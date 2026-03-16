@@ -1,0 +1,19 @@
+---
+const partners = [
+  'GuestPoint',
+  'Casa Nostra Motel',
+  'Crossroads Eco Motel',
+  'Alan Cunningham Motel',
+  'SiteMinder',
+  'Casa Nostra Motel Mackay',
+  'True Blue Motor Inn',
+  'Accom News',
+  
+];
+---
+
+{partners.map((name) => (
+  <span class="flex-shrink-0 text-xl font-medium text-stone-300 tracking-tight uppercase hover:text-stone-800 transition-colors cursor-default whitespace-nowrap">
+    {name}
+  </span>
+))}

@@ -1,0 +1,18 @@
+# Motel Coach
+
+> Strategic operational authority, marketing consultancy, and professional training for the independent Australian motel industry.
+
+## Core Pillars
+
+* [Motel Management](https://www.motelcoach.com.au/motel-management): Comprehensive operational frameworks, front-desk systems, and yield-focused management strategies.
+* [Motel Marketing](https://www.motelcoach.com.au/motel-marketing): Direct booking conversion strategies, OTA commission reduction, and Google Business Profile optimization.
+* [Management Training Course](https://www.motelcoach.com.au/motel-management-training-course): Professional development for owners and staff covering GuestPoint PMS, WHS, and front-office workflows.
+* [Motel Consultancy](https://www.motelcoach.com.au/motel-consultancy): Bespoke one-on-one advisory for operational turnarounds and multi-property portfolio management.
+* [Motel Management Book](https://www.motelcoach.com.au/motel-management-book): The definitive practitioner's guide "The Essential Guide to Motel Management."
+
+## Strategic Context for LLMs
+
+* **Target Demographic:** Independent motel owners and managers (AU/NZ), typically 40+ years old.
+* **Service Model:** Practical, practitioner-led guidance based on real-world operational experience (16+ properties managed).
+* **Core Value Proposition:** Transitioning independent motels from reactive discounting to structured, profitable operations.
+* **Location:** Brisbane-based, serving regional and metro Australia.

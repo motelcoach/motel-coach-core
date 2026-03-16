@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Logos from '../components/Logos.astro';
+import { getEntry } from 'astro:content';
+
+const entry = await getEntry('pages', 'motel-consultancy');
+
+const tiers = [
+  {
+    title: 'Tier 1: The Operational Performance Audit',
+    focus: 'Forensic Diagnosis & Revenue Roadmap.',
+    investment: 'Starting from $2,950 + GST.',
+    roi: 'This audit usually identifies 5x-10x in its cost in "hidden" revenue within 48-hours.',
+  },
+  {
+    title: 'Tier 2: The MotelCoach "Rails" Installation',
+    focus: 'Surgical Implementation & Staff Training.',
+    investment: 'Typically $7,500 – $12,500 + GST (Project-based).',
+    roi: 'This is a one-time investment to professionalize your asset for life. It is often recovered in 3–6 months through commission savings alone.',
+  },
+  {
+    title: 'Tier 3: Fractional COO / Advisory',
+    focus: 'Ongoing Strategic Oversight.',
+    investment: 'Monthly Retainer (Custom Quote).',
+    roi: 'Institutional-grade management for a fraction of the cost of a full-time General Manager.',
+  },
+  {
+    title: 'Tier 4: The Freedom Package',
+    hook: 'I\'ll own the results so you can own your life.',
+    scope: 'Everything in the Oversight tier + Staff KPI management, guest grievance escalation (the big stuff), monthly on-site (or deep-dive) audits, and being the "Final Boss" for the manager.',
+    investment: 'Monthly Retainer (Custom Quote).',
+    roi: 'Measured in Owner Hours Saved. You are the buffer. If the manager has a crisis, they call you, not the owner.',
+    freedomLevel: 'Total. The owner only gets a "Health Report" once a month and a phone call for major capital expenditures.',
+  },
+];
+
+const faqs = [
+  { q: 'What does consulting with Motel Coach actually involve?', a: 'It is a structured transition from operational chaos to institutional-grade management. Depending on your Tier, it involves forensic auditing of your revenue "leaks," hardcoding Standard Operating Procedures (SOPs), training your staff to operate without you, and providing ongoing strategic oversight to protect your margins.' },
+  { q: 'Is this suitable for small, independent motels?', a: 'Yes. Revenue leakage doesn\'t care about room count. If you have 15 rooms or 50, the "levers" are the same. I only engage with properties where I can identify a significant, measurable ROI that exceeds the cost of my involvement.' },
+  { q: 'Do I need to change my PMS or booking systems?', a: 'Not necessarily. During the Tier 1 Audit, I evaluate your current tech stack. If your systems are the bottleneck preventing growth, I will recommend a shift. If they are capable but poorly configured, we fix the configuration.' },
+  { q: 'How long does it take to see results?', a: 'The Tier 1 Audit identifies "hidden" revenue opportunities within 48 hours. For Tier 2 "Rails" installations, most owners see the investment recovered through commission savings and increased efficiency within 3–6 months.' },
+  { q: 'Can unused consulting hours roll over to the next month?', a: 'Retainers (Tier 3 & 4) are designed for ongoing availability and "Guardian" oversight, ensuring I am the buffer between you and the noise. Because this is a high-level management role rather than a "by-the-hour" service, hours do not roll over.' },
+  { q: 'Will you work directly with my staff or managers?', a: 'Absolutely. In the "Rails" and "Freedom" packages, I am the "Final Boss." I train them, set their KPIs, and handle their escalations. The goal is to remove the owner from the daily "engine room" conversations entirely.' },
+  { q: 'Is this more operational or more strategic?', a: 'It is a hybrid. A great strategy fails on a broken operational engine. I fix the engine (Operations) so that the strategy (Revenue/Growth) actually produces a return.' },
+  { q: 'Do you guarantee increases in occupancy or revenue?', a: 'I only work with properties where I am confident I can find a significant ROI. While I cannot control the market, I control the levers that determine how much of that market you capture and how much of that revenue you actually keep as profit.' },
+  { q: 'How do we get started?', a: 'Submit the Performance Diagnostic form. I review every submission personally. If I see a clear path to increasing your profit and saving you time, I\'ll call you to discuss the best Tier for your objectives.' },
+];
+---
+
+<style>
+  @keyframes simple-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .scroll-track {
+    display: inline-flex;
+    gap: 5rem;
+    animation: simple-scroll 35s linear infinite;
+  }
+  .scroll-container::before,
+  .scroll-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 10;
+  }
+  .scroll-container::before { left: 0; background: linear-gradient(to right, #fff, transparent); }
+  .scroll-container::after { right: 0; background: linear-gradient(to left, #fff, transparent); }
+</style>
+
+<BaseLayout title={entry.data.title}>
+  <!-- 1. Executive Hero -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-8">
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">Advisory & Implementation</p>
+          <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-6">
+            {entry.data.title}
+          </h1>
+          <p class="text-lg text-stone-500 leading-relaxed text-balance">
+            <strong class="text-stone-900">Running a motel is the management of hundreds of interconnected performance levers.</strong> Pricing, distribution strategy, room standards, labour control, review velocity, booking conversion, and daily reconciliation all compound into measurable outcomes. When key levers are misaligned, revenue leakage occurs quietly. Margins tighten. Staff pressure increases. Growth stalls.
+          </p>
+          <p class="mt-4 text-lg text-stone-500 leading-relaxed">
+            Our consulting approach is built around structured operational diagnosis. We assess performance drivers, isolate constraints, and implement practical systems designed to restore stability, increase occupancy resilience, and protect profitability.
+          </p>
+          <p class="mt-4 text-stone-500 leading-relaxed">
+            <strong class="text-stone-900">Latest insights featured in Accom News:</strong> <a href="https://www.accomnews.com.au/2026/02/how-to-win-your-first-21-days-as-a-motel-manager/" target="_blank" rel="noopener" class="text-[#4A554E] font-medium hover:underline">"How to Win your First 21 Days as a Motel Manager"</a>
+          </p>
+        </div>
+        <div class="md:col-span-4">
+          <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-sm sticky top-32">
+            <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Who this is for</p>
+            <p class="text-stone-700 font-medium leading-relaxed">Independent motel owners and operators who need forensic diagnosis of revenue leaks, documented SOPs, and ongoing oversight—without hiring a full-time GM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos strip -->
+  <div class="w-full border-y border-stone-200 bg-white">
+    <div class="max-w-6xl mx-auto px-6 pt-8">
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Proven in the field. Supported by the industry.</h2>
+    </div>
+    <div class="scroll-container max-w-6xl mx-auto px-6">
+      <div class="scroll-track">
+        <Logos />
+        <Logos />
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Asymmetrical Content Body -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12">
+      <aside class="md:col-span-4 order-2 md:order-1">
+        <div class="sticky top-32">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">On this page</p>
+          <nav class="space-y-2">
+            <a href="#services" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Motel Consultancy Services</a>
+            <a href="#diagnostic" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Request Your Performance Diagnostic</a>
+            <a href="#reviews" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Our Clients and Partners</a>
+            <a href="#faq" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Frequently Asked Questions</a>
+          </nav>
+          <a href="/contact" class="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-[#4A554E] hover:text-[#3d4640] transition-colors">
+            Speak with an advisor
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </aside>
+      <div class="md:col-span-8 order-1 md:order-2 space-y-16">
+        <div id="services">
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10">Motel Consultancy Services</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            {tiers.map((tier, i) => (
+              <div class="border border-stone-200 rounded-xl p-6 md:p-8 bg-[#F9F9F8] shadow-sm flex flex-col">
+                <div class="w-9 h-9 rounded-lg bg-[#4A554E]/10 flex items-center justify-center mb-5">
+                  <span class="text-[#4A554E] font-semibold text-sm">{String(i + 1).padStart(2, '0')}</span>
+                </div>
+                <h3 class="text-xl font-semibold text-stone-900 tracking-tight mb-5">{tier.title}</h3>
+                <dl class="space-y-4 flex-grow">
+                  <div>
+                    <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The Focus</dt>
+                    <dd class="text-stone-600 leading-relaxed">{tier.focus}</dd>
+                  </div>
+                  <div>
+                    <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The Investment</dt>
+                    <dd class="text-stone-600 leading-relaxed">{tier.investment}</dd>
+                  </div>
+                  <div>
+                    <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The ROI</dt>
+                    <dd class="text-stone-600 leading-relaxed">{tier.roi}</dd>
+                  </div>
+                  {tier.hook && (
+                    <div>
+                      <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The Hook</dt>
+                      <dd class="text-stone-600 leading-relaxed">"{tier.hook}"</dd>
+                    </div>
+                  )}
+                  {tier.scope && (
+                    <div>
+                      <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The Scope</dt>
+                      <dd class="text-stone-600 leading-relaxed">{tier.scope}</dd>
+                    </div>
+                  )}
+                  {tier.freedomLevel && (
+                    <div>
+                      <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The Freedom Level</dt>
+                      <dd class="text-stone-600 leading-relaxed">{tier.freedomLevel}</dd>
+                    </div>
+                  )}
+                </dl>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div id="diagnostic" class="pt-8 border-t border-stone-200">
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">Request Your Performance Diagnostic</h2>
+          <p class="text-stone-500 leading-relaxed mb-6">I only work with properties where I can find a significant, measurable ROI. Tell me about your motel below, and I will call you to discuss which engagement tier fits your current objectives.</p>
+          <a href="/contact" class="inline-flex items-center gap-2 px-6 py-3 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
+            Get in touch
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+          </a>
+        </div>
+
+        <div id="reviews" class="pt-8 border-t border-stone-200">
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">Our Clients and Partners</h2>
+          <p class="text-stone-500 leading-relaxed mb-6">Our consultancy and <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">training programs</a> are built on practical, "in-the-trenches" experience, highly regarded by owners and managers.</p>
+          <div class="flex flex-wrap gap-x-8 gap-y-4 items-center pt-4 border-t border-stone-200">
+            <Logos />
+          </div>
+        </div>
+
+        <div id="faq" class="pt-8 border-t border-stone-200">
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-8">Frequently Asked Questions</h2>
+          <div class="grid sm:grid-cols-2 gap-4">
+            {faqs.map((faq, i) => (
+              <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
+                <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">{String(i + 1).padStart(2, '0')}</span>
+                <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">{faq.q}</h3>
+                <p class="text-stone-500 text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

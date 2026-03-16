@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const courses = [
+  {
+    slug: 'motel-management-training-course',
+    title: 'Learn Motel Management',
+    description: 'The flagship 21-day transition blueprint. Move from reactive firefighting to systems-based ownership without the profit drain.',
+    format: 'Self-Paced Video',
+    badge: '01',
+    waitlist: false,
+  },
+  {
+    slug: 'learn-guest-point-pms',
+    title: 'Learn GuestPoint PMS',
+    description: 'Data hygiene, reporting, and operational daily workflows. Master the PMS that powers your property so nothing slips through the cracks.',
+    format: 'Self-Paced Video',
+    badge: '02',
+    waitlist: false,
+  },
+  {
+    slug: 'motel-marketing',
+    title: 'Learn Motel Marketing',
+    description: 'Direct booking funnels and breaking OTA dependency. Turn your website into a capital asset that compounds your margin.',
+    format: 'Self-Paced Video',
+    badge: '03',
+    waitlist: true,
+  },
+  {
+    slug: 'motel-revenue-management',
+    title: 'Learn Motel Revenue Management',
+    description: 'Dynamic pricing, yield optimization, and margin expansion. Stop leaving money on the table with institutional-grade revenue discipline.',
+    format: 'Self-Paced Video',
+    badge: '04',
+    waitlist: true,
+  },
+];
+---
+
+<BaseLayout title="Training Programs | Motel Coach" hideFooterCta>
+  <!-- 1. Premium Hero Section -->
+  <section class="w-full bg-white pt-20 pb-16 md:pt-28 md:pb-24">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">
+        Training & Certification
+      </p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-stone-900 tracking-tight leading-tight mb-6 text-balance">
+        Operational Mastery for Motels.
+      </h1>
+      <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-2xl">
+        Upskill your management team and install self-sustaining frameworks without needing to be on-site 24/7. Choose a specific system to master below.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. The Course Grid -->
+  <section class="w-full bg-[#F9F9F8] py-16 md:py-24 border-y border-stone-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-6">
+        {courses.map((course) => {
+          const href = course.waitlist ? `/contact?waitlist=${course.slug}` : `/${course.slug}`;
+          const ctaText = course.waitlist ? 'Join Waitlist' : 'View Curriculum';
+          return (
+            <a
+              href={href}
+              class="group block bg-white border border-stone-200 rounded-xl p-8 shadow-sm hover:shadow-md hover:border-stone-300 transition-all duration-200"
+            >
+              <div class="flex items-start justify-between gap-4 mb-6">
+                <div class="w-10 h-10 rounded-lg bg-[#4A554E]/10 flex items-center justify-center flex-shrink-0">
+                  <span class="text-[#4A554E] font-semibold text-sm">{course.badge}</span>
+                </div>
+                {course.waitlist && (
+                  <span class="text-xs font-semibold uppercase tracking-widest text-stone-400 bg-stone-100 px-3 py-1.5 rounded-full">
+                    Coming soon
+                  </span>
+                )}
+              </div>
+              <div class="flex items-start justify-between gap-4 mb-3">
+                <h2 class="text-xl md:text-2xl font-semibold text-stone-900 tracking-tight group-hover:text-[#4A554E] transition-colors">
+                  {course.title}
+                </h2>
+                <span class="text-base font-bold text-[#4A554E] whitespace-nowrap bg-[#4A554E]/15 px-3 py-1.5 rounded-lg">From $89</span>
+              </div>
+              <p class="text-stone-500 leading-relaxed mb-4">
+                {course.description}
+              </p>
+              <span class="inline-block text-xs font-medium uppercase tracking-widest text-stone-400 mb-4">
+                {course.format}
+              </span>
+              <div class="mb-6">
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-[#4A554E]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 shrink-0" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  Certificate on completion
+                </span>
+              </div>
+              <span class="inline-flex items-center gap-1.5 text-sm font-medium text-[#4A554E] group-hover:text-[#3d4640] transition-colors">
+                {ctaText}
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Bottom CTA Section -->
+  <section class="w-full bg-white py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">
+        Need us to do it for you?
+      </h2>
+      <p class="text-lg text-stone-500 leading-relaxed max-w-2xl mx-auto mb-8">
+        If you don't have the time to train your team, we can step in. Book a Strategic Audit and we will build your systems for you.
+      </p>
+      <a
+        href="/audit"
+        class="inline-flex items-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+      >
+        Book a Strategic Audit
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

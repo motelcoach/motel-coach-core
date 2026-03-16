@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+
+const entry = await getEntry('pages', 'motel-marketing-strategies-for-independent-operators-increase-direct-bookings-occupancy');
+---
+
+<BaseLayout title={entry.data.title}>
+  <!-- 1. Executive Hero -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-8">
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">Marketing Strategy</p>
+          <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-6">
+            {entry.data.title}
+          </h1>
+          <p class="text-lg text-stone-500 leading-relaxed text-balance">
+            Most marketing agencies sell "visibility." They talk about TikTok followers and Instagram likes.
+          </p>
+          <p class="mt-4 text-lg text-stone-500 leading-relaxed">
+            <strong class="text-stone-900">At Motel Coach, we talk about RevPAR and Asset Value.</strong>
+          </p>
+          <p class="mt-4 text-lg text-stone-500 leading-relaxed">
+            If you are an <strong class="text-stone-900">Owner</strong>, your website is a capital improvement. Just like a $100k paint job, a high-performance website increases the "Curb Appeal" of your business and significantly raises the valuation of your Management Rights.
+          </p>
+          <p class="mt-4 text-lg text-stone-500 leading-relaxed">
+            If you are a <strong class="text-stone-900">Manager</strong>, you are time-poor. You don't need a "Social Media Manager" to give you more work; you need a system that works while you sleep.
+          </p>
+        </div>
+        <div class="md:col-span-4">
+          <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-sm sticky top-32">
+            <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Who this is for</p>
+            <blockquote class="text-stone-700 font-medium leading-relaxed border-l-4 border-[#4A554E] pl-4 not-italic">
+              "A fresh coat of paint gets them in the driveway. A high-performance website gets them to pay YOU directly."
+            </blockquote>
+            <p class="mt-4 text-sm text-stone-500">
+              Every booking that moves from an OTA to your website puts 15–20% back in your pocket.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Asymmetrical Content Body -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12">
+      <aside class="md:col-span-4 order-2 md:order-1">
+        <div class="sticky top-32">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">On this page</p>
+          <nav class="space-y-2">
+            <a href="#why-choose" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Why Independent Motels Choose Coaching</a>
+            <a href="#big-levers" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">The Big Levers</a>
+            <a href="#ota-tax" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Stop Paying the OTA Tax</a>
+          </nav>
+          <a href="/contact" class="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-[#4A554E] hover:text-[#3d4640] transition-colors">
+            Speak with an advisor
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </aside>
+      <div class="md:col-span-8 order-1 md:order-2 space-y-16">
+        <div id="why-choose">
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-8">Why Independent Motels Choose Coaching Over "Agencies"</h2>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">01</span>
+              <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Generic Marketing Agency</p>
+              <ul class="text-stone-500 text-sm leading-relaxed space-y-1">
+                <li>Focus: "Likes" and Impressions</li>
+                <li>Strategy: Post on Social Media</li>
+                <li>OTA View: "List on more sites"</li>
+                <li>Knowledge: They know "Digital Marketing"</li>
+              </ul>
+            </div>
+            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">02</span>
+              <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">The Motel Coach Approach</p>
+              <ul class="text-stone-600 text-sm leading-relaxed space-y-1 font-medium">
+                <li>Direct Bookings & Profit Margin</li>
+                <li>Intercept Guests on Google & Maps</li>
+                <li>Reduce OTA Dependency & Commissions</li>
+                <li>We know Motel Operations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="big-levers">
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">The Big Levers: Where We Focus</h2>
+          <p class="text-stone-500 leading-relaxed mb-8">We don't do everything. We do what moves the needle for a 10-to-40 room independent property.</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">01</span>
+              <h3 class="font-semibold text-stone-900 tracking-tight mb-2">The Digital Front Desk (Conversion)</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">We don't build "brochures." We build high-speed booking engines. If your site doesn't load in under 2 seconds on a patchy regional mobile connection, you are losing money to Booking.com.</p>
+            </div>
+            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">02</span>
+              <h3 class="font-semibold text-stone-900 tracking-tight mb-2">Google Interception & Local SEO</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">When someone is 10km away and searches "Motel near me," you need to be the #1 choice. We optimize your Google Business Profile to drive phone calls and direct clicks, bypassing the OTA commission.</p>
+            </div>
+            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">03</span>
+              <h3 class="font-semibold text-stone-900 tracking-tight mb-2">The "Fact Layer" for AI & Search</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">Modern travelers (and AI search engines) want data, not fluff. We replace "beautiful rooms" with "King beds, 50Mbps Wi-Fi, and B-Double parking." High-density info wins the booking.</p>
+            </div>
+            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">04</span>
+              <h3 class="font-semibold text-stone-900 tracking-tight mb-2">Revenue & Rate Integrity</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">Marketing fails if your pricing is reactive. We help managers implement simple pricing structures that capture peak demand without "discounting" your brand away.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="ota-tax">
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">Stop Paying the "OTA Tax"</h2>
+          <p class="text-stone-500 leading-relaxed mb-6">Every booking that moves from an OTA to your website puts <strong class="text-stone-900">15-20% back in your pocket.</strong> For a 20-room motel, that is often the difference between a struggling year and a record-breaking one.</p>
+          <p class="text-stone-500 leading-relaxed mb-8">
+            <a href="/contact" class="text-[#4A554E] font-medium hover:underline">Book a Free Marketing Audit</a>
+            <span class="mx-2">|</span>
+            <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">View Consultancy Options</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

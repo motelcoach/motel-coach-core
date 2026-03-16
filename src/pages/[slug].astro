@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout title={entry.data.title}>
+  <div class="bg-brand-50 py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight mb-10">
+        {entry.data.title}
+      </h1>
+      <article class="prose prose-lg prose-stone max-w-none prose-headings:text-stone-900 prose-headings:font-semibold prose-headings:tracking-tight prose-p:text-stone-500 prose-p:leading-relaxed prose-a:text-[#4A554E] prose-a:font-medium prose-a:no-underline hover:prose-a:underline prose-blockquote:border-l-[#4A554E] prose-blockquote:bg-white prose-blockquote:border-stone-200">
+        <Content />
+      </article>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Logos from '../components/Logos.astro';
+---
+
+<style>
+  /* Seamless Marquee Animation */
+  @keyframes simple-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .scroll-track {
+    display: inline-flex;
+    gap: 5rem;
+    animation: simple-scroll 35s linear infinite;
+  }
+
+  /* Fade edges to match the pure white background */
+  .scroll-container::before,
+  .scroll-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 10;
+  }
+  .scroll-container::before { left: 0; background: linear-gradient(to right, white, transparent); }
+  .scroll-container::after { right: 0; background: linear-gradient(to left, white, transparent); }
+</style>
+
+<BaseLayout>
+  
+  <section class="w-full bg-white pt-24 pb-16 md:pt-32 md:pb-20">
+    <div class="max-w-6xl mx-auto px-6 w-full">
+      
+      <div class="max-w-4xl">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold text-stone-900 leading-[1.05] tracking-tight text-balance mb-8">
+          Stop Managing Your Motel.<br/>
+          <span class="text-stone-400">Start Owning a High-Yield Asset.</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-3xl mb-12 text-balance">
+          Most owners are trapped by inefficient operations and stagnant occupancy. We provide the motel system and marketing strategies required to scale your revenue without sacrificing your freedom. Whether you need a fractional COO to fix the leaks or a comprehensive management course to upskill your team, we deliver the structural precision your business lacks.
+        </p>
+        
+        <div class="flex flex-wrap items-center gap-4 mb-20">
+          <a href="/audit" class="px-7 py-3.5 bg-[#4A554E] text-white text-base font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
+            Book a Strategic Motel Audit
+          </a>
+          <a href="/playbook" class="px-7 py-3.5 bg-white border border-stone-200 text-stone-900 text-base font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm">
+            Download the Management Playbook
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-full border-y border-stone-100 bg-white">
+      <div class="max-w-6xl mx-auto px-6 pt-8">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">
+          Proven in the field. Supported by the industry.
+        </h2>
+      </div>
+      <div class="scroll-container max-w-6xl mx-auto px-6">
+        <div class="scroll-track">
+          <Logos />
+          <Logos />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full bg-[#F9F9F8] py-24 md:py-32 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-16">
+        <h2 class="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight mb-4">
+          Precision over guesswork.
+        </h2>
+        <p class="text-lg text-stone-500 leading-relaxed">
+          We strip away the noise of daily operations and install frameworks that practically run themselves.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-stone-200 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded-lg bg-[#4A554E]/10 flex items-center justify-center mb-6">
+            <span class="text-[#4A554E] font-bold text-sm">01</span>
+          </div>
+          <h3 class="text-xl font-semibold text-stone-900 mb-3 tracking-tight">The Mastery Course</h3>
+          <p class="text-stone-500 leading-relaxed mb-6">
+            A clinical 21-day blueprint for transitioning into ownership without the profit drain.
+          </p>
+          <a href="/courses" class="text-sm font-medium text-[#4A554E] hover:text-stone-900 transition-colors flex items-center gap-1">
+            Explore the curriculum &rarr;
+          </a>
+        </div>
+
+        <div class="bg-white border border-stone-200 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center mb-6">
+            <span class="text-stone-500 font-bold text-sm">02</span>
+          </div>
+          <h3 class="text-xl font-semibold text-stone-900 mb-3 tracking-tight">Operational Audits</h3>
+          <p class="text-stone-500 leading-relaxed mb-6">
+            Deep-dive analysis of your GuestPoint data and staff workflows to recover missing margins.
+          </p>
+          <a href="/audit" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors flex items-center gap-1">
+            See the audit process &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

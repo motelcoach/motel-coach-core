@@ -1,0 +1,30 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={`${frontmatter.title} | Motel Coach`}>
+  
+  <section class="w-full bg-[#F9F9F8] pt-32 pb-16 border-b border-stone-200">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">
+        {frontmatter.category || "Insight"}
+      </p>
+      <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-6">
+        {frontmatter.title}
+      </h1>
+      <p class="text-lg text-stone-500 leading-relaxed text-balance">
+        {frontmatter.description}
+      </p>
+    </div>
+  </section>
+
+  <section class="w-full bg-white py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-stone lg:prose-lg max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-stone-900 prose-p:text-stone-500 prose-p:leading-relaxed prose-a:text-[#4A554E] prose-a:font-medium prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-stone-300 prose-blockquote:border-l-[#4A554E] prose-blockquote:bg-[#F9F9F8] prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:text-stone-700 prose-blockquote:not-italic prose-blockquote:rounded-r-lg prose-img:rounded-xl prose-img:shadow-sm prose-img:border prose-img:border-stone-200 prose-li:text-stone-500">
+        <slot />
+      </article>
+    </div>
+  </section>
+
+</BaseLayout>
