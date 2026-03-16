@@ -18,8 +18,6 @@ export default defineConfig({
     '/motel-front-desk-quick-reference-guide': '/motel-management',
     '/how-to-manage-a-small-motel': '/motel-management',
     '/motel-management-book-free-shortened': '/motel-management-book-free',
-    '/how-to-manage-a-small-motel': '/motel-management',
-    '/how-to-manage-a-small-motel': '/motel-management',
     '/learn-motel-mangement': '/motel-management-training-course',
     '/motel-marketing-review': '/motel-marketing',
     '/motel-management-australia': '/motel-management',
