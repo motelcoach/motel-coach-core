@@ -17,7 +17,7 @@ export default defineConfig({
     '/how-to-run-a-motel': '/motel-management',
     '/motel-front-desk-quick-reference-guide': '/motel-management',
     '/how-to-manage-a-small-motel': '/motel-management',
-    '/motel-management-book-free-shortened': '/motel-management-book-free-chapter',
+    '/motel-management-book-free-shortened': '/motel-management-book',
     '/learn-motel-mangement': '/motel-management-training-course',
     '/motel-marketing-review': '/motel-marketing',
     '/motel-management-australia': '/motel-management',
@@ -49,6 +49,8 @@ export default defineConfig({
     '/faq': '/',
     '/motel-resources': '/',
     '/blog/motel-manager-career': '/blog/what-does-a-motel-manager-do',
-    '/motel-management-book-free-shortened': '/motel-management-book'
+    '/motel-seo-guide': '/blog/motel-seo',
+    '/local-seo-motels': '/blog/motel-seo',
+    '/motel-marketing-strategies-for-independent-operators-increase-direct-bookings-occupancy': '/motel-marketing'
   },
 });
