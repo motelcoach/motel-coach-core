@@ -22,17 +22,17 @@ By submitting this form, you’ll receive the GuestPoint Information Pack you re
 **Proven** in the Field. **Supported** by the Industry.
 -------------------------------------------------------
 
-![Text that reads 'GuestPoint' in blue and orange logo style.](https://images.squarespace-cdn.com/content/v1/67ed224a315ac1209f49feb2/5facaf75-dbe3-4840-b3be-44f64bae1861/GuestPoint-PMS.webp?format=original)
+![Text that reads 'GuestPoint' in blue and orange logo style.](/images/legacy/GuestPoint-PMS.webp)
 
-[![](https://images.squarespace-cdn.com/content/v1/67ed224a315ac1209f49feb2/0f8bdfa5-74e7-4bcf-92cd-88ee164f27cd/motel-management-news.jpg?format=original)](null)
+[![](/images/legacy/motel-management-news.jpg)](null)
 
-![Casa Nostra Motel logo with three purple stars above and the location VILLAS - ROCKHAMPTON below.](https://images.squarespace-cdn.com/content/v1/67ed224a315ac1209f49feb2/45eab96b-eb4a-4ec2-b2b6-4408bd9cbf7f/Casa-Nostra-Motel-Logo.webp?format=original)
+![Casa Nostra Motel logo with three purple stars above and the location VILLAS - ROCKHAMPTON below.](/images/legacy/Casa-Nostra-Motel-Logo.webp)
 
-[![](https://images.squarespace-cdn.com/content/v1/67ed224a315ac1209f49feb2/ea4439e5-8f62-408f-a92c-ca5725c4a658/motel-consultancy-client-ecomotel.png?format=original)](null)
+[![](/images/legacy/motel-consultancy-client-ecomotel.png)](null)
 
-![Stylized black and white illustration of a man with curly hair, a mustache, and a serious expression, wearing a jacket. The word "MOTEL" in large red letters is overlaid at the bottom.](https://images.squarespace-cdn.com/content/v1/67ed224a315ac1209f49feb2/39e5706a-fda2-4d01-9467-f1a2daa361b4/cropped-AllanCunninghamMotel_Logo.webp?format=original)
+![Stylized black and white illustration of a man with curly hair, a mustache, and a serious expression, wearing a jacket. The word "MOTEL" in large red letters is overlaid at the bottom.](/images/legacy/cropped-AllanCunninghamMotel_Logo.webp)
 
-![SiteMinder partner badge with logo and text](https://images.squarespace-cdn.com/content/v1/67ed224a315ac1209f49feb2/bdc8114b-203d-4845-910d-7621572c0bbd/Partner_p_rgb.png?format=original)
+![SiteMinder partner badge with logo and text](/images/legacy/Partner_p_rgb.png)
 
 **_Latest insights featured in Accom News:_** [**_“How to Win your First 21 Days as a Motel Manager”_**](https://www.accomnews.com.au/2026/02/how-to-win-your-first-21-days-as-a-motel-manager/)
 

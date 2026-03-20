@@ -1,0 +1,186 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LucideIcon from '../components/LucideIcon.astro';
+const STRIPE_CHECKOUT_URL = 'https://buy.stripe.com/8x214nf353vn6yD7pp6Zy02';
+---
+
+<BaseLayout title="Free Chapter | The Essential Guide to Motel Management" canonicalURL="https://motelcoach.com.au/motel-management-book">
+  <!-- Hero -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">
+          Free Chapter
+        </p>
+        <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-4">
+          Your Free Chapter
+        </h1>
+        <p class="text-lg text-stone-500 leading-relaxed mb-4 text-balance">
+          A free chapter from <span class="font-semibold text-stone-900">The Essential Guide to Motel Management</span> - We've included a part of the Introduction and Front Office Chapters.
+        </p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a
+            href={STRIPE_CHECKOUT_URL}
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+          >
+            Buy the Full Book
+            <LucideIcon name="arrow-right" size={18} class="text-white" />
+          </a>
+          <a
+            href="/courses"
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-stone-900 border border-stone-200 font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm"
+          >
+            Explore the Training
+          </a>
+        </div>
+        <div class="mt-4 space-y-1 text-xs text-stone-500">
+          <p class="text-stone-400 uppercase tracking-widest font-semibold">
+            Supported payment methods
+          </p>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Visa</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Mastercard</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Amex</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Apple Pay</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Google Pay</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img
+          src="/the-essential-guide-to-motel-management.png"
+          alt="The Essential Guide to Motel Management book cover"
+          class="max-w-sm w-full"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter Content -->
+  <section class="bg-white py-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-lg prose-stone max-w-none prose-headings:text-stone-900 prose-p:text-stone-500 prose-a:text-[#4A554E] prose-a:font-medium">
+        <h2>1. About Us</h2>
+        <p>
+          I’ve seen every side of this industry — from scrubbing toilets on Christmas Day to handling medical emergencies, driving sales,
+          leading teams, and fine-tuning revenue. I’ve worked across properties big and small, from humble motels to high-occupancy
+          hotels with 400+ rooms, and I’ve done the hard yards in every department: housekeeping, front office, F&amp;B, reservations,
+          marketing, and general management.
+        </p>
+        <p>
+          Whether it’s building strong teams, lifting guest satisfaction, or finding smart ways to grow revenue, I bring a hands-on approach
+          and a sharp eye for detail. I know how to keep things running — and how to make every day exceptional.
+        </p>
+
+        <h2>2. Purpose of the Guide</h2>
+        <p>
+          Running a motel is more than just checking guests in and out — it’s about creating a smooth, welcoming, and profitable operation
+          that reflects care and professionalism in every aspect. Your ability to manage, the standards you set for yourself, and the expectations
+          you have with your staff will determine the motel’s success or failure.
+        </p>
+        <p>
+          This book was born from real hands-on experience in the industry, built for those who want to raise the standard and run high performing
+          motels. The purpose of this book is simple: to help you run your motel smarter, more efficiently, and with confidence. If you care about doing
+          things right — from reception to room turnover, from pricing to people — then this is your manual.
+        </p>
+
+        <h2>3. Who It’s For</h2>
+        <p>
+          This book is written for anyone who operates, manages, or dreams of running a motel — from fresh beginners to experienced hands in the
+          field. It is packed with practical tools, checklists, templates, and lessons from the field — because we’ve been there.
+        </p>
+        <p><strong>New Owners &amp; Operators</strong> – If you're just getting started, this book lays out the foundations clearly and simply, helping you avoid costly mistakes and build good habits from day one.</p>
+        <p><strong>Family-Run Motels</strong> – For those running small or independent motels with limited staff, this book shows you how to streamline operations, stay organized, and serve guests professionally without feeling overwhelmed.</p>
+        <p><strong>Seasoned Operators</strong> – If you've been in the game for a while but want to tighten your systems, improve your results, or just bring a fresh structure to your business, this book offers a practical refresh.</p>
+        <p><strong>Managers, Supervisors &amp; Staff Trainers</strong> – Use this book as a staff training tool or operations manual to bring consistency, clarity, and confidence to your team. Wherever you are on your motel journey, this guide gives you real-world tools and actionable systems you can put to work immediately.</p>
+        <p><strong>This book isn’t about theory, it’s about action.</strong></p>
+
+        <h2>4. How to Use This Book</h2>
+        <p>
+          This book is designed to serve two powerful purposes:
+        </p>
+        <p><strong>1. A guided journey</strong> – Read it from start to finish and you’ll gain a thorough understanding of how to run every part of your motel with intention and structure.</p>
+        <p><strong>2. A practical reference manual</strong> – Use it as a go-to guide any time you need a system, a checklist, or a resource for a specific part of your operation.</p>
+        <p>
+          The book is organized by key motel departments — from Reception to Revenue Management. Inside each, you’ll find a rich collection of tools,
+          checklists, and templates you can use immediately.
+        </p>
+        <p>
+          Whether you’re reading it cover-to-cover or jumping straight to the section you need most, this book is built to help you create smoother
+          operations and a more successful motel.
+        </p>
+
+        <h2>5. Expectations of Running a Motel</h2>
+        <p>
+          We wanted to set some expectations from the beginning. People often see running a small motel or B&amp;B as a relaxing lifestyle job. As a
+          general rule, even a small motel or B&amp;B demands long hours — often seven days a week. Expect to jump into many different roles as staff
+          call in sick or the motel requires.
+        </p>
+        <p>
+          Each motel has varying requirements, procedures and tasks. If you are running a small motel with 15 rooms then you might be required to be
+          more hands-on in each area of the motel: you may clean some rooms, complete a maintenance task or be on Reception.
+        </p>
+        <p>
+          As the size of the motel increases you will have more staff to support you, and your role will shift from hands on to more of a people
+          management role.
+        </p>
+        <p>
+          <strong>Tip:</strong> A smaller motel is a great opportunity to learn about each department and get hands-on experience learning and completing jobs
+          within each department. As you grow in your career and manage a larger team, they will appreciate that you understand their role and will give
+          you more respect as their manager.
+        </p>
+
+        <h2>Chapter 2: Front Office Management (Preview)</h2>
+        <h3>1. Introduction to the Front Office</h3>
+        <p>
+          This is not like a textbook found in a university or Tafe, it is an operational manual created from running motels. We have broken this
+          chapter into two key sections: Front Office Checklist, and Front Office Best Practices.
+        </p>
+        <p>
+          The front office is the direct point of contact for guests. It’s where first impressions are made, issues are resolved, and guest expectations
+          are managed. A well-run front desk combines structure, professionalism, and empathy.
+        </p>
+        <p>
+          For new Motel Managers, this section acts as your actionable playbook, organized as a Front Desk Daily Checklist, and Best Practice Guide
+          complete with explanations, and downloadable resources to help you run a smooth, well-organized operation.
+        </p>
+      </article>
+
+      <div class="mt-12 border-t border-stone-200 pt-8 text-center">
+        <p class="text-stone-500 leading-relaxed mb-4">
+          You&apos;ve just read the introduction and a preview of Chapter 2. The full book includes complete checklists, glossaries, and departmental systems.
+        </p>
+        <a
+          href={STRIPE_CHECKOUT_URL}
+          class="inline-flex items-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+        >
+          Continue with the Full Book
+          <LucideIcon name="arrow-right" size={18} class="text-white" />
+        </a>
+        <div class="mt-5 space-y-1 text-xs text-stone-500">
+          <p class="text-stone-400 uppercase tracking-widest font-semibold">
+            Supported payment methods
+          </p>
+          <div class="flex flex-wrap justify-center items-center gap-2">
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Visa</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Mastercard</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Amex</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Apple Pay</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Google Pay</span>
+          </div>
+          <p class="text-[10px] text-stone-400">
+            Secure checkout powered by Stripe
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-stone-100 border border-stone-200 rounded-2xl p-8 my-12 text-center">
+        <h3 class="text-xl font-bold text-stone-900 mb-4">Enjoyed this sample?</h3>
+        <p class="text-stone-600 mb-6">Get the full 190+ page manual including all 70+ operational templates and checklists.</p>
+        <a href="/motel-management-book" class="inline-block px-8 py-4 bg-[#4A554E] text-white font-bold rounded-lg hover:bg-[#3d4640] transition-all">Buy the Full Book Now</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

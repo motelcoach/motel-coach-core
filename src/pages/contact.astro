@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const params = Astro.url.searchParams;
+const prefill = {
+  name: params.get('name') ?? '',
+  email: params.get('email') ?? '',
+  phone: params.get('phone') ?? '',
+  role: params.get('role') ?? '',
+  property: params.get('property') ?? '',
+  topic: params.get('topic') ?? '',
+  waitlist: params.get('waitlist') ?? '',
+  message: params.get('message') ?? '',
+};
+---
+
+<BaseLayout title="Contact | Motel Coach">
+  <section class="bg-[#F9F9F8] border-b border-stone-200 py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h1 class="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight text-balance mb-4">
+        Contact Motel Coach
+      </h1>
+      <p class="text-stone-500 leading-relaxed mb-8">
+        Tell us a little about your motel, your role, and what you&apos;re trying to solve. We&apos;ll review your message and respond with the most appropriate next step — whether that&apos;s an audit, training, or a strategic call.
+      </p>
+      <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-8 md:p-10">
+        <form class="space-y-5">
+          {prefill.waitlist && (
+            <div class="rounded-xl border border-stone-200 bg-[#F9F9F8] p-4">
+              <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+                Waitlist request
+              </p>
+              <p class="text-sm text-stone-600 leading-relaxed">
+                You&apos;re enquiring about: <span class="font-semibold text-stone-900">{prefill.waitlist}</span>
+              </p>
+              <input type="hidden" name="waitlist" value={prefill.waitlist} />
+            </div>
+          )}
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+                Full Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+                placeholder="Your name"
+                value={prefill.name}
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+                Email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+                placeholder="you@example.com"
+                value={prefill.email}
+              />
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label for="phone" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+                Phone (Optional)
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+                placeholder="+61..."
+                value={prefill.phone}
+              />
+            </div>
+            <div>
+              <label for="role" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+                Your Role
+              </label>
+              <select
+                id="role"
+                name="role"
+                class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+              >
+                <option value="">Select...</option>
+                <option value="owner" selected={prefill.role === 'owner'}>Owner</option>
+                <option value="manager" selected={prefill.role === 'manager'}>Manager</option>
+                <option value="buyer" selected={prefill.role === 'buyer'}>Prospective Buyer</option>
+                <option value="other" selected={prefill.role === 'other'}>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="property" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+              Motel Name / Location
+            </label>
+            <input
+              id="property"
+              name="property"
+              type="text"
+              class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+              placeholder="e.g. 28-room regional motel in NSW"
+              value={prefill.property}
+            />
+          </div>
+
+          <div>
+            <label for="topic" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+              What do you want help with?
+            </label>
+            <select
+              id="topic"
+              name="topic"
+              class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+            >
+              <option value="">Select...</option>
+              <option value="audit" selected={prefill.topic === 'audit'}>Motel Audit / Due Diligence</option>
+              <option value="consultancy" selected={prefill.topic === 'consultancy'}>Consultancy</option>
+              <option value="training" selected={prefill.topic === 'training'}>Training & Courses</option>
+              <option value="book" selected={prefill.topic === 'book'}>Book / Resources</option>
+              <option value="other" selected={prefill.topic === 'other'}>Something else</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+              Context (Optional but Helpful)
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+              placeholder="Tell us about your current situation, constraints, and what success looks like."
+            >{prefill.message}</textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+          >
+            Submit enquiry
+          </button>
+
+          <p class="mt-3 text-[11px] text-stone-400 text-center">
+            We&apos;ll review your enquiry and reply within 1–2 business days.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

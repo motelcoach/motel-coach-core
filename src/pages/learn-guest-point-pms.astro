@@ -1,0 +1,346 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+import LucideIcon from '../components/LucideIcon.astro';
+
+const entry = await getEntry('pages', 'learn-guest-point-pms');
+---
+
+<BaseLayout title={entry.data.title}>
+  <!-- 1. Zero-Risk Hero -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-7">
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">
+          Practitioner-Led System Training
+        </p>
+        <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-4">
+          GuestPoint PMS Course
+        </h1>
+        <p class="text-lg text-stone-500 leading-relaxed mb-4">
+          Structured system training for independent motel operators using GuestPoint PMS.
+        </p>
+        <p class="text-stone-500 leading-relaxed mb-6">
+          This course provides practical GuestPoint training aligned with real motel operations — not generic software tutorials.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a
+            href="#curriculum"
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+          >
+            View Course Modules
+          </a>
+          <a
+            href="#intro-video"
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-stone-900 border border-stone-200 font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm"
+          >
+            Watch Intro Video
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div class="bg-stone-50 border-2 border-stone-200 rounded-2xl p-6 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">
+            Why GuestPoint Training Matters
+          </p>
+          <p class="text-sm text-stone-600 leading-relaxed mb-3">
+            GuestPoint controls reservations, room allocation, payments, debtors, housekeeping workflow, daily reconciliation, and reporting.
+          </p>
+          <p class="text-sm text-stone-600 leading-relaxed mb-3">
+            Errors inside the PMS affect revenue, reporting, and guest experience. This course ensures you operate GuestPoint with confidence and control.
+          </p>
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Motel Coach is a recommended consultant and trainer by GuestPoint.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Accom News Authority Bar -->
+  <section class="bg-stone-50 border-y border-stone-200 py-6">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
+        As featured in Accom News
+      </p>
+      <p class="text-base text-stone-700 italic font-serif">
+        &quot;How to Win your First 21 Days as a Motel Manager&quot;
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. Curriculum Overview -->
+  <section id="curriculum" class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10">
+        GuestPoint PMS Curriculum
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm">
+          <h3 class="text-lg md:text-xl font-semibold text-stone-900 tracking-tight mb-3">
+            System Foundations
+          </h3>
+          <p class="text-sm text-stone-500 leading-relaxed mb-4">
+            GuestPoint System Overview &amp; Navigation, understanding the PMS environment, and access setup with the right permissions.
+          </p>
+          <ul class="text-sm text-stone-600 leading-relaxed space-y-2">
+            {[
+              'System architecture and operational logic',
+              'User access, roles, and permissions',
+            ].map((t) => (
+              <li class="flex items-start gap-2">
+                <span class="mt-0.5">
+                  <LucideIcon name="dot" size={18} class="text-stone-400" />
+                </span>
+                <span>{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm">
+          <h3 class="text-lg md:text-xl font-semibold text-stone-900 tracking-tight mb-3">
+            Reservation Management
+          </h3>
+          <p class="text-sm text-stone-500 leading-relaxed mb-4">
+            Creating and managing reservations, modifying and moving bookings, and running accurate guest check-out.
+          </p>
+          <ul class="text-sm text-stone-600 leading-relaxed space-y-2">
+            {[
+              'Corporate account reservations',
+              'Travel agent profiles & linked bookings',
+            ].map((t) => (
+              <li class="flex items-start gap-2">
+                <span class="mt-0.5">
+                  <LucideIcon name="dot" size={18} class="text-stone-400" />
+                </span>
+                <span>{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm">
+          <h3 class="text-lg md:text-xl font-semibold text-stone-900 tracking-tight mb-3">
+            Operational Workflows
+          </h3>
+          <ul class="text-sm text-stone-600 leading-relaxed space-y-2">
+            {[
+              'Group bookings setup and management',
+              'Posting payments and room charges',
+              'Housekeeping coordination and room status control',
+              'Debtor account setup and management',
+            ].map((t) => (
+              <li class="flex items-start gap-2">
+                <span class="mt-0.5">
+                  <LucideIcon name="dot" size={18} class="text-stone-400" />
+                </span>
+                <span>{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm">
+          <h3 class="text-lg md:text-xl font-semibold text-stone-900 tracking-tight mb-3">
+            Reporting &amp; Daily Operations
+          </h3>
+          <ul class="text-sm text-stone-600 leading-relaxed space-y-2">
+            {[
+              'Interpreting and using GuestPoint reports',
+              'Managing daily motel operations in GuestPoint',
+              'End-of-day reconciliation and error prevention',
+            ].map((t) => (
+              <li class="flex items-start gap-2">
+                <span class="mt-0.5">
+                  <LucideIcon name="dot" size={18} class="text-stone-400" />
+                </span>
+                <span>{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3b. Pricing Options -->
+  <section class="bg-white pb-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10">
+        Choose How You Want to Learn
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm flex flex-col">
+          <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
+            Self-Guided
+          </h3>
+          <p class="text-3xl font-semibold text-stone-900 mb-1">$89</p>
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-3">
+            <span class="inline-flex items-center gap-2">
+              <span>Course duration: 7–21 days</span>
+              <LucideIcon name="dot" size={18} class="text-stone-400" />
+              <span>No certificate</span>
+            </span>
+          </p>
+          <p class="text-sm text-stone-500 leading-relaxed flex-grow">
+            Self-guided access to the full GuestPoint PMS content. Ideal if you want a structured introduction to the system without formal assessment.
+          </p>
+          <p class="mt-3 text-sm text-stone-600 flex items-start gap-2">
+            <span class="mt-0.5 h-4 w-4 flex items-center justify-center rounded bg-[#4A554E]/10 text-[#4A554E]">
+              <LucideIcon name="folder" size={18} class="text-[#4A554E]" />
+            </span>
+            <span>Includes a Motel Management folder with real-world templates, checklists and documents used to run an independent motel.</span>
+          </p>
+        </div>
+
+        <div class="relative bg-white border-2 border-[#4A554E] rounded-2xl p-8 shadow-md flex flex-col">
+          <span class="absolute -top-3 left-4 inline-flex items-center rounded-full bg-[#4A554E] px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
+            Most Popular
+          </span>
+          <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
+            Self-Guided + Testing
+          </h3>
+          <p class="text-3xl font-semibold text-stone-900 mb-1">$189</p>
+          <p class="text-sm font-medium text-[#4A554E] mb-3">
+            <span class="inline-flex items-center gap-2">
+              <span>Course duration: 7–21 days</span>
+              <LucideIcon name="dot" size={18} class="text-stone-400" />
+              <span>Certificate included</span>
+            </span>
+          </p>
+          <p class="text-sm text-stone-500 leading-relaxed flex-grow">
+            Self-guided learning plus structured assessments to validate your competency in GuestPoint and award a certificate you can present to owners and employers.
+          </p>
+          <p class="mt-3 text-sm text-stone-600 flex items-start gap-2">
+            <span class="mt-0.5 h-4 w-4 flex items-center justify-center rounded bg-[#4A554E]/10 text-[#4A554E]">
+              <LucideIcon name="folder" size={18} class="text-[#4A554E]" />
+            </span>
+            <span>Includes a Motel Management folder with the templates, checklists and operational documents used in real motels.</span>
+          </p>
+        </div>
+
+        <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm flex flex-col">
+          <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
+            Priority Course
+          </h3>
+          <p class="text-3xl font-semibold text-stone-900 mb-1">$675</p>
+          <p class="text-sm font-medium text-[#4A554E] mb-3">
+            <span class="inline-flex items-center gap-2">
+              <span>Course duration: 7–21 days</span>
+              <LucideIcon name="dot" size={18} class="text-stone-400" />
+              <span>Certificate + 1:1 coaching</span>
+            </span>
+          </p>
+          <p class="text-sm text-stone-500 leading-relaxed flex-grow">
+            Starting a role and need to learn GuestPoint fast? Our Priority Course pairs you with an experienced motel manager for two full days of intensive coaching, with guided implementation support over 7–21 days.
+          </p>
+          <p class="mt-3 text-sm text-stone-600 flex items-start gap-2">
+            <span class="mt-0.5 h-4 w-4 flex items-center justify-center rounded bg-[#4A554E]/10 text-[#4A554E]">
+              <LucideIcon name="folder" size={18} class="text-[#4A554E]" />
+            </span>
+            <span>Includes the full Motel Management folder of templates and real documents we use to operate motels day-to-day.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Instructor Proof -->
+  <section class="bg-[#F9F9F8] py-24 border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-start">
+      <div class="md:col-span-4 flex justify-center md:justify-start">
+        <img
+          src="/motel-instructor-benjamin-douglas.jpg"
+          alt="Motel Instructor Benjamin Douglas"
+          class="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-sm"
+          loading="lazy"
+        />
+      </div>
+      <div class="md:col-span-8">
+        <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">
+          Meet your Instructor
+        </h2>
+        <p class="text-stone-500 leading-relaxed mb-4">
+          <strong class="text-stone-900">Benjamin Douglas</strong> is the Lead Instructor at Motel Coach and author of <em>The Essential Guide to Motel Management</em>.
+        </p>
+        <p class="text-stone-500 leading-relaxed mb-4">
+          His background spans operational and commercial leadership across independent motel and hotel groups, progressing from frontline roles through to executive management overseeing
+          <strong class="text-stone-900"> 16+ motels</strong>, 10 restaurants, and more than 200 staff.
+        </p>
+        <p class="text-stone-500 leading-relaxed">
+          With experience across regional Australia, Brisbane, and London, Benjamin specialises in motel profit optimisation, OTA strategy, and practical implementation for independent operators.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FAQ (Accordion) -->
+  <section class="bg-white py-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-center mb-10">
+        Frequently Asked Questions
+      </h2>
+      <div class="space-y-4">
+        <details class="border-2 border-stone-200 rounded-xl p-4 group">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-sm md:text-base font-semibold text-stone-900">
+              Who is the course instructor?
+            </span>
+            <span class="ml-4 text-stone-400 text-2xl md:text-3xl leading-none">
+              +
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-stone-500 leading-relaxed">
+            Benjamin Douglas is the Lead Instructor at Motel Coach and author of <a href="/motel-management-book" class="text-[#4A554E] font-medium hover:underline">The Essential Guide to Motel Management</a>.
+            His background spans operational and commercial leadership across independent motel and hotel groups, progressing from frontline roles through to executive management overseeing 16+ motels, 10 restaurants, and more than 200 staff.
+          </div>
+        </details>
+
+        <details class="border-2 border-stone-200 rounded-xl p-4 group">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-sm md:text-base font-semibold text-stone-900">
+              Is the course self-paced?
+            </span>
+            <span class="ml-4 text-stone-400 text-2xl md:text-3xl leading-none">
+              +
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-stone-500 leading-relaxed">
+            Yes, the course is self-paced with some instructor led sessions.
+          </div>
+        </details>
+
+        <details class="border-2 border-stone-200 rounded-xl p-4 group">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-sm md:text-base font-semibold text-stone-900">
+              Do I get a certificate on completion?
+            </span>
+            <span class="ml-4 text-stone-400 text-2xl md:text-3xl leading-none">
+              +
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-stone-500 leading-relaxed">
+            Yes. Because we provide a certificate of completion, we ensure all students understand the material before completing the course and support anyone who needs extra help.
+          </div>
+        </details>
+
+        <details class="border-2 border-stone-200 rounded-xl p-4 group">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-sm md:text-base font-semibold text-stone-900">
+              Do you offer refunds?
+            </span>
+            <span class="ml-4 text-stone-400 text-2xl md:text-3xl leading-none">
+              +
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-stone-500 leading-relaxed">
+            In the event the course is not for you we have a 10-day money back guarantee.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

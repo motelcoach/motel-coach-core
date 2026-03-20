@@ -1,0 +1,42 @@
+---
+// You will replace the src with your local /images/legacy/... paths
+const partners = [
+  { name: "GuestPoint", src: "/images/legacy/GuestPoint-PMS.webp" },
+  { name: "Casa Nostra Motel", src: "/images/legacy/Casa-Nostra-Motel-Logo.webp" },
+  { name: "Crossroads Eco Motel", src: "/images/legacy/motel-consultancy-client-ecomotel.png" },
+  { name: "Alan Cunningham Motel", src: "/images/legacy/Allan-Cunningham-Motel_Logo.webp" },
+  { name: "SiteMinder", src: "/images/legacy/siteminder-motel-channel-manager.webp" },
+  { name: "Accom News", src: "/images/legacy/motel-management-news.webp" },
+  { name: "True Blue Motor Inn", src: "/images/legacy/True-Blue-Motor-Inn.webp" }, 
+  { name: "Casa Nostra Motel Mackay", src: "/images/legacy/Casa-Nostra-Mackay-Motel-Logo.webp" } 
+];
+---
+
+<section class="py-16 md:py-20 bg-white border-y border-stone-200">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div class="text-center mb-10 md:mb-14">
+      <h2 class="text-xs md:text-sm font-bold text-stone-400 uppercase tracking-widest">
+        Proven in the field. Supported by the industry.
+      </h2>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 items-center justify-items-center">
+      {partners.map((partner) => (
+        <div class="group flex items-center justify-center w-full h-16 md:h-20 transition-all duration-300 cursor-pointer">
+          <img 
+            src={partner.src} 
+            alt={`${partner.name} - Motel Coach Partner`} 
+            /* mix-blend-multiply removes white backgrounds from JPEGs.
+              grayscale + opacity-50 creates the uniform "tint".
+              group-hover reverses it back to the brand's true colors.
+            */
+            class="max-h-full max-w-full object-contain filter grayscale opacity-50 mix-blend-multiply transition-all duration-400 ease-in-out group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 group-hover:drop-shadow-sm"
+            loading="lazy"
+          />
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

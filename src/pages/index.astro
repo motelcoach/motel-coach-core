@@ -1,65 +1,29 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Logos from '../components/Logos.astro';
+import PartnerGrid from '../components/PartnerGrid.astro';
 ---
 
-<style>
-  /* Seamless Marquee Animation */
-  @keyframes simple-scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  .scroll-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .scroll-track {
-    display: inline-flex;
-    gap: 5rem;
-    animation: simple-scroll 35s linear infinite;
-  }
-
-  /* Fade edges to match the pure white background */
-  .scroll-container::before,
-  .scroll-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 120px;
-    height: 100%;
-    z-index: 10;
-  }
-  .scroll-container::before { left: 0; background: linear-gradient(to right, white, transparent); }
-  .scroll-container::after { right: 0; background: linear-gradient(to left, white, transparent); }
-</style>
-
-<BaseLayout>
+<BaseLayout hideFooterCta>
   
   <section class="w-full bg-white pt-24 pb-16 md:pt-32 md:pb-20">
     <div class="max-w-6xl mx-auto px-6 w-full">
       
       <div class="max-w-4xl">
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold text-stone-900 leading-[1.05] tracking-tight text-balance mb-8">
-          Stop Managing Your Motel.<br/>
-          <span class="text-stone-400">Start Owning a High-Yield Asset.</span>
+          Turn Your Motel Into a High-Performance Asset<br />
+          <span class="text-stone-400">Not a 24/7 Headache.</span>
         </h1>
         
         <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-3xl mb-12 text-balance">
-          Most owners are trapped by inefficient operations and stagnant occupancy. We provide the motel system and marketing strategies required to scale your revenue without sacrificing your freedom. Whether you need a fractional COO to fix the leaks or a comprehensive management course to upskill your team, we deliver the structural precision your business lacks.
+          From due diligence to daily operations and elite staffing, we help motel owners maximize profit, reclaim their time, and buy with total confidence.
         </p>
         
         <div class="flex flex-wrap items-center gap-4 mb-20">
-          <a href="/audit" class="px-7 py-3.5 bg-[#4A554E] text-white text-base font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
-            Book a Strategic Motel Audit
+          <a href="/contact" class="px-7 py-3.5 bg-[#4A554E] text-white text-base font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
+            Book Your Free Strategy Session
           </a>
-          <a href="/playbook" class="px-7 py-3.5 bg-white border border-stone-200 text-stone-900 text-base font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm">
-            Download the Management Playbook
+          <a href="/courses" class="px-7 py-3.5 bg-white border border-stone-200 text-stone-900 text-base font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm">
+            Explore our Management Courses
           </a>
         </div>
       </div>
@@ -67,57 +31,272 @@ import Logos from '../components/Logos.astro';
     </div>
 
     <div class="w-full border-y border-stone-100 bg-white">
-      <div class="max-w-6xl mx-auto px-6 pt-8">
-        <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">
-          Proven in the field. Supported by the industry.
+      
+      <PartnerGrid />
+    </div>
+  </section>
+
+  <!-- Pain / Problem Section -->
+  <section class="w-full bg-[#F9F9F8] py-24 md:py-32 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-12">
+        <h2 class="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight mb-4">
+          The Reality of the &quot;Motel Lifestyle&quot; vs. The Bottom Line
         </h2>
+        <p class="text-lg text-stone-500 leading-relaxed">
+          Full weekends, tired owners, and a bank balance that doesn&apos;t match the effort. If you&apos;re burnt out—or terrified of buying a lemon—you don&apos;t need more hustle. You need a specialist.
+        </p>
       </div>
-      <div class="scroll-container max-w-6xl mx-auto px-6">
-        <div class="scroll-track">
-          <Logos />
-          <Logos />
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="bg-white border border-stone-200 p-6 rounded-2xl shadow-sm">
+          <h3 class="text-lg font-semibold text-stone-900 mb-2">The OTA Trap</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            You&apos;re full on weekends but your profit margin hasn&apos;t moved. Booking sites own your demand, promos erode your rate, and your &quot;loyalty&quot; sits with an algorithm instead of your own direct guests.
+          </p>
+        </div>
+        <div class="bg-white border border-stone-200 p-6 rounded-2xl shadow-sm">
+          <h3 class="text-lg font-semibold text-stone-900 mb-2">The Manager Merry-Go-Round</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            You hire on gut feel, not systems. Six months later you&apos;re back on Seek, reviews have slipped, and every handover consumes more of your time than the last.
+          </p>
+        </div>
+        <div class="bg-white border border-stone-200 p-6 rounded-2xl shadow-sm">
+          <h3 class="text-lg font-semibold text-stone-900 mb-2">The &quot;Lemon&quot; Risk</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            For buyers, one missed waterproofing failure, wage underpayment, or inflated add-back can wipe out years of returns. For owners, deferred maintenance and poor records quietly crush your eventual sale price.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Services Grid -->
   <section class="w-full bg-[#F9F9F8] py-24 md:py-32 border-b border-stone-200">
     <div class="max-w-6xl mx-auto px-6">
       <div class="max-w-2xl mb-16">
         <h2 class="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight mb-4">
-          Precision over guesswork.
+          Services Designed Around Measurable Results
         </h2>
         <p class="text-lg text-stone-500 leading-relaxed">
-          We strip away the noise of daily operations and install frameworks that practically run themselves.
+          Every engagement is anchored to your P&amp;L: more profit, cleaner systems, and less time chained to your motel.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white border border-stone-200 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-10 h-10 rounded-lg bg-[#4A554E]/10 flex items-center justify-center mb-6">
-            <span class="text-[#4A554E] font-bold text-sm">01</span>
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- Pre-Sale Audit -->
+        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
+              <!-- icon: clipboard -->
+              <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="3" width="8" height="4" rx="1" />
+                <path d="M9 3V2h6v1" />
+                <rect x="5" y="7" width="14" height="14" rx="2" />
+                <path d="M9 11h6M9 15h4" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight">
+              Pre-Sale Audit (Due Diligence)
+            </h3>
           </div>
-          <h3 class="text-xl font-semibold text-stone-900 mb-3 tracking-tight">The Mastery Course</h3>
-          <p class="text-stone-500 leading-relaxed mb-6">
-            A clinical 21-day blueprint for transitioning into ownership without the profit drain.
+          <p class="text-sm text-stone-500 leading-relaxed">
+            For buyers and vendors who want zero surprises at settlement. We stress-test add-backs, wage assumptions, and capex exposure so you know exactly what you&apos;re buying—or selling. The outcome is a clear-eyed view of risk, not a glossy listing story.
           </p>
-          <a href="/courses" class="text-sm font-medium text-[#4A554E] hover:text-stone-900 transition-colors flex items-center gap-1">
-            Explore the curriculum &rarr;
-          </a>
         </div>
 
-        <div class="bg-white border border-stone-200 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center mb-6">
-            <span class="text-stone-500 font-bold text-sm">02</span>
+        <!-- Operational Performance Audit -->
+        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
+              <!-- icon: bar chart -->
+              <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="19" x2="4" y2="10" />
+                <line x1="10" y1="19" x2="10" y2="5" />
+                <line x1="16" y1="19" x2="16" y2="8" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight">
+              Operational Performance Audit
+            </h3>
           </div>
-          <h3 class="text-xl font-semibold text-stone-900 mb-3 tracking-tight">Operational Audits</h3>
-          <p class="text-stone-500 leading-relaxed mb-6">
-            Deep-dive analysis of your GuestPoint data and staff workflows to recover missing margins.
+          <p class="text-sm text-stone-500 leading-relaxed">
+            A forensic read on your current operation: occupancy, RevPAR, cost lines, and workflows. We surface leaks in distribution, wage structure, and housekeeping that can be fixed in weeks, not years. You receive a prioritised, practical roadmap instead of a theoretical report.
           </p>
-          <a href="/audit" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors flex items-center gap-1">
-            See the audit process &rarr;
-          </a>
         </div>
+
+        <!-- Manager Recruitment -->
+        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
+              <!-- icon: users -->
+              <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="3" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a3 3 0 0 1 0 5.75" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight">
+              Manager Recruitment
+            </h3>
+          </div>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            We help you source, screen, and onboard managers who can actually run a motel, not just work a reception desk. Clear role design, scorecards, and a 90-day ramp plan reduce churn and protect guest experience. You stop rewriting the same ad every six months.
+          </p>
+        </div>
+
+        <!-- Fractional COO -->
+        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
+              <!-- icon: briefcase -->
+              <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                <path d="M2 13h20" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight">
+              Fractional COO
+            </h3>
+          </div>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            For owners who want institutional-grade oversight without a full-time salary. We sit above your managers to align pricing, staffing, and strategy with your long-term asset goals. You keep control of the decisions while handing off the noise.
+          </p>
+        </div>
+
+        <!-- Motel Marketing -->
+        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
+              <!-- icon: megaphone -->
+              <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 11v2a4 4 0 0 0 4 4h1" />
+                <path d="M21 8v8" />
+                <path d="M13 4.5v15" />
+                <path d="M3 9a4 4 0 0 1 4-4h1l9-3v22l-9-3H7a4 4 0 0 1-4-4" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight">
+              Motel Marketing
+            </h3>
+          </div>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            No vanity metrics. We focus on shifting guests from OTAs into your own channels, tightening your hotel motel website speed, and using Google Hotel Ads and local SEO to intercept intent. The goal is simple: more direct bookings at higher contribution margin.
+          </p>
+        </div>
+
+        <!-- Motel Management Training -->
+        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
+              <!-- icon: graduation cap -->
+              <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10L12 4 2 10l10 6 10-6z" />
+                <path d="M6 12v5c0 .4.2.8.6 1l5.4 3 5.4-3c.4-.2.6-.6.6-1v-5" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight">
+              Motel Management Training
+            </h3>
+          </div>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            Structured, online or in-person training for new and existing managers. We turn front desk training, PMS usage, and daily reporting into a repeatable motel system instead of personality-driven chaos. Every module is built to show up on your P&amp;L.
+          </p>
+        </div> 	 		 	
+      </div>
+    </div>
+  </section>
+
+  <!-- Authority Section -->
+  <section class="w-full bg-white py-24 md:py-32 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6 grid gap-12 md:grid-cols-2 md:items-center">
+      <div class="order-2 md:order-1">
+        <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">
+          Why a &quot;Motel Coach&quot; and not a Business Coach?
+        </h2>
+        <p class="text-stone-500 leading-relaxed mb-3">
+          Generic business advice rarely survives contact with real-world motel operations. Australian motels live and die on cleanliness, linen costs, ADR, wage percentages and effective room distribution.
+        </p>
+        <p class="text-stone-500 leading-relaxed mb-3">
+          We&apos;ve run motels, not just &quot;coached&quot; them. That means we understand motel operations, how to price rooms without blowing up repeat trade, and how to structure rosters that match occupancy instead of habit.
+        </p>
+        <p class="text-stone-500 leading-relaxed">
+          Our frameworks are built for Australian metro and regional markets with actual boots-on-the-ground experience. We know which reports matter, which KPIs move the needle, and how to turn a busy motel into a high-yield asset instead of a 24/7 job.
+        </p>
+      </div>
+      <div class="order-1 md:order-2">
+        <div class="relative h-64 rounded-3xl border border-dashed border-stone-200 bg-[#F5F5F4] shadow-sm sm:h-72">
+          <div class="absolute inset-6 rounded-2xl border border-white/70 bg-gradient-to-br from-[#4A554E] to-stone-900 p-6 text-white shadow-lg flex flex-col justify-between">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-widest text-stone-200">
+                Motel Coach Profile
+              </p>
+              <p class="mt-3 text-lg font-semibold">
+                We've worked in every role from housekeeping to managing the operations and marketing of a group of 16 motels. We've stripped beds and checked in 1000s of guests. 
+              </p>
+              <p class="mt-2 text-xs text-stone-100">
+                
+              </p>
+            </div>
+            <p class="text-xs text-stone-100">
+              Designed from lived experience, not theory.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="w-full bg-[#F9F9F8] py-24 md:py-32 border-b border-stone-200">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-6">
+        Frequently Asked Questions
+      </h2>
+      <div class="space-y-4">
+        <details class="group rounded-xl border border-stone-200 bg-white p-4">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 text-left">
+            <span class="text-sm md:text-base font-semibold text-stone-900">
+              What if I&apos;m not happy with my current manager&apos;s quality?
+            </span>
+            <span class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-stone-300 text-stone-500 transition group-open:rotate-45">
+              +
+            </span>
+          </summary>
+          <p class="mt-3 text-sm text-stone-500 leading-relaxed">
+            We can either stabilise your existing manager with clear KPIs, training, and support—or help you recruit a replacement with a structured onboarding plan. In both cases the goal is the same: a manager who protects profit instead of consuming your time.
+          </p>
+        </details>
+
+        <details class="group rounded-xl border border-stone-200 bg-white p-4">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 text-left">
+            <span class="text-sm md:text-base font-semibold text-stone-900">
+              Does my motel need to be a certain size for this to work?
+            </span>
+            <span class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-stone-300 text-stone-500 transition group-open:rotate-45">
+              +
+            </span>
+          </summary>
+          <p class="mt-3 text-sm text-stone-500 leading-relaxed">
+            No. We work with small regional motels through to larger multi-site portfolios. The levers—distribution, staffing, pricing, and guest experience—exist at every room count; we simply scale the operating rhythm and reporting to match your operation.
+          </p>
+        </details>
+
+        <details class="group rounded-xl border border-stone-200 bg-white p-4">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 text-left">
+            <span class="text-sm md:text-base font-semibold text-stone-900">
+              How long before I see a return on investment?
+            </span>
+            <span class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-stone-300 text-stone-500 transition group-open:rotate-45">
+              +
+            </span>
+          </summary>
+          <p class="mt-3 text-sm text-stone-500 leading-relaxed">
+            Many owners see quick wins within the first 60–90 days as we fix obvious wage, OTA, and pricing leaks. Deeper structural changes—like manager upgrades, process design, and system changes—compound over 6–18 months in both cashflow and asset value.
+          </p>
+        </details>
       </div>
     </div>
   </section>

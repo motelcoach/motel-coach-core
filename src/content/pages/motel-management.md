@@ -8,7 +8,7 @@ slug: motel-management
 
 ## The Profitable Motel Blueprint: Build Direct Bookings & Manage Costs
 
-![Motel Marketing Analytics](https://images.squarespace-cdn.com/content/v1/67ed224a315ac1209f49feb2/86af7239-89fd-4bfa-b801-90c3afde31b2/Trip-Advisor-Motel-Marketing+%282%29.png?format=original)
+![Motel Marketing Analytics](/images/legacy/Trip-Advisor-Motel-Marketing+%282%29.png)
 
 Independent motels lack the corporate safety net of major chains. Without brand infrastructure to absorb operational drift, your profitability relies entirely on **disciplined systems** across pricing, staffing, and distribution.
 
@@ -44,7 +44,7 @@ A **motel manager** must pivot between high-level strategy and granular task ove
 * **Distribution Audit:** Daily check of OTA rankings, rate parity, and review responses.
 * **Maintenance Triage:** Identifying "ADR killers"—minor room defects that justify guest demands for discounts.
 
-![Trip Advisor Review Strategy](https://images.squarespace-cdn.com/content/v1/67ed224a315ac1209f49feb2/8d280007-5678-44a7-bab4-301c5371184e/Trip-Advisor-Motel-Marketing+%281%29.png?format=original)
+![Trip Advisor Review Strategy](/images/legacy/Trip-Advisor-Motel-Marketing+%281%29.png)
 
 ## Housekeeping Standards & Operational Discipline
 

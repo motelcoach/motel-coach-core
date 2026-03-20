@@ -1,0 +1,144 @@
+---
+/**
+ * Minimal Lucide-style icon renderer.
+ * Kept in plain JS to avoid build issues in Astro frontmatter.
+ *
+ * Props:
+ * - name: string (e.g. "arrow-right")
+ * - size: number (default 18)
+ * - class: string (default "text-stone-400")
+ * - strokeWidth: number (default 1.5)
+ */
+const name = Astro.props.name;
+const size = Astro.props.size ?? 18;
+const className = Astro.props.class ?? 'text-stone-400';
+const strokeWidth = Astro.props.strokeWidth ?? 1.5;
+
+const common = {
+  xmlns: 'http://www.w3.org/2000/svg',
+  width: size,
+  height: size,
+  viewBox: '0 0 24 24',
+  fill: 'none',
+  stroke: 'currentColor',
+  'stroke-width': strokeWidth,
+  'stroke-linecap': 'round',
+  'stroke-linejoin': 'round',
+  class: className,
+  'aria-hidden': 'true',
+  focusable: 'false',
+};
+---
+
+{name === 'arrow-right' && (
+  <svg {...common}>
+    <path d="M5 12h14" />
+    <path d="m12 5 7 7-7 7" />
+  </svg>
+)}
+
+{name === 'check' && (
+  <svg {...common}>
+    <path d="M20 6 9 17l-5-5" />
+  </svg>
+)}
+
+{name === 'check-circle-2' && (
+  <svg {...common}>
+    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+    <path d="M22 4 12 14.01l-3-3" />
+  </svg>
+)}
+
+{name === 'dot' && (
+  <svg {...common}>
+    <circle cx="12" cy="12" r="1.75" fill="currentColor" stroke="none" />
+  </svg>
+)}
+
+{name === 'folder' && (
+  <svg {...common}>
+    <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z" />
+  </svg>
+)}
+
+{name === 'mail' && (
+  <svg {...common}>
+    <rect width="20" height="16" x="2" y="4" rx="2" />
+    <path d="m22 7-10 7L2 7" />
+  </svg>
+)}
+
+{name === 'phone-call' && (
+  <svg {...common}>
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.86.31 1.7.57 2.5a2 2 0 0 1-.45 2.11L9.09 10.91a16 16 0 0 0 4 4l1.58-1.14a2 2 0 0 1 2.11-.45c.8.26 1.64.45 2.5.57A2 2 0 0 1 22 16.92z" />
+    <path d="M14 2a8 8 0 0 1 8 8" />
+    <path d="M14 6a4 4 0 0 1 4 4" />
+  </svg>
+)}
+
+{name === 'shield-check' && (
+  <svg {...common}>
+    <path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-4 8 4z" />
+    <path d="m9 12 2 2 4-4" />
+  </svg>
+)}
+
+{name === 'trending-up' && (
+  <svg {...common}>
+    <path d="M3 17l6-6 4 4 8-8" />
+    <path d="M14 7h7v7" />
+  </svg>
+)}
+
+{name === 'layout-dashboard' && (
+  <svg {...common}>
+    <rect width="7" height="9" x="3" y="3" rx="1" />
+    <rect width="7" height="5" x="14" y="3" rx="1" />
+    <rect width="7" height="9" x="14" y="12" rx="1" />
+    <rect width="7" height="5" x="3" y="16" rx="1" />
+  </svg>
+)}
+
+{name === 'users' && (
+  <svg {...common}>
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+    <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  </svg>
+)}
+
+{name === 'user-plus' && (
+  <svg {...common}>
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+    <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+    <path d="M19 8v6" />
+    <path d="M22 11h-6" />
+  </svg>
+)}
+
+{name === 'globe' && (
+  <svg {...common}>
+    <circle cx="12" cy="12" r="10" />
+    <path d="M2 12h20" />
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+  </svg>
+)}
+
+{name === 'search-code' && (
+  <svg {...common}>
+    <path d="m13.5 13.5 5 5" />
+    <circle cx="10" cy="10" r="6" />
+    <path d="M7.5 9 6 10.5 7.5 12" />
+    <path d="M12.5 9 14 10.5 12.5 12" />
+  </svg>
+)}
+
+{name === 'briefcase' && (
+  <svg {...common}>
+    <path d="M16 20V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v16" />
+    <rect width="20" height="14" x="2" y="6" rx="2" />
+    <path d="M12 12h.01" />
+  </svg>
+)}

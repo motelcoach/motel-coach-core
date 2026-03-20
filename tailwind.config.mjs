@@ -14,7 +14,7 @@ export default {
         },
       },
       fontFamily: {
-        // Overriding the default sans with our new sophisticated editorial font
+        // Oatmeal & Olive: editorial sans
         sans: ['Instrument Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
     },

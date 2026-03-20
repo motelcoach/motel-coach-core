@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LucideIcon from '../components/LucideIcon.astro';
 
 const courses = [
   {
@@ -25,31 +26,59 @@ const courses = [
     format: 'Self-Paced Video',
     badge: '03',
     waitlist: true,
+    waitlistHref: '/motel-marketing-course-waitlist',
   },
   {
     slug: 'motel-revenue-management',
-    title: 'Learn Motel Revenue Management',
+    title: 'Learn Revenue Management',
     description: 'Dynamic pricing, yield optimization, and margin expansion. Stop leaving money on the table with institutional-grade revenue discipline.',
     format: 'Self-Paced Video',
     badge: '04',
     waitlist: true,
+    waitlistHref: '/motel-revenue-management-course-waitlist',
   },
 ];
 ---
 
 <BaseLayout title="Training Programs | Motel Coach" hideFooterCta>
-  <!-- 1. Premium Hero Section -->
-  <section class="w-full bg-white pt-20 pb-16 md:pt-28 md:pb-24">
-    <div class="max-w-4xl mx-auto px-6">
-      <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">
-        Training & Certification
-      </p>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-stone-900 tracking-tight leading-tight mb-6 text-balance">
-        Operational Mastery for Motels.
-      </h1>
-      <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-2xl">
-        Upskill your management team and install self-sustaining frameworks without needing to be on-site 24/7. Choose a specific system to master below.
-      </p>
+  <!-- 1. Executive Hero (aligned with pillar pages) -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-8" data-reveal="up">
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">
+            Training &amp; Certification
+          </p>
+          <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-6">
+            Operational mastery for independent motels.
+          </h1>
+          <p class="text-lg md:text-xl text-stone-500 leading-relaxed text-balance">
+            Upskill your management team and install self-sustaining motel systems without needing to be on-site 24/7. Choose a specific system to master below.
+          </p>
+        </div>
+        <div class="md:col-span-4" data-reveal="up">
+          <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-sm hover:shadow-lg transition sticky top-32">
+            <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">
+              What these courses cover
+            </p>
+            <ul class="space-y-3 text-sm text-stone-600">
+              {[
+                'Core motel management systems and checklists',
+                'Front desk training and PMS confidence',
+                'Motel marketing levers for direct bookings',
+                'Revenue management and booking-dot-com rank',
+              ].map((item) => (
+                <li class="flex items-start gap-2">
+                  <span class="mt-0.5">
+                    <LucideIcon name="dot" size={18} class="text-stone-400" />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -58,12 +87,13 @@ const courses = [
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-6">
         {courses.map((course) => {
-          const href = course.waitlist ? `/contact?waitlist=${course.slug}` : `/${course.slug}`;
+          const href = course.waitlist ? (course.waitlistHref ?? `/contact?waitlist=${course.slug}`) : `/${course.slug}`;
           const ctaText = course.waitlist ? 'Join Waitlist' : 'View Curriculum';
           return (
             <a
               href={href}
-              class="group block bg-white border border-stone-200 rounded-xl p-8 shadow-sm hover:shadow-md hover:border-stone-300 transition-all duration-200"
+              class="group block bg-white border border-stone-200 rounded-xl p-8 shadow-sm hover:shadow-lg hover:border-stone-300 transition-all duration-200"
+              data-reveal="up"
             >
               <div class="flex items-start justify-between gap-4 mb-6">
                 <div class="w-10 h-10 rounded-lg bg-[#4A554E]/10 flex items-center justify-center flex-shrink-0">
@@ -108,23 +138,21 @@ const courses = [
     </div>
   </section>
 
-  <!-- 3. Bottom CTA Section -->
-  <section class="w-full bg-white py-16 md:py-24">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">
-        Need us to do it for you?
+  <!-- 3. Bottom CTA -->
+  <section class="w-full bg-[#F9F9F8] py-16 md:py-24 border-t border-stone-200">
+    <div class="max-w-3xl mx-auto px-6 text-center" data-reveal="up">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4 text-balance">
+        Want the right course for your role?
       </h2>
-      <p class="text-lg text-stone-500 leading-relaxed max-w-2xl mx-auto mb-8">
-        If you don't have the time to train your team, we can step in. Book a Strategic Audit and we will build your systems for you.
+      <p class="text-stone-500 leading-relaxed mb-7">
+        Tell us what you&apos;re running and what you&apos;re stuck on. We&apos;ll point you to the fastest path.
       </p>
       <a
-        href="/audit"
-        class="inline-flex items-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+        href="/contact?topic=training&message=Help%20me%20choose%20the%20right%20course."
+        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#4A554E] text-white text-base font-medium rounded-lg hover:bg-[#3d4640] transition shadow-sm hover:shadow-lg"
       >
-        Book a Strategic Audit
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-        </svg>
+        Contact &amp; Course Recommendation
+        <LucideIcon name="arrow-right" size={18} class="text-white" />
       </a>
     </div>
   </section>

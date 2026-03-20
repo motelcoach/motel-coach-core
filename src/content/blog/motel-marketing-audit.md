@@ -2,12 +2,14 @@
 title: "Free Motel Marketing Audit for Independent Motels"
 pubDate: Thu, 18 Dec 2025 05:21:40 +0000
 slug: motel-marketing-audit
+category: "Motel Marketing"
+executiveSummary: "Stop paying the OTA Tax. Start learning marketing strategies to increase direct bookings."
 ---
 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-<em>[GEO Action Required: Write a 50-100 word declarative summary here. State the operational result first, followed by the mechanism. This is your 'BLUF' (Bottom Line Up Front) for AI overviews.]</em>
+<em>Increase direct profit by fixing the bottlenecks in your motel marketing instead of throwing more money at ads. This free marketing audit isolates why guests book through Booking-dot-com instead of your own hotel motel website speed-optimised pages, then gives you a ranked list of changes that actually move revenue. We review your website, OTA listings, and channel mix, then show you how to shift demand toward higher-margin direct bookings. To turn these insights into a repeatable motel system, consider working with our <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a>.</em>
 </p>
 </div>
 
@@ -46,7 +48,7 @@ We analyse how effectively your website converts visitors into bookings:
 *   Missed opportunities to reduce OTA reliance
     
 
-### [Booking.com](/motel-management-blog?category=Booking.com) Listing Review
+### [Booking.com](//blog?category=Booking.com) Listing Review
 
 Booking.com is a primary demand driver for most motels. We review:
 

@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Logos from '../components/Logos.astro';
 import { getEntry } from 'astro:content';
+import LucideIcon from '../components/LucideIcon.astro';
 
 const entry = await getEntry('pages', 'motel-consultancy');
 
@@ -135,18 +136,45 @@ const faqs = [
           </nav>
           <a href="/contact" class="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-[#4A554E] hover:text-[#3d4640] transition-colors">
             Speak with an advisor
-            <span aria-hidden="true">→</span>
+            <LucideIcon name="arrow-right" size={18} class="text-[#4A554E]" />
           </a>
         </div>
       </aside>
       <div class="md:col-span-8 order-1 md:order-2 space-y-16">
         <div id="services">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10">Motel Consultancy Services</h2>
-          <div class="grid md:grid-cols-2 gap-6">
-            {tiers.map((tier, i) => (
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">Motel Consultancy Services</h2>
+          <p class="text-stone-500 leading-relaxed mb-8">
+            If you are still assessing a property, our <a href="/motel-buyers-audit" class="text-[#4A554E] font-medium hover:underline">Motel Buyers Audit</a> is a pre-purchase due diligence service designed for buyers. The consultancy tiers below are post-purchase services for current motel owners and operators who want to stabilise operations and grow profit.
+          </p>
+          <div class="grid md:grid-cols-3 gap-6">
+            {tiers.slice(0, 3).map((tier, i) => (
               <div class="border border-stone-200 rounded-xl p-6 md:p-8 bg-[#F9F9F8] shadow-sm flex flex-col">
                 <div class="w-9 h-9 rounded-lg bg-[#4A554E]/10 flex items-center justify-center mb-5">
                   <span class="text-[#4A554E] font-semibold text-sm">{String(i + 1).padStart(2, '0')}</span>
+                </div>
+                <h3 class="text-xl font-semibold text-stone-900 tracking-tight mb-5">{tier.title}</h3>
+                <dl class="space-y-4 flex-grow">
+                  <div>
+                    <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The Focus</dt>
+                    <dd class="text-stone-600 leading-relaxed">{tier.focus}</dd>
+                  </div>
+                  <div>
+                    <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The Investment</dt>
+                    <dd class="text-stone-600 leading-relaxed">{tier.investment}</dd>
+                  </div>
+                  <div>
+                    <dt class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">The ROI</dt>
+                    <dd class="text-stone-600 leading-relaxed">{tier.roi}</dd>
+                  </div>
+                </dl>
+              </div>
+            ))}
+          </div>
+          <div class="mt-6">
+            {tiers.slice(3, 4).map((tier, i) => (
+              <div class="border border-stone-200 rounded-xl p-6 md:p-8 bg-[#F9F9F8] shadow-sm flex flex-col">
+                <div class="w-9 h-9 rounded-lg bg-[#4A554E]/10 flex items-center justify-center mb-5">
+                  <span class="text-[#4A554E] font-semibold text-sm">{String(i + 4).padStart(2, '0')}</span>
                 </div>
                 <h3 class="text-xl font-semibold text-stone-900 tracking-tight mb-5">{tier.title}</h3>
                 <dl class="space-y-4 flex-grow">
@@ -187,8 +215,15 @@ const faqs = [
         </div>
 
         <div id="diagnostic" class="pt-8 border-t border-stone-200">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">Request Your Performance Diagnostic</h2>
-          <p class="text-stone-500 leading-relaxed mb-6">I only work with properties where I can find a significant, measurable ROI. Tell me about your motel below, and I will call you to discuss which engagement tier fits your current objectives.</p>
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">Request Motel Performance Audit</h2>
+          <p class="text-stone-500 leading-relaxed mb-2">All of our consultancy services start with a thorough review of your motels operations and strategies.</p>
+          <p class="text-sm text-stone-500 leading-relaxed mb-6">
+            See details
+            <a href="/motel-buyers-audit" class="text-[#4A554E] font-medium hover:underline inline-flex items-center gap-2">
+              on the Motel Acquisition Audit page
+              <LucideIcon name="arrow-right" size={18} class="text-[#4A554E]" />
+            </a>
+          </p>
           <a href="/contact" class="inline-flex items-center gap-2 px-6 py-3 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
             Get in touch
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>

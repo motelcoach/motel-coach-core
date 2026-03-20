@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Motel Marketing Course Waitlist | Motel Coach" hideFooterCta>
+  <!-- Hero (Minimalist) -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 pt-24 pb-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-semibold text-stone-900 tracking-tight text-balance" data-reveal="up">
+        The Motel Marketing Course
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-stone-500 leading-relaxed text-balance max-w-2xl mx-auto" data-reveal="up">
+        A practical course for Australian motel operators who want direct bookings without guessing.
+      </p>
+      <a
+        href="#waitlist"
+        class="mt-8 inline-flex items-center justify-center rounded-lg bg-[#4A554E] px-8 py-4 text-base font-medium text-white shadow-sm hover:bg-[#3d4640] hover:shadow-lg transition"
+        data-reveal="up"
+      >
+        Join the waitlist
+      </a>
+    </div>
+  </section>
+
+  <!-- Course Syllabus at a Glance -->
+  <section class="bg-white py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center" data-reveal="up">
+        <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance">
+          Course syllabus at a glance
+        </h2>
+        <p class="mt-4 text-stone-500 leading-relaxed">
+          The exact modules most motels need first—before spending another dollar on “marketing.”
+        </p>
+      </div>
+
+      <div class="mt-10 max-w-2xl mx-auto rounded-2xl border border-stone-200 bg-[#F9F9F8] p-8" data-reveal="up">
+        <ul class="space-y-4">
+          {[
+            'Direct booking foundations: website path, offer clarity, mobile booking',
+            'Google Local: maps visibility, GBP optimisation, high-intent copy',
+            'Distribution discipline: OTA strategy, parity control, feeding direct demand',
+          ].map((t) => (
+            <li class="flex items-start gap-3 text-stone-500">
+              <svg class="mt-0.5 h-5 w-5 text-stone-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              <span class="leading-relaxed">{t}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist Form -->
+  <section id="waitlist" class="bg-white pb-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-xl mx-auto text-center" data-reveal="up">
+        <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance">
+          Get notified when enrollment opens.
+        </h2>
+        <p class="mt-4 text-stone-500 leading-relaxed">
+          Join the waitlist and we&apos;ll email you first.
+        </p>
+      </div>
+
+      <form class="mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="/contact" method="get" data-reveal="up">
+        <input type="hidden" name="topic" value="training" />
+        <input type="hidden" name="waitlist" value="motel-marketing-course" />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="you@example.com"
+          class="flex-1 px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+        />
+        <button type="submit" class="px-6 py-3 rounded-lg bg-[#4A554E] text-white text-sm font-medium shadow-sm hover:bg-[#3d4640] hover:shadow-lg transition">
+          Join waitlist
+        </button>
+      </form>
+
+      <p class="mt-4 text-center text-xs text-stone-400" data-reveal="fade">
+        Join other Australian operators improving their channel mix.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+

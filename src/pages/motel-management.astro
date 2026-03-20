@@ -1,215 +1,327 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getEntry } from 'astro:content';
-
-const entry = await getEntry('pages', 'motel-management');
+import LucideIcon from '../components/LucideIcon.astro';
 ---
 
-<BaseLayout title={entry.data.title}>
-  <!-- 1. Executive Hero -->
-  <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-12 gap-12 items-start">
-        <div class="md:col-span-8">
-          <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">Operational Strategy</p>
-          <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-6">
-            {entry.data.title}
-          </h1>
-          <p class="text-lg text-stone-500 leading-relaxed text-balance">
-            Independent motels lack the corporate safety net of major chains. Without brand infrastructure to absorb operational drift, your profitability relies entirely on <strong class="text-stone-900">disciplined systems</strong> across pricing, staffing, and distribution.
-          </p>
-        </div>
-        <div class="md:col-span-4">
-          <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-sm sticky top-32">
-            <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Key takeaway</p>
-            <blockquote class="text-stone-700 font-medium leading-relaxed border-l-4 border-[#4A554E] pl-4 not-italic">
-              If your occupancy fluctuates wildly or your staff requires constant supervision, you don't have a market problem—you have a <strong>motel system</strong> problem.
-            </blockquote>
-          </div>
+<BaseLayout title="How to Run a Motel | Motel Management Systems | Motel Coach" description="A systems-first guide to motel management systems, staffing, distribution, and operations for independent Australian motels.">
+  <!-- Hero -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 pt-24 pb-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-4xl" data-reveal="up">
+        <h1 class="text-5xl md:text-7xl font-semibold text-stone-900 tracking-tight text-balance">
+          How to Run a Motel: The Systems-First Guide to High-Performance Management.
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-stone-500 leading-relaxed text-balance">
+          Stop &quot;buying a job&quot; and start building a high-profit asset. Whether you are taking over your first 10-room property or scaling a regional group, these are the operational blueprints used by the industry&apos;s top 1%.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="up">
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="/motel-management-training-course" class="inline-flex items-center justify-center rounded-lg bg-[#4A554E] px-6 py-3.5 text-sm font-medium text-white shadow-sm hover:bg-[#3d4640] hover:shadow-lg transition">
+            Join the Motel Mastery Course
+          </a>
+          <a href="/contact" class="inline-flex items-center justify-center rounded-lg border border-stone-200 bg-white px-6 py-3.5 text-sm font-medium text-stone-900 shadow-sm hover:bg-stone-50 hover:shadow-lg transition">
+            Book Your Free Strategy Session
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 2. Asymmetrical Content Body -->
+  <!-- Choose Your Support -->
   <section class="bg-white py-24">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12">
-      <aside class="md:col-span-4 order-2 md:order-1">
-        <div class="sticky top-32">
-          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">On this page</p>
-          <nav class="space-y-2">
-            <a href="#what-is" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">What Is Motel Management?</a>
-            <a href="#front-office" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Front Office & Guest Experience</a>
-            <a href="#housekeeping" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Housekeeping Standards</a>
-            <a href="#revenue" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Revenue Management</a>
-            <a href="#direct-booking" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Direct Booking Strategy</a>
-            <a href="#help-running" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Help With Running a Motel</a>
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl" data-reveal="up">
+        <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance">
+          Choose your support.
+        </h2>
+        <p class="mt-4 text-stone-500 leading-relaxed">
+          Three options. Same outcome: a motel that runs on systems—not your stress response.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <a href="/motel-management-book" class="group rounded-2xl border border-stone-200 bg-stone-50 p-6 shadow-sm hover:shadow-lg transition" data-reveal="up">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400">The book</p>
+          <h3 class="mt-3 text-lg font-semibold text-stone-900 tracking-tight">
+            The Essential Guide to Motel Management.
+          </h3>
+          <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+            Perfect for those starting their research.
+          </p>
+          <p class="mt-4 text-sm font-medium text-[#4A554E] group-hover:underline inline-flex items-center gap-2">
+            View the book
+            <LucideIcon name="arrow-right" size={18} class="text-[#4A554E]" />
+          </p>
+        </a>
+
+        <a href="/motel-management-training-course" class="group rounded-2xl border border-stone-200 bg-stone-50 p-6 shadow-sm hover:shadow-lg transition" data-reveal="up">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400">The course</p>
+          <h3 class="mt-3 text-lg font-semibold text-stone-900 tracking-tight">
+            The Motel Mastery Course.
+          </h3>
+          <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+            A clinical 7–21 day deep dive for managers and owners.
+          </p>
+          <p class="mt-4 text-sm font-medium text-[#4A554E] group-hover:underline inline-flex items-center gap-2">
+            View the course
+            <LucideIcon name="arrow-right" size={18} class="text-[#4A554E]" />
+          </p>
+        </a>
+
+        <a href="/motel-performance-audit" class="group rounded-2xl border border-stone-200 bg-stone-50 p-6 shadow-sm hover:shadow-lg transition" data-reveal="up">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400">Consultancy</p>
+          <h3 class="mt-3 text-lg font-semibold text-stone-900 tracking-tight">
+            Operational Performance Audit.
+          </h3>
+          <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+            For established owners wanting a professional to find the hidden profit.
+          </p>
+          <p class="mt-4 text-sm font-medium text-[#4A554E] group-hover:underline inline-flex items-center gap-2">
+            See audit details
+            <LucideIcon name="arrow-right" size={18} class="text-[#4A554E]" />
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillar Content (Reading-focused with sticky TOC) -->
+  <section class="bg-white pb-32">
+    <div class="max-w-6xl mx-auto px-6 grid gap-12 md:grid-cols-12">
+      <aside class="md:col-span-4">
+        <div class="md:sticky md:top-28 space-y-4" data-reveal="fade">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400">
+            Table of contents
+          </p>
+          <nav class="space-y-2 text-sm">
+            <a class="block text-stone-500 hover:text-[#4A554E] transition-colors" href="#why-fail">Why Most Small Motels Fail</a>
+            <a class="block text-stone-500 hover:text-[#4A554E] transition-colors" href="#pillars">The 4 Pillars of a Motel System</a>
+            <a class="block text-stone-500 hover:text-[#4A554E] transition-colors" href="#small-motel">How to Run a Small Motel Business</a>
+            <a class="block text-stone-500 hover:text-[#4A554E] transition-colors" href="#operator-proof">Operator Proof</a>
+            <a class="block text-stone-500 hover:text-[#4A554E] transition-colors" href="#faq">FAQ</a>
           </nav>
-          <a href="/contact" class="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-[#4A554E] hover:text-[#3d4640] transition-colors">
+          <a href="/contact" class="inline-flex items-center gap-2 text-sm font-medium text-[#4A554E] hover:text-[#3d4640] transition-colors">
             Speak with an advisor
-            <span aria-hidden="true">→</span>
+            <LucideIcon name="arrow-right" size={18} class="text-[#4A554E]" />
           </a>
         </div>
       </aside>
-      <div class="md:col-span-8 order-1 md:order-2 space-y-16">
-        <div id="what-is">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">What Is Motel Management?</h2>
-          <p class="text-stone-500 leading-relaxed mb-8">Effective <strong class="text-stone-900">motel management</strong> is the integration of five core departmental systems. It is not "hosting"; it is the clinical execution of:</p>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">01</span>
-              <p class="font-semibold text-stone-900">Front Office Operations:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Revenue accuracy and review velocity.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">02</span>
-              <p class="font-semibold text-stone-900">Housekeeping Systems:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Standardized output and labor cost control.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">03</span>
-              <p class="font-semibold text-stone-900">Revenue Management:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Pricing for margin, not just occupancy.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">04</span>
-              <p class="font-semibold text-stone-900">Distribution Control:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Leveraging OTAs without becoming dependent.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8] sm:col-span-2">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">05</span>
-              <p class="font-semibold text-stone-900">Asset Preservation:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Protecting the long-term value of the physical property.</p>
-            </div>
-          </div>
-          <p class="mt-6 text-stone-500 leading-relaxed">Most operators confuse "keeping busy" with "management." If you are running a motel without documented SOPs, you aren't managing an asset; you are working a job that owns you.</p>
+
+      <article class="md:col-span-8">
+        <div class="prose prose-stone prose-lg max-w-none" data-reveal="up">
+          <h2 id="why-fail">Why Most Small Motels Fail</h2>
+          <p>
+            Most small motels don’t fail because the owner is lazy. They fail because the operation is built on <strong>reactive management</strong> instead of <strong>systemic management</strong>.
+          </p>
+          <p>
+            Reactive management is firefighting: chasing complaints, patching rosters, discounting to fill gaps, and living inside the front desk. Systemic management is repeatable: clear standards, documented SOPs, and a weekly rhythm that keeps the business stable even when staff change.
+          </p>
+
+          <h2 id="pillars">The 4 Pillars of a Motel System</h2>
+          <p>
+            A motel system is not a binder. It is the minimum set of operational rules that makes performance predictable.
+          </p>
         </div>
 
-        <div id="front-office">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">Front Office & Guest Experience: From Tasks to Systems</h2>
-          <p class="text-stone-500 leading-relaxed mb-8">A <strong class="text-stone-900">motel manager</strong> must pivot between high-level strategy and granular task oversight. Whether you are an owner-operator or hiring a management couple, the role requires a <strong class="text-stone-900">motel guide</strong> for daily consistency.</p>
-          <h3 class="text-xl font-semibold text-stone-900 tracking-tight mb-4">The Daily Operational Rhythm</h3>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs mb-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg></span>
-              <p class="font-semibold text-stone-900 text-sm">Arrival/Departure Control:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Verification of rates, payment security, and upsell discipline.</p>
+        <div class="mt-8 grid gap-5 sm:grid-cols-2" data-reveal="up">
+          {[
+            {
+              title: 'Operations & Housekeeping',
+              desc: 'The “engine room”. Standards, checklists, and quality control that protect reviews and reduce rework.',
+              icon: (
+                <svg class="h-5 w-5 text-stone-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19h16" />
+                  <path d="M7 19V8a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11" />
+                  <path d="M9 11h6" />
+                </svg>
+              ),
+            },
+            {
+              title: 'Revenue & Distribution',
+              desc: 'OTA vs direct strategy, rate rules, parity control, and channel mix discipline.',
+              icon: (
+                <svg class="h-5 w-5 text-stone-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19V5" />
+                  <path d="M4 19h16" />
+                  <path d="M7 14l3-3 3 2 4-6" />
+                </svg>
+              ),
+            },
+            {
+              title: 'Guest Experience',
+              desc: 'The “trust infrastructure”. Messaging, expectations, review velocity, and service consistency.',
+              icon: (
+                <svg class="h-5 w-5 text-stone-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z" />
+                  <path d="M12 10.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                </svg>
+              ),
+            },
+            {
+              title: 'Staffing & Autonomy',
+              desc: 'How to step away from the front desk without quality collapsing. Roles, training, and ownership.',
+              icon: (
+                <svg class="h-5 w-5 text-stone-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              ),
+            },
+          ].map((p) => (
+            <div class="rounded-2xl border border-stone-200 bg-[#F9F9F8] p-6 shadow-sm hover:shadow-lg transition">
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 flex h-10 w-10 items-center justify-center rounded-xl bg-white border border-stone-200">
+                  {p.icon}
+                </div>
+                <div>
+                  <h3 class="text-base font-semibold text-stone-900 tracking-tight">{p.title}</h3>
+                  <p class="mt-1 text-sm text-stone-500 leading-relaxed">{p.desc}</p>
+                </div>
+              </div>
             </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs mb-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg></span>
-              <p class="font-semibold text-stone-900 text-sm">Housekeeping Supervision:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Moving beyond "is it clean?" to "is it compliant?" via a structured <strong class="text-stone-700">motel cleaning checklist</strong>.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs mb-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg></span>
-              <p class="font-semibold text-stone-900 text-sm">Distribution Audit:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Daily check of OTA rankings, rate parity, and review responses.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs mb-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" /></svg></span>
-              <p class="font-semibold text-stone-900 text-sm">Maintenance Triage:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Identifying "ADR killers"—minor room defects that justify guest demands for discounts.</p>
-            </div>
-          </div>
+          ))}
         </div>
 
-        <div id="housekeeping">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">Housekeeping Standards & Operational Discipline</h2>
-          <p class="text-stone-500 leading-relaxed mb-8">Cleanliness is a logistics challenge, not a moral one. Inconsistent rooms destroy repeat business. Your <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">housekeeping systems</a> must include:</p>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">01</span>
-              <p class="font-semibold text-stone-900">Structured Room Checklists:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">No room is cleared until every point on the physical checklist is ticked.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">02</span>
-              <p class="font-semibold text-stone-900">Supervisor Sign-off:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Trust, but verify.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">03</span>
-              <p class="font-semibold text-stone-900">Linen & Stock Control:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Tracking consumables to prevent "invisible" margin erosion.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">04</span>
-              <p class="font-semibold text-stone-900">Deep-Clean Cycles:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">A rotating schedule to prevent asset decay.</p>
-            </div>
-          </div>
-        </div>
-
-        <div id="revenue">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">Revenue Management: Profit vs. Occupancy</h2>
-          <p class="text-stone-500 leading-relaxed mb-6">Profit is controlled through pricing discipline. A common mistake in <strong class="text-stone-900">motel management</strong> is "occupancy at any cost." Discounting to fill rooms often increases wear and tear and labor costs while shrinking the bottom line.</p>
-          <p class="font-semibold text-stone-900 mb-2">Key Metrics to Track:</p>
-          <ul class="list-disc list-inside text-stone-500 leading-relaxed space-y-1 mb-6">
-            <li><strong class="text-stone-700">Pickup Pace:</strong> How fast are rooms booking for future dates?</li>
-            <li><strong class="text-stone-700">Compression:</strong> Are local events allowing for aggressive rate increases?</li>
-            <li><strong class="text-stone-700">Channel Mix:</strong> What percentage of your bookings are losing 15-20% to OTA commissions?</li>
+        <div class="mt-12 prose prose-stone prose-lg max-w-none" data-reveal="up">
+          <h2 id="small-motel">How to Run a Small Motel Business (10–25 rooms)</h2>
+          <p>
+            If you are stretched thin, the answer is not “work harder.” The answer is <strong>reduce variation</strong>. Build a weekly rhythm that forces consistency:
+          </p>
+          <ul>
+            <li><strong>Daily:</strong> arrivals/departures, cash control, defect triage.</li>
+            <li><strong>Weekly:</strong> rate review, channel mix review, roster performance.</li>
+            <li><strong>Monthly:</strong> deep clean cycle, maintenance debt review, training refresh.</li>
           </ul>
-          <p class="text-stone-500 leading-relaxed">Strategic <a href="/motel-marketing" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> increases visibility, but revenue management ensures that visibility converts into the highest possible margin.</p>
+          <p>
+            A small motel becomes profitable when the owner stops being the system and starts installing the system.
+          </p>
+
+          <h2 id="operator-proof">Operator Proof</h2>
         </div>
 
-        <div id="direct-booking">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">Direct Booking Strategy: Breaking OTA Dependency</h2>
-          <p class="text-stone-500 leading-relaxed mb-8">OTAs are high-cost billboards. Use them to acquire the guest once; use your <a href="/motel-management" class="text-[#4A554E] font-medium hover:underline">motel system</a> to own them forever.</p>
-          <h3 class="text-xl font-semibold text-stone-900 tracking-tight mb-4">The Direct Booking Funnel:</h3>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">01</span>
-              <p class="font-semibold text-stone-900">Fast Mobile Website:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">If a guest can't book in three clicks, they'll go back to Booking.com.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">02</span>
-              <p class="font-semibold text-stone-900">Rate Integrity:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Never allow an OTA to undercut your direct price.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8] sm:col-span-2">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">03</span>
-              <p class="font-semibold text-stone-900">In-Stay Conversion:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Use front-desk interactions to move the next booking to your direct channel.</p>
-            </div>
+        <div id="operator-proof" class="mt-6 rounded-2xl border border-stone-200 bg-stone-50 p-8 shadow-sm" data-reveal="up">
+          <p class="text-sm font-semibold text-stone-900">
+            We aren&apos;t just theorists.
+          </p>
+          <p class="mt-2 text-stone-500 leading-relaxed">
+            We&apos;ve run 6-room boutique stays and 16-property groups. We know how to clean a room, manage a GDS, and handle a midnight check-in.
+          </p>
+        </div>
+
+        <div class="mt-14" data-reveal="up">
+          <h2 id="faq" class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance">
+            Motel management FAQ
+          </h2>
+          <p class="mt-4 text-stone-500 leading-relaxed">
+            Practical answers to the questions owners actually ask.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            {[
+              {
+                q: 'How much does it cost to run a motel?',
+                a: 'It depends on room count, staffing model, and utilities, but the biggest controllables are wages, commissions, and maintenance debt. A system reduces variation so costs stop creeping upward silently.',
+              },
+              {
+                q: 'What is the best motel management software?',
+                a: 'The best PMS is the one your team uses correctly. Focus on clean data, consistent workflows, and reporting discipline before switching platforms.',
+              },
+              {
+                q: 'How do I run a motel without being on the front desk every day?',
+                a: 'Document standards, train to checklists, and build a weekly management rhythm. Autonomy is earned by systems—never by hope.',
+              },
+              {
+                q: 'How do I find a reliable motel manager?',
+                a: 'Hire for discipline and consistency, then support them with a playbook. A strong manager will still fail in a weak system.',
+              },
+              {
+                q: 'How do I reduce Booking.com dependency?',
+                a: 'Fix parity, strengthen direct conversion, and run OTAs as billboards. The goal is channel mix control, not channel elimination.',
+              },
+              {
+                q: 'What are the core motel management systems I need first?',
+                a: 'Housekeeping standards, cash and rate integrity, distribution checks, maintenance triage, and review velocity. Start with the engine room.',
+              },
+              {
+                q: 'How do I train front desk staff quickly?',
+                a: 'Use scripts, checklists, and real scenarios. Reduce variation in guest handling and daily admin so errors stop recurring.',
+              },
+              {
+                q: 'How often should I change room rates?',
+                a: 'Weekly is a minimum. In high-demand markets you can review more frequently, but rules matter more than frequency.',
+              },
+              {
+                q: 'How do I improve motel reviews?',
+                a: 'Set standards, reduce room defects, and implement a simple review request workflow. Reviews are a system output.',
+              },
+              {
+                q: 'How do I run a small motel business profitably?',
+                a: 'Protect margin first: wage discipline, parity control, defect reduction, and direct conversion. Small motels win by consistency, not complexity.',
+              },
+            ].map((item) => (
+              <details class="group rounded-xl border border-stone-200 bg-white p-4 shadow-sm hover:shadow-lg transition">
+                <summary class="flex cursor-pointer items-center justify-between gap-4 text-left">
+                  <span class="text-sm md:text-base font-semibold text-stone-900">
+                    {item.q}
+                  </span>
+                  <span class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-stone-200 text-stone-500 transition group-open:rotate-45">
+                    +
+                  </span>
+                </summary>
+                <p class="mt-3 text-sm text-stone-500 leading-relaxed">
+                  {item.a}
+                </p>
+              </details>
+            ))}
           </div>
         </div>
-
-        <div id="help-running">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">Help With Running a Motel: The 90-Day Transition</h2>
-          <p class="text-stone-500 leading-relaxed mb-8">If you have recently purchased a property, the first 90 days are critical. You are likely inheriting weak OTA rankings, deferred maintenance, or "lazy" pricing.</p>
-          <h3 class="text-xl font-semibold text-stone-900 tracking-tight mb-4">Your Priority Sequence:</h3>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">01</span>
-              <p class="font-semibold text-stone-900">Stability:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Implement <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">management training</a> for all staff to ensure a baseline of service.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8]">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">02</span>
-              <p class="font-semibold text-stone-900">Audit:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Review the last 12 months of data to find revenue leaks.</p>
-            </div>
-            <div class="border border-stone-200 p-6 rounded-xl bg-[#F9F9F8] sm:col-span-2">
-              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">03</span>
-              <p class="font-semibold text-stone-900">Optimization:</p>
-              <p class="text-stone-500 text-sm leading-relaxed mt-1">Update the <a href="/motel-websites-design" class="text-[#4A554E] font-medium hover:underline">website</a> and OTA content for immediate "quick win" visibility.</p>
-            </div>
-          </div>
-          <p class="mt-6 text-stone-500 leading-relaxed">For those requiring an external perspective, our <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">motel consultancy</a> services provide a deep-dive audit into your specific operational hurdles.</p>
-        </div>
-
-        <div>
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-6">Take Control of Your Property</h2>
-          <p class="text-stone-500 leading-relaxed mb-6">Stop guessing and start operating. Whether you need a comprehensive <a href="/motel-management-book" class="text-[#4A554E] font-medium hover:underline">motel management book</a> or hands-on training, the goal is the same: a predictable, profitable, and system-driven business.</p>
-          <a href="/playbook" class="inline-flex items-center gap-2 px-6 py-3 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
-            Download the Professional Motel Management Toolkit
-            <span aria-hidden="true">→</span>
-          </a>
-          <p class="mt-3 text-sm text-stone-500">Daily Front Office Checklist, Housekeeping Checklist, and Maintenance Tracker Spreadsheet. <strong class="text-stone-700">Move from owner-operator to asset manager.</strong></p>
-        </div>
-      </div>
+      </article>
     </div>
   </section>
 
+  <!-- Sticky Footer CTA (appears after hero) -->
+  <div id="sticky-footer-cta" class="fixed inset-x-0 bottom-0 z-40 hidden">
+    <div class="bg-white/90 backdrop-blur border-t border-stone-200">
+      <div class="max-w-6xl mx-auto px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm text-stone-700">
+          <span class="font-semibold text-stone-900">Ready to systemize your motel?</span> Start with the fastest path.
+        </p>
+        <div class="flex w-full sm:w-auto gap-3">
+          <a href="/motel-management-training-course" class="flex-1 sm:flex-none inline-flex items-center justify-center rounded-lg bg-[#4A554E] px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-[#3d4640] transition">
+            Start the Course
+          </a>
+          <a href="/motel-performance-audit" class="flex-1 sm:flex-none inline-flex items-center justify-center rounded-lg border border-stone-200 bg-white px-5 py-2.5 text-sm font-medium text-stone-900 shadow-sm hover:bg-stone-50 transition">
+            Book an Audit
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sticky-footer-sentinel" aria-hidden="true"></div>
+
+  <script>
+    (function () {
+      const bar = document.getElementById('sticky-footer-cta');
+      const sentinel = document.getElementById('sticky-footer-sentinel');
+      if (!bar || !sentinel) return;
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          // When sentinel is visible (top of page), hide bar. Once scrolled past, show bar.
+          if (entry.isIntersecting) bar.classList.add('hidden');
+          else bar.classList.remove('hidden');
+        },
+        { root: null, threshold: 0 }
+      );
+
+      // Place sentinel right after hero in flow: it will scroll away quickly.
+      io.observe(sentinel);
+    })();
+  </script>
 </BaseLayout>

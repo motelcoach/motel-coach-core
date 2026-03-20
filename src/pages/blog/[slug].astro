@@ -14,6 +14,22 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout title={entry.data.title}>
+  {entry.data.faqs && (
+    <script type="application/ld+json">
+      {JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: entry.data.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.a,
+          },
+        })),
+      })}
+    </script>
+  )}
   <div class="max-w-3xl mx-auto px-6 py-20">
     <a href="/blog" class="text-[#4A554E] font-medium text-sm hover:text-stone-900 transition-colors">← Back to Blog</a>
     <article class="mt-8 prose prose-lg prose-stone max-w-none prose-headings:text-stone-900 prose-headings:font-semibold prose-headings:tracking-tight prose-p:text-stone-500 prose-p:leading-relaxed prose-a:text-[#4A554E] prose-a:font-medium hover:prose-a:underline prose-blockquote:border-l-[#4A554E] prose-blockquote:bg-brand-50 prose-blockquote:border-stone-200">

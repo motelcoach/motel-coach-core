@@ -1,0 +1,379 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+import LucideIcon from '../components/LucideIcon.astro';
+
+const entry = await getEntry('pages', 'motel-management-book');
+const STRIPE_CHECKOUT_URL = 'https://buy.stripe.com/8x214nf353vn6yD7pp6Zy02';
+---
+<head>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "The Essential Guide to Motel Management",
+      "author": {
+        "@type": "Person",
+        "name": "Benjamin Douglas"
+      },
+      "url": "https://motelcoach.com.au/motel-management-book",
+      "workExample": {
+        "@type": "Book",
+        "bookFormat": "https://schema.org/EBook"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Motel Coach"
+      },
+      "inLanguage": "en-AU",
+      "about": [
+        "motel management",
+        "how to run a motel business",
+        "motel system",
+        "motel marketing",
+        "front desk training"
+      ],
+      "isbn": "ISBN_GOES_HERE"
+    }
+  </script>
+
+ <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who This Book Is For?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "First-time motel buyers
+Existing independent operators
+Staff transitioning into leadership roles
+Motel Owners seeking structured operational control
+For Owners looking for a bit more"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What You'll Learn",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Front office systems
+Housekeeping control frameworks
+Revenue management fundamentals
+OTA positioning strategies
+Direct booking optimisation
+Cost control discipline
+Operational checklists
+This is structured knowledge, not surface-level advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why It's Different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most hospitality books focus on hotel chains.
+
+This guide focuses specifically on independent motels operating without brand infrastructure.
+
+The systems are designed for real operational environments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Relationship to Your Training",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The book forms the foundation of the Motel Coach training framework.
+
+Operators who want structured implementation, templates, and operational playbooks can explore the full Motel Management Training Course.
+
+Motel Management Courses. This turns credibility into conversion."
+          }
+        },
+           {
+          "@type": "Question",
+          "name": "Format & Access",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Digital edition
+Instant access
+Downloadable reference
+Practical checklists included"
+          }
+        }
+      ]
+    }
+  </script>
+
+</head>
+
+<BaseLayout title={entry.data.title}>
+  <!-- 1. Bestseller Hero -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">
+          The Definitive Guide
+        </p>
+        <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-6">
+          The Essential Guide to Motel Management
+        </h1>
+        <p class="text-lg text-stone-500 leading-relaxed mb-4">
+          Running a motel requires structured systems across pricing, operations, staffing, and distribution.
+        </p>
+        <p class="text-lg text-stone-500 leading-relaxed">
+          The Essential Guide to Motel Management provides a practical framework designed specifically for independent motel operators.
+          This is not theory. It is operational structure.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a
+            href={STRIPE_CHECKOUT_URL}
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+          >
+            Buy the Book
+            <LucideIcon name="arrow-right" size={18} class="text-white" />
+          </a>
+          <a
+            href="/motel-management-book-free-chapter"
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-stone-900 border border-stone-200 font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm"
+          >
+            Read a Free Chapter
+          </a>
+        </div>
+        <div class="mt-4 space-y-1 text-xs text-stone-500">
+          <p class="text-stone-400 uppercase tracking-widest font-semibold">
+            Supported payment methods
+          </p>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Visa</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Mastercard</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Amex</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Apple Pay</span>
+            <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Google Pay</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img
+          src="/the-essential-guide-to-motel-management.png"
+          alt="The Essential Guide to Motel Management book cover"
+          class="max-w-sm w-full"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. What You'll Learn Bento -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10">
+        What You&apos;ll Learn Inside the Guide
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { title: 'Front office systems', text: 'Daily rhythms and controls that keep revenue accurate, guests informed, and reviews trending upward.' },
+          { title: 'Housekeeping control frameworks', text: 'Checklists, standards, and supervision that protect cleanliness, reputation, and margin.' },
+          { title: 'Revenue management fundamentals', text: 'Pricing discipline for profit—not just occupancy—using pickup pace and compression as guiding signals.' },
+          { title: 'OTA positioning strategies', text: 'Use OTAs as billboards while building systems that shift bookings back to your direct channels.' },
+          { title: 'Direct booking optimisation', text: 'Turn your website, phone, and email into high-conversion assets that capture more of every market cycle.' },
+          { title: 'Cost control & operational checklists', text: 'Practical tools and frameworks to track costs, prevent leaks, and standardise daily execution.' },
+        ].map((item, index) => (
+          <div class="relative bg-[#F9F9F8] border border-stone-200 p-8 rounded-2xl shadow-sm">
+            <span class="absolute top-5 right-6 text-xs font-semibold tracking-widest text-stone-300">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <h3 class="text-lg font-semibold text-stone-900 mb-2 tracking-tight">
+              {item.title}
+            </h3>
+            <p class="text-sm text-stone-500 leading-relaxed">
+              {item.text}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Authority Asymmetrical Block -->
+  <section class="bg-[#F9F9F8] py-24 border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12">
+      <aside class="md:col-span-4">
+        <div class="sticky top-32 space-y-4">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400">
+            Who is this for?
+          </p>
+          <p class="text-stone-500 leading-relaxed">
+            First-time motel buyers, existing independent operators, staff transitioning into leadership roles, and motel owners seeking structured operational control.
+          </p>
+          <ul class="mt-2 space-y-1 text-sm text-stone-600">
+            {[
+              'First-time motel buyers',
+              'Existing independent operators',
+              'Staff transitioning into leadership roles',
+              'Motel owners seeking structured operational control',
+            ].map((item) => (
+              <li class="flex items-start gap-2">
+                <span class="mt-0.5">
+                  <LucideIcon name="dot" size={18} class="text-stone-400" />
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </aside>
+      <div class="md:col-span-8">
+        <article class="prose prose-lg prose-stone max-w-none prose-headings:text-stone-900 prose-p:text-stone-500 prose-a:text-[#4A554E] prose-a:font-medium">
+          <h2>Proven in the Field. Supported by the Industry.</h2>
+          <p>
+            The Essential Guide to Motel Management is built from real operational experience, not theory. It focuses specifically on independent motels operating without brand infrastructure. The systems are designed for real operational environments, where every percentage point of occupancy and margin matters.
+          </p>
+          <p>
+            Most hospitality books focus on hotel chains. This guide focuses on the operators who don&apos;t have corporate safety nets—those who need a clear, practical playbook for daily decisions.
+          </p>
+          <h3>Relationship to Your Training</h3>
+          <p>
+            The book forms the foundation of the Motel Coach training framework. Operators who want structured implementation, templates, and operational playbooks can explore the full Motel Management Training Course. This turns credibility into conversion.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Social Proof & FAQ -->
+  <section class="bg-white py-24 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 space-y-16">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">
+          Client Reviews
+        </h2>
+        <p class="text-stone-500 leading-relaxed">
+          Reviews from our past <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel training</a> and
+          <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">consultancy clients</a>, including hospitality students, motel receptionists, motel managers and motel owners.
+          Learn more <a href="/about" class="text-[#4A554E] font-medium hover:underline">about Motel Coach</a>.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-8">
+          Frequently Asked Questions
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="bg-[#F9F9F8] border border-stone-200 rounded-2xl p-8 shadow-sm">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">
+              01
+            </span>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Who This Book Is For</h3>
+            <ul class="text-sm text-stone-500 leading-relaxed space-y-1">
+              <li>First-time motel buyers</li>
+              <li>Existing independent operators</li>
+              <li>Staff transitioning into leadership roles</li>
+              <li>Motel Owners seeking structured operational control</li>
+              <li>For Owners looking for a bit more</li>
+            </ul>
+          </div>
+
+          <div class="bg-[#F9F9F8] border border-stone-200 rounded-2xl p-8 shadow-sm">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">
+              02
+            </span>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">What You&apos;ll Learn</h3>
+            <ul class="text-sm text-stone-500 leading-relaxed space-y-1">
+              <li>Front office systems</li>
+              <li>Housekeeping control frameworks</li>
+              <li>Revenue management fundamentals</li>
+              <li>OTA positioning strategies</li>
+              <li>Direct booking optimisation</li>
+              <li>Cost control discipline</li>
+              <li>Operational checklists</li>
+            </ul>
+            <p class="mt-3 text-sm text-stone-500">
+              This is structured knowledge, not surface-level advice.
+            </p>
+          </div>
+
+          <div class="bg-[#F9F9F8] border border-stone-200 rounded-2xl p-8 shadow-sm">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">
+              03
+            </span>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Why It&apos;s Different</h3>
+            <p class="text-sm text-stone-500 leading-relaxed">
+              Most hospitality books focus on hotel chains.
+            </p>
+            <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+              This guide focuses specifically on independent motels operating without brand infrastructure.
+            </p>
+            <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+              The systems are designed for real operational environments.
+            </p>
+          </div>
+
+          <div class="bg-[#F9F9F8] border border-stone-200 rounded-2xl p-8 shadow-sm">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">
+              04
+            </span>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Relationship to Your Training</h3>
+            <p class="text-sm text-stone-500 leading-relaxed">
+              The book forms the foundation of the Motel Coach training framework.
+            </p>
+            <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+              Operators who want structured implementation, templates, and operational playbooks can explore the full Motel Management Training Course.
+            </p>
+            <p class="mt-2 text-sm text-stone-500 leading-relaxed">
+              <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">Motel Management Courses</a>.
+              This turns credibility into conversion.
+            </p>
+          </div>
+
+          <div class="bg-[#F9F9F8] border border-stone-200 rounded-2xl p-8 shadow-sm sm:col-span-2 lg:col-span-1">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#4A554E] text-white text-xs font-semibold mb-4">
+              05
+            </span>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Format &amp; Access</h3>
+            <ul class="text-sm text-stone-500 leading-relaxed space-y-1">
+              <li>Digital edition</li>
+              <li>Instant access</li>
+              <li>Downloadable reference</li>
+              <li>Practical checklists included</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. High-Intent Footer CTA -->
+  <section class="bg-white py-24 text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-6 text-balance">
+        Ready to transform your motel&apos;s profitability?
+      </h2>
+      <p class="text-stone-500 leading-relaxed mb-8">
+        Get the complete operational playbook used by independent Australian motels to stabilise occupancy, protect margins, and turn daily chaos into a system.
+      </p>
+      <a
+        href={STRIPE_CHECKOUT_URL}
+        class="inline-flex items-center gap-2 px-8 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+      >
+        Buy the Book
+        <LucideIcon name="arrow-right" size={18} class="text-white" />
+      </a>
+      <div class="mt-5 flex flex-wrap justify-center items-center gap-2 text-xs text-stone-500">
+        <span class="text-stone-400 uppercase tracking-widest font-semibold">Supported payment methods</span>
+        <span class="h-1 w-1 rounded-full bg-stone-300"></span>
+        <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Visa</span>
+        <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Mastercard</span>
+        <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Amex</span>
+        <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Apple Pay</span>
+        <span class="px-2 py-1 rounded-md border border-stone-200 bg-white">Google Pay</span>
+        <span class="h-1 w-1 rounded-full bg-stone-300"></span>
+        <span class="text-[10px] text-stone-400">Secure checkout powered by Stripe</span>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
