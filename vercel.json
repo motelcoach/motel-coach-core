@@ -20,6 +20,8 @@
     { "source": "/motel-management-course-purchase",              "destination": "/motel-management-training-course",                 "permanent": true },
     { "source": "/motel-marketing-review",                        "destination": "/motel-marketing",                                  "permanent": true },
     { "source": "/motel-management-australia",                    "destination": "/motel-management",                                 "permanent": true },
+    { "source": "/blog/tag/:path*",                               "destination": "/blog",                                             "permanent": true },
+    { "source": "/blog/category/:path*",                          "destination": "/blog",                                             "permanent": true },
     { "source": "/motel-management-blog",                         "destination": "/blog",                                             "permanent": true },
     { "source": "/motel-management-blog/:path*",                  "destination": "/blog/:path*",                                      "permanent": true },
     { "source": "/improve-motel-occupancy-1",                     "destination": "/motel-consultancy",                                "permanent": true },
@@ -47,7 +49,6 @@
     { "source": "/front-desk-training-guide-motel",               "destination": "/blog/front-desk-training-checklist",               "permanent": true },
     { "source": "/motel-marketing-strategies-for-independent-operators-increase-direct-bookings-occupancy", "destination": "/motel-marketing", "permanent": true },
     { "source": "/guestpoint-pms-account-troublshooting",         "destination": "/blog/guestpoint-pms-account-troublshooting",       "permanent": true },
-
     { "source": "/blog/test-page-load-motel",                     "destination": "/blog/hotel-motel-website-speed",                   "permanent": true },
     { "source": "/blog/motel-marketing-course-yx5mj",             "destination": "/blog/motel-marketing-checklist",                   "permanent": true },
     { "source": "/blog/Blog-Post-Title-One-zd2kp-rktlj",          "destination": "/blog/front-desk-training-checklist",               "permanent": true },
@@ -55,14 +56,14 @@
     { "source": "/blog/front-desk-training-hospitality",          "destination": "/blog/front-desk-training-checklist",               "permanent": true },
     { "source": "/blog/motel-marketing-course",                   "destination": "/blog/motel-marketing-checklist",                   "permanent": true },
     { "source": "/blog/motel-marketing-basics",                   "destination": "/blog/motel-marketing-checklist",                   "permanent": true },
-    { "source": "/blog/increase-bookingdotcom-rank-checklist",    "destination": "/blog/booking-review-rank",                         "permanent": true },
+    
     { "source": "/blog/optimize-bookingdotcom-for-more-bookings", "destination": "/blog/booking-review-rank",                         "permanent": true },
     { "source": "/blog/motel-room-inventory-management-guide",    "destination": "/blog/managing-motel-room-inventory",               "permanent": true },
-    { "source": "/blog/motel-manager-career",                     "destination": "/blog/what-does-a-motel-manager-do",                "permanent": true },
+    
     { "source": "/blog/motel-manager-duties",                     "destination": "/blog/what-does-a-motel-manager-do",                "permanent": true },
     { "source": "/blog/hospitality-careers-getting-started",      "destination": "/blog/what-does-a-motel-manager-do",                "permanent": true },
     { "source": "/blog/a-day-in-life-of-motel-manager",           "destination": "/blog/what-does-a-motel-manager-do",                "permanent": true },
-
+    { "source": "/motel-management-courses",                      "destination": "/courses",                                          "permanent": true },
     { "source": "/motel-management-lessons",                      "destination": "/blog",                                             "permanent": true },
     { "source": "/motel-management-blog/hiring-housekeepers-as-contractors", "destination": "/blog/hiring-housekeepers-as-contractors", "permanent": true },
     { "source": "/motel-management-blog/optimize-bookingdotcom-for-more-bookings", "destination": "/blog/booking-review-rank",        "permanent": true },
@@ -75,7 +76,7 @@
     { "source": "/motel-management-blog/motel-management-basics", "destination": "/blog/motel-marketing-checklist",                   "permanent": true },
     { "source": "/motel-management-blog/motel-room-inventory-management-guide", "destination": "/blog/managing-motel-room-inventory",  "permanent": true },
     { "source": "/motel-management-blog/increase-bookingdotcom-rank-checklist", "destination": "/blog/booking-review-rank",            "permanent": true },
-    { "source": "/motel-management-blog/tag/Hiring+Housekeepers", "destination": "/blog/hiring-housekeepers-as-contractors",           "permanent": true },
+    { "source": "/motel-management-blog/tag/", "destination": "/blog/",           "permanent": true },
     { "source": "/motel-management-blog/front-desk-training-checklist", "destination": "/blog/front-desk-training-checklist",         "permanent": true }
   ]
 }

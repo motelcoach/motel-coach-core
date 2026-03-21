@@ -13,7 +13,7 @@ Achieve operational stability during a management changeover by prioritizing sys
 
 **Last Updated: 23/02/2026**
 
-The first 21 days of [motel management](https://www.motelcoach.com.au/motel-management) are not for "making your mark." They are for **stabilization**. Most new managers fail because they attempt to overhaul culture before they understand the plumbing—both literal and figurative.
+The first 21 days of [motel management](/motel-management) are not for "making your mark." They are for **stabilization**. Most new managers fail because they attempt to overhaul culture before they understand the plumbing—both literal and figurative.
 
 Success in this period is measured by your ability to prevent operational drift while the previous leadership exits.
 

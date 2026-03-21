@@ -20,7 +20,7 @@ Independent motels lack the corporate safety net of major chains. Without brand 
 * [Housekeeping & Cleaning Checklists](/motel-management#housekeeping)
 * [Revenue Management & Pricing](/motel-management#revenue)
 * [OTA vs. Direct Booking Strategy](/motel-management#revenue)
-* [The 90-Day Post-Purchase Audit](https://www.motelcoach.com.au/motel-management#help-running-motel)
+* [The 90-Day Post-Purchase Audit](/motel-management#help-running-motel)
 
 ## What Is Motel Management?
 
@@ -48,7 +48,7 @@ A **motel manager** must pivot between high-level strategy and granular task ove
 
 ## Housekeeping Standards & Operational Discipline
 
-Cleanliness is a logistics challenge, not a moral one. Inconsistent rooms destroy repeat business. Your [housekeeping systems](https://www.motelcoach.com.au/motel-management-training-course) must include:
+Cleanliness is a logistics challenge, not a moral one. Inconsistent rooms destroy repeat business. Your [housekeeping systems](/motel-management-training-course) must include:
 
 * **Structured Room Checklists:** No room is cleared until every point on the physical checklist is ticked.
 * **Supervisor Sign-off:** Trust, but verify.
@@ -64,11 +64,11 @@ Profit is controlled through pricing discipline. A common mistake in **motel man
 * **Compression:** Are local events allowing for aggressive rate increases?
 * **Channel Mix:** What percentage of your bookings are losing 15-20% to OTA commissions?
 
-Strategic [motel marketing](https://www.motelcoach.com.au/motel-marketing) increases visibility, but revenue management ensures that visibility converts into the highest possible margin.
+Strategic [motel marketing](/motel-marketing) increases visibility, but revenue management ensures that visibility converts into the highest possible margin.
 
 ## Direct Booking Strategy: Breaking OTA Dependency
 
-OTAs are high-cost billboards. Use them to acquire the guest once; use your [motel system](https://www.motelcoach.com.au/motel-management) to own them forever.
+OTAs are high-cost billboards. Use them to acquire the guest once; use your [motel system](/motel-management) to own them forever.
 
 ### The Direct Booking Funnel:
 1. **Fast Mobile Website:** If a guest can't book in three clicks, they’ll go back to Booking.com.
@@ -80,11 +80,11 @@ OTAs are high-cost billboards. Use them to acquire the guest once; use your [mot
 If you have recently purchased a property, the first 90 days are critical. You are likely inheriting weak OTA rankings, deferred maintenance, or "lazy" pricing.
 
 ### Your Priority Sequence:
-1. **Stability:** Implement [management training](https://www.motelcoach.com.au/motel-management-training-course) for all staff to ensure a baseline of service.
+1. **Stability:** Implement [management training](/motel-management-training-course) for all staff to ensure a baseline of service.
 2. **Audit:** Review the last 12 months of data to find revenue leaks.
 3. **Optimization:** Update the [website](/motel-website-design) and OTA content for immediate "quick win" visibility.
 
-For those requiring an external perspective, our [motel consultancy](https://www.motelcoach.com.au/motel-consultancy) services provide a deep-dive audit into your specific operational hurdles.
+For those requiring an external perspective, our [motel consultancy](/motel-consultancy) services provide a deep-dive audit into your specific operational hurdles.
 
 ## Take Control of Your Property
 

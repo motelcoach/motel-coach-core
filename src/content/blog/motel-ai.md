@@ -15,7 +15,7 @@ Future-proof your property’s visibility by transitioning from traditional keyw
 
 In 2026, the term "Artificial Intelligence" is no longer a futuristic buzzword for multinational hotel chains. For the independent operator, **Motel AI** is the only way to manage the "Zero-Click" search reality and the rising costs of manual labor.
 
-If your [motel marketing](https://www.motelcoach.com.au/motel-marketing) strategy doesn't account for how "Answer Engines" (like ChatGPT and Google AI Overviews) categorize your property, you are essentially invisible to the modern traveler.
+If your [motel marketing](/motel-marketing) strategy doesn't account for how "Answer Engines" (like ChatGPT and Google AI Overviews) categorize your property, you are essentially invisible to the modern traveler.
 
 **The Search Shift: Why AI is the New SEO**
 -------------------------------------------
@@ -27,7 +27,7 @@ To win this search, your website must move beyond "descriptive fluff" and adopt 
 **Practical AI in Hospitality Industry Examples**
 -------------------------------------------------
 
-You don’t need a robot at the front desk. Real-world [motel management](https://www.motelcoach.com.au/motel-management) uses AI to solve three specific headaches:
+You don’t need a robot at the front desk. Real-world [motel management](/motel-management) uses AI to solve three specific headaches:
 
 1.  **Revenue Management:** AI-powered tools now allow independent motels to use "Dynamic Pricing." Instead of a static $140 rate, your system adjusts based on real-time local demand, ensuring you don't leave money on the table during local festivals or sporting events.
     
@@ -39,7 +39,7 @@ You don’t need a robot at the front desk. Real-world [motel management](https:
 **The Competitive Landscape**
 -----------------------------
 
-Innovators like **Motel Moose** and other forward-thinking operators are already using AI to streamline the guest experience. They understand that AI doesn't replace the "hospitality" of a motel owner—it removes the "administrative friction" that prevents you from focusing on your guests. Whether it's through [motel management training](https://www.motelcoach.com.au/motel-management-training-course) or advanced [motel consultancy](https://www.motelcoach.com.au/motel-consultancy), the goal is the same: use technology to reclaim your time.
+Innovators like **Motel Moose** and other forward-thinking operators are already using AI to streamline the guest experience. They understand that AI doesn't replace the "hospitality" of a motel owner—it removes the "administrative friction" that prevents you from focusing on your guests. Whether it's through [motel management training](/motel-management-training-course) or advanced [motel consultancy](/motel-consultancy), the goal is the same: use technology to reclaim your time.
 
 **FAQs: Motel AI and the Future of Search**
 -------------------------------------------

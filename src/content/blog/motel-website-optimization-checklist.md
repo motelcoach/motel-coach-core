@@ -19,7 +19,7 @@ Maximise your direct booking revenue by transforming your digital presence into 
 
 In 2026, a [**motel website**](/motel-website-design) that merely "exists" is a liability. As third-party commissions climb, your website’s sole purpose is to convert a browser into a direct booking. If your site doesn't feel as reliable as a clean room and a firm mattress, the guest will go back to the OTA.
 
-To win in the current market, your [motel marketing](https://www.motelcoach.com.au/motel-marketing) must be backed by a high-performance technical infrastructure.
+To win in the current market, your [motel marketing](/motel-marketing) must be backed by a high-performance technical infrastructure.
 
 1\. The "Momentum" Metric: Interaction to Next Paint (INP)
 ----------------------------------------------------------
@@ -33,7 +33,7 @@ We have moved beyond simple "loading speeds." In 2026, the critical metric is **
 *   **The Fix:** Eliminate "JavaScript Bloat." Many modern booking engines are wrapped in heavy code that kills mobile responsiveness.
     
 
-If your technical performance is lagging, it’s a symptom of deeper [motel management](https://www.motelcoach.com.au/motel-management) neglect. You wouldn't leave a guest waiting at the front desk for 10 minutes; don't do it online.
+If your technical performance is lagging, it’s a symptom of deeper [motel management](/motel-management) neglect. You wouldn't leave a guest waiting at the front desk for 10 minutes; don't do it online.
 
 2\. Frictionless Mobile Payments (The 25% Gap)
 ----------------------------------------------
@@ -61,7 +61,7 @@ This is invisible code that tells the "bots" exactly what you offer:
 *   **Specific Amenities:** (EV Charging, 24/7 Keyless Entry, Truck Parking)
     
 
-Without this structured data, your property is invisible to the digital assistants travelers now use to filter results. This technical layer is a key module in our [motel management training course](https://www.motelcoach.com.au/motel-management-training-course).
+Without this structured data, your property is invisible to the digital assistants travelers now use to filter results. This technical layer is a key module in our [motel management training course](/motel-management-training-course).
 
 4\. Visual Storytelling vs. Stock Clichés
 -----------------------------------------
@@ -75,7 +75,7 @@ In 2026, "stock-style" photography is a trust-killer. Guests want to see the **R
 3.  **The Actual Room:** Not a stylized "lifestyle" shot, but a clear, high-resolution 360° view.
     
 
-Video walkthroughs on your landing pages can increase conversion rates by up to **80%**. This is where most [motel consultancy](https://www.motelcoach.com.au/motel-consultancy) audits find the biggest "low-hanging fruit."
+Video walkthroughs on your landing pages can increase conversion rates by up to **80%**. This is where most [motel consultancy](/motel-consultancy) audits find the biggest "low-hanging fruit."
 
 The 2026 Website Audit Checklist
 --------------------------------

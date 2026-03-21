@@ -15,7 +15,7 @@ Dominate your local market by prioritizing review velocity and recency over hist
 
 **Last Updated: 02/03/2026**
 
-For the independent motel owner, TripAdvisor is a double-edged sword. It can be your most cost-effective [motel marketing](https://www.motelcoach.com.au/motel-marketing) tool, or a public record of your operational failures.
+For the independent motel owner, TripAdvisor is a double-edged sword. It can be your most cost-effective [motel marketing](/motel-marketing) tool, or a public record of your operational failures.
 
 The ranking you see—the "Popularity Index"—is not a simple average of your scores. A motel with a 5.0 average can easily rank lower than a competitor with a 4.2. Why? Because the algorithm prioritizes **momentum over perfection.**
 
@@ -24,7 +24,7 @@ The ranking you see—the "Popularity Index"—is not a simple average of your s
 
 TripAdvisor’s algorithm is built on three specific metrics. If you lack even one, your ranking will stagnate.
 
-1.  **Quality (The "Bubble" Rating):** While 5-bubble reviews are the goal, the algorithm looks for consistency. A steady stream of 4-bubble reviews is mathematically superior to a volatile mix of 1s and 5s. In [motel management](https://www.motelcoach.com.au/motel-management), consistency is the ultimate trust signal.
+1.  **Quality (The "Bubble" Rating):** While 5-bubble reviews are the goal, the algorithm looks for consistency. A steady stream of 4-bubble reviews is mathematically superior to a volatile mix of 1s and 5s. In [motel management](/motel-management), consistency is the ultimate trust signal.
     
 2.  **Recency (The "Freshness" Factor):** This is where most motels fail. A glowing review from 2022 is almost worthless in 2026. The algorithm weights new reviews more heavily. If you haven't received a review in two weeks, your "relevance" score drops, and so does your rank.
     
@@ -34,14 +34,14 @@ TripAdvisor’s algorithm is built on three specific metrics. If you lack even o
 **The "Management Response" Multiplier**
 ----------------------------------------
 
-Management interaction is no longer optional. While responding to a review doesn't _directly_ change the math of a 3-bubble rating, it heavily influences **recency and engagement signals.** Active engagement proves the property is under "Live Management." In our [motel management training course](https://www.motelcoach.com.au/motel-management-training-course), we teach that a professional response to a negative review is more powerful than a generic "thanks" to a positive one. It reduces the "first-stay friction" for potential guests who are looking for a reason _not_ to book you.
+Management interaction is no longer optional. While responding to a review doesn't _directly_ change the math of a 3-bubble rating, it heavily influences **recency and engagement signals.** Active engagement proves the property is under "Live Management." In our [motel management training course](/motel-management-training-course), we teach that a professional response to a negative review is more powerful than a generic "thanks" to a positive one. It reduces the "first-stay friction" for potential guests who are looking for a reason _not_ to book you.
 
 **The "SEO Factory" Trap**
 --------------------------
 
 There is a common misconception that displaying "Certificates of Excellence" or TripAdvisor widgets automatically boosts your rank. It doesn’t. These are "Trust Symbols" for humans, not ranking factors for the algorithm.
 
-The real "gaming of the system" is simply **Review Velocity.** You must build a system—integrated into your [motel consultancy](https://www.motelcoach.com.au/motel-consultancy) strategy—that asks every guest for a review at the moment of highest satisfaction (usually at checkout or via an automated follow-up).
+The real "gaming of the system" is simply **Review Velocity.** You must build a system—integrated into your [motel consultancy](/motel-consultancy) strategy—that asks every guest for a review at the moment of highest satisfaction (usually at checkout or via an automated follow-up).
 
 **TripAdvisor Popularity Index: Frequently Asked Questions**
 ------------------------------------------------------------

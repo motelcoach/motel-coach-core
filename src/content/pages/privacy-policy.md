@@ -245,5 +245,5 @@ The most recent version will always be displayed here on our website.
 For any privacy questions or concerns, please contact:
 
 **Motel Coach**  
-Website: [**www.motelcoach.com.au**](https://www.motelcoach.com.au)  
+Website: [**motelcoach.com.au**](https://motelcoach.com.au)  
 Email: **contact@motelcoach.com.au**
