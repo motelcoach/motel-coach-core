@@ -29,7 +29,7 @@ Page speed influences:
 • Guest trust  
 • Bounce rate
 
-Improving speed is one of the highest-return technical upgrades a [motel manager](/what-does-a-motel-manager-do) can make.
+Improving speed is one of the highest-return technical upgrades a [motel manager](/blog/what-does-a-motel-manager-do) can make.
 
 Understanding Core Web Vitals for Motels
 ----------------------------------------

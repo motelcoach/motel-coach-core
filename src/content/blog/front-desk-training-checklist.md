@@ -68,7 +68,7 @@ Getting organized at the start of your day is pivotal. Arrival preparation deter
 
 ## 3. Step-by-Step Guide to Checking in Guests
 
-A correct check-in prevents disputes later. **Do not skip verification to speed up lines.** Errors during check-in create longer problems later.
+A correct check-in prevents disputes later. **Do not skip verification to speed up the process.** Errors during check-in create longer problems later.
 
 1. **Welcome & Confirm:** Ask for their name or booking confirmation. Confirm their room type and guest count. This is a chance to quickly upsell them if their room is not suitable.
 2. **Collect Details:** Print the guest registration card. Collect at minimum: Mobile, Email, Company, and City of residence. 
@@ -76,6 +76,7 @@ A correct check-in prevents disputes later. **Do not skip verification to speed 
 4. **Property Briefing:** Go through key policies and have them sign the registration card. Highlight check-out times, Wi-Fi access, and organize when they would like their room serviced.
 5. **Local Hospitality:** Provide a few suggestions for dinner or local activities.
 
+Interested in learning more about motel operations, read the first chapter of our motel management book [The Essential Guide to Motel Management](/motel-management-book-free-chapter/) here.
 ---
 
 ## 4. Handling Phone Bookings & Cancellations
