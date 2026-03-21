@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://motelcoach.com.au/sitemap-index.xml

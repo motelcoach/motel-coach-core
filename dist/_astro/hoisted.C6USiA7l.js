@@ -1,1 +1,0 @@
-import"./hoisted.CUiPirMa.js";(function(){const e=document.getElementById("sticky-footer-cta"),t=document.getElementById("sticky-footer-sentinel");if(!e||!t)return;new IntersectionObserver(n=>{n[0].isIntersecting?e.classList.add("hidden"):e.classList.remove("hidden")},{root:null,threshold:0}).observe(t)})();
