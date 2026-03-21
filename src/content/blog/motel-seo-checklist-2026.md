@@ -55,7 +55,7 @@ Google now rolls out core updates focusing on content “helpfulness,” experti
 
 ### Google Business Profile Optimization _(Beginner)_
 
-Your Google Business Profile is the cornerstone of local SEO and [Marketing for your Motel](/motel-marketing) – think of it as your motel’s mini-website on Google Maps. **Difficulty:** Beginner (mostly form-filling and good hospitality sense). Start by claiming your profile (if you haven’t already) and verifying ownership. Then complete every section with accurate details:
+Your Google Business Profile is the cornerstone of local SEO and [marketing for your Motel](/motel-marketing) – think of it as your motel’s mini-website on Google Maps. **Difficulty:** Beginner (mostly form-filling and good hospitality sense). Start by claiming your profile (if you haven’t already) and verifying ownership. Then complete every section with accurate details:
 
 *   **Basic Info:** Double-check Name, Address, Phone, and Website URL for accuracy. These should exactly match what’s on your website (consistency is key). Choose the most specific category (e.g. “Motel,” “Hotel”) available.
     

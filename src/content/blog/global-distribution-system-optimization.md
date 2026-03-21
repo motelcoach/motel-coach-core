@@ -119,4 +119,4 @@ A well-optimised GDS profile helps:
 **Quarterly:** Full profile audit, agent outreach, marketing message refresh  
 **Annually:** RFP season prep, corporate/consortia rate review, photography overhaul
 
-Interested in learning more about GDS Optimization, [join our Motel Management Course today](/motel-management-training-course)[.](/learn-motel-mangement)
+Interested in learning more about GDS Optimization, [join our Motel Management Course today](/motel-management-training-course)

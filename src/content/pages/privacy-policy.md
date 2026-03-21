@@ -4,14 +4,6 @@ pubDate: Fri, 09 Jan 2026 02:44:14 +0000
 slug: privacy-policy
 ---
 
-Privacy Policy.
----------------
-
-.has-section-divider\[data-section-id="6837f1773b955e05f48bdd7a"\] { padding-bottom: var(--divider-height); z-index: var(--z-index); } .has-section-divider\[data-section-id="6837f1773b955e05f48bdd7a"\] .background-pause-button { bottom: calc(14px + var(--divider-height)); } .has-section-divider\[data-section-id="6837f1773b955e05f48bdd7a"\] .section-divider-svg-clip { display: none; } .has-section-divider\[data-section-id="6837f1773b955e05f48bdd7a"\].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) { padding-bottom: calc(var(--sqs-site-gutter) + var(--divider-height)); } .has-section-divider\[data-section-id="6837f1773b955e05f48bdd7a"\].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) .section-background { bottom: calc(var(--sqs-site-gutter) + var(--divider-height)); } .has-section-divider\[data-section-id="6837f1773b955e05f48bdd7a"\] .section-divider-block { height: var(--divider-height); } .has-section-divider\[data-section-id="6837f1773b955e05f48bdd7a"\] { padding-bottom: 2vw; } .has-section-divider\[data-section-id="6837f1773b955e05f48bdd7a"\].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) { padding-bottom: calc(var(--sqs-site-gutter) + 2vw); }
-
-**Privacy Policy**
-==================
-
 **Last updated: 24 November 2025**
 
 Motel Coach (“we”, “us”, “our”) is committed to protecting your personal information in accordance with the **Privacy Act 1988 (Cth)** and the **Australian Privacy Principles (APPs)**.  

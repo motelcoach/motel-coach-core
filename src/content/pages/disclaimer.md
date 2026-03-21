@@ -4,16 +4,8 @@ pubDate: Thu, 06 Nov 2025 06:05:54 +0000
 slug: disclaimer
 ---
 
-Disclaimer
-----------
-
-.has-section-divider\[data-section-id="6837f48d5a01005435a24b9a"\] { padding-bottom: var(--divider-height); z-index: var(--z-index); } .has-section-divider\[data-section-id="6837f48d5a01005435a24b9a"\] .background-pause-button { bottom: calc(14px + var(--divider-height)); } .has-section-divider\[data-section-id="6837f48d5a01005435a24b9a"\] .section-divider-svg-clip { display: none; } .has-section-divider\[data-section-id="6837f48d5a01005435a24b9a"\].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) { padding-bottom: calc(var(--sqs-site-gutter) + var(--divider-height)); } .has-section-divider\[data-section-id="6837f48d5a01005435a24b9a"\].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) .section-background { bottom: calc(var(--sqs-site-gutter) + var(--divider-height)); } .has-section-divider\[data-section-id="6837f48d5a01005435a24b9a"\] .section-divider-block { height: var(--divider-height); } .has-section-divider\[data-section-id="6837f48d5a01005435a24b9a"\] { padding-bottom: 2vw; } .has-section-divider\[data-section-id="6837f48d5a01005435a24b9a"\].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) { padding-bottom: calc(var(--sqs-site-gutter) + 2vw); }
-
-**Disclaimer**
---------------
-
 **Effective Date:** 29 May 2025  
-**Website:** [www.motelcoach.com](http://www.motelcoach.com)  
+**Website:** [www.motelcoach.com.au](/)  
 **Business Name:** Motel Coach
 
 ### **1\. General Information**

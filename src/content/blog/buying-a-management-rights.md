@@ -15,7 +15,7 @@ executiveSummary: "Buying a Management Rights can be rewarding, but it can also 
 
 Management Rights can look attractive from the outside: a business, a residence, and long-term income all wrapped into one. But as many operators discover too late, the reality can be very different if the structure, the people, or the agreements are wrong.
 
-Before we go any further—and before you assume we are a _Management Rights Specialist_—we’re not. Our speciality is [Motel Management Training](/motel-management-training-course) and [Consultancy Services](/improve-motel-occupancy).
+Before we go any further—and before you assume we are a _Management Rights Specialist_—we’re not. Our speciality is [Motel Management Training](/motel-management-training-course) and [Consultancy Services](/motel-consultancy).
 
 We intentionally leave Management Rights to people who have earned their experience in this space and understand the subtleties that can make all the difference. This guide is designed to give you **initial, practical insight** into Management Rights and, more importantly, to highlight why getting the _right_ advice early matters.
 

@@ -168,7 +168,7 @@ In many cases:
 
 *   Breakfast-only service
     
-*   Or [partnerships](//blog?category=Motel%20Marketing) with local venues
+*   Or partnerships with local venues
     
 
 are more profitable than full food operations.
@@ -258,13 +258,13 @@ Buying a motel involves financial risk and requires independent due diligence. B
 
 While every effort has been made to ensure the information is accurate and practical at the time of publication, **Motel Coach makes no representations or warranties** regarding the accuracy, completeness, or suitability of the information for any particular purpose.
 
-To the maximum extent permitted by law, [Motel Coach](/home) disclaims all liability for any loss, damage, or expense incurred as a result of reliance on the information provided.
+To the maximum extent permitted by law, [Motel Coach](/) disclaims all liability for any loss, damage, or expense incurred as a result of reliance on the information provided.
 
 Use of this content indicates your acceptance of this disclaimer.
 
 Learn More about Motel Management
 ---------------------------------
 
-What are the options for learning [Motel Management from Certificate & Diploma](/hospitality-diplomas-degrees-australia) to [Motel Management or Hospitality Degree Courses](/motel-management-australia).
+Motel Coach offers a few options for learning [Motel Management](/motel-management-training-course).
 
-Learn the computer system or [Motel Property Management System](/learn-guest-point-pms).
+If your weakness is the computer, have a look at our [Motel Property Management System Course](/learn-guest-point-pms) using GuestPoint PMS.

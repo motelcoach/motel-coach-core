@@ -21,5 +21,4 @@ We work with:
     
 *   Individuals preparing to purchase or manage a motel
     
-
 Submit your enquiry below and outline your current situation. We will respond with the most appropriate next step.

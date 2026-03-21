@@ -45,7 +45,7 @@ We do not specialize in large chain hotels. We specialize in **independent opera
 
 ## Our Clients
 We work with some of Australia's highest rated motels:
-* **Casa Nostra Motel Rockhampton:** We started our career in this motel and have worked with them on-going over the past several years [Casa Nostra Motel Rockhampton](https://www.https://www.casanostramotel.com.au/)
+* **Casa Nostra Motel Rockhampton:** We started our career in this motel and have worked with them on-going over the past several years [Casa Nostra Motel Rockhampton](https://www.casanostramotel.com.au/)
 
 * **Crossroads Eco Motel Port Augusta:** A high quality motel in Port Augusta [Crossroads Ecomotel](https://ecomotel.com.au/)
 
@@ -57,6 +57,7 @@ We work with some of Australia's highest rated motels:
 Our operational frameworks have been recognized and published by leading Australian accommodation authorities:
 * **Accom News:** Read our featured article on [How to win your first 21 days as a motel manager](https://www.accomnews.com.au/2026/02/how-to-win-your-first-21-days-as-a-motel-manager/)
 * **Accom News:** Read our featured article on [Op ed: A day in the life of a motel manager](https://www.accomnews.com.au/2026/03/op-ed-a-day-in-the-life-of-a-motel-manager/)
+* **Accom News:** Read our featured article on [Motel marketing fundamentals: Securing your online visibility](https://www.accomnews.com.au/2026/03/motel-marketing-fundamentals-securing-your-online-visibility/)
 
 We work with leading property management providers as partners
 

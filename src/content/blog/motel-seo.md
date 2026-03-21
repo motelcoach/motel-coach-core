@@ -9,7 +9,7 @@ executiveSummary: "Stop over-relying on OTAs. Master the 2026 Motel SEO framewor
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-blue-900 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-blue-800 m-0">
-Every booking captured through organic search or Google Maps costs you nothing in commission. The independent motels winning in 2026 are not spending more on ads — they are building three compounding SEO assets: a dominant Google Business Profile, a technically clean website with structured data, and content formatted for AI search engines. This guide gives you the exact framework across all three pillars. To audit your current digital distribution and implement these systems, engage our <a href="/motel-consultancy" class="text-blue-700 font-medium hover:underline">Motel Consultancy</a> or enrol in our <a href="/motel-management-training-course" class="text-blue-700 font-medium hover:underline">motel management training courses</a>.
+Every booking captured through organic search or Google Maps costs you nothing in commission. The independent motels winning in 2026 are not spending more on ads — they are building three compounding SEO assets: a dominant Google Business Profile, a technically clean website with structured data, and content formatted for AI search engines. This guide gives you the exact framework across all three pillars. To audit your current digital distribution and implement these systems. Want us to do it for you? <a href="/contact" class="text-blue-700 font-medium hover:underline">Contact us</a> or visit our <a href="/motel-consultancy" class="text-blue-700 font-medium hover:underline">Motel Consultancy</a>.
 </p>
 </div>
 

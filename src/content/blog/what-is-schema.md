@@ -15,7 +15,7 @@ Increase your direct booking conversion and search prominence by implementing Sc
 
 **Last Edited 15/01/2026.**
 
-What Is Schema? (In Plain English)and why is it important in [Motel Management](/motel-management) and [Motel Marketing](/motel-marketing)
+What Is Schema? (In Plain English)and why is it important in [Motel Management](/motel-management) and is a skill used by [Motel Marketers](/motel-marketing)
 
 If you’ve ever searched for a business on Google and seen things like star ratings, opening hours, price ranges, FAQs, or “check-in time” right in the search results — that’s not magic.
 
@@ -240,4 +240,4 @@ And in business, that’s what actually matters.
 
 > Getting your Schema correct is similar to good room photos - it works for you, and pays itself off every day your motel operates.
 
-Interested in learning more about Motel Management, [Learn more about our Motel Management Training here.](/motel-management-training-course) If your Motel is missing a lot of bookings because of incorrect setup, and you want additional support, talk to us about our [motel consultancy services](/motel-consultancy) or start with a [Free Motel Marketing Audit](/motel-marketing).
+Interested in learning more about Motel Management, [Learn more about our Motel Management Training here.](/motel-management-training-course) If your Motel is missing a lot of bookings because of incorrect setup, and you want additional support, talk to us about our [motel consultancy services](/motel-consultancy).

@@ -20,7 +20,7 @@ executiveSummary: "Stop paying the OTA Tax. Start learning marketing strategies 
 What’s Included in the Free Motel Marketing Audit
 -------------------------------------------------
 
-Our **Free Motel Marketing Audit** gives you a clear, practical breakdown of what’s working, what’s holding you back, and where you can make immediate improvements to [drive more bookings](/improve-motel-occupancy).
+Our **Free Motel Marketing Audit** gives you a clear, practical breakdown of what’s working, what’s holding you back, and where you can make immediate improvements to drive more bookings.
 
 No sales fluff. No generic advice. Just a straight-talking review based on how guests actually find and book motels today.
 
@@ -48,7 +48,7 @@ We analyse how effectively your website converts visitors into bookings:
 *   Missed opportunities to reduce OTA reliance
     
 
-### [Booking.com](//blog?category=Booking.com) Listing Review
+### Booking.com Listing Review
 
 Booking.com is a primary demand driver for most motels. We review:
 

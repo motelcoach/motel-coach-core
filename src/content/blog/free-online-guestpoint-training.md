@@ -9,7 +9,7 @@ executiveSummary: "GuestPoint PMS Training from a motel operations specialist."
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-<em>Reduce front-desk stress and check-in errors by mastering the technical workflows of your Property Management System. Success in motel management is impossible without a solid command of reservations, housekeeping allocation, and daily rollovers. By utilizing our free GuestPoint Training, you replace guesswork with a professional motel system approach that ensures data accuracy and guest satisfaction. To transition from a beginner to a confident operator, combine these lessons with our complete  <a href="/learn-guest-point-pms" class="text-[#4A554E] font-medium hover:underline">Learn GuestPoint PMS</a>, where you have access to the real PMS starting at just $89.</em>
+<em>Reduce front-desk stress and check-in errors by mastering the technical workflows of your Property Management System. Success in motel management is impossible without a solid command of reservations, housekeeping allocation, and daily rollovers. By utilizing our free GuestPoint Training, you replace guesswork with a professional motel system approach that ensures data accuracy and guest satisfaction. To transition from a beginner to a confident operator, combine these lessons with our complete <a href="/learn-guest-point-pms" class="text-[#4A554E] font-medium hover:underline">GuestPoint Training Course</a>, where you have access to the real PMS starting at just $89.</em>
 </p>
 </div>
 
@@ -24,7 +24,7 @@ Let’s dive in 👇
 
 1\. Creating a Reservation
 
-Learn how to create a reservation in [GuestPoint](/learn-guest-point-pms) quickly and correctly. In this lesson, I cover how to choose room types, input guest details, set pricing, and handle special requests. Whether it’s a direct booking or an OTA reservation, understanding how to manually create bookings ensures smoother check-ins and accurate room allocation.
+Learn how to create a reservation in GuestPoint quickly and correctly. In this lesson, I cover how to choose room types, input guest details, set pricing, and handle special requests. Whether it’s a direct booking or an OTA reservation, understanding how to manually create bookings ensures smoother check-ins and accurate room allocation.
 
 2\. Managing a Reservation
 
