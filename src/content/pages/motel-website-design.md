@@ -1,7 +1,7 @@
 ---
 title: "Motel Websites"
 pubDate: Sun, 08 Mar 2026 03:27:54 +0000
-slug: motel-websites-design
+slug: motel-website-design
 ---
 
 **Stop Donating 15% to Booking.com.**

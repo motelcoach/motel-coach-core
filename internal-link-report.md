@@ -39,7 +39,7 @@ Pages with 0 or 1 incoming links (Search engines struggle to find these):
 - **http://localhost:4321/blog/hiring-housekeepers-as-contractors** (Incoming Links: 1)
 - **http://localhost:4321/blog/motel-management-basics** (Incoming Links: 1)
 - **http://localhost:4321/motel-website-design** (Incoming Links: 1)
-- **http://localhost:4321/motel-websites-design** (Incoming Links: 1)
+- **http://localhost:4321/motel-website-design** (Incoming Links: 1)
 - **http://localhost:4321/home** (Incoming Links: 1)
 - **http://localhost:4321/hospitality-diplomas-degrees-australia** (Incoming Links: 1)
 - **http://localhost:4321/motel-management-australia** (Incoming Links: 1)

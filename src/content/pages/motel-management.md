@@ -82,7 +82,7 @@ If you have recently purchased a property, the first 90 days are critical. You a
 ### Your Priority Sequence:
 1. **Stability:** Implement [management training](https://www.motelcoach.com.au/motel-management-training-course) for all staff to ensure a baseline of service.
 2. **Audit:** Review the last 12 months of data to find revenue leaks.
-3. **Optimization:** Update the [website](/motel-websites-design) and OTA content for immediate "quick win" visibility.
+3. **Optimization:** Update the [website](/motel-website-design) and OTA content for immediate "quick win" visibility.
 
 For those requiring an external perspective, our [motel consultancy](https://www.motelcoach.com.au/motel-consultancy) services provide a deep-dive audit into your specific operational hurdles.
 
