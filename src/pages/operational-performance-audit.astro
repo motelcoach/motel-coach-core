@@ -109,7 +109,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           Provide a few details below. We&apos;ll review your current operation and respond with the next best step for a confidential performance audit.
         </p>
 
-        <form class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+        <div id="perf-audit-success" class="hidden py-10 text-center">
+          <p class="text-2xl font-semibold text-stone-900 mb-2">Request received.</p>
+          <p class="text-stone-500">We&apos;ll review your operation and be in touch with next steps shortly.</p>
+        </div>
+        <form id="perf-audit-form" class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
           <input type="hidden" name="source_page" value="Operational Performance Audit" />
           <input type="hidden" name="form_type" value="performance-audit" />
           <div class="grid md:grid-cols-2 gap-4">
@@ -210,6 +214,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
+
+<script>
+  document.getElementById('perf-audit-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const original = btn.textContent.trim();
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch(this.action, { method: 'POST', body: new URLSearchParams(new FormData(this)) });
+      if (!res.ok) throw new Error();
+      this.classList.add('hidden');
+      document.getElementById('perf-audit-success').classList.remove('hidden');
+    } catch {
+      btn.disabled = false;
+      btn.textContent = original;
+      alert('Something went wrong. Please try again.');
+    }
+  });
+</script>
 
   <!-- 4. Benjamin Douglas Bio Snippet -->
   <section class="bg-white py-20">

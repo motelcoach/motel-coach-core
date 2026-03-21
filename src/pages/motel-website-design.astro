@@ -409,7 +409,12 @@ const jsonLd = {
           </p>
         </div>
 
+        <div id="website-audit-success" class="hidden bg-[#F9F9F8] rounded-2xl border border-stone-200 p-10 text-center">
+          <p class="text-2xl font-semibold text-stone-900 mb-2">Audit request received.</p>
+          <p class="text-stone-500">We&apos;ll assess your site and send you a priority action list shortly.</p>
+        </div>
         <form
+          id="website-audit-form"
           action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/"
           method="POST"
           class="bg-[#F9F9F8] rounded-2xl border border-stone-200 p-8 space-y-4"
@@ -554,4 +559,23 @@ const jsonLd = {
     </div>
   </section>
 
+<script>
+  document.getElementById('website-audit-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const original = btn.textContent.trim();
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch(this.action, { method: 'POST', body: new URLSearchParams(new FormData(this)) });
+      if (!res.ok) throw new Error();
+      this.classList.add('hidden');
+      document.getElementById('website-audit-success').classList.remove('hidden');
+    } catch {
+      btn.disabled = false;
+      btn.textContent = original;
+      alert('Something went wrong. Please try again.');
+    }
+  });
+</script>
 </BaseLayout>

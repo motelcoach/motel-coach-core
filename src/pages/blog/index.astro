@@ -23,7 +23,7 @@ const fullCanonical = new URL(Astro.url.href, Astro.site ?? Astro.url.origin);
       <p class="mt-4 text-lg text-stone-500 max-w-2xl leading-relaxed">
         Actionable strategies, checklists, and guides for independent motel operators.
       </p>
-      <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" aria-label="Subscribe to blog updates">
+      <form id="blog-subscribe-form" class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" aria-label="Subscribe to blog updates">
         <input type="hidden" name="source_page" value="Blog Index" />
         <input type="hidden" name="form_type" value="newsletter" />
         <label for="blog-email" class="sr-only">Email address</label>
@@ -86,6 +86,24 @@ const fullCanonical = new URL(Astro.url.href, Astro.site ?? Astro.url.origin);
 </BaseLayout>
 
 <script>
+  document.getElementById('blog-subscribe-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const original = btn.textContent.trim();
+    btn.disabled = true;
+    btn.textContent = 'Subscribing…';
+    try {
+      const res = await fetch(this.action, { method: 'POST', body: new URLSearchParams(new FormData(this)) });
+      if (!res.ok) throw new Error();
+      btn.textContent = 'Subscribed!';
+      this.querySelector('input[type="email"]').value = '';
+    } catch {
+      btn.disabled = false;
+      btn.textContent = original;
+      alert('Something went wrong. Please try again.');
+    }
+  });
+
   document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.filter-btn');
     const cards = document.querySelectorAll('.blog-card');

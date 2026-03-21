@@ -65,7 +65,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </div>
 
-      <form class="mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" data-reveal="up">
+      <div id="marketing-waitlist-success" class="hidden mt-8 max-w-xl mx-auto text-center py-6 bg-[#4A554E]/10 rounded-2xl">
+        <p class="font-semibold text-stone-900 mb-1">You&apos;re on the list!</p>
+        <p class="text-sm text-stone-500">We&apos;ll email you first when enrollment opens.</p>
+      </div>
+      <form id="marketing-waitlist-form" class="mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" data-reveal="up">
         <input type="hidden" name="source_page" value="Motel Marketing Course Waitlist" />
         <input type="hidden" name="form_type" value="waitlist" />
         <input type="hidden" name="waitlist" value="motel-marketing-course" />
@@ -86,5 +90,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </p>
     </div>
   </section>
+<script>
+  document.getElementById('marketing-waitlist-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const original = btn.textContent.trim();
+    btn.disabled = true;
+    btn.textContent = 'Joining…';
+    try {
+      const res = await fetch(this.action, { method: 'POST', body: new URLSearchParams(new FormData(this)) });
+      if (!res.ok) throw new Error();
+      this.classList.add('hidden');
+      document.getElementById('marketing-waitlist-success').classList.remove('hidden');
+    } catch {
+      btn.disabled = false;
+      btn.textContent = original;
+      alert('Something went wrong. Please try again.');
+    }
+  });
+</script>
 </BaseLayout>
 

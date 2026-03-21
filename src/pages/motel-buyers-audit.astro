@@ -114,7 +114,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p class="text-stone-500 leading-relaxed mb-8">
           Provide a few details below and we&apos;ll schedule a confidential, practitioner-led review of your target property before you finalise your contract.
         </p>
-        <form class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+        <div id="buyers-audit-success" class="hidden py-10 text-center">
+          <p class="text-2xl font-semibold text-stone-900 mb-2">Request received.</p>
+          <p class="text-stone-500">We&apos;ll review your target property details and be in touch shortly.</p>
+        </div>
+        <form id="buyers-audit-form" class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
           <input type="hidden" name="source_page" value="Motel Buyers Audit" />
           <input type="hidden" name="form_type" value="buyers-audit" />
           <div class="grid md:grid-cols-2 gap-4">
@@ -213,6 +217,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
+
+<script>
+  document.getElementById('buyers-audit-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const original = btn.textContent.trim();
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch(this.action, { method: 'POST', body: new URLSearchParams(new FormData(this)) });
+      if (!res.ok) throw new Error();
+      this.classList.add('hidden');
+      document.getElementById('buyers-audit-success').classList.remove('hidden');
+    } catch {
+      btn.disabled = false;
+      btn.textContent = original;
+      alert('Something went wrong. Please try again.');
+    }
+  });
+</script>
 
   <!-- 4. Benjamin Douglas Bio Snippet -->
   <section class="bg-white py-20">

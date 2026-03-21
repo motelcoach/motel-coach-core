@@ -438,7 +438,11 @@ const entry = await getEntry('pages', 'motel-management-training-course');
       <p class="text-stone-500 leading-relaxed mb-6">
         By submitting this form, you’ll receive the Motel Management Guide you requested, along with a short series of follow-up emails to help you understand motel management and your next steps. You can unsubscribe at any time.
       </p>
-      <form class="space-y-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+      <div id="course-guide-success" class="hidden py-4">
+        <p class="font-semibold text-stone-900 mb-1">Guide on its way!</p>
+        <p class="text-sm text-stone-500">Check your inbox shortly.</p>
+      </div>
+      <form id="course-guide-form" class="space-y-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
         <input type="hidden" name="source_page" value="Motel Management Training Course" />
         <input type="hidden" name="form_type" value="guide-download" />
         <input
@@ -457,5 +461,25 @@ const entry = await getEntry('pages', 'motel-management-training-course');
       </form>
     </div>
   </section>
+
+<script>
+  document.getElementById('course-guide-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const original = btn.textContent.trim();
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch(this.action, { method: 'POST', body: new URLSearchParams(new FormData(this)) });
+      if (!res.ok) throw new Error();
+      this.classList.add('hidden');
+      document.getElementById('course-guide-success').classList.remove('hidden');
+    } catch {
+      btn.disabled = false;
+      btn.textContent = original;
+      alert('Something went wrong. Please try again.');
+    }
+  });
+</script>
 </BaseLayout>
 
