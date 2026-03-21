@@ -1,4 +1,7 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "astro",
   "redirects": [
     { "source": "/hospitality-coaching",                          "destination": "/motel-consultancy",                                "permanent": true },
     { "source": "/hospitality-courses-australia",                 "destination": "/motel-management-training-course",                 "permanent": true },
