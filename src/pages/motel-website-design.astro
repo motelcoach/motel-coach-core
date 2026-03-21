@@ -410,12 +410,13 @@ const jsonLd = {
         </div>
 
         <form
-          action="/contact"
-          method="get"
+          action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/"
+          method="POST"
           class="bg-[#F9F9F8] rounded-2xl border border-stone-200 p-8 space-y-4"
           aria-label="Request a motel website audit"
         >
-          <input type="hidden" name="topic" value="website-audit" />
+          <input type="hidden" name="source_page" value="Motel Website Design" />
+          <input type="hidden" name="form_type" value="website-audit" />
 
           <div class="grid gap-4 sm:grid-cols-2">
             <div>
@@ -434,7 +435,7 @@ const jsonLd = {
               <input
                 id="audit-motel"
                 type="text"
-                name="motel"
+                name="motel_name"
                 required
                 placeholder="Blue Hills Motor Inn"
                 class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent text-sm"

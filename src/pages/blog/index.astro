@@ -23,7 +23,9 @@ const fullCanonical = new URL(Astro.url.href, Astro.site ?? Astro.url.origin);
       <p class="mt-4 text-lg text-stone-500 max-w-2xl leading-relaxed">
         Actionable strategies, checklists, and guides for independent motel operators.
       </p>
-      <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md" action="#" method="post" aria-label="Subscribe to blog updates">
+      <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" aria-label="Subscribe to blog updates">
+        <input type="hidden" name="source_page" value="Blog Index" />
+        <input type="hidden" name="form_type" value="newsletter" />
         <label for="blog-email" class="sr-only">Email address</label>
         <input
           id="blog-email"

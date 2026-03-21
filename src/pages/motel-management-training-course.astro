@@ -438,7 +438,9 @@ const entry = await getEntry('pages', 'motel-management-training-course');
       <p class="text-stone-500 leading-relaxed mb-6">
         By submitting this form, you’ll receive the Motel Management Guide you requested, along with a short series of follow-up emails to help you understand motel management and your next steps. You can unsubscribe at any time.
       </p>
-      <form class="space-y-3" action="/contact" method="get">
+      <form class="space-y-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+        <input type="hidden" name="source_page" value="Motel Management Training Course" />
+        <input type="hidden" name="form_type" value="guide-download" />
         <input
           type="email"
           name="email"

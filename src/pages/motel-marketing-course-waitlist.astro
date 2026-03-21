@@ -65,8 +65,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </div>
 
-      <form class="mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="/contact" method="get" data-reveal="up">
-        <input type="hidden" name="topic" value="training" />
+      <form class="mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" data-reveal="up">
+        <input type="hidden" name="source_page" value="Motel Marketing Course Waitlist" />
+        <input type="hidden" name="form_type" value="waitlist" />
         <input type="hidden" name="waitlist" value="motel-marketing-course" />
         <input
           type="email"

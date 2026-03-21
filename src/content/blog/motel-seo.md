@@ -73,7 +73,8 @@ Review velocity is also the fastest way to close the gap on a competitor who has
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the Free Motel Management Guide</h2>
   <p class="text-stone-600 text-sm mb-6">Get the exact blueprints and SEO checklists we use to optimize property visibility.</p>
-  <form action="/contact" method="get" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/download/motel-management-guide">
+  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/download/motel-management-guide">
+    <input type="hidden" name="source_page" value="Blog: Motel SEO" />
     <input type="hidden" name="topic" value="guide" />
     <input type="hidden" name="message" value="Please send me the Motel Management Guide." />
     <label for="seo-guide-email" class="sr-only">Email address</label>

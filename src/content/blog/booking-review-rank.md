@@ -16,7 +16,8 @@ executiveSummary: "Master the Booking.com search and review algorithms. Learn ho
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download our Booking.com Optimization Checklist</h2>
   <p class="text-stone-600 text-sm mb-6">Sign up to receive our Booking.com Checklist and other <a href="/motel-marketing" class="text-[#4A554E] font-medium hover:underline">Motel Marketing</a> resources direct to your inbox.</p>
-  <form action="/contact" method="get" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/download/booking-com-checklist">
+  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/download/booking-com-checklist">
+    <input type="hidden" name="source_page" value="Blog: Booking.com Rank" />
     <input type="hidden" name="topic" value="checklist" />
     <input type="hidden" name="message" value="Please send me the Booking.com Checklist." />
     <label for="bookingcom-checklist-email" class="sr-only">Email address</label>

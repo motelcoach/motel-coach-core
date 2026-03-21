@@ -24,7 +24,8 @@ const prefill = {
         Tell us a little about your motel, your role, and what you&apos;re trying to solve. We&apos;ll review your message and respond with the most appropriate next step — whether that&apos;s an audit, training, or a strategic call.
       </p>
       <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-8 md:p-10">
-        <form class="space-y-5">
+        <form class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+          <input type="hidden" name="source_page" value="Contact Page" />
           {prefill.waitlist && (
             <div class="rounded-xl border border-stone-200 bg-[#F9F9F8] p-4">
               <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">

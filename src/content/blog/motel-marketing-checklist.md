@@ -28,9 +28,12 @@ These channels directly intercept guests who are actively searching to book. The
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the 2026 Motel Marketing Checklist</h2>
   <p class="text-stone-600 text-sm mb-6">Enter your email to receive the full spreadsheet checklist plus practical <a href="/motel-marketing" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> and <a href="/motel-management" class="text-[#4A554E] font-medium hover:underline">motel management</a> resources direct to your inbox.</p>
   <form
+    action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/"
+    method="POST"
     class="global-download-form flex flex-col sm:flex-row gap-3"
     data-download="https://docs.google.com/spreadsheets/d/1bEKkymOYYejWDxpuSTozMt4Q0s9LDYzhaKVjhfFmrPo/edit?usp=sharing"
   >
+    <input type="hidden" name="source_page" value="Blog: Motel Marketing Checklist" />
     <label for="dl-email-marketing-checklist" class="sr-only">Email address</label>
     <input
       id="dl-email-marketing-checklist"

@@ -339,25 +339,30 @@ const resolvedCanonical = canonicalURL ?? new URL(Astro.url.pathname, Astro.site
           var emailInput  = form.querySelector('input[type="email"]');
           var submitBtn   = form.querySelector('button[type="submit"]');
           var email       = emailInput ? emailInput.value.trim() : '';
+          var sourcePage  = (form.querySelector('input[name="source_page"]') || {}).value || window.location.pathname;
 
-          if (!email || !downloadUrl) return;
+          if (!email) return;
 
           if (submitBtn) {
             submitBtn.disabled    = true;
             submitBtn.textContent = 'Sending\u2026';
           }
 
-          fetch('/api/subscribe', {
-            method:  'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body:    JSON.stringify({ email: email, download: downloadUrl }),
+          var formData = new FormData();
+          formData.append('email', email);
+          formData.append('source_page', sourcePage);
+          formData.append('form_type', 'guide-download');
+          if (downloadUrl) formData.append('download_url', downloadUrl);
+
+          fetch('https://hooks.zapier.com/hooks/catch/26131104/upwyerc/', {
+            method: 'POST',
+            body:   formData,
           })
-            .then(function (res) {
-              if (!res.ok) throw new Error('non-2xx');
-              window.location.href = downloadUrl;
+            .then(function () {
+              if (downloadUrl) window.location.href = downloadUrl;
             })
             .catch(function () {
-              window.location.href = downloadUrl;
+              if (downloadUrl) window.location.href = downloadUrl;
             })
             .finally(function () {
               if (submitBtn) {
