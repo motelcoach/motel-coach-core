@@ -6,9 +6,6 @@ category: "Motel Management"
 executiveSummary: "What a motel manager actually does day-to-day: the five core responsibilities, skills required, lifestyle realities, and how to prepare before applying for your first role."
 ---
 
-Thinking About Becoming a Motel Manager? **Read This First**
-============================================================
-
 The Reality Most People Don't Expect
 ------------------------------------
 
