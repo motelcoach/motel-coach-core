@@ -267,10 +267,19 @@ Download the introductory guide below or read our book: [The Essential Guide to 
   <p class="text-stone-600 text-sm mb-6">Get the exact blueprints and operational templates to help you master your first year as a manager.</p>
   <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/download/motel-management-guide">
     <input type="hidden" name="source_page" value="Blog: What Does a Motel Manager Do" />
+    <input type="hidden" name="form_type" value="guide-download" />
     <input type="hidden" name="topic" value="guide" />
     <input type="hidden" name="message" value="Please send me the Motel Management Guide." />
     <label for="manager-guide-email" class="sr-only">Email address</label>
     <input id="manager-guide-email" type="email" name="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
+    <label for="manager-guide-exp" class="sr-only">Experience Level</label>
+    <select id="manager-guide-exp" name="motel_experience" required class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent">
+      <option value="" disabled selected>Select Experience Level</option>
+      <option value="No Experience">No Experience</option>
+      <option value="Some Experience">Some Experience</option>
+      <option value="Experienced">Experienced</option>
+      <option value="Motel Owner">Motel Owner</option>
+    </select>
     <button type="submit" class="px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">Get the Guide</button>
   </form>
 </div>

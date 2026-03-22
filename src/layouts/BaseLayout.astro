@@ -348,11 +348,16 @@ const resolvedCanonical = canonicalURL ?? new URL(Astro.url.pathname, Astro.site
             submitBtn.textContent = 'Sending\u2026';
           }
 
-          var formData = new FormData();
-          formData.append('email', email);
-          formData.append('source_page', sourcePage);
-          formData.append('form_type', 'guide-download');
-          if (downloadUrl) formData.append('download_url', downloadUrl);
+          var formData = new FormData(form);
+          if (!formData.has('source_page')) {
+            formData.append('source_page', sourcePage);
+          }
+          if (!formData.has('form_type')) {
+            formData.append('form_type', 'guide-download');
+          }
+          if (downloadUrl && !formData.has('download_url')) {
+            formData.append('download_url', downloadUrl);
+          }
 
           fetch('https://hooks.zapier.com/hooks/catch/26131104/upwyerc/', {
             method: 'POST',

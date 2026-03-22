@@ -30,6 +30,7 @@ const prefill = {
         </div>
         <form id="contact-form" class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
           <input type="hidden" name="source_page" value="Contact Page" />
+          <input type="hidden" name="form_type" value="general-contact" />
           {prefill.waitlist && (
             <div class="rounded-xl border border-stone-200 bg-[#F9F9F8] p-4">
               <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
