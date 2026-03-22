@@ -255,14 +255,3 @@ This means:
 The compound effect of this framework is significant. A motel that ranks in the Google Map Pack, has structured Schema data triggering rich results, appears in AI search summaries, and converts that traffic directly rather than through an OTA is operating at a fundamentally different margin than one relying entirely on OTA commission.
 
 Implement each pillar sequentially, audit against the [2026 Motel Marketing Checklist](/blog/motel-marketing-checklist), and measure progress monthly in Google Search Console and Google Business Profile Insights.
-
----
-
-<div class="bg-[#4A554E] text-white rounded-2xl p-10 my-16 text-center max-w-4xl mx-auto shadow-lg">
-  <h2 class="text-3xl font-bold mb-4">Ready to Master Motel Operations?</h2>
-  <p class="text-stone-200 mb-8 max-w-2xl mx-auto text-lg">Stop guessing and start yielding. Get the definitive 190+ page manual on Australian motel management, packed with hundreds of operational templates.</p>
-  <div class="flex flex-col sm:flex-row justify-center gap-4">
-    <a href="/motel-management-book" class="px-8 py-3 bg-white text-[#4A554E] font-bold rounded-lg hover:bg-stone-100 transition-colors">Buy the Book</a>
-    <a href="/motel-management-training-course" class="px-8 py-3 bg-transparent border border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">View Training Courses</a>
-  </div>
-</div>
