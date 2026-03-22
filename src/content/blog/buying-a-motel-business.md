@@ -261,11 +261,11 @@ Enter your email to receive a practical, step-by-step checklist covering:
       <div class="space-y-3">
         <label class="flex items-start gap-3 cursor-pointer">
           <input type="radio" name="offer_tier" value="free" checked class="mt-1 text-[#4A554E] focus:ring-[#4A554E]" />
-          <span class="text-sm text-stone-700"><strong>Option A (Free):</strong> Send me the Pre-Purchase Checklist (Lead Magnet).</span>
+          <span class="text-sm text-stone-700"><strong>Option A (Free):</strong> Send me the Pre-Purchase Checklist.</span>
         </label>
         <label class="flex items-start gap-3 cursor-pointer">
           <input type="radio" name="offer_tier" value="paid" class="mt-1 text-[#4A554E] focus:ring-[#4A554E]" />
-          <span class="text-sm text-stone-700"><strong>Option B ($149):</strong> I want the 30-Min Strategy Call & Document Review. (We will email you a payment link).</span>
+          <span class="text-sm text-stone-700"><strong>Option B ($149):</strong> I want the 30-Min Strategy Call & Document Review.</span>
         </label>
       </div>
     </div>

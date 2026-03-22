@@ -217,11 +217,3 @@ Management Rights can also become a long-term source of stress if:
 Education and specialist advice upfront can save years of frustration later.
 
 If you’re considering Management Rights, make sure your advice comes from people who understand **both the numbers and the lived reality** of operating inside a body corporate environment.
-
-<div class="bg-stone-50 border border-stone-200 rounded-2xl p-8 my-10">
-  <h2 class="text-xl font-semibold text-stone-900 mb-3 !mt-0">Expert Management Rights Advice</h2>
-  <p class="text-stone-600 text-sm mb-6">Buying management rights requires specialist legal and financial due diligence. We recommend speaking with our trusted partners who specialize in the Australian Management Rights sector.</p>
-  <a href="/contact" class="inline-block px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors">
-    Inquire with our Management Rights Specialist &rarr;
-  </a>
-</div>

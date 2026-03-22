@@ -93,11 +93,11 @@ Review velocity is also the fastest way to close the gap on a competitor who has
       <div class="space-y-3">
         <label class="flex items-start gap-3 cursor-pointer">
           <input type="radio" name="offer_tier" value="free" checked class="mt-1 text-[#4A554E] focus:ring-[#4A554E]" />
-          <span class="text-sm text-stone-700"><strong>Option A (Free):</strong> Send me the Automated Speed & SEO Report.</span>
+          <span class="text-sm text-stone-700"><strong>Option A (Free):</strong> Send me a Quick SEO and Speed Summary of my Website</span>
         </label>
         <label class="flex items-start gap-3 cursor-pointer">
           <input type="radio" name="offer_tier" value="paid" class="mt-1 text-[#4A554E] focus:ring-[#4A554E]" />
-          <span class="text-sm text-stone-700"><strong>Option B ($99):</strong> I want the Expert Video Audit & 12-Month SEO Roadmap. (We will email you a payment link).</span>
+          <span class="text-sm text-stone-700"><strong>Option B ($99):</strong> Full Performance Audit & 30-Minute Execution Call.</span>
         </label>
       </div>
     </div>
