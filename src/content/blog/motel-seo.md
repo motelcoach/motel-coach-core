@@ -76,7 +76,6 @@ Review velocity is also the fastest way to close the gap on a competitor who has
   <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4">
     <input type="hidden" name="source_page" value="Blog: Motel SEO" />
     <input type="hidden" name="form_type" value="website-audit" />
-    
     <div class="flex flex-col sm:flex-row gap-3">
       <label for="seo-audit-email" class="sr-only">Email address</label>
       <input id="seo-audit-email" type="email" name="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
@@ -89,7 +88,6 @@ Review velocity is also the fastest way to close the gap on a competitor who has
         <option value="Motel Owner">Motel Owner</option>
       </select>
     </div>
-
     <div class="bg-white p-4 rounded-lg border border-stone-200 mt-2">
       <p class="text-sm font-semibold text-stone-900 mb-3">Select your option:</p>
       <div class="space-y-3">
@@ -103,7 +101,6 @@ Review velocity is also the fastest way to close the gap on a competitor who has
         </label>
       </div>
     </div>
-
     <button type="submit" class="w-full px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">
       Get My Audit
     </button>

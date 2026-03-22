@@ -236,9 +236,7 @@ Enter your email to receive a practical, step-by-step checklist covering:
 *   Physical inspection points
     
 *   Cash reserve planning
-    
 *   Red flags to watch for
-    
 
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Pre-Purchase Acquisition Audit</h2>
@@ -246,7 +244,6 @@ Enter your email to receive a practical, step-by-step checklist covering:
   <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4">
     <input type="hidden" name="source_page" value="Blog: Buying a Motel Business" />
     <input type="hidden" name="form_type" value="acquisition-audit" />
-    
     <div class="flex flex-col sm:flex-row gap-3">
       <label for="acq-email" class="sr-only">Email address</label>
       <input id="acq-email" type="email" name="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
@@ -259,7 +256,6 @@ Enter your email to receive a practical, step-by-step checklist covering:
         <option value="Motel Owner">Motel Owner</option>
       </select>
     </div>
-
     <div class="bg-white p-4 rounded-lg border border-stone-200 mt-2">
       <p class="text-sm font-semibold text-stone-900 mb-3">Select your option:</p>
       <div class="space-y-3">
@@ -273,12 +269,13 @@ Enter your email to receive a practical, step-by-step checklist covering:
         </label>
       </div>
     </div>
-
     <button type="submit" class="w-full px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">
       Get Started
     </button>
   </form>
 </div>
+
+---
 
 Final Thought
 -------------
