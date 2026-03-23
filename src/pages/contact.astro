@@ -163,6 +163,35 @@ const prefill = {
     </div>
   </section>
 <script>
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const topic = params.get('topic');
+    const context = params.get('context');
+
+    if (topic && topic.toLowerCase() === 'consultancy') {
+      const topicSelect = document.getElementById('topic');
+      if (topicSelect) topicSelect.value = 'consultancy';
+    }
+
+    if (context) {
+      const messageTextarea = document.getElementById('message');
+      if (messageTextarea && !messageTextarea.value) {
+        messageTextarea.value = context;
+      }
+
+      if (context.includes('Strategy Session')) {
+        const h1 = document.querySelector('h1');
+        if (h1) h1.textContent = 'Book Your Free Strategy Session';
+
+        const subhead = document.querySelector('h1 + p');
+        if (subhead) subhead.textContent = 'Tell me a bit about your property below to get started.';
+
+        const formType = document.querySelector('input[name="form_type"]');
+        if (formType) formType.value = 'strategy-session';
+      }
+    }
+  })();
+
   document.getElementById('contact-form').addEventListener('submit', async function (e) {
     e.preventDefault();
     const btn = this.querySelector('button[type="submit"]');
