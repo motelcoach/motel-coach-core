@@ -80,18 +80,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           placeholder="you@example.com"
           class="flex-1 px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
         />
-        <label for="revenue-waitlist-exp" class="sr-only">Experience Level</label>
+        <label for="revenue-waitlist-type" class="sr-only">Operator Type</label>
         <select
-          id="revenue-waitlist-exp"
-          name="motel_experience"
+          id="revenue-waitlist-type"
+          name="operator_type"
           required
           class="flex-1 px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
         >
-          <option value="" disabled selected>Select Experience Level</option>
-          <option value="No Experience">No Experience</option>
-          <option value="Some Experience">Some Experience</option>
-          <option value="Experienced">Experienced</option>
-          <option value="Motel Owner">Motel Owner</option>
+          <option value="" disabled selected>Select your profile...</option>
+          <option value="I'm an Owner/Operator (Generalist)">I'm an Owner/Operator (Generalist)</option>
+          <option value="I'm New to the Industry / Buying">I'm New to the Industry / Buying</option>
+          <option value="I'm a Corporate Pro / Specialist">I'm a Corporate Pro / Specialist</option>
         </select>
         <button type="submit" class="px-6 py-3 rounded-lg bg-[#4A554E] text-white text-sm font-medium shadow-sm hover:bg-[#3d4640] hover:shadow-lg transition">
           Join waitlist
@@ -100,6 +99,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <p class="mt-4 text-center text-xs text-stone-400" data-reveal="fade">
         Join other Australian operators improving their yield and channel mix.
+      </p>
+      <p class="mt-6 text-center text-xs text-stone-500 max-w-lg mx-auto bg-stone-50 p-4 rounded-lg border border-stone-100" data-reveal="fade">
+        <strong>Note:</strong> These courses are designed for independent owners and general managers. If you are a specialized Corporate RM or Marketing Pro, this content may be too foundational for your needs.
       </p>
     </div>
   </section>
@@ -111,8 +113,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     btn.disabled = true;
     btn.textContent = 'Joining…';
     try {
-      const res = await fetch(this.action, { method: 'POST', body: new URLSearchParams(new FormData(this)) });
-      if (!res.ok) throw new Error();
+      await fetch(this.action, { 
+        method: 'POST', 
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams(new FormData(this)).toString() 
+      });
       this.classList.add('hidden');
       document.getElementById('revenue-waitlist-success').classList.remove('hidden');
     } catch {
