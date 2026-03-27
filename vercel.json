@@ -1,19 +1,6 @@
 {
-  "redirects": [
-    { 
-      "source": "/motel-management-blog/optimize-bookingdotcom-for-more-bookings/", 
-      "destination": "/blog/booking-review-rank/", 
-      "permanent": true 
-    },
-    { 
-      "source": "/motel-management-blog/optimize-bookingdotcom-for-more-bookings", 
-      "destination": "/blog/booking-review-rank/", 
-      "permanent": true 
-    },
-    { 
-      "source": "/home", 
-      "destination": "https://google.com", 
-      "permanent": false 
-    }
-  ]
+  "trailingSlash": true,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "astro"
 }
