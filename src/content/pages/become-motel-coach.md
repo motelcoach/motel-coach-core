@@ -4,7 +4,7 @@ pubDate: Wed, 11 Feb 2026 23:56:15 +0000
 slug: become-motel-coach
 ---
 
-[A man in a brown blazer and light blue shirt is giving a presentation about the check-in process to four people sitting in chairs. The presentation slide shows icons of a person, a key, and the word "ROOM." The setting is a room with cleaning supplies on a cart and a reception desk.](/images/legacy/Become-Motel-Instructor.png)
+[A man in a brown blazer and light blue shirt is giving a presentation about the check-in process to four people sitting in chairs. The presentation slide shows icons of a person, a key, and the word "ROOM." The setting is a room with cleaning supplies on a cart and a reception desk.](/images/legacy/Become-Motel-Instructor.webp)
 
 **Become a Motel Coach**
 ------------------------
