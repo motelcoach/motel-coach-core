@@ -1,33 +1,19 @@
 {
-  "trailingSlash": false,
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "astro",
   "redirects": [
-    { "source": "/home", "destination": "/", "permanent": true },
-    { "source": "/home/", "destination": "/", "permanent": true },
-    { "source": "/contact-1", "destination": "/contact/", "permanent": true },
-    { "source": "/contact-1/", "destination": "/contact/", "permanent": true },
-    { "source": "/motel-websites-design", "destination": "/motel-website-design/", "permanent": true },
-    { "source": "/motel-websites-design/", "destination": "/motel-website-design/", "permanent": true },
-    { "source": "/blog/how-tripadvisor-rankings-calculated-67c6s", "destination": "/blog/how-tripadvisor-rankings-calculated/", "permanent": true },
-    { "source": "/blog/how-tripadvisor-rankings-calculated-67c6s/", "destination": "/blog/how-tripadvisor-rankings-calculated/", "permanent": true },
-    { "source": "/motel-management-blog/optimize-bookingdotcom-for-more-bookings", "destination": "/blog/booking-review-rank/", "permanent": true },
-    { "source": "/motel-management-blog/optimize-bookingdotcom-for-more-bookings/", "destination": "/blog/booking-review-rank/", "permanent": true },
-    { "source": "/blog/optimize-bookingdotcom-for-more-bookings", "destination": "/blog/booking-review-rank/", "permanent": true },
-    { "source": "/blog/optimize-bookingdotcom-for-more-bookings/", "destination": "/blog/booking-review-rank/", "permanent": true },
-    { "source": "/motel-management-blog/guestpoint-pms-account-troublshooting", "destination": "/blog/guestpoint-pms-account-troublshooting/", "permanent": true },
-    { "source": "/motel-management-blog/guestpoint-pms-account-troublshooting/", "destination": "/blog/guestpoint-pms-account-troublshooting/", "permanent": true },
-    { "source": "/motel-management-blog/motel-maintenance-schedule", "destination": "/blog/motel-maintenance-schedule/", "permanent": true },
-    { "source": "/motel-management-blog/motel-maintenance-schedule/", "destination": "/blog/motel-maintenance-schedule/", "permanent": true },
-    { "source": "/motel-management-blog/Blog Post Title One-zd2kp-rktlj", "destination": "/blog/front-desk-training-checklist/", "permanent": true },
-    { "source": "/motel-management-blog/Blog Post Title One-zd2kp-rktlj/", "destination": "/blog/front-desk-training-checklist/", "permanent": true },
-    { "source": "/motel-management-books-Wrmc2", "destination": "/motel-management-book/", "permanent": true },
-    { "source": "/motel-management-books-Wrmc2/", "destination": "/motel-management-book/", "permanent": true },
-    { "source": "/introduction-motel-mangement", "destination": "/motel-management-training-course/", "permanent": true },
-    { "source": "/introduction-motel-mangement/", "destination": "/motel-management-training-course/", "permanent": true },
-    { "source": "/blog/tag/:path*", "destination": "/blog/", "permanent": true },
-    { "source": "/blog/category/:path*", "destination": "/blog/", "permanent": true },
-    { "source": "/motel-management-blog/:path*", "destination": "/blog/", "permanent": true }
+    { 
+      "source": "/motel-management-blog/optimize-bookingdotcom-for-more-bookings/", 
+      "destination": "/blog/booking-review-rank/", 
+      "permanent": true 
+    },
+    { 
+      "source": "/motel-management-blog/optimize-bookingdotcom-for-more-bookings", 
+      "destination": "/blog/booking-review-rank/", 
+      "permanent": true 
+    },
+    { 
+      "source": "/home", 
+      "destination": "https://google.com", 
+      "permanent": false 
+    }
   ]
 }
