@@ -61,7 +61,6 @@
     { "source": "/motel-management-courses", "destination": "/courses/", "permanent": true },
     { "source": "/motel-management-lessons", "destination": "/blog/", "permanent": true },
     
-    /* Specific Motel Management Blog Exceptions (MUST stay above the wildcard) */
     { "source": "/motel-management-blog/Blog%20Post%20Title%20One-zd2kp-rktlj", "destination": "/blog/front-desk-training-checklist/", "permanent": true },
     { "source": "/motel-management-blog/learn-guestpoint-pms-training", "destination": "/blog/free-online-guestpoint-training/", "permanent": true },
     { "source": "/motel-management-blog/hiring-housekeepers-as-contractors", "destination": "/blog/hiring-housekeepers-as-contractors/", "permanent": true },
@@ -77,13 +76,11 @@
     { "source": "/motel-management-blog/increase-bookingdotcom-rank-checklist", "destination": "/blog/booking-review-rank/", "permanent": true },
     { "source": "/motel-management-blog/front-desk-training-checklist", "destination": "/blog/front-desk-training-checklist/", "permanent": true },
     
-    /* Search Console Stragglers */
     { "source": "/motel-resources-member", "destination": "/", "permanent": true },
     { "source": "/introduction-motel-mangement", "destination": "/motel-management-training-course/", "permanent": true },
     { "source": "/-motel-courses", "destination": "/courses/", "permanent": true },
     { "source": "/store-DTIgm", "destination": "/", "permanent": true },
 
-    /* WILDCARDS (The "Safety Nets" - MUST stay at the very bottom) */
     { "source": "/blog/tag/:path*", "destination": "/blog/", "permanent": true },
     { "source": "/blog/category/:path*", "destination": "/blog/", "permanent": true },
     { "source": "/motel-management-blog/", "destination": "/blog/", "permanent": true },
