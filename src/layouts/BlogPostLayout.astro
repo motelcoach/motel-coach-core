@@ -1,6 +1,15 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
 const { frontmatter } = Astro.props;
+
+// Fetch all posts, sort by date, exclude the current one, and take top 3
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+const relatedPosts = sortedPosts
+  .filter(post => post.data.title !== frontmatter.title)
+  .slice(0, 3);
 ---
 
 <BaseLayout title={`${frontmatter.title} | Motel Coach`}>
@@ -26,5 +35,29 @@ const { frontmatter } = Astro.props;
       </article>
     </div>
   </section>
+
+  <!-- Related Articles Section -->
+  {relatedPosts.length > 0 && (
+    <section class="w-full bg-[#F9F9F8] py-16 border-t border-stone-200">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-stone-900 tracking-tight mb-8">Latest from the Blog</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          {relatedPosts.map(post => (
+            <a href={`/blog/${post.slug}`} class="group bg-white p-6 rounded-2xl border border-stone-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+              <p class="text-xs font-semibold text-[#4A554E] mb-3 uppercase tracking-widest">
+                {post.data.category || 'General'}
+              </p>
+              <h3 class="text-lg font-medium text-stone-900 group-hover:text-[#4A554E] transition-colors line-clamp-2 mb-2">
+                {post.data.title}
+              </h3>
+              <p class="text-sm text-stone-500 line-clamp-3">
+                {post.data.executiveSummary}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
 </BaseLayout>

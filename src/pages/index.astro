@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PartnerGrid from '../components/PartnerGrid.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const recentPosts = allPosts
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
+  .slice(0, 3);
 ---
 
 <BaseLayout hideFooterCta>
@@ -85,7 +91,7 @@ import PartnerGrid from '../components/PartnerGrid.astro';
 
       <div class="grid gap-6 md:grid-cols-3">
         <!-- Pre-Sale Audit -->
-        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+        <a href="/motel-buyers-audit/" class="block bg-white border border-stone-200 p-8 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
           <div class="flex items-center gap-3 mb-4">
             <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
               <!-- icon: clipboard -->
@@ -100,13 +106,14 @@ import PartnerGrid from '../components/PartnerGrid.astro';
               Pre-Sale Audit (Due Diligence)
             </h3>
           </div>
-          <p class="text-sm text-stone-500 leading-relaxed">
+          <p class="text-sm text-stone-500 leading-relaxed mb-4">
             For buyers and vendors who want zero surprises at settlement. We stress-test add-backs, wage assumptions, and capex exposure so you know exactly what you&apos;re buying—or selling. The outcome is a clear-eyed view of risk, not a glossy listing story.
           </p>
-        </div>
+          <span class="text-[#4A554E] font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">Learn more &rarr;</span>
+        </a>
 
         <!-- Operational Performance Audit -->
-        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+        <a href="/operational-performance-audit/" class="block bg-white border border-stone-200 p-8 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
           <div class="flex items-center gap-3 mb-4">
             <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
               <!-- icon: bar chart -->
@@ -120,13 +127,14 @@ import PartnerGrid from '../components/PartnerGrid.astro';
               Operational Performance Audit
             </h3>
           </div>
-          <p class="text-sm text-stone-500 leading-relaxed">
+          <p class="text-sm text-stone-500 leading-relaxed mb-4">
             A forensic read on your current operation: occupancy, RevPAR, cost lines, and workflows. We surface leaks in distribution, wage structure, and housekeeping that can be fixed in weeks, not years. You receive a prioritised, practical roadmap instead of a theoretical report.
           </p>
-        </div>
+          <span class="text-[#4A554E] font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">Learn more &rarr;</span>
+        </a>
 
         <!-- Manager Recruitment -->
-        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+        <a href="/motel-consultancy/" class="block bg-white border border-stone-200 p-8 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
           <div class="flex items-center gap-3 mb-4">
             <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
               <!-- icon: users -->
@@ -141,13 +149,14 @@ import PartnerGrid from '../components/PartnerGrid.astro';
               Manager Recruitment
             </h3>
           </div>
-          <p class="text-sm text-stone-500 leading-relaxed">
+          <p class="text-sm text-stone-500 leading-relaxed mb-4">
             We help you source, screen, and onboard managers who can actually run a motel, not just work a reception desk. Clear role design, scorecards, and a 90-day ramp plan reduce churn and protect guest experience. You stop rewriting the same ad every six months.
           </p>
-        </div>
+          <span class="text-[#4A554E] font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">Learn more &rarr;</span>
+        </a>
 
         <!-- Fractional COO -->
-        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+        <a href="/motel-consultancy/" class="block bg-white border border-stone-200 p-8 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
           <div class="flex items-center gap-3 mb-4">
             <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
               <!-- icon: briefcase -->
@@ -161,13 +170,14 @@ import PartnerGrid from '../components/PartnerGrid.astro';
               Fractional COO
             </h3>
           </div>
-          <p class="text-sm text-stone-500 leading-relaxed">
+          <p class="text-sm text-stone-500 leading-relaxed mb-4">
             For owners who want institutional-grade oversight without a full-time salary. We sit above your managers to align pricing, staffing, and strategy with your long-term asset goals. You keep control of the decisions while handing off the noise.
           </p>
-        </div>
+          <span class="text-[#4A554E] font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">Learn more &rarr;</span>
+        </a>
 
         <!-- Motel Marketing -->
-        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+        <a href="/motel-marketing/" class="block bg-white border border-stone-200 p-8 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
           <div class="flex items-center gap-3 mb-4">
             <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
               <!-- icon: megaphone -->
@@ -182,13 +192,14 @@ import PartnerGrid from '../components/PartnerGrid.astro';
               Motel Marketing
             </h3>
           </div>
-          <p class="text-sm text-stone-500 leading-relaxed">
+          <p class="text-sm text-stone-500 leading-relaxed mb-4">
             No vanity metrics. We focus on shifting guests from OTAs into your own channels, tightening your hotel motel website speed, and using Google Hotel Ads and local SEO to intercept intent. The goal is simple: more direct bookings at higher contribution margin.
           </p>
-        </div>
+          <span class="text-[#4A554E] font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">Learn more &rarr;</span>
+        </a>
 
         <!-- Motel Management Training -->
-        <div class="bg-white border border-stone-200 p-8 rounded-2xl shadow-sm">
+        <a href="/motel-management-training-course/" class="block bg-white border border-stone-200 p-8 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
           <div class="flex items-center gap-3 mb-4">
             <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#4A554E]/10">
               <!-- icon: graduation cap -->
@@ -201,10 +212,11 @@ import PartnerGrid from '../components/PartnerGrid.astro';
               Motel Management Training
             </h3>
           </div>
-          <p class="text-sm text-stone-500 leading-relaxed">
+          <p class="text-sm text-stone-500 leading-relaxed mb-4">
             Structured, online or in-person training for new and existing managers. We turn front desk training, PMS usage, and daily reporting into a repeatable motel system instead of personality-driven chaos. Every module is built to show up on your P&amp;L.
           </p>
-        </div> 	 		 	
+          <span class="text-[#4A554E] font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">Learn more &rarr;</span>
+        </a> 	 		 	
       </div>
     </div>
   </section>
@@ -294,6 +306,44 @@ import PartnerGrid from '../components/PartnerGrid.astro';
             Many owners see quick wins within the first 60–90 days as we fix obvious wage, OTA, and pricing leaks. Deeper structural changes—like manager upgrades, process design, and system changes—compound over 6–18 months in both cashflow and asset value.
           </p>
         </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest from the Blog Section -->
+  <section class="w-full bg-white py-24 md:py-32 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between mb-12">
+        <h2 class="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight">
+          From the Operations Library
+        </h2>
+        <a href="/blog" class="hidden md:inline-flex items-center gap-2 text-sm font-medium text-[#4A554E] hover:text-stone-900 transition-colors">
+          View all articles &rarr;
+        </a>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        {recentPosts.map(post => (
+          <a href={`/blog/${post.slug}`} class="group bg-[#F9F9F8] p-8 rounded-2xl border border-stone-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+            <p class="text-xs font-semibold text-[#4A554E] mb-4 uppercase tracking-widest">
+              {post.data.category || 'General'}
+            </p>
+            <h3 class="text-xl font-semibold text-stone-900 group-hover:text-[#4A554E] transition-colors line-clamp-2 mb-3">
+              {post.data.title}
+            </h3>
+            <p class="text-sm text-stone-500 line-clamp-3 leading-relaxed mb-6 flex-grow">
+              {post.data.executiveSummary}
+            </p>
+            <span class="text-[#4A554E] font-medium text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all mt-auto">
+              Read article &rarr;
+            </span>
+          </a>
+        ))}
+      </div>
+      <div class="mt-8 text-center md:hidden">
+        <a href="/blog" class="inline-flex items-center gap-2 text-sm font-medium text-[#4A554E] hover:text-stone-900 transition-colors">
+          View all articles &rarr;
+        </a>
       </div>
     </div>
   </section>
