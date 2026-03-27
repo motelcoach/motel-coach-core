@@ -86,5 +86,5 @@
     { "source": "/introduction-motel-mangement", "destination": "/motel-management-training-course/", "permanent": true },
     { "source": "/-motel-courses", "destination": "/courses/", "permanent": true },
     { "source": "/store-DTIgm", "destination": "/", "permanent": true }
-  ],
+  ]
 }
