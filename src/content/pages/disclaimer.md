@@ -5,7 +5,7 @@ slug: disclaimer
 ---
 
 **Effective Date:** 29 May 2025  
-**Website:** [www.motelcoach.com.au](/)  
+**Website:** [motelcoach.com.au](https://motelcoach.com.au)  
 **Business Name:** Motel Coach
 
 ### **1\. General Information**

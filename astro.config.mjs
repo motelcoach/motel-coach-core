@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   integrations: [tailwind(), sitemap()],
   site: 'https://motelcoach.com.au',
-
+  trailingSlash: 'always', // Add this line,
 
 });
