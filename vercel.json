@@ -81,6 +81,10 @@
     { "source": "/motel-management-blog/motel-room-inventory-management-guide", "destination": "/blog/managing-motel-room-inventory/",  "permanent": true },
     { "source": "/motel-management-blog/increase-bookingdotcom-rank-checklist", "destination": "/blog/booking-review-rank/",            "permanent": true },
     { "source": "/motel-management-blog/tag/", "destination": "/blog/",           "permanent": true },
-    { "source": "/motel-management-blog/front-desk-training-checklist", "destination": "/blog/front-desk-training-checklist/",         "permanent": true }
-  ]
+    { "source": "/motel-management-blog/front-desk-training-checklist", "destination": "/blog/front-desk-training-checklist/",         "permanent": true },
+    { "source": "/motel-resources-member", "destination": "/", "permanent": true },
+    { "source": "/introduction-motel-mangement", "destination": "/motel-management-training-course/", "permanent": true },
+    { "source": "/-motel-courses", "destination": "/courses/", "permanent": true },
+    { "source": "/store-DTIgm", "destination": "/", "permanent": true }
+  ],
 }
