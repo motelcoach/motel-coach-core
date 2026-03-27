@@ -14,8 +14,6 @@ export default defineConfig({
     '/motel-websites-design': '/motel-website-design/',
     '/blog/how-tripadvisor-rankings-calculated-67c6s': '/blog/how-tripadvisor-rankings-calculated/',
     '/blog/managing-motel-room-inventory-dbjab': '/blog/managing-motel-room-inventory/',
-    
-    // Course & Management Fixes (Resolving 401 and 404 issues)
     '/hospitality-coaching': '/motel-consultancy/',
     '/hospitality-management': '/motel-management/',
     '/how-to-run-a-motel': '/motel-management/',
@@ -25,8 +23,6 @@ export default defineConfig({
     '/motel-management-course': '/motel-management-training-course/',
     '/-motel-courses': '/courses/',
     '/motel-management-books-Wrmc2': '/motel-management-book/',
-
-    // Legacy Blog Folder Cleanup (The /motel-management-blog/ migration)
     '/motel-management-blog/optimize-bookingdotcom-for-more-bookings': '/blog/booking-review-rank/',
     '/blog/optimize-bookingdotcom-for-more-bookings': '/blog/booking-review-rank/',
     '/motel-management-blog/guestpoint-pms-account-troublshooting': '/blog/guestpoint-pms-account-troublshooting/',
@@ -35,9 +31,6 @@ export default defineConfig({
     '/motel-management-blog/increase-bookingdotcom-rank-checklist': '/blog/booking-review-rank/',
     '/motel-management-blog/Blog Post Title One-zd2kp-rktlj': '/blog/front-desk-training-checklist/',
     '/blog/Blog-Post-Title-One-zd2kp-rktlj': '/blog/front-desk-training-checklist/',
-    '/front-desk-training-guide-motel': '/blog/front-desk-training-checklist/',
-    
-    // Wildcard Redirect (Catch-all for old blog folder)
-    '/motel-management-blog/[...slug]': '/blog/[...slug]'
+    '/front-desk-training-guide-motel': '/blog/front-desk-training-checklist/'
   }
 });
