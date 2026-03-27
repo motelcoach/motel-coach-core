@@ -16,6 +16,8 @@ const {
 } = Astro.props;
 
 const resolvedCanonical = canonicalURL ?? new URL(Astro.url.pathname, Astro.site);
+// Ensure canonical URL does not contain www.
+const finalCanonical = resolvedCanonical.toString().replace('www.', '');
 ---
 
 <!DOCTYPE html>
@@ -29,10 +31,10 @@ const resolvedCanonical = canonicalURL ?? new URL(Astro.url.pathname, Astro.site
     <title>{title}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex, follow" />}
-    <link rel="canonical" href={resolvedCanonical} />
+    <link rel="canonical" href={finalCanonical} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={resolvedCanonical} />
+    <meta property="og:url" content={finalCanonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
 

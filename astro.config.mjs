@@ -9,29 +9,36 @@ export default defineConfig({
   output: 'static',
   
   redirects: {
-    '/hospitality-coaching': '/motel-consultancy/',
-    '/hospitality-management': '/motel-management/',
-    '/motel-room-pick-up': '/blog/what-is-motel-room-pick-up/',
-    '/how-to-run-a-motel': '/motel-management/',
-    '/motel-front-desk-quick-reference-guide': '/motel-management/',
-    '/learn-motel-mangement': '/motel-management-training-course/',
-    '/motel-management-course': '/motel-management-training-course/',
-    '/motel-marketing-review': '/motel-marketing/',
-    '/motel-management-australia': '/motel-management/',
+    // Top Priority / Brand Fixes
+    '/home': '/',
     '/contact-1': '/contact/',
     '/motel-websites-design': '/motel-website-design/',
-    '/motel-seo-guide': '/blog/motel-seo/',
+    '/blog/how-tripadvisor-rankings-calculated-67c6s': '/blog/how-tripadvisor-rankings-calculated/',
+    '/blog/managing-motel-room-inventory-dbjab': '/blog/managing-motel-room-inventory/',
     
+    // Course & Management Fixes (Resolving 401 and 404 issues)
+    '/hospitality-coaching': '/motel-consultancy/',
+    '/hospitality-management': '/motel-management/',
+    '/how-to-run-a-motel': '/motel-management/',
+    '/motel-front-desk-quick-reference-guide': '/motel-management/',
+    '/how-to-manage-a-small-motel': '/motel-management/',
+    '/introduction-motel-mangement': '/motel-management-training-course/',
+    '/motel-management-course': '/motel-management-training-course/',
+    '/-motel-courses': '/courses/',
+    '/motel-management-books-Wrmc2': '/motel-management-book/',
+
+    // Legacy Blog Folder Cleanup (The /motel-management-blog/ migration)
     '/motel-management-blog/optimize-bookingdotcom-for-more-bookings': '/blog/booking-review-rank/',
     '/blog/optimize-bookingdotcom-for-more-bookings': '/blog/booking-review-rank/',
-    
     '/motel-management-blog/guestpoint-pms-account-troublshooting': '/blog/guestpoint-pms-account-troublshooting/',
+    '/motel-management-blog/motel-maintenance-schedule': '/blog/motel-maintenance-schedule/',
     '/motel-management-blog/learn-google-hotel-ads': '/blog/learn-google-hotel-ads/',
+    '/motel-management-blog/increase-bookingdotcom-rank-checklist': '/blog/booking-review-rank/',
+    '/motel-management-blog/Blog Post Title One-zd2kp-rktlj': '/blog/front-desk-training-checklist/',
+    '/blog/Blog-Post-Title-One-zd2kp-rktlj': '/blog/front-desk-training-checklist/',
+    '/front-desk-training-guide-motel': '/blog/front-desk-training-checklist/',
     
-    '/motel-resources-member': '/',
-    '/introduction-motel-mangement': '/motel-management-training-course/',
-    '/-motel-courses': '/courses/',
-    '/store-DTIgm': '/',
-    '/home': '/',
+    // Wildcard Redirect (Catch-all for old blog folder)
+    '/motel-management-blog/[...slug]': '/blog/[...slug]',
   }
 });
