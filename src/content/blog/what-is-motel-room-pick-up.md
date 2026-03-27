@@ -9,7 +9,7 @@ executiveSummary: "Room pickup is a revenue management tool to help you roster s
 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2><p class="text-gray-700 m-0">
-Maximise your revenue by using room pickup as a real-time barometer for booking momentum and demand shifts. Success in motel management requires tracking the net change in reservations—new bookings minus cancellations—over specific daily or weekly windows to identify rapid pickup or soft demand. By monitoring these fluctuations, you can pivot your pricing strategy instantly, raising rates during high-velocity spikes or launching targeted promotions when pickup turns negative. To integrate these analytics into your daily routine and professionalise your forecasting, enrol in our <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> or engage our <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> for a full revenue performance audit.</p>
+Maximise your revenue by using room pickup as a real-time barometer for booking momentum and demand shifts. Success in motel management requires tracking the net change in reservations—new bookings minus cancellations—over specific daily or weekly windows to identify rapid pickup or soft demand. By monitoring these fluctuations, you can pivot your pricing strategy instantly, raising rates during high-velocity spikes or launching targeted promotions when pickup turns negative. To integrate these analytics into your daily routine and professionalise your forecasting, enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> or engage our <a href="/motel-consultancy/" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> for a full revenue performance audit.</p>
 </div>
 
 Room Pick up Explained
@@ -63,6 +63,6 @@ A basic example may help. Your motel is tracking bookings for July 10:
 
 *   **Negative pickup:** If on July 9 your bookings fall to 16 (due to cancellations), then the one-day pickup = 16 – 18 = –2 rooms, indicating 2 more cancellations than new reservations
 
-Such simple calculations can be done with any bookkeeping or PMS data. In practice, many motels use their [property management system](/learn-guest-point-pms) or even a spreadsheet to record total bookings for each future date at the end of each day, then compute pickups by subtraction.
+Such simple calculations can be done with any bookkeeping or PMS data. In practice, many motels use their [property management system](/learn-guest-point-pms/) or even a spreadsheet to record total bookings for each future date at the end of each day, then compute pickups by subtraction.
 
 Overall, room pickup is a basic yet powerful metric. By watching how many rooms are added (or lost) each day or week, motel operators gain a timely view of demand and can adjust forecasts, pricing, and marketing in response.

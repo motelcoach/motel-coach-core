@@ -15,7 +15,7 @@ executiveSummary: "Master the Booking.com search and review algorithms. Learn ho
 
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download our Booking.com Optimization Checklist</h2>
-  <p class="text-stone-600 text-sm mb-6">Sign up to receive our Booking.com Checklist and other <a href="/motel-marketing" class="text-[#4A554E] font-medium hover:underline">Motel Marketing</a> resources direct to your inbox.</p>
+  <p class="text-stone-600 text-sm mb-6">Sign up to receive our Booking.com Checklist and other <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">Motel Marketing</a> resources direct to your inbox.</p>
   <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/download/booking-com-checklist">
     <input type="hidden" name="source_page" value="Blog: Booking.com Rank" />
     <input type="hidden" name="form_type" value="checklist-download" />
@@ -109,4 +109,4 @@ Australian motels serve a unique mix of domestic road-trippers and seasonal holi
 ### Conclusion
 Ranking higher on Booking.com is an ongoing process of aligning your property with the platform’s core formula: high conversion, deep visual content, and recent, positive guest reviews. By mastering these variables, independent motels can trigger algorithmic boosts that outpace local competitors.
 
-To audit your current OTA performance and professionalise your digital distribution, engage our [Motel Consultancy](/motel-consultancy) or enrol in our [Motel Management Training Courses](/motel-management-training-course).
+To audit your current OTA performance and professionalise your digital distribution, engage our [Motel Consultancy](/motel-consultancy/) or enrol in our [Motel Management Training Courses](/motel-management-training-course/).

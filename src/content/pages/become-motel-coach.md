@@ -31,6 +31,6 @@ Motel Coach creates smart, practical training content for motel and small accomm
 
 ### **Ready to Teach?**
 
-If you’re passionate about the industry and want to help others succeed, [Contact Us](/contact). We review all submissions and will be in touch if it’s a fit. Know someone great? We’d love a referral too.
+If you’re passionate about the industry and want to help others succeed, [Contact Us](/contact/). We review all submissions and will be in touch if it’s a fit. Know someone great? We’d love a referral too.
 
 Let’s make training better—together.

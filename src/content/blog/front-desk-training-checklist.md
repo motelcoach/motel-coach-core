@@ -9,7 +9,7 @@ executiveSummary: "Eliminate front-desk errors and service drift by adopting a s
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-<em>Eliminate front-desk errors and service drift by adopting a step-by-step guest registration framework. Inexperienced operators often miss critical upselling or service-scheduling opportunities during the arrival rush. A disciplined <a href="/motel-management" class="text-[#4A554E] font-medium hover:underline">motel management system</a> approach ensures every guest is correctly billed and briefed on property policies before they receive their keys. To build a solid foundation in property operations and team leadership, enrol in our <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> designed specifically for the Australian market.</em>
+<em>Eliminate front-desk errors and service drift by adopting a step-by-step guest registration framework. Inexperienced operators often miss critical upselling or service-scheduling opportunities during the arrival rush. A disciplined <a href="/motel-management/" class="text-[#4A554E] font-medium hover:underline">motel management system</a> approach ensures every guest is correctly billed and briefed on property policies before they receive their keys. To build a solid foundation in property operations and team leadership, enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> designed specifically for the Australian market.</em>
 </p>
 </div>
 
@@ -72,7 +72,7 @@ Every reservation represents revenue. Incorrect payments lead to losses that are
 Getting organized at the start of your day is pivotal. Arrival preparation determines how stressful the afternoon becomes.
 
 1. **Review Overnight Activity:** Check for arrivals after reception hours, early departures, failed payments, or maintenance alerts.
-2. **Print the Arrival Report:** Pull the daily report from your [Property Management System](/learn-guest-point-pms).
+2. **Print the Arrival Report:** Pull the daily report from your [Property Management System](/learn-guest-point-pms/).
 3. **Verify Bedding Configurations:** Does the allocated room suit the number of people booked? A morning phone call to finalize room allocations is quicker than getting disturbed after-hours for an extra bed.
 4. **Pre-Allocate Special Requests:** Assign rollaway beds, ground floor rooms, or quiet rooms before housekeeping starts their shift.
 5. **Secure Contact Numbers:** If guests lack mobile numbers on their file, contact them or their OTA immediately. As the day progresses (flights, meetings), they become harder to reach.

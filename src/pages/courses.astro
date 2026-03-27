@@ -26,7 +26,7 @@ const courses = [
     format: 'Self-Paced Video',
     badge: '03',
     waitlist: true,
-    waitlistHref: '/motel-marketing-course-waitlist',
+    waitlistHref: '/motel-marketing-course-waitlist/',
   },
   {
     slug: 'motel-revenue-management',
@@ -35,7 +35,7 @@ const courses = [
     format: 'Self-Paced Video',
     badge: '04',
     waitlist: true,
-    waitlistHref: '/motel-revenue-management-course-waitlist',
+    waitlistHref: '/motel-revenue-management-course-waitlist/',
   },
 ];
 ---
@@ -87,7 +87,7 @@ const courses = [
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-6">
         {courses.map((course) => {
-          const href = course.waitlist ? (course.waitlistHref ?? `/contact?waitlist=${course.slug}`) : `/${course.slug}`;
+          const href = course.waitlist ? (course.waitlistHref ?? `/contact/?waitlist=${course.slug}`) : `/${course.slug}/`;
           const ctaText = course.waitlist ? 'Join Waitlist' : 'View Curriculum';
           return (
             <a
@@ -148,7 +148,7 @@ const courses = [
         Tell us what you&apos;re running and what you&apos;re stuck on. We&apos;ll point you to the fastest path.
       </p>
       <a
-        href="/contact?topic=training&message=Help%20me%20choose%20the%20right%20course."
+        href="/contact/?topic=training&message=Help%20me%20choose%20the%20right%20course."
         class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#4A554E] text-white text-base font-medium rounded-lg hover:bg-[#3d4640] transition shadow-sm hover:shadow-lg"
       >
         Contact &amp; Course Recommendation

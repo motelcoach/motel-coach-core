@@ -11,12 +11,12 @@ Website Terms and Conditions
 --------------------------------
 
 **Effective Date:** 29 May 2025  
-**Website:** [motelcoach.com.au](https://motelcoach.com.au)  
+**Website:** [motelcoach.com.au](https://motelcoach.com.au/)  
 **Business Name:** Motel Coach
 
 ### **1\. Acceptance of Terms**
 
-By accessing or using this website, you agree to be bound by these Terms & Conditions and our [Privacy Policy](/terms-conditions). If you do not agree, you must not use this website.
+By accessing or using this website, you agree to be bound by these Terms & Conditions and our [Privacy Policy](/terms-conditions/). If you do not agree, you must not use this website.
 
 ### **2\. Website Content**
 

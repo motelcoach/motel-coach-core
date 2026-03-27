@@ -8,14 +8,14 @@ executiveSummary: "Lets look at your motel and identify opportunities to improve
 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2><p class="text-gray-700 m-0">
-Maximise your property’s performance and conversion rates by auditing the guest journey through a "customer-first" operational lens. Success in motel management is achieved by refining basic touchpoints—such as Wi-Fi stability, hero photo selection on Booking.com, and local rate positioning—rather than high-cost capital works. By systematically reviewing your global distribution system (GDS) and Google Business Profile, you ensure your property captures high-value corporate and leisure traffic. To master these fundamental pillars and professionalise your daily workflows, enrol in our <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> or engage our <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> for a comprehensive operational audit.</p>
+Maximise your property’s performance and conversion rates by auditing the guest journey through a "customer-first" operational lens. Success in motel management is achieved by refining basic touchpoints—such as Wi-Fi stability, hero photo selection on Booking.com, and local rate positioning—rather than high-cost capital works. By systematically reviewing your global distribution system (GDS) and Google Business Profile, you ensure your property captures high-value corporate and leisure traffic. To master these fundamental pillars and professionalise your daily workflows, enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> or engage our <a href="/motel-consultancy/" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> for a comprehensive operational audit.</p>
 </div>
 
 
 
 ![](/images/migrated/motel-management-getting-back-to-basics.jpg)
 
-Getting the basics right in [Motel Management](/motel-management) is a matter of stepping back from your role and into the shoes of your customers. It is sometimes easy to get caught in the day to day and forget the basics. We’ve put together some ideas to level up your motels performance without major expenditure.
+Getting the basics right in [Motel Management](/motel-management/) is a matter of stepping back from your role and into the shoes of your customers. It is sometimes easy to get caught in the day to day and forget the basics. We’ve put together some ideas to level up your motels performance without major expenditure.
 
 **Become a customer**
 
@@ -25,7 +25,7 @@ Run through the booking, check-in, stay and post stay experience of your custome
 
 **Booking.com and Expedia**
 
-*   Photos are a massive conversion factor for your [Motel](/motel-management) - do you have good quality photos, how do you compare against other properties?
+*   Photos are a massive conversion factor for your [Motel](/motel-management/) - do you have good quality photos, how do you compare against other properties?
     
 *   We spend a lot of time looking at Hero Photos - this is the first image of your motel that is displayed, a good hero photo will increase your conversion from browsing to staying.
     
@@ -53,7 +53,7 @@ Run through the booking, check-in, stay and post stay experience of your custome
     
 *   Upload photos regularly.
     
-*   [Motel Marketing](/motel-marketing) is more about optimizing your existing channels than big budget campaigns.
+*   [Motel Marketing](/motel-marketing/) is more about optimizing your existing channels than big budget campaigns.
     
 
 **Trip Advisor**
@@ -71,7 +71,7 @@ Run through the booking, check-in, stay and post stay experience of your custome
 
 **Room Distribution Check**
 
-Are all of your rooms listed online without restriction? This is the starting point for [motel room management](/motel-management). You can always block rooms or put restrictions on them if you have key clients you want to cater for, but it is always a good start to have all of your rooms selling on the online channels.
+Are all of your rooms listed online without restriction? This is the starting point for [motel room management](/motel-management/). You can always block rooms or put restrictions on them if you have key clients you want to cater for, but it is always a good start to have all of your rooms selling on the online channels.
 
 **Review Check**
 
@@ -116,4 +116,4 @@ Price check your market, you need to work out where you are priced compared to y
     1.  This might be an opportunity to put some rate restrictions on like a minimum length of stay
         
 
-Interested in learning in a structured environment? Try our [motel pms course](/learn-guest-point-pms) or [motel management training course](/motel-management-training-course) here.
+Interested in learning in a structured environment? Try our [motel pms course](/learn-guest-point-pms/) or [motel management training course](/motel-management-training-course/) here.

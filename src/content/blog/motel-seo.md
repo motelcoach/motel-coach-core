@@ -9,7 +9,7 @@ executiveSummary: "Stop over-relying on OTAs. Master the 2026 Motel SEO framewor
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-blue-900 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-blue-800 m-0">
-Every booking captured through organic search or Google Maps costs you nothing in commission. The independent motels winning in 2026 are not spending more on ads — they are building three compounding SEO assets: a dominant Google Business Profile, a technically clean website with structured data, and content formatted for AI search engines. This guide gives you the exact framework across all three pillars. To audit your current digital distribution and implement these systems. Want us to do it for you? <a href="/contact" class="text-blue-700 font-medium hover:underline">Contact us</a> or visit our <a href="/motel-consultancy" class="text-blue-700 font-medium hover:underline">Motel Consultancy</a>.
+Every booking captured through organic search or Google Maps costs you nothing in commission. The independent motels winning in 2026 are not spending more on ads — they are building three compounding SEO assets: a dominant Google Business Profile, a technically clean website with structured data, and content formatted for AI search engines. This guide gives you the exact framework across all three pillars. To audit your current digital distribution and implement these systems. Want us to do it for you? <a href="/contact/" class="text-blue-700 font-medium hover:underline">Contact us</a> or visit our <a href="/motel-consultancy/" class="text-blue-700 font-medium hover:underline">Motel Consultancy</a>.
 </p>
 </div>
 
@@ -58,7 +58,7 @@ Review velocity is the rate at which your property generates new reviews. Google
 3. Add a review request to your post-stay confirmation email
 4. Respond to every review within 24 hours — responses signal active management to Google's algorithm
 
-Review velocity is also the fastest way to close the gap on a competitor who has been accumulating reviews for years. See the full channel-by-channel breakdown in the [2026 Motel Marketing Checklist](/blog/motel-marketing-checklist).
+Review velocity is also the fastest way to close the gap on a competitor who has been accumulating reviews for years. See the full channel-by-channel breakdown in the [2026 Motel Marketing Checklist](/blog/motel-marketing-checklist/).
 
 ### Google Business Profile Optimisation Checklist
 
@@ -194,7 +194,7 @@ The majority of motel searches occur on mobile, often on a patchy regional 4G co
 - Preconnect to critical third-party origins (fonts, booking engines)
 - Avoid render-blocking JavaScript in the `<head>`
 
-A complete technical audit checklist lives in our [2026 Motel Marketing Checklist](/blog/motel-marketing-checklist).
+A complete technical audit checklist lives in our [2026 Motel Marketing Checklist](/blog/motel-marketing-checklist/).
 
 ### Crawl Budget and URL Hygiene
 
@@ -271,11 +271,11 @@ Search visibility means nothing if the traffic it generates does not convert. Th
 
 This means:
 
-- **A fast, mobile-optimised property website** that loads before the visitor loses patience on a regional connection — see our guide on [Motel Website Design](/motel-website-design) for the specific conversion architecture
+- **A fast, mobile-optimised property website** that loads before the visitor loses patience on a regional connection — see our guide on [Motel Website Design](/motel-website-design/) for the specific conversion architecture
 - **Rate parity** with OTAs displayed clearly, with a "Book Direct & Save" message that gives guests a reason to bypass Booking.com
 - **A friction-free booking engine** with no hidden fees, no mandatory account creation, and a mobile-optimised checkout flow
 - **Trust signals above the fold** — Google review score, TripAdvisor rating, number of reviews — so the guest who found you via SEO has immediate confidence
 
 The compound effect of this framework is significant. A motel that ranks in the Google Map Pack, has structured Schema data triggering rich results, appears in AI search summaries, and converts that traffic directly rather than through an OTA is operating at a fundamentally different margin than one relying entirely on OTA commission.
 
-Implement each pillar sequentially, audit against the [2026 Motel Marketing Checklist](/blog/motel-marketing-checklist), and measure progress monthly in Google Search Console and Google Business Profile Insights.
+Implement each pillar sequentially, audit against the [2026 Motel Marketing Checklist](/blog/motel-marketing-checklist/), and measure progress monthly in Google Search Console and Google Business Profile Insights.

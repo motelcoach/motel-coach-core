@@ -9,7 +9,7 @@ executiveSummary: "Stop paying the OTA Tax. Start learning marketing strategies 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-<em>Increase direct profit by fixing the bottlenecks in your motel marketing instead of throwing more money at ads. This free marketing audit isolates why guests book through Booking-dot-com instead of your own hotel motel website speed-optimised pages, then gives you a ranked list of changes that actually move revenue. We review your website, OTA listings, and channel mix, then show you how to shift demand toward higher-margin direct bookings. To turn these insights into a repeatable motel system, consider working with our <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a>.</em>
+<em>Increase direct profit by fixing the bottlenecks in your motel marketing instead of throwing more money at ads. This free marketing audit isolates why guests book through Booking-dot-com instead of your own hotel motel website speed-optimised pages, then gives you a ranked list of changes that actually move revenue. We review your website, OTA listings, and channel mix, then show you how to shift demand toward higher-margin direct bookings. To turn these insights into a repeatable motel system, consider working with our <a href="/motel-consultancy/" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a>.</em>
 </p>
 </div>
 
@@ -89,7 +89,7 @@ What You’ll Get
 Who This Audit Is For
 ---------------------
 
-*   [Independent motels](/motel-management-book) (10–100 rooms)
+*   [Independent motels](/motel-management-book/) (10–100 rooms)
     
 *   Owners and managers who want more control over bookings
     

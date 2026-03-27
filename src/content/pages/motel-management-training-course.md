@@ -41,7 +41,7 @@ Reviews from our past students and and motel consultancy clients, including hosp
     
 *   I have no experience, is motel management right for me?
     
-    Yes - our training courses are designed to be beginner friendly and to get you ready for day one as a [motel manager](/motel-management).
+    Yes - our training courses are designed to be beginner friendly and to get you ready for day one as a [motel manager](/motel-management/).
     
 *   I'm an Experienced Manager - what can you offer me?
     

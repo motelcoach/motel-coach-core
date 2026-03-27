@@ -72,6 +72,6 @@ We work with leading property management providers as partners
 We only work with motel clients that we can drive performance improvements with. If you are looking for additional support, want to step back from your motel investment or want more performance, contact our team today.
 
 
-Motel owners who implement formal operational frameworks report significantly improved guest satisfaction and protected profit margins. Comprehensive training on these frameworks is available through our specialized [Motel Management Training Courses](/courses). 
+Motel owners who implement formal operational frameworks report significantly improved guest satisfaction and protected profit margins. Comprehensive training on these frameworks is available through our specialized [Motel Management Training Courses](/courses/). 
 
-Independent operators facing occupancy volatility require structured rate discipline to secure direct bookings. Our [Performance-Focused Motel Consultancy Services](/motel-consultancy) provide the exact systems needed to stabilize your asset.
+Independent operators facing occupancy volatility require structured rate discipline to secure direct bookings. Our [Performance-Focused Motel Consultancy Services](/motel-consultancy/) provide the exact systems needed to stabilize your asset.

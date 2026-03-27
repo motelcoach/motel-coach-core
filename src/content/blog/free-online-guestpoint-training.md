@@ -9,7 +9,7 @@ executiveSummary: "GuestPoint PMS Training from a motel operations specialist."
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-<em>Reduce front-desk stress and check-in errors by mastering the technical workflows of your Property Management System. Success in motel management is impossible without a solid command of reservations, housekeeping allocation, and daily rollovers. By utilizing our free GuestPoint Training, you replace guesswork with a professional motel system approach that ensures data accuracy and guest satisfaction. To transition from a beginner to a confident operator, combine these lessons with our complete <a href="/learn-guest-point-pms" class="text-[#4A554E] font-medium hover:underline">GuestPoint Training Course</a>, where you have access to the real PMS starting at just $89.</em>
+<em>Reduce front-desk stress and check-in errors by mastering the technical workflows of your Property Management System. Success in motel management is impossible without a solid command of reservations, housekeeping allocation, and daily rollovers. By utilizing our free GuestPoint Training, you replace guesswork with a professional motel system approach that ensures data accuracy and guest satisfaction. To transition from a beginner to a confident operator, combine these lessons with our complete <a href="/learn-guest-point-pms/" class="text-[#4A554E] font-medium hover:underline">GuestPoint Training Course</a>, where you have access to the real PMS starting at just $89.</em>
 </p>
 </div>
 
@@ -18,7 +18,7 @@ Running a motel is much easier when you understand your Property Management Syst
 
 Each video below walks you through a real-world task step-by-step, showing exactly how to get things done in GuestPoint — from reservations and housekeeping to reports and rollovers.
 
-Interested in investing in yourself, Take our [GuestPoint PMS Course](/learn-guest-point-pms) today?
+Interested in investing in yourself, Take our [GuestPoint PMS Course](/learn-guest-point-pms/) today?
 
 Let’s dive in 👇
 
@@ -72,4 +72,4 @@ In this bonus lesson, I show how to use your daily building walk to connect oper
 
 Ready to Go Deeper?
 
-These free videos are the perfect starting point to build confidence with GuestPoint PMS. But if you want to master GuestPoint faster, get personal help, or train your entire team — I offer 1-on-1 GuestPoint Training Sessions and a complete [Comprehensive Motel Management Course](/motel-management-training-course), both designed specifically for [Australian motels](/motel-management).
+These free videos are the perfect starting point to build confidence with GuestPoint PMS. But if you want to master GuestPoint faster, get personal help, or train your entire team — I offer 1-on-1 GuestPoint Training Sessions and a complete [Comprehensive Motel Management Course](/motel-management-training-course/), both designed specifically for [Australian motels](/motel-management/).

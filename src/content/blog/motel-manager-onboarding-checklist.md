@@ -8,12 +8,12 @@ executiveSummary: "Get a list of key items to review before your handover period
 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2><p class="text-gray-700 m-0">
-Minimise operational risk and secure your decision-making authority by executing a thorough property handover before assuming full responsibility. Professional motel management relies on a clear understanding of spending limits, PMS data security, and unwritten property quirks that often fall through the cracks during a transition. By systematically auditing everything from emergency shut-off valves to staff roster anchors, you establish the baseline required for long-term success. To ensure your onboarding matches industry best practices, enrol in our <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> or consult our <a href="/motel-management" class="text-[#4A554E] font-medium hover:underline">motel management system</a> resources for a complete property transition roadmap.</p>
+Minimise operational risk and secure your decision-making authority by executing a thorough property handover before assuming full responsibility. Professional motel management relies on a clear understanding of spending limits, PMS data security, and unwritten property quirks that often fall through the cracks during a transition. By systematically auditing everything from emergency shut-off valves to staff roster anchors, you establish the baseline required for long-term success. To ensure your onboarding matches industry best practices, enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> or consult our <a href="/motel-management/" class="text-[#4A554E] font-medium hover:underline">motel management system</a> resources for a complete property transition roadmap.</p>
 </div>
 
 **Last Edited 23/01/2026.**
 
-Use this checklist to confirm you have everything you need **before** you take on a [Motel Management](/motel-management) Role. **We are not indicating to print it, and use it when you meet your employer for on-boarding,** but review, it and make your own notes about what you should run through, use it as a base for creating your own template.
+Use this checklist to confirm you have everything you need **before** you take on a [Motel Management](/motel-management/) Role. **We are not indicating to print it, and use it when you meet your employer for on-boarding,** but review, it and make your own notes about what you should run through, use it as a base for creating your own template.
 
 A. Role Clarity & Expectations
 ------------------------------
@@ -71,7 +71,7 @@ D. Front Office & Guest Handling
 E. Property Management System (PMS)
 -----------------------------------
 
-☐ [PMS](/learn-guest-point-pms) login provided  
+☐ [PMS](/learn-guest-point-pms/) login provided  
 ☐ Admin vs staff access clarified  
 ☐ Room status workflow explained  
 ☐ Rate setup explained  
@@ -145,7 +145,7 @@ J. Staff & People Management
 ☐ Pay cycle explained  
 ☐ Award interpretation clarified  
 ☐ Leave balances disclosed  
-☐ [Motel Training](/motel-management-training-course) expectations explained  
+☐ [Motel Training](/motel-management-training-course/) expectations explained  
 ☐ Known staff issues disclosed  
 ☐ Recruitment responsibility clarified  
 ☐ Disciplinary process explained
@@ -224,4 +224,4 @@ Final Confirmation
 ☐ I have been shown the problem areas  
 ☐ I am not being judged on undisclosed issues
 
-Learn more about what is [involved in Motel Management](/motel-management). Prefer everything in one place; [The Essential Guide to Motel Management.](/motel-management-book)
+Learn more about what is [involved in Motel Management](/motel-management/). Prefer everything in one place; [The Essential Guide to Motel Management.](/motel-management-book/)

@@ -9,7 +9,7 @@ executiveSummary: "Over 70% of visitors start their accommodation search on Goog
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-<em>Grow direct bookings and cut OTA commission by ranking your motel higher on Google Maps and search for the queries that matter. This 2026 motel SEO checklist shows you how to combine solid motel marketing, schema-powered local signals, and fast hotel motel website speed so Google and AI surfaces your property ahead of competitors. You’ll tighten your motel website content, Google Business Profile, and reviews into one coherent motel system that turns search visibility into real revenue. For owners who want a partner to execute, start with our  <a href="/motel-marketing" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> support.</em>
+<em>Grow direct bookings and cut OTA commission by ranking your motel higher on Google Maps and search for the queries that matter. This 2026 motel SEO checklist shows you how to combine solid motel marketing, schema-powered local signals, and fast hotel motel website speed so Google and AI surfaces your property ahead of competitors. You’ll tighten your motel website content, Google Business Profile, and reviews into one coherent motel system that turns search visibility into real revenue. For owners who want a partner to execute, start with our  <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> support.</em>
 </p>
 </div>
 
@@ -39,7 +39,7 @@ Email Address
 
 ⬇️ Download Guide (Free)
 
-Please review our [Privacy Policy](/privacy-policy).
+Please review our [Privacy Policy](/privacy-policy/).
 
 Thank you! Please find attached a link to our 2026 Motel SEO Checklist
 
@@ -47,7 +47,7 @@ Thank you! Please find attached a link to our 2026 Motel SEO Checklist
 
 ### How Guests Search
 
-Google dominates how travelers find and choose accommodation – over **70% of travelers begin their trip planning on Google**. For an independent motel in Australia, mastering SEO (Search Engine Optimization) means more direct bookings and less reliance on OTAs. In 2026 and beyond, Google’s algorithm and features are evolving fast. Mobile searches, voice queries, and AI-driven results are now central to how guests discover places to stay. This guide will walk you through current best practices in [SEO and Local SEO](/motel-marketing) for motels, with each tactic labeled by difficulty level. Whether you’re a beginner or a marketing pro, you’ll find actionable steps to boost your Google Search and Maps presence – and bring more guests straight to your front desk.
+Google dominates how travelers find and choose accommodation – over **70% of travelers begin their trip planning on Google**. For an independent motel in Australia, mastering SEO (Search Engine Optimization) means more direct bookings and less reliance on OTAs. In 2026 and beyond, Google’s algorithm and features are evolving fast. Mobile searches, voice queries, and AI-driven results are now central to how guests discover places to stay. This guide will walk you through current best practices in [SEO and Local SEO](/motel-marketing/) for motels, with each tactic labeled by difficulty level. Whether you’re a beginner or a marketing pro, you’ll find actionable steps to boost your Google Search and Maps presence – and bring more guests straight to your front desk.
 
 ### Google’s Evolving Algorithm & Why It Matters _(Advanced)_
 
@@ -55,7 +55,7 @@ Google now rolls out core updates focusing on content “helpfulness,” experti
 
 ### Google Business Profile Optimization _(Beginner)_
 
-Your Google Business Profile is the cornerstone of local SEO and [marketing for your Motel](/motel-marketing) – think of it as your motel’s mini-website on Google Maps. **Difficulty:** Beginner (mostly form-filling and good hospitality sense). Start by claiming your profile (if you haven’t already) and verifying ownership. Then complete every section with accurate details:
+Your Google Business Profile is the cornerstone of local SEO and [marketing for your Motel](/motel-marketing/) – think of it as your motel’s mini-website on Google Maps. **Difficulty:** Beginner (mostly form-filling and good hospitality sense). Start by claiming your profile (if you haven’t already) and verifying ownership. Then complete every section with accurate details:
 
 *   **Basic Info:** Double-check Name, Address, Phone, and Website URL for accuracy. These should exactly match what’s on your website (consistency is key). Choose the most specific category (e.g. “Motel,” “Hotel”) available.
     
@@ -72,7 +72,7 @@ Your Google Business Profile is the cornerstone of local SEO and [marketing for 
 
 Staying active on your Google Business Profile directly influences your local rankings. A fully-optimized GBP can get your motel into the **local 3-pack** – those top Maps results for searches like “motels in \[Town\]”. Many travelers, especially on mobile, will choose from those top 3 map results without ever clicking “View more.” Your goal is to be in that spotlight.
 
-### On-Page [Website SEO Basics](/motel-marketing) _(Intermediate)_
+### On-Page [Website SEO Basics](/motel-marketing/) _(Intermediate)_
 
 Once your GBP is in shape, turn attention to your website – the content here strongly impacts both organic Google rankings and the info Google shows in search snippets or AI answers. **Difficulty:** Intermediate (you may need to edit website text and some HTML tags). Focus on:
 
@@ -207,7 +207,7 @@ Remember, SEO is about meeting your potential guests where they are and providin
 
 Stay proactive: keep learning, keep updating, and your motel will thrive in Google’s evolving landscape. Happy optimizing, and here’s to seeing your motel at the top of the local search results – right where it belongs!
 
-**Is your Motel losing significant amounts of money due to poor website conversion** or the lack of a clear [motel marketing](/motel-marketing) strategy? Contact Motel Coach today - our [Motel Consultancy Services](/motel-consultancy) push the levers that drive big financial wins for your motel.
+**Is your Motel losing significant amounts of money due to poor website conversion** or the lack of a clear [motel marketing](/motel-marketing/) strategy? Contact Motel Coach today - our [Motel Consultancy Services](/motel-consultancy/) push the levers that drive big financial wins for your motel.
 
 **Motel SEO: Frequently Asked Questions**
 -----------------------------------------

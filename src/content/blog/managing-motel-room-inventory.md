@@ -9,7 +9,7 @@ executiveSummary: "Maximize RevPAR by shifting from passive order-taking to acti
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-Maximise your total yield by preventing "early sell-outs" that block high-value, multi-night bookings. Effective inventory control requires a shift from filling beds to protecting your booking window through Minimum Length of Stay (MLOS) restrictions, Closed to Arrival (CTA) fences, and tiered rate reviews. By identifying demand spikes 30 to 90 days out, you use peak demand to fill quiet shoulder dates. To audit your current distribution strategy and automate these controls, engage our <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> or enrol in our <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a>.
+Maximise your total yield by preventing "early sell-outs" that block high-value, multi-night bookings. Effective inventory control requires a shift from filling beds to protecting your booking window through Minimum Length of Stay (MLOS) restrictions, Closed to Arrival (CTA) fences, and tiered rate reviews. By identifying demand spikes 30 to 90 days out, you use peak demand to fill quiet shoulder dates. To audit your current distribution strategy and automate these controls, engage our <a href="/motel-consultancy/" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> or enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a>.
 </p>
 </div>
 
@@ -17,7 +17,7 @@ Maximise your total yield by preventing "early sell-outs" that block high-value,
 
 Managing available room inventory is the difference between surviving and thriving. If you are sitting at 100% occupancy a month out, you have likely failed. A "Sold Out" sign appearing too early indicates your rates are too low and your strategy is too soft. You have allowed single-night travelers to steal inventory from high-yield, multi-night guests.
 
-Effective [motel management](/motel-management) requires filling rooms with the right guest, at the best price, through the optimal channel.
+Effective [motel management](/motel-management/) requires filling rooms with the right guest, at the best price, through the optimal channel.
 
 ## 1. The "Early Sell-Out" Trap & Booking Windows
 
@@ -33,7 +33,7 @@ To leverage revenue strategies, you must understand your property's specific boo
 2.  **Stage 2:** Split your tracking into two segments: Standard/Twin Rooms vs. Family/Multi-person suites.
 3.  **Stage 3:** Overlay school holiday and regional event periods to predict demand shifts.
 
-*(For 100s of operational templates, refer to [The Essential Guide to Motel Management](/motel-management-book)).*
+*(For 100s of operational templates, refer to [The Essential Guide to Motel Management](/motel-management-book/)).*
 
 ![](/images/migrated/reservation-screen.png)
 
@@ -85,4 +85,4 @@ Manual inventory management causes double-bookings and revenue leaks. Your tech 
 * **Pooled Inventory:** Ensure your Channel Manager uses pooled inventory to sell all rooms across all channels simultaneously, updating globally the second a booking occurs.
 * **Automated Rules:** Program your MLOS and CTA restrictions into your PMS months in advance based on your demand forecast. Do not rely on manual daily adjustments.
 
-Missing small rate increases and restrictions equates to $100,000+ in revenue leaks for a standard 20-room property. To deploy these advanced revenue strategies, engage our [Motel Consultancy Services](/motel-consultancy) or master the technical execution through our [Motel Management Training Course](/motel-management-training-course).
+Missing small rate increases and restrictions equates to $100,000+ in revenue leaks for a standard 20-room property. To deploy these advanced revenue strategies, engage our [Motel Consultancy Services](/motel-consultancy/) or master the technical execution through our [Motel Management Training Course](/motel-management-training-course/).

@@ -9,7 +9,7 @@ executiveSummary: "Buying the wrong motel can cost you your savings - our guide 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-<em>Safeguard your investment by mitigating capital risk through a rigorous <a href="/motel-buyers-audit" class="text-[#4A554E] font-medium hover:underline">motel buyers audit</a> before signing any contract. Buying a motel without professional due diligence is a gamble that ignores hidden waterproofing failures, aged plant equipment, and unfavorable lease reviews. You must account for family labor, deferred maintenance and articificially bloated future bookings to uncover the "True Profit" of any motel that is listed for sale. To ensure you have the skills to grow your investment from Day 1, our  <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> provide the definitive roadmap for professionalizing your acquisition and streamlining daily operations.</em>
+<em>Safeguard your investment by mitigating capital risk through a rigorous <a href="/motel-buyers-audit/" class="text-[#4A554E] font-medium hover:underline">motel buyers audit</a> before signing any contract. Buying a motel without professional due diligence is a gamble that ignores hidden waterproofing failures, aged plant equipment, and unfavorable lease reviews. You must account for family labor, deferred maintenance and articificially bloated future bookings to uncover the "True Profit" of any motel that is listed for sale. To ensure you have the skills to grow your investment from Day 1, our  <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> provide the definitive roadmap for professionalizing your acquisition and streamlining daily operations.</em>
 </p>
 </div>
 
@@ -223,7 +223,7 @@ Deferred maintenance becomes your problem the day after settlement.
 Download: Free Motel Buying Checklist
 -------------------------------------
 
-Buying and [running a motel](/motel-management) involves dozens of decisions and documents. Missing just one can be costly. Download our free checklist below or strongly consider our thorough [Motel Management Courses](/motel-management-training-course) or book; [The Essential Guide to Motel Management](/motel-management-book).
+Buying and [running a motel](/motel-management/) involves dozens of decisions and documents. Missing just one can be costly. Download our free checklist below or strongly consider our thorough [Motel Management Courses](/motel-management-training-course/) or book; [The Essential Guide to Motel Management](/motel-management-book/).
 
 Enter your email to receive a practical, step-by-step checklist covering:
 
@@ -302,6 +302,6 @@ Use of this content indicates your acceptance of this disclaimer.
 Learn More about Motel Management
 ---------------------------------
 
-Motel Coach offers a few options for learning [Motel Management](/motel-management-training-course).
+Motel Coach offers a few options for learning [Motel Management](/motel-management-training-course/).
 
-If your weakness is the computer, have a look at our [Motel Property Management System Course](/learn-guest-point-pms) using GuestPoint PMS.
+If your weakness is the computer, have a look at our [Motel Property Management System Course](/learn-guest-point-pms/) using GuestPoint PMS.

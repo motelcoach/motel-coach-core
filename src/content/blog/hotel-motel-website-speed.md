@@ -9,7 +9,7 @@ executiveSummary: "A slow motel website is the best way to send guests to the mo
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
 <p class="text-gray-700 m-0">
-<em>Boost direct revenue by making your hotel motel website speed a weapon, not a liability. Slow pages hand guests back to Booking-dot-com and destroy conversion, even if your rooms and reviews are strong. This guide shows you how to diagnose load issues, prioritise fixes, and build a lean motel website that Google rewards and guests trust. You’ll turn technical tweaks into measurable booking gains. If you want strategic oversight as you rebuild your stack, our  <a href="/motel-management" class="text-[#4A554E] font-medium hover:underline">motel management</a> and <a href="/motel-marketing" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> frameworks give you the roadmap.</em>
+<em>Boost direct revenue by making your hotel motel website speed a weapon, not a liability. Slow pages hand guests back to Booking-dot-com and destroy conversion, even if your rooms and reviews are strong. This guide shows you how to diagnose load issues, prioritise fixes, and build a lean motel website that Google rewards and guests trust. You’ll turn technical tweaks into measurable booking gains. If you want strategic oversight as you rebuild your stack, our  <a href="/motel-management/" class="text-[#4A554E] font-medium hover:underline">motel management</a> and <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> frameworks give you the roadmap.</em>
 </p>
 </div>
 
@@ -29,7 +29,7 @@ Page speed influences:
 • Guest trust  
 • Bounce rate
 
-Improving speed is one of the highest-return technical upgrades a [motel manager](/blog/what-does-a-motel-manager-do) can make.
+Improving speed is one of the highest-return technical upgrades a [motel manager](/blog/what-does-a-motel-manager-do/) can make.
 
 Understanding Core Web Vitals for Motels
 ----------------------------------------
@@ -180,7 +180,7 @@ If speed improvements lift conversion to 6%, that’s 60 bookings — commission
 
 Small speed gains compound revenue.
 
-Is your motel website slow? Our Motel Coach team are [marketing specialists](/motel-marketing) and can build you a website that will drive additional motel bookings and increase your visibility on Google. Contact us today; [Motel Consultancy Services.](/motel-consultancy)
+Is your motel website slow? Our Motel Coach team are [marketing specialists](/motel-marketing/) and can build you a website that will drive additional motel bookings and increase your visibility on Google. Contact us today; [Motel Consultancy Services.](/motel-consultancy/)
 
 Frequently Asked Questions
 --------------------------

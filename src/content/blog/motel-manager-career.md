@@ -6,7 +6,7 @@ category: "Motel Management"
 executiveSummary: "My answer is no - but not all motels are equal. Lets talk about what motel role might be a good fit."
 ---
 
-**Executive Summary:** You do not need a formal qualification to start in motel or hotel operations. Most operators care more about reliability, problem-solving, and service consistency than certificates. The fastest path is to get practical experience, then layer systems training so you can move from task work into leadership. If you want a structured path, start with our [motel management system guide](/motel-management) or [motel management course](/motel-management-training-course).
+**Executive Summary:** You do not need a formal qualification to start in motel or hotel operations. Most operators care more about reliability, problem-solving, and service consistency than certificates. The fastest path is to get practical experience, then layer systems training so you can move from task work into leadership. If you want a structured path, start with our [motel management system guide](/motel-management/) or [motel management course](/motel-management-training-course/).
 
 **Last Updated: 20/03/2026**
 
@@ -33,7 +33,7 @@ I now run a motel and hospitality training company, but I started in operations 
 
 If you want help building your path, email contact@motelcoach.com.au.
 
-For owners needing support with teams and operational structure, we provide onboarding and upskilling through [motel management training](/motel-management-training-course), plus [consultancy support](/motel-consultancy) across operations, marketing, and revenue strategy.
+For owners needing support with teams and operational structure, we provide onboarding and upskilling through [motel management training](/motel-management-training-course/), plus [consultancy support](/motel-consultancy/) across operations, marketing, and revenue strategy.
 ---
 title: "Do You Need Qualifications to Work in Hotels or Motels?"
 pubDate: Mon, 09 Mar 2026 12:24:36 +0000
@@ -42,7 +42,7 @@ category: "Motel Management"
 executiveSummary: "Your declarative 50-word summary here."
 ---
 
-**Executive Summary:** You do not need a formal qualification to start in motel or hotel operations. Most operators care more about reliability, problem-solving, and service consistency than certificates. The fastest path is to get practical experience, then layer systems training so you can move from task work into leadership. If you want a structured path, start with our [motel management system guide](/motel-management) or [motel management course](/motel-management-training-course).
+**Executive Summary:** You do not need a formal qualification to start in motel or hotel operations. Most operators care more about reliability, problem-solving, and service consistency than certificates. The fastest path is to get practical experience, then layer systems training so you can move from task work into leadership. If you want a structured path, start with our [motel management system guide](/motel-management/) or [motel management course](/motel-management-training-course/).
 
 **Last Updated: 20/03/2026**
 
@@ -67,5 +67,5 @@ Once you are in, progression is real. You may need to change properties to move 
 
 I now run a motel and hospitality training company, but I started in operations and worked through to senior management roles. If you want help building your path, email contact@motelcoach.com.au.
 
-For owners needing support with teams and operational structure, we provide onboarding and upskilling through [motel management training](/motel-management-training-course), plus [consultancy support](/motel-consultancy) across operations, marketing, and revenue strategy.
+For owners needing support with teams and operational structure, we provide onboarding and upskilling through [motel management training](/motel-management-training-course/), plus [consultancy support](/motel-consultancy/) across operations, marketing, and revenue strategy.
 

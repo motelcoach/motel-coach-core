@@ -13,7 +13,7 @@ A motel manager doesn't do one job - they switch roles all day.
 
 You check in guests, solve complaints, adjust bookings and fix small problems while coordinating cleaners, contractors and arrivals at the same time. A key card stops working, a room isn't ready, a guest arrives early, and an air-conditioner fails - often within the same hour.
 
-You manage housekeeping standards, step in when staff are short, monitor payments and daily balances, organise repairs and keep rooms available for sale. Group bookings, [marketing tasks](/motel-marketing), online reviews and maintenance all compete for attention, especially on busy arrival days.
+You manage housekeeping standards, step in when staff are short, monitor payments and daily balances, organise repairs and keep rooms available for sale. Group bookings, [marketing tasks](/motel-marketing/), online reviews and maintenance all compete for attention, especially on busy arrival days.
 
 The work isn't difficult because tasks are complex - it's difficult because everything happens at once and decisions can't wait.
 
@@ -217,7 +217,7 @@ Common Beginner Mistakes
 *   Learning only during problems instead of preparing before them
     
 
-[Motel management](/motel-management) rewards structured thinking, not personality.
+[Motel management](/motel-management/) rewards structured thinking, not personality.
 
 Who This Job Suits
 ------------------
@@ -260,7 +260,7 @@ Start With the Basics
 
 If you're considering entering the industry, begin with an overview of how motels actually operate - bookings, housekeeping flow, daily financial checks and guest handling.
 
-Download the introductory guide below or read our book: [The Essential Guide to Motel Management](/motel-management-book). This will give you a great orientation. If you are looking for more structured support as a motel owner, we provide [tailored motel consultancy services](/motel-consultancy).
+Download the introductory guide below or read our book: [The Essential Guide to Motel Management](/motel-management-book/). This will give you a great orientation. If you are looking for more structured support as a motel owner, we provide [tailored motel consultancy services](/motel-consultancy/).
 
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the Free Motel Management Guide</h2>
@@ -300,11 +300,11 @@ Download the introductory guide below or read our book: [The Essential Guide to 
     
 *   Is motel management suitable for people with minimal experience?
     
-    Yes. Many people successfully enter motel management with limited experience, provided they are willing to learn and take responsibility across multiple areas. If you want more confidence going into the application process you can complete our [Motel Management Certificate Course](/motel-management-training-course).
+    Yes. Many people successfully enter motel management with limited experience, provided they are willing to learn and take responsibility across multiple areas. If you want more confidence going into the application process you can complete our [Motel Management Certificate Course](/motel-management-training-course/).
     
 *   What skills should I focus on before becoming a motel manager?
     
-    Customer service, communication, organisation, basic computer skills, and willingness to learn operational systems are more important than formal qualifications. Learning a PMS like [GuestPoint](/learn-guest-point-pms) or RMS can help you into your first role.
+    Customer service, communication, organisation, basic computer skills, and willingness to learn operational systems are more important than formal qualifications. Learning a PMS like [GuestPoint](/learn-guest-point-pms/) or RMS can help you into your first role.
     
 *   Should I apply for a motel manager role before learning the basics?
     

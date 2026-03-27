@@ -13,7 +13,7 @@ Why Improving Motel Occupancy Is Not About Filling Rooms
 
 Many independent motels attempt to improve occupancy by lowering rates or increasing channel exposure. While this may temporarily lift room nights sold, it often compresses margin and creates long-term pricing instability.
 
-[Improving occupancy](/motel-marketing) sustainably requires structured control across pricing discipline, demand forecasting, distribution strategy, review performance, and direct booking conversion.
+[Improving occupancy](/motel-marketing/) sustainably requires structured control across pricing discipline, demand forecasting, distribution strategy, review performance, and direct booking conversion.
 
 Occupancy problems are rarely caused by demand alone. They are usually caused by structural misalignment across multiple operational levers.
 
@@ -30,7 +30,7 @@ Improving occupancy requires coordinated control across interconnected revenue d
     
 3.  Review velocity and reputation strength
     
-4.  [Direct booking conversion optimisation](/motel-consultancy)
+4.  [Direct booking conversion optimisation](/motel-consultancy/)
     
 5.  Room type mix control
     
@@ -78,7 +78,7 @@ RevPAR provides a clearer indicator of revenue efficiency because it measures to
 
 Pricing discipline is the foundation of revenue stability.
 
-[High-performing motels](/motel-management) do not change rates emotionally or reactively. They operate within structured pricing frameworks that account for:
+[High-performing motels](/motel-management/) do not change rates emotionally or reactively. They operate within structured pricing frameworks that account for:
 
 - Demand cycles
 - Pickup pace
@@ -102,7 +102,7 @@ Ranking factors typically include:
 - Cancellation policy structure
 - Response time
 
-[Motels](/motel-management) that understand these mechanics can improve placement without excessive discounting. OTA optimisation is about improving conversion strength and operational reliability within the platform - not simply reducing price.
+[Motels](/motel-management/) that understand these mechanics can improve placement without excessive discounting. OTA optimisation is about improving conversion strength and operational reliability within the platform - not simply reducing price.
 
 3\. Review Velocity
 -------------------
@@ -152,7 +152,7 @@ Effective room type management improves yield without increasing occupancy press
 
 Event compression occurs when local demand temporarily exceeds supply due to events, conferences, infrastructure projects, or seasonal influx.
 
-Many [motels](/motel-management-training-course) underprice during compression periods due to static rate structures or slow reaction times.
+Many [motels](/motel-management-training-course/) underprice during compression periods due to static rate structures or slow reaction times.
 
 A structured event compression strategy includes:
 
@@ -240,7 +240,7 @@ If occupancy fluctuates despite pricing adjustments, the issue is rarely demand 
 
 Structural misalignment across pricing, distribution, review performance, and operational systems often limits performance.
 
-If you would like your property assessed against these performance indicators, our [motel consultancy services](/motel-consultancy) provide a structured operational review.
+If you would like your property assessed against these performance indicators, our [motel consultancy services](/motel-consultancy/) provide a structured operational review.
 
 ### Frequently Asked Questions
 

@@ -8,7 +8,7 @@ executiveSummary: "The 2026 operating checklist for independent motel marketing:
 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2><p class="text-gray-700 m-0">
-Maximise occupancy by executing a disciplined operating rhythm across six high-impact digital channels. In 2026, motel marketing success is determined by review velocity, photo quality, and room-type clarity on Booking.com and Google Business Profile — not social media spend. Before touching advertising, optimise these four core channels: <strong>Google Business Profile, Booking.com, Expedia Group, and your direct booking path</strong>. Small improvements on each — better photos, tighter descriptions, stronger review scores, corrected room-type ordering — consistently lift occupancy more than any paid campaign. To audit your current distribution strategy, engage our <a href="/motel-consultancy" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> or enrol in our <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a>.</p>
+Maximise occupancy by executing a disciplined operating rhythm across six high-impact digital channels. In 2026, motel marketing success is determined by review velocity, photo quality, and room-type clarity on Booking.com and Google Business Profile — not social media spend. Before touching advertising, optimise these four core channels: <strong>Google Business Profile, Booking.com, Expedia Group, and your direct booking path</strong>. Small improvements on each — better photos, tighter descriptions, stronger review scores, corrected room-type ordering — consistently lift occupancy more than any paid campaign. To audit your current distribution strategy, engage our <a href="/motel-consultancy/" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> or enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a>.</p>
 </div>
 
 ## The Four Channels That Drive Motel Bookings
@@ -26,7 +26,7 @@ These channels directly intercept guests who are actively searching to book. The
 
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the 2026 Motel Marketing Checklist</h2>
-  <p class="text-stone-600 text-sm mb-6">Enter your email to receive the full spreadsheet checklist plus practical <a href="/motel-marketing" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> and <a href="/motel-management" class="text-[#4A554E] font-medium hover:underline">motel management</a> resources direct to your inbox.</p>
+  <p class="text-stone-600 text-sm mb-6">Enter your email to receive the full spreadsheet checklist plus practical <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> and <a href="/motel-management/" class="text-[#4A554E] font-medium hover:underline">motel management</a> resources direct to your inbox.</p>
   <form
     action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/"
     method="POST"
@@ -320,4 +320,4 @@ Every incremental improvement to your direct booking path reduces OTA commission
 
 ---
 
-Overwhelmed or unsure where to start? Our [motel consultancy services](/motel-consultancy) are built on direct motel operations experience across 16 properties. We also offer [motel management training courses](/motel-management-training-course) covering distribution, revenue management, and marketing systems in full.
+Overwhelmed or unsure where to start? Our [motel consultancy services](/motel-consultancy/) are built on direct motel operations experience across 16 properties. We also offer [motel management training courses](/motel-management-training-course/) covering distribution, revenue management, and marketing systems in full.

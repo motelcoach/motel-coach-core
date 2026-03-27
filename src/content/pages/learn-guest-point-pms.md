@@ -52,7 +52,7 @@ Course Outline
     
 *   #### Chapter 2: Reservation Management
     
-    *   Creating and [Managing Reservation](/motel-management-training-course)s
+    *   Creating and [Managing Reservation](/motel-management-training-course/)s
         
     *   Modifying, Moving & Cancelling Bookings
         
@@ -87,7 +87,7 @@ Course Outline
     
 *   #### Chapter 8: Daily Operations
     
-    Managing [Daily Motel Operations](/motel-management-training-course) in GuestPoint
+    Managing [Daily Motel Operations](/motel-management-training-course/) in GuestPoint
     
 
 Customer Reviews
@@ -97,7 +97,7 @@ Customer Reviews
 
 *   #### Who is the Course Instructor?
     
-    Benjamin Douglas is the Lead Instructor at Motel Coach and author of [The Essential Guide to Motel Management.](/motel-management-book)
+    Benjamin Douglas is the Lead Instructor at Motel Coach and author of [The Essential Guide to Motel Management.](/motel-management-book/)
     
     His background spans operational and commercial leadership across independent motel and hotel groups, progressing from frontline roles through to executive management overseeing 16+ motels, 10 restaurants, and more than 200 staff.
     

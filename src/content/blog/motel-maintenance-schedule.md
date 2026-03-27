@@ -8,7 +8,7 @@ executiveSummary: "We've put together a terrific Maintenance Tracker, grab it at
 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
 <h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2><p class="text-gray-700 m-0">
-Eliminate emergency repair costs and negative guest reviews by transitioning from reactive fixes to a systematic proactive maintenance schedule. Effective motel management requires moving maintenance tasks out of your head and into a verifiable motel system that tracks filter cleans, tap washers, and battery replacements before they fail. By batching these minor tasks, you reduce operational friction and protect your property's long-term reputation. To audit your current facility standards or professionalise your repair workflows, enrol in our <a href="/motel-management-training-course" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> or consult our <a href="/motel-management-book" class="text-[#4A554E] font-medium hover:underline">motel management book</a> for comprehensive maintenance templates.</p>
+Eliminate emergency repair costs and negative guest reviews by transitioning from reactive fixes to a systematic proactive maintenance schedule. Effective motel management requires moving maintenance tasks out of your head and into a verifiable motel system that tracks filter cleans, tap washers, and battery replacements before they fail. By batching these minor tasks, you reduce operational friction and protect your property's long-term reputation. To audit your current facility standards or professionalise your repair workflows, enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> or consult our <a href="/motel-management-book/" class="text-[#4A554E] font-medium hover:underline">motel management book</a> for comprehensive maintenance templates.</p>
 </div>
 
 
@@ -35,7 +35,7 @@ It’s checking things before guests ever notice a problem.
 
 It’s replacing a washer before it leaks. Cleaning an air-con filter before it stops cooling. Testing a smoke alarm before it starts chirping at 2am in a guest room. Note to you - add this to your maintenance tracker.
 
-The irony is that proactive maintenance actually feels like less work — but only once you stop relying on memory. When I first [operated a motel](/motel-management) I would enter the same room to do different tasks so many times over a week, that I started to realize - “_hey, I can batch these jobs and spend a lot less time doing the same amount of work!_”
+The irony is that proactive maintenance actually feels like less work — but only once you stop relying on memory. When I first [operated a motel](/motel-management/) I would enter the same room to do different tasks so many times over a week, that I started to realize - “_hey, I can batch these jobs and spend a lot less time doing the same amount of work!_”
 
 Most motel owners and managers don’t avoid maintenance because they don’t care. They avoid it because they’re busy, juggling reception, housekeeping, bookings, staff issues, and everything else that comes with running a motel. Maintenance ends up living in someone’s head instead of in a system.
 
@@ -81,7 +81,7 @@ Proactive maintenance won’t eliminate every problem. Things will still break �
 
 But it will dramatically reduce the number of surprises.
 
-And in this business, fewer surprises means fewer late nights, fewer angry guests, and a much calmer operation overall. If you are not confident with your motel operation currently, have a look at our [Motel Management Course](/motel-management-training-course) or Motel Management Book: [The Essential Guide to Motel Management.](/motel-management-book)
+And in this business, fewer surprises means fewer late nights, fewer angry guests, and a much calmer operation overall. If you are not confident with your motel operation currently, have a look at our [Motel Management Course](/motel-management-training-course/) or Motel Management Book: [The Essential Guide to Motel Management.](/motel-management-book/)
 
 If you’re tired of fixing things only after they break, download the free Motel Maintenance Tracker and start getting ahead of problems instead of reacting to them.
 

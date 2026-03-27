@@ -38,7 +38,7 @@ This is not theory. It is operational structure.
 Client Reviews
 --------------
 
-Reviews from our past [motel training](/motel-management-training-course) and [consultancy clients](/motel-consultancy), including hospitality students, motel receptionists, motel managers and motel owners. Learn more [about Motel Coach](/about).
+Reviews from our past [motel training](/motel-management-training-course/) and [consultancy clients](/motel-consultancy/), including hospitality students, motel receptionists, motel managers and motel owners. Learn more [about Motel Coach](/about/).
 
 ### Frequently Asked Questions
 
@@ -88,7 +88,7 @@ Reviews from our past [motel training](/motel-management-training-course) and [c
     
     Operators who want structured implementation, templates, and operational playbooks can explore the full Motel Management Training Course.
     
-    [Motel Management Courses](/motel-management-training-course)
+    [Motel Management Courses](/motel-management-training-course/)
     
     This turns credibility into conversion.
     
