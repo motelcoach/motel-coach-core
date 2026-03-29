@@ -26,9 +26,6 @@ OTAs cannot create a Google Business Profile (GBP). This is your only unfair adv
 *   **Tactical Update:** Do not just "add photos." Add photos that verify specific amenities (e.g., a B-Double truck in your parking lot). AI now scans images to confirm if your "Truck Parking" claim is a fact or a lie.
     
 *   **The Review Momentum:** A 4.8-star rating is useless if the last review was three weeks ago. You need **Recency.**
-    
-
-#block-948448f64559e382fcc2 { box-sizing: border-box; height: 100%; padding: 3% 3% 3% 3%; border-radius: 5px 5px 5px 5px; border-width: 1px; border-style: solid; }
 
 Learn How to Increase Your Motels Rank on Google
 ------------------------------------------------
