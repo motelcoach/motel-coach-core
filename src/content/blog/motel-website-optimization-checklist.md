@@ -103,7 +103,7 @@ Your [**motel website**](/motel-website-design/) is the only part of your digita
       <label for="opt-audit-email" class="sr-only">Email address</label>
       <input id="opt-audit-email" type="email" name="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
       <label for="opt-audit-exp" class="sr-only">Experience Level</label>
-      <select id="opt-audit-exp" name="motel_experience" required class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent">
+      <select id="opt-audit-exp" name="motel-experience" required class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent">
         <option value="" disabled selected>Select Experience Level</option>
         <option value="No Experience">No Experience</option>
         <option value="Some Experience">Some Experience</option>

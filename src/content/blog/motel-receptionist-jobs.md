@@ -209,7 +209,7 @@ Many independent motels hire locally and value preparation over hospitality hist
     <label for="reception-guide-exp" class="sr-only">Experience Level</label>
     <select
       id="reception-guide-exp"
-      name="motel_experience"
+      name="motel-experience"
       required
       class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
     >

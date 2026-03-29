@@ -33,7 +33,7 @@ executiveSummary: "Master the Booking.com search and review algorithms. Learn ho
     <label for="bookingcom-checklist-exp" class="sr-only">Experience Level</label>
     <select
       id="bookingcom-checklist-exp"
-      name="motel_experience"
+      name="motel-experience"
       required
       class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
     >

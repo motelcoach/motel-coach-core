@@ -248,7 +248,7 @@ Enter your email to receive a practical, step-by-step checklist covering:
       <label for="acq-email" class="sr-only">Email address</label>
       <input id="acq-email" type="email" name="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
       <label for="acq-exp" class="sr-only">Experience Level</label>
-      <select id="acq-exp" name="motel_experience" required class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent">
+      <select id="acq-exp" name="motel-experience" required class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent">
         <option value="" disabled selected>Select Experience Level</option>
         <option value="No Experience">No Experience</option>
         <option value="Some Experience">Some Experience</option>
