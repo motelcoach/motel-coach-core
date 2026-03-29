@@ -7,7 +7,7 @@ const prefill = {
   email: params.get('email') ?? '',
   phone: params.get('phone') ?? '',
   role: params.get('role') ?? '',
-  property: params.get('motel_name') ?? params.get('property') ?? '',
+  property: params.get('motel-name') ?? params.get('property') ?? '',
   topic: params.get('topic') ?? '',
   waitlist: params.get('waitlist') ?? '',
   message: params.get('message') ?? '',
@@ -109,7 +109,7 @@ const prefill = {
             </label>
             <input
               id="property"
-              name="motel_name"
+              name="motel-name"
               type="text"
               class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
               placeholder="e.g. 28-room regional motel in NSW"
