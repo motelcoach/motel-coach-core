@@ -12,18 +12,12 @@
     { "source": "/faq(/?)", "destination": "/", "permanent": true },
     { "source": "/cart(/?)", "destination": "/", "permanent": true },
     { "source": "/store(/?)", "destination": "/", "permanent": true },
-    { "source": "/store/:path*", "destination": "/", "permanent": true },
     
     { "source": "/blog/motel-room-inventory-management-guide(/?)", "destination": "/blog/managing-motel-room-inventory/", "permanent": true },
     { "source": "/blog/learn-guestpoint-pms-training(/?)", "destination": "/blog/free-online-guestpoint-training/", "permanent": true },
     { "source": "/blog/test-page-load-motel(/?)", "destination": "/blog/hotel-motel-website-speed/", "permanent": true },
     { "source": "/improve-motel-occupancy(/?)", "destination": "/blog/improve-motel-occupancy/", "permanent": true },
     { "source": "/what-does-a-motel-manager-do(/?)", "destination": "/blog/what-does-a-motel-manager-do/", "permanent": true },
-
-    { "source": "/blog/category/:path*", "destination": "/blog/", "permanent": true },
-    { "source": "/blog/tag/:path*", "destination": "/blog/", "permanent": true },
-    { "source": "/motel-management-lessons(/?)", "destination": "/blog/", "permanent": true },
-    { "source": "/motel-management-blog/:path*", "destination": "/blog/", "permanent": true },
 
     { "source": "/home(/?)", "destination": "/", "permanent": true },
     { "source": "/contact-1(/?)", "destination": "/contact/", "permanent": true },
@@ -39,6 +33,7 @@
     { "source": "/motel-management-course(/?)", "destination": "/motel-management-training-course/", "permanent": true },
     { "source": "/-motel-courses(/?)", "destination": "/courses/", "permanent": true },
     { "source": "/motel-management-books-Wrmc2(/?)", "destination": "/motel-management-book/", "permanent": true },
+    
     { "source": "/motel-management-blog/optimize-bookingdotcom-for-more-bookings(/?)", "destination": "/blog/booking-review-rank/", "permanent": true },
     { "source": "/blog/optimize-bookingdotcom-for-more-bookings(/?)", "destination": "/blog/booking-review-rank/", "permanent": true },
     { "source": "/motel-management-blog/guestpoint-pms-account-troublshooting(/?)", "destination": "/blog/guestpoint-pms-account-troublshooting/", "permanent": true },
@@ -47,6 +42,14 @@
     { "source": "/motel-management-blog/increase-bookingdotcom-rank-checklist(/?)", "destination": "/blog/booking-review-rank/", "permanent": true },
     { "source": "/motel-management-blog/Blog Post Title One-zd2kp-rktlj(/?)", "destination": "/blog/front-desk-training-checklist/", "permanent": true },
     { "source": "/blog/Blog-Post-Title-One-zd2kp-rktlj(/?)", "destination": "/blog/front-desk-training-checklist/", "permanent": true },
-    { "source": "/front-desk-training-guide-motel(/?)", "destination": "/blog/front-desk-training-checklist/", "permanent": true }
+    { "source": "/front-desk-training-guide-motel(/?)", "destination": "/blog/front-desk-training-checklist/", "permanent": true },
+
+
+    { "source": "/blog/category/:path*", "destination": "/blog/", "permanent": true },
+    { "source": "/blog/tag/:path*", "destination": "/blog/", "permanent": true },
+    { "source": "/motel-management-lessons(/?)", "destination": "/blog/", "permanent": true },
+    { "source": "/motel-management-blog(/?)", "destination": "/blog/", "permanent": true },
+    { "source": "/motel-management-blog/:path*", "destination": "/blog/", "permanent": true },
+    { "source": "/store/:path*", "destination": "/", "permanent": true }
   ]
 }
