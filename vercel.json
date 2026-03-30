@@ -29,6 +29,8 @@
     { "source": "/how-to-run-a-motel(/?)", "destination": "/motel-management/", "permanent": true },
     { "source": "/motel-front-desk-quick-reference-guide(/?)", "destination": "/motel-management/", "permanent": true },
     { "source": "/how-to-manage-a-small-motel(/?)", "destination": "/motel-management/", "permanent": true },
+	{ "source": "/how-to-manage-a-small-motel-1", "destination": "/motel-management/", "permanent": true },
+	{ "source": "/how-to-manage-a-small-motel-1-1", "destination": "/motel-management/", "permanent": true },
     { "source": "/introduction-motel-mangement(/?)", "destination": "/motel-management-training-course/", "permanent": true },
     { "source": "/motel-management-course(/?)", "destination": "/motel-management-training-course/", "permanent": true },
     { "source": "/-motel-courses(/?)", "destination": "/courses/", "permanent": true },
