@@ -56,8 +56,8 @@ Place the downloadable asset in `public/downloads/`.
 public/
   downloads/
     booking-checklist.pdf
-    maintenance-schedule.pdf
-    front-desk-sop.pdf
+    maintenance-tracker.xlsx
+    front-office-checklist.xlsx
 ```
 
 Astro serves everything in `public/` as static files at the root of the site.
