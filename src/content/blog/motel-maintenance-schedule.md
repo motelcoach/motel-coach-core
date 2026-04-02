@@ -2,7 +2,7 @@
 title: "Pro-active Motel Maintenance Strategy "
 pubDate: Mon, 05 Jan 2026 11:31:10 +0000
 slug: motel-maintenance-schedule
-Category: "Motel Maintenance"
+Category: "Maintenance"
 executiveSummary: "We've put together a terrific Maintenance Tracker, grab it at the bottom of this article."
 ---
 
@@ -93,9 +93,9 @@ Download: Free Maintenance Tracker.
 Getting your Maintenance spot on will save you time and money. While it can feel like a lot to put in place proactive systems, ultimately, you will do less and have better results. Start today, download our free Maintenance Tracker.
 
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
-  <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Get the Motel Maintenance Tracker</h2>
-  <p class="text-stone-600 text-sm mb-6">Move your maintenance out of your head and into a system.</p>
-  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4">
+  <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the Free Motel Maintenance Tracker</h2>
+  <p class="text-stone-600 text-sm mb-6">Move your maintenance out of your head and into a system. Enter your email for instant access — no cost, no catch.</p>
+  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4" data-download="/downloads/maintenance-tracker.xlsx">
     <input type="hidden" name="source_page" value="Blog: Motel Maintenance Schedule" />
     <input type="hidden" name="form_type" value="maintenance-tracker" />
     <div class="flex flex-col sm:flex-row gap-3">
@@ -110,21 +110,9 @@ Getting your Maintenance spot on will save you time and money. While it can feel
         <option value="Motel Owner">Motel Owner</option>
       </select>
     </div>
-    <div class="bg-white p-4 rounded-lg border border-stone-200 mt-2">
-      <p class="text-sm font-semibold text-stone-900 mb-3">Select your option:</p>
-      <div class="space-y-3">
-        <label class="flex items-start gap-3 cursor-pointer">
-          <input type="radio" name="offer_tier" value="free" checked class="mt-1 text-[#4A554E] focus:ring-[#4A554E]" />
-          <span class="text-sm text-stone-700"><strong>Option A (Free):</strong> Send me the PDF Maintenance Checklist.</span>
-        </label>
-        <label class="flex items-start gap-3 cursor-pointer">
-          <input type="radio" name="offer_tier" value="paid" class="mt-1 text-[#4A554E] focus:ring-[#4A554E]" />
-          <span class="text-sm text-stone-700"><strong>Option B ($49):</strong> I want the "Digital Maintenance Vault" (Editable Template/SOP). (We will email you a payment link).</span>
-        </label>
-      </div>
-    </div>
+    <input type="hidden" name="offer_tier" value="free" />
     <button type="submit" class="w-full px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">
-      Get the Tracker
+      Download Free Tracker
     </button>
   </form>
 </div>

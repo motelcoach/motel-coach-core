@@ -192,7 +192,7 @@ Many independent motels hire locally and value preparation over hospitality hist
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the Free Reception Quick Reference Guide</h2>
   <p class="text-stone-600 text-sm mb-6">See exactly how the daily workflow operates. Perfect for interview prep or your first week on the job.</p>
-  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/download/front-desk-guide">
+  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/downloads/front-office-checklist.xlsx">
     <input type="hidden" name="source_page" value="Blog: Motel Receptionist Jobs" />
     <input type="hidden" name="form_type" value="guide-download" />
     <input type="hidden" name="topic" value="checklist" />
