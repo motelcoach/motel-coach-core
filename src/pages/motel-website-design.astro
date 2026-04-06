@@ -91,37 +91,156 @@ const jsonLd = {
   <!-- ═══════════════════════════════════════════
        HERO
   ═══════════════════════════════════════════ -->
-  <section class="bg-white pt-24 pb-16 md:pt-32 md:pb-24 border-b border-stone-100">
+  <section class="bg-white pt-24 pb-0 md:pt-32 border-b border-stone-100 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-        <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#4A554E] mb-6">
-          <span class="h-px w-6 bg-[#4A554E]"></span>
-          Motel Websites
-        </span>
+        <!-- Copy -->
+        <div class="pb-16 md:pb-24">
+          <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#4A554E] mb-6">
+            <span class="h-px w-6 bg-[#4A554E]"></span>
+            Motel Websites
+          </span>
 
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold text-stone-900 leading-[1.05] tracking-tight text-balance mb-6">
-          Stop Donating 15%<br />
-          <span class="text-stone-400">to Booking.com.</span>
-        </h1>
+          <h1 class="text-5xl md:text-6xl font-semibold text-stone-900 leading-[1.05] tracking-tight mb-2">
+            Stop Donating 15%
+          </h1>
+          <h1 class="text-5xl md:text-6xl font-semibold text-stone-400 leading-[1.05] tracking-tight mb-6">
+            to Booking.com.
+          </h1>
 
-        <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-2xl mb-10 text-balance">
-          When your site is slow, guests flee to OTAs and the motel next door. A high-performance motel website is the only way to protect your margins and own the guest relationship.
-        </p>
+          <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-xl mb-8">
+            When your site is slow, guests flee to OTAs and the motel next door. A high-performance motel website is the only way to protect your margins and own the guest relationship.
+          </p>
 
-        <div class="flex flex-wrap items-center gap-4">
-          <a
-            href="#audit-form"
-            class="px-7 py-3.5 bg-[#4A554E] text-white text-base font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
-          >
-            Request a Website Audit
-          </a>
-          <a
-            href="/motel-consultancy/"
-            class="px-7 py-3.5 bg-white border border-stone-200 text-stone-900 text-base font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm"
-          >
-            Learn About Our Consultancy
-          </a>
+          <div class="flex flex-wrap items-center gap-4">
+            <a
+              href="#audit-form"
+              class="px-7 py-3.5 bg-[#4A554E] text-white text-base font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+            >
+              Request a Website Audit
+            </a>
+            <a
+              href="#pricing"
+              class="px-7 py-3.5 bg-white border border-stone-200 text-stone-900 text-base font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm"
+            >
+              View Packages
+            </a>
+          </div>
+
+          <!-- Live build credit -->
+          <p class="mt-6 text-xs text-stone-400">
+            Live build shown:
+            <a href="https://eco-motel.netlify.app/rooms/king-deluxe-motel-room/" target="_blank" rel="noopener noreferrer" class="text-[#4A554E] font-medium hover:underline">
+              Crossroads Ecomotel &rarr;
+            </a>
+          </p>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="flex justify-center lg:justify-end items-center pb-16 md:pb-24">
+          <!-- Outer phone shell -->
+          <div class="relative w-[260px] md:w-[290px] flex-shrink-0" style="filter: drop-shadow(0 30px 60px rgba(0,0,0,0.18));">
+            <!-- Phone frame -->
+            <div class="relative bg-stone-900 rounded-[2.8rem] p-[10px] border-[6px] border-stone-800">
+              <!-- Notch -->
+              <div class="absolute top-[10px] left-1/2 -translate-x-1/2 w-20 h-5 bg-stone-900 rounded-b-xl z-20"></div>
+              <!-- Side buttons -->
+              <div class="absolute -left-[10px] top-24 w-[5px] h-8 bg-stone-700 rounded-l-sm"></div>
+              <div class="absolute -left-[10px] top-36 w-[5px] h-12 bg-stone-700 rounded-l-sm"></div>
+              <div class="absolute -right-[10px] top-28 w-[5px] h-14 bg-stone-700 rounded-r-sm"></div>
+              <!-- Screen -->
+              <div class="bg-slate-50 rounded-[2.2rem] overflow-hidden" style="height: 520px;">
+                <!-- Status bar -->
+                <div class="bg-white px-5 pt-7 pb-2 flex justify-between items-center">
+                  <span class="text-[9px] font-bold text-stone-800">9:41</span>
+                  <div class="flex items-center gap-1">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none"><rect x="0" y="2" width="2" height="6" rx="0.5" fill="#1c1917"/><rect x="3" y="1" width="2" height="7" rx="0.5" fill="#1c1917"/><rect x="6" y="0" width="2" height="8" rx="0.5" fill="#1c1917"/><rect x="9" y="0" width="3" height="8" rx="0.5" fill="#1c1917" opacity="0.3"/></svg>
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M5 1.5C6.8 1.5 8.4 2.3 9.5 3.5L10 3 C8.7 1.5 6.9 0.5 5 0.5C3.1 0.5 1.3 1.5 0 3L0.5 3.5C1.6 2.3 3.2 1.5 5 1.5Z" fill="#1c1917"/><path d="M5 3.5C6.1 3.5 7.1 4 7.8 4.8L8.3 4.3C7.4 3.3 6.3 2.7 5 2.7C3.7 2.7 2.6 3.3 1.7 4.3L2.2 4.8C2.9 4 3.9 3.5 5 3.5Z" fill="#1c1917"/><circle cx="5" cy="6.5" r="1" fill="#1c1917"/></svg>
+                    <svg width="18" height="9" viewBox="0 0 18 9" fill="none"><rect x="0.5" y="0.5" width="15" height="8" rx="1.5" stroke="#1c1917" stroke-opacity="0.35"/><rect x="1.5" y="1.5" width="11" height="6" rx="1" fill="#1c1917"/><path d="M17 3.5V5.5C17.8 5.2 17.8 3.8 17 3.5Z" fill="#1c1917" opacity="0.4"/></svg>
+                  </div>
+                </div>
+
+                <!-- Scrollable page content -->
+                <div class="overflow-y-auto" style="height: 468px; scroll-behavior: smooth;">
+
+                  <!-- Nav bar -->
+                  <div class="bg-white border-b border-slate-100 px-3 py-2 flex justify-between items-center sticky top-0 z-10">
+                    <img src="/images/legacy/eco-motel-logo.png" alt="Crossroads Ecomotel" class="h-6 w-auto object-contain" />
+                    <a href="https://eco-motel.netlify.app/rooms/king-deluxe-motel-room/" target="_blank" rel="noopener noreferrer" class="text-[8px] font-bold text-white bg-[#fab663] px-2 py-1 rounded-md">Book Now</a>
+                  </div>
+
+                  <!-- Hero image -->
+                  <div class="relative">
+                    <img
+                      src="/images/legacy/crossroads-ecomotel-deluxe-king-room.jpg"
+                      alt="Crossroads Ecomotel King Deluxe Room"
+                      class="w-full object-cover"
+                      style="height: 130px;"
+                      loading="lazy"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-3">
+                      <div>
+                        <p class="text-white font-black text-sm uppercase tracking-wider leading-none">King Deluxe</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Booking card -->
+                  <div class="bg-white mx-3 mt-2 relative z-10 rounded-xl shadow-md p-3 border border-slate-100">
+                    <div class="flex justify-between items-start mb-2">
+                      <div>
+                        <p class="text-[8px] font-bold uppercase tracking-widest text-slate-400">Direct Rate Guarantee</p>
+                        <div class="flex items-end gap-1 mt-0.5">
+                          <span class="text-2xl font-black text-stone-900 leading-none">$165</span>
+                          <span class="text-[9px] text-slate-400 mb-0.5">/ night</span>
+                        </div>
+                      </div>
+                      <div class="text-right">
+                        <div class="flex items-center gap-1 justify-end">
+                          <span class="text-[9px] font-black text-stone-800">8.8</span>
+                          <span class="text-[8px] text-slate-400">/10</span>
+                        </div>
+                        <p class="text-[7px] text-slate-400 uppercase tracking-wider">Booking.com</p>
+                        <div class="flex items-center gap-0.5 mt-0.5 justify-end">
+                          <span class="text-[#febb02] text-[8px] leading-none">★★★★★</span>
+                        </div>
+                        <p class="text-[7px] text-slate-400 uppercase tracking-wider">Google 4.7</p>
+                      </div>
+                    </div>
+                    <a href="https://eco-motel.netlify.app/rooms/king-deluxe-motel-room/" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-[#fab663] text-stone-900 text-[9px] font-black uppercase tracking-widest py-2 rounded-lg">
+                      Reserve Room
+                    </a>
+                  </div>
+
+                  <!-- Amenities -->
+                  <div class="px-3 mt-3">
+                    <p class="text-[8px] font-bold uppercase tracking-widest text-slate-400 mb-2">Room Facilities</p>
+                    <div class="grid grid-cols-2 gap-1.5">
+                      {['🛏️ King Bed', '❄️ Split A/C', '📶 Free Wi-Fi', '🤫 Soundproofing', '📺 Flat Screen TV', '🚿 Walk-in Shower'].map((item) => (
+                        <div class="bg-slate-50 rounded-lg px-2 py-1.5 text-[8px] font-medium text-slate-600 border border-slate-100">{item}</div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <!-- Eco section -->
+                  <div class="px-3 mt-3 pb-4">
+                    <p class="text-[8px] font-bold uppercase tracking-widest text-slate-400 mb-2">Eco Friendly</p>
+                    <div class="space-y-1.5">
+                      {['🌿 Passive solar rammed earth design', '🌿 On-site solar array', '🌿 Rainwater smart garden'].map((item) => (
+                        <p class="text-[8px] text-slate-600 leading-relaxed">{item}</p>
+                      ))}
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Home indicator -->
+            <div class="flex justify-center mt-2">
+              <div class="w-24 h-1 bg-stone-700 rounded-full"></div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -387,6 +506,185 @@ const jsonLd = {
             <p class="text-sm text-stone-500 leading-relaxed">{body}</p>
           </div>
         ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRICING
+  ═══════════════════════════════════════════ -->
+  <section id="pricing" class="bg-white py-20 md:py-28 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="max-w-2xl mb-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#4A554E] mb-3 block">Investment</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight mb-4">
+          Choose your starting point.
+        </h2>
+        <p class="text-lg text-stone-500 leading-relaxed">
+          Every build is backed by a 0.8s load time guarantee. An additional 1s of load time costs you 7% in direct bookings — we eliminate that tax from day one.
+        </p>
+      </div>
+
+      <!-- Peace of Mind banner -->
+      <div class="mb-10 bg-[#F9F9F8] border border-stone-200 rounded-2xl px-6 py-5 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-[#4A554E]/10 flex items-center justify-center">
+          <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <p class="text-sm font-semibold text-stone-900 mb-0.5">Every package includes the $100/mo Peace of Mind subscription.</p>
+          <p class="text-sm text-stone-500">Covers: Hosting &middot; Managed Backups &middot; 24/7 Security Updates &middot; Professional Content Updates (photos, prices &amp; promos) &mdash; so you never have to touch the tech.</p>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="inline-block text-sm font-bold text-[#4A554E] bg-[#4A554E]/10 px-4 py-2 rounded-lg whitespace-nowrap">$100/mo included</span>
+        </div>
+      </div>
+
+      <!-- Three tier cards -->
+      <div class="grid gap-6 lg:grid-cols-3 items-start">
+
+        <!-- Tier 1: The Website Refresh -->
+        <div class="bg-white rounded-2xl border-2 border-stone-200 p-8 shadow-sm flex flex-col">
+          <div class="mb-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Tier 01</p>
+            <h3 class="text-xl font-bold text-stone-900 tracking-tight mb-1">The Website Refresh</h3>
+            <p class="text-sm text-[#4A554E] font-semibold italic">&ldquo;Fix the Leaky Bucket&rdquo;</p>
+          </div>
+          <div class="mb-6 pb-6 border-b border-stone-100">
+            <div class="flex items-end gap-1.5">
+              <span class="text-4xl font-bold text-stone-900">$2,650</span>
+              <span class="text-stone-400 text-sm mb-1.5">inc. GST</span>
+            </div>
+            <p class="text-stone-500 text-sm mt-1 font-medium">100% upfront</p>
+            <p class="text-stone-400 text-sm mt-0.5">+ $100/mo Peace of Mind</p>
+          </div>
+          <p class="text-sm text-stone-500 leading-relaxed mb-6">
+            Technical renovation of your current site. No full rebuild required &mdash; we inject speed, fix conversion leaks, and clean the code that&apos;s stalling mobile guests.
+          </p>
+          <ul class="space-y-3 flex-grow mb-8">
+            {[
+              { label: 'Speed Injection', desc: 'Reaching the 0.8s load time benchmark.' },
+              { label: 'Conversion Alignment', desc: 'Optimising existing pages for direct booking.' },
+              { label: 'Technical Debt Cleanup', desc: 'Removing code bloat that stalls mobile guests.' },
+              { label: 'Timeline', desc: '2&ndash;4 Weeks.' },
+            ].map(({ label, desc }) => (
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 h-5 w-5 flex-shrink-0 flex items-center justify-center rounded-full bg-[#4A554E]/10">
+                  <svg class="h-3 w-3 text-[#4A554E]" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <p class="text-sm text-stone-600"><span class="font-semibold text-stone-900">{label}:</span> <span set:html={desc}></span></p>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="https://buy.stripe.com/28E6oH3knfe5cX18tt6Zy0e"
+            class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors"
+          >
+            Get Started
+          </a>
+        </div>
+
+        <!-- Tier 2: The Growth Engine — Recommended (centre) -->
+        <div class="relative bg-gradient-to-br from-stone-900 to-[#4A554E] rounded-2xl p-8 shadow-xl flex flex-col">
+          <div class="absolute -top-3.5 left-6 inline-flex items-center gap-1.5 bg-[#4A554E] border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
+            <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none"><path d="M6 1l1.5 3 3.5.5-2.5 2.5.5 3.5L6 9l-3 1.5.5-3.5L1 4.5 4.5 4z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            Recommended Strategy
+          </div>
+          <div class="mb-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-stone-300 mb-2">Tier 02</p>
+            <h3 class="text-xl font-bold text-white tracking-tight mb-1">The Growth Engine</h3>
+            <p class="text-sm text-stone-300 font-semibold italic">&ldquo;Market Dominance&rdquo;</p>
+          </div>
+          <div class="mb-6 pb-6 border-b border-white/10">
+            <div class="flex items-end gap-1.5">
+              <span class="text-4xl font-bold text-white">$4,750</span>
+              <span class="text-stone-300 text-sm mb-1.5">inc. GST</span>
+            </div>
+            <p class="text-stone-300 text-sm mt-1 font-medium">50% upfront &middot; 50% on completion</p>
+            <p class="text-stone-400 text-sm mt-0.5">+ $100/mo Peace of Mind</p>
+          </div>
+          <p class="text-sm text-stone-300 leading-relaxed mb-6">
+            For owners looking to outrank competitors and reclaim margins from OTAs. Everything in The Foundation, plus the tools to dominate your market.
+          </p>
+          <ul class="space-y-3 flex-grow mb-8">
+            {[
+              { label: 'Everything in The Foundation', desc: 'Full ground-up build included.' },
+              { label: 'Social Trust Stack', desc: 'Integration of verified 3rd-party review widgets.' },
+              { label: 'Niche Content Strategy', desc: 'Custom pages targeting high-intent local search terms.' },
+              { label: 'Revenue Support', desc: 'We manage your seasonal price-promo banners and photo updates.' },
+              { label: 'Timeline', desc: '4 Weeks.' },
+            ].map(({ label, desc }) => (
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 h-5 w-5 flex-shrink-0 flex items-center justify-center rounded-full bg-white/10">
+                  <svg class="h-3 w-3 text-white" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <p class="text-sm text-stone-200"><span class="font-semibold text-white">{label}:</span> <span set:html={desc}></span></p>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="https://buy.stripe.com/eVqeVdf35c1T2indNN6Zy0d"
+            class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors shadow-sm"
+          >
+            Get Started &mdash; Pay 50% Now
+          </a>
+        </div>
+
+        <!-- Tier 3: The Foundation -->
+        <div class="bg-white rounded-2xl border-2 border-stone-200 p-8 shadow-sm flex flex-col">
+          <div class="mb-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Tier 03</p>
+            <h3 class="text-xl font-bold text-stone-900 tracking-tight mb-1">The Foundation</h3>
+            <p class="text-sm text-[#4A554E] font-semibold italic">&ldquo;The Modern Motel Standard&rdquo;</p>
+          </div>
+          <div class="mb-6 pb-6 border-b border-stone-100">
+            <div class="flex items-end gap-1.5">
+              <span class="text-4xl font-bold text-stone-900">$3,550</span>
+              <span class="text-stone-400 text-sm mb-1.5">inc. GST</span>
+            </div>
+            <p class="text-stone-500 text-sm mt-1 font-medium">50% upfront &middot; 50% on completion</p>
+            <p class="text-stone-400 text-sm mt-0.5">+ $100/mo Peace of Mind</p>
+          </div>
+          <p class="text-sm text-stone-500 leading-relaxed mb-6">
+            A ground-up build based on hospitality best practices. Designed for the 2026 guest journey from the first click to the booking confirmation.
+          </p>
+          <ul class="space-y-3 flex-grow mb-8">
+            {[
+              { label: 'Brand New High-Speed Site', desc: 'Built for the 2026 guest journey.' },
+              { label: 'Local SEO Foundation', desc: "Optimised for &lsquo;Accommodation [Your Town]&rsquo; search terms." },
+              { label: 'Direct Booking Sync', desc: 'Native Little Hotelier, GuestPoint, or RMS integration.' },
+              { label: 'Timeline', desc: '2&ndash;4 Weeks.' },
+            ].map(({ label, desc }) => (
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 h-5 w-5 flex-shrink-0 flex items-center justify-center rounded-full bg-[#4A554E]/10">
+                  <svg class="h-3 w-3 text-[#4A554E]" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <p class="text-sm text-stone-600"><span class="font-semibold text-stone-900">{label}:</span> <span set:html={desc}></span></p>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="https://buy.stripe.com/cNi3cvaMP9TL9KP9xx6Zy0f"
+            class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors"
+          >
+            Get Started &mdash; Pay 50% Now
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Trust footer row -->
+      <div class="mt-10 pt-8 border-t border-stone-100 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-stone-400 text-center md:text-left">
+          ABN: 53 690 759 132 &middot; All prices in AUD inc. GST
+        </p>
+        <p class="text-xs text-stone-500 italic text-center md:text-right max-w-md">
+          &ldquo;Founded on decades of frontline hospitality grit. We&apos;ve cleaned the rooms; now we fill them.&rdquo;
+        </p>
       </div>
 
     </div>

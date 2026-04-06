@@ -134,7 +134,7 @@ const entry = await getEntry('pages', 'motel-management-training-course');
 
 </head>
 
-<BaseLayout title={entry.data.title}>
+<BaseLayout title={entry.data.title} hideFooterCta>
   <!-- 1. Executive Hero (aligned with Marketing/Management pillars) -->
   <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
     <div class="max-w-7xl mx-auto px-6">
@@ -239,7 +239,7 @@ const entry = await getEntry('pages', 'motel-management-training-course');
                 <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
                   <LucideIcon name="check" size={14} class="text-[#4A554E]" />
                 </span>
-                <span>Course duration: 7–21 days</span>
+                <span>Course duration: 7 to 21 days</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
@@ -280,7 +280,7 @@ const entry = await getEntry('pages', 'motel-management-training-course');
                 <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
                   <LucideIcon name="check" size={14} class="text-[#4A554E]" />
                 </span>
-                <span>Course duration: 7–21 days</span>
+                <span>Course duration: 7 to 21 days</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
@@ -318,7 +318,7 @@ const entry = await getEntry('pages', 'motel-management-training-course');
                 <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
                   <LucideIcon name="check" size={14} class="text-[#4A554E]" />
                 </span>
-                <span>Course duration: 7–21 days</span>
+                <span>Course duration: 7 to 21 days</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
@@ -486,18 +486,29 @@ const entry = await getEntry('pages', 'motel-management-training-course');
     </div>
   </section>
 
-  <!-- 6. Bottom Lead Magnet -->
-  <section class="bg-[#F9F9F8] py-24 border-t border-stone-200">
+  <!-- 6. Google Reviews -->
+  <section class="bg-white py-16 md:py-20 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10 text-center">
+        What our students say
+      </h2>
+      <script src="https://static.elfsight.com/platform/platform.js" async is:inline></script>
+      <div class="elfsight-app-b09bbb90-e770-4872-8334-f5b66579c51e" data-elfsight-app-lazy></div>
+    </div>
+  </section>
+
+  <!-- 7. Bottom Lead Magnet -->
+  <section class="bg-[#4A554E] py-24 border-t border-white/10">
     <div class="max-w-xl mx-auto px-6">
-      <h3 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-3 text-balance">
+      <h3 class="text-2xl md:text-3xl font-semibold text-white tracking-tight mb-3 text-balance">
         Download our Free Motel Guide
       </h3>
-      <p class="text-stone-500 leading-relaxed mb-6">
-        By submitting this form, you’ll receive the Motel Management Guide you requested, along with a short series of follow-up emails to help you understand motel management and your next steps. You can unsubscribe at any time.
+      <p class="text-stone-300 leading-relaxed mb-6">
+        By submitting this form, you&apos;ll receive the Motel Management Guide you requested, along with a short series of follow-up emails to help you understand motel management and your next steps. You can unsubscribe at any time.
       </p>
       <div id="course-guide-success" class="hidden py-4">
-        <p class="font-semibold text-stone-900 mb-1">Guide on its way!</p>
-        <p class="text-sm text-stone-500">Check your inbox shortly.</p>
+        <p class="font-semibold text-white mb-1">Guide on its way!</p>
+        <p class="text-sm text-stone-300">Check your inbox shortly.</p>
       </div>
       <form id="course-guide-form" class="space-y-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
         <input type="hidden" name="source_page" value="Motel Management Training Course" />
@@ -507,24 +518,24 @@ const entry = await getEntry('pages', 'motel-management-training-course');
           name="email"
           required
           placeholder="you@example.com"
-          class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+          class="w-full px-4 py-2.5 rounded-lg border border-white/20 bg-white/10 text-sm text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
         />
         <label for="course-guide-exp" class="sr-only">Experience Level</label>
         <select
           id="course-guide-exp"
           name="motel-experience"
           required
-          class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+          class="w-full px-4 py-2.5 rounded-lg border border-white/20 bg-white/10 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
         >
-          <option value="" disabled selected>Select Experience Level</option>
-          <option value="No Experience">No Experience</option>
-          <option value="Some Experience">Some Experience</option>
-          <option value="Experienced">Experienced</option>
-          <option value="Motel Owner">Motel Owner</option>
+          <option value="" disabled selected class="text-stone-900">Select Experience Level</option>
+          <option value="No Experience" class="text-stone-900">No Experience</option>
+          <option value="Some Experience" class="text-stone-900">Some Experience</option>
+          <option value="Experienced" class="text-stone-900">Experienced</option>
+          <option value="Motel Owner" class="text-stone-900">Motel Owner</option>
         </select>
         <button
           type="submit"
-          class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+          class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors shadow-sm"
         >
           Get the Free Guide
         </button>
