@@ -3,7 +3,7 @@ title: "Booking.com Rating System: The 36-Month Truth & ROI Guide"
 pubDate: 2026-04-08
 slug: bookingcom-rating-system
 category: "Motel Management"
-executiveSummary: "Your Booking.com Guest Review Score directly affects both your room rate ceiling and your search rank. This guide explains the 36-month recency window, review velocity, and the practical steps to improve your score faster."
+executiveSummary: "Your Booking.com score affects your rate ceiling and rank. This guide explains the 36-month recency window, review velocity, and practical steps to improve your score faster."
 ---
 
 <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
