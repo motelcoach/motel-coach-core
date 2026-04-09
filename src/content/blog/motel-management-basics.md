@@ -14,7 +14,7 @@ Maximise your property’s performance and conversion rates by auditing the gues
 
 
 
-![](/images/migrated/motel-management-getting-back-to-basics.jpg)
+<img src="/images/migrated/motel-management-getting-back-to-basics.jpg" alt="Getting back to basics in motel management" width="870" height="1305" loading="lazy" decoding="async" style="max-width:100%;height:auto;" />
 
 Getting the basics right in [Motel Management](/motel-management/) is a matter of stepping back from your role and into the shoes of your customers. It is sometimes easy to get caught in the day to day and forget the basics. We’ve put together some ideas to level up your motels performance without major expenditure.
 
@@ -22,7 +22,7 @@ Getting the basics right in [Motel Management](/motel-management/) is a matter o
 
 Run through the booking, check-in, stay and post stay experience of your customers. Go onto Google Maps, Booking.com, Expedia, Direct on your website. Do the photos, descriptions and reviews push potential customers to stay at your property? Who are your customers and are you catering for their needs, if you cater primarily for business customers - set up your laptop in one of the rooms - are you comfortable, can you get a good internet connection, is the room quiet, and does the A/C keep the room comfortable? Testing should be done when the property is busy and everyone is preferably in-house, this will impact how well your guests can connect and use your WiFi.
 
-![](/images/migrated/motel-management-booking.com.png)
+<img src="/images/migrated/motel-management-booking.com.png" alt="Motel Booking.com management dashboard" width="1487" height="278" loading="lazy" decoding="async" style="max-width:100%;height:auto;" />
 
 **Booking.com and Expedia**
 
@@ -78,7 +78,7 @@ Are all of your rooms listed online without restriction? This is the starting po
 
 Table up your reviews and identify the key sentiments in them ,
 
-![](/images/migrated/styled-room-issues-table.jpg)
+<img src="/images/migrated/styled-room-issues-table.jpg" alt="Motel room issues review table" width="2385" height="753" loading="lazy" decoding="async" style="max-width:100%;height:auto;" />
 
 **Rate Check**
 

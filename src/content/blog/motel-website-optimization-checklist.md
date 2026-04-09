@@ -16,7 +16,7 @@ Maximise your direct booking revenue by transforming your digital presence into 
 
 **Last Updated: 03/03/2026**
 
-![](/images/migrated/motel-website-key-statistics.png)
+<img src="/images/migrated/motel-website-key-statistics.png" alt="Key statistics for motel website performance" width="478" height="260" loading="lazy" decoding="async" style="max-width:100%;height:auto;" />
 
 In 2026, a [**motel website**](/motel-website-design/) that merely "exists" is a liability. As third-party commissions climb, your website’s sole purpose is to convert a browser into a direct booking. If your site doesn't feel as reliable as a clean room and a firm mattress, the guest will go back to the OTA.
 

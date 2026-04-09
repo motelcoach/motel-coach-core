@@ -36,7 +36,7 @@ To leverage revenue strategies, you must understand your property's specific boo
 
 *(For 100s of operational templates, refer to [The Essential Guide to Motel Management](/motel-management-book/)).*
 
-![](/images/migrated/reservation-screen.png)
+<img src="/images/migrated/reservation-screen.png" alt="Motel reservation screen in PMS" width="1920" height="1080" loading="lazy" decoding="async" style="max-width:100%;height:auto;" />
 
 ## 2. Balancing Occupancy vs. Average Daily Rate (ADR)
 
@@ -64,7 +64,7 @@ Attach conditions to discounted rates so they do not cannibalize your primary re
 * **Advance Purchase:** Offer lower rates for bookings made 21+ days in advance with a strict non-refundable policy.
 * **Channel Fencing:** Offer value-adds (e.g., free breakfast or late checkout) exclusively to guests booking via your direct website to reduce OTA commission reliance.
 
-![](/images/migrated/revenue-management-101--1-.png)
+<img src="/images/migrated/revenue-management-101--1-.png" alt="Revenue management 101 for motels" width="1920" height="1080" loading="lazy" decoding="async" style="max-width:100%;height:auto;" />
 
 ## 4. Advanced Tactics: Stop-Sell and Overbooking
 

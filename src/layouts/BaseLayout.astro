@@ -5,14 +5,17 @@ interface Props {
   hideFooterCta?: boolean;
   noindex?: boolean;
   canonicalURL?: string | URL;
+  /** Pass a <link rel="preload"> tag for the page's LCP element */
+  lcpPreload?: string;
 }
 
 const {
-  title = "Independent Motel Management & Marketing | Motel Coach 	",
+  title = "Independent Motel Management & Marketing | Motel Coach",
   description = "Practical Management & Marketing for Independent Motels. Moving owners from reactive management to systems-based profitability.",
   hideFooterCta = false,
   noindex = false,
   canonicalURL,
+  lcpPreload,
 } = Astro.props;
 
 const resolvedCanonical = canonicalURL ?? new URL(Astro.url.pathname, Astro.site);
@@ -38,9 +41,13 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
 
+    {lcpPreload && <Fragment set:html={lcpPreload} />}
+    <slot name="head" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" /></noscript>
 
     <script type="application/ld+json">
     {
@@ -121,26 +128,32 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
     </script>
 
     {import.meta.env.PROD && (
-      <>
-        <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-B8FB29436G"></script>
-        <script is:inline>
+      <script is:inline>
+        // Load GA/GTM after the page is interactive to avoid TBT penalty
+        function loadGtag() {
+          var s = document.createElement('script');
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-B8FB29436G';
+          s.async = true;
+          document.head.appendChild(s);
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
           gtag('js', new Date());
-
           gtag('config', 'G-B8FB29436G');
-          gtag('config', 'AW-5951687348', {
-            'allow_enhanced_conversions': true
-          });
-
+          gtag('config', 'AW-5951687348', {'allow_enhanced_conversions': true});
           document.addEventListener('astro:after-swap', function() {
             gtag('event', 'page_view', {
               page_location: window.location.href,
               page_path: window.location.pathname + window.location.search
             });
           });
-        </script>
-      </>
+        }
+        if (document.readyState === 'complete') {
+          loadGtag();
+        } else {
+          window.addEventListener('load', loadGtag, {once: true});
+        }
+      </script>
     )}
   </head>
 
@@ -154,6 +167,9 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
             src="/motel-management-marketing-motel-coach.png"
             alt="Motel Management by Motel Coach"
             class="h-10 w-auto"
+            width="200"
+            height="40"
+            fetchpriority="high"
           />
         </a>
 
@@ -203,6 +219,9 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
             src="/motel-management-marketing-motel-coach.png"
             alt="Motel Management by Motel Coach"
             class="h-10 w-auto"
+            width="200"
+            height="40"
+            loading="lazy"
           />
         </a>
         <button
@@ -451,9 +470,9 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
       })();
     </script>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- WhatsApp Floating Button (deferred until after load) -->
     <script>
-      (function () {
+      window.addEventListener('load', function () {
         // Check if the page has a form with form_type="guide-download"
         var hasGuideForm = document.querySelector('input[name="form_type"][value="guide-download"]');
         
@@ -483,7 +502,7 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
           waButton.appendChild(icon);
           document.body.appendChild(waButton);
         }
-      })();
+      }, {once: true});
     </script>
 
   </body>

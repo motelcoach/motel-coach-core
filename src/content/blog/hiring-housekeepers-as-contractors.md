@@ -16,7 +16,7 @@ executiveSummary: "How to hiring housekeepers with the correct employment or con
 
 
 
-![](/images/migrated/sham-contracting-housekeepers.png)
+<img src="/images/migrated/sham-contracting-housekeepers.png" alt="Sham contracting risks for motel housekeepers" width="512" height="512" loading="lazy" decoding="async" style="max-width:100%;height:auto;" />
 
 **Last Edited 19.01.2026**
 
