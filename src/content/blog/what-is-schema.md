@@ -3,6 +3,7 @@ title: "What Is Schema? A Simple Guide for Beginners"
 pubDate: Thu, 15 Jan 2026 05:19:29 +0000
 slug: what-is-schema
 category: "Motel Marketing"
+description: "A simple guide to Schema for motels. Learn how structured data helps AI models like Gemini recommend your property. Request technical implementation."
 executiveSummary: "Room Schema is an SEO strategy to help your motel show up in Google."
 ---
 

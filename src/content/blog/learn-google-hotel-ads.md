@@ -3,6 +3,7 @@ title: "What are Google Hotel Ads, and is it Worth It?"
 pubDate: Fri, 30 May 2025 03:56:17 +0000
 slug: learn-google-hotel-ads
 category: "Motel Marketing"
+description: "Intercept guest intent before they hit the OTAs. Learn how Google Hotel Ads drive high-margin direct bookings. Book your Digital Strategy Session now."
 executiveSummary: "Google Hotels Ads are a great way to drive more direct bookings, and capture more market share."
 ---
 

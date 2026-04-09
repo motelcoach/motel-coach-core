@@ -3,6 +3,7 @@ title: 'Motel AI: The New Front Door to Your Property'
 pubDate: Mon, 02 Mar 2026 04:33:18 +0000
 slug: motel-ai
 category: "Motel Marketing"
+description: "Is your motel invisible to Gemini and ChatGPT? Learn how AI search works and how to control your property's narrative. Book a Digital Strategy Session."
 executiveSummary: "Learn how to future proof your motel investment or risk losing guests to the motel next door."
 ---
 

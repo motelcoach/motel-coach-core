@@ -3,6 +3,7 @@ title: "GuestPoint PMS Tips: Simplify Guest Accounts"
 pubDate: Thu, 02 Oct 2025 04:35:33 +0000
 slug: guestpoint-pms-account-troublshooting
 category: "GuestPoint Training"
+description: "How to troubleshoot a GuestPoint PMS Account for your Motel. Enrol in the full course today from $95"
 executiveSummary: "An easy win for troubleshooting accounts in GuestPoint PMS"
 ---
 

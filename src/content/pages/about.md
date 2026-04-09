@@ -1,6 +1,6 @@
 ---
 title: "About Motel Coach"
-description: "From cleaning rooms to managing 16+ properties. Real operational experience for independent motels."
+description: "From cleaning rooms to group-level operations. Discover the hands-on experience driving Motel Coach. Meet Ben Douglas and reclaim your motel's profit."
 pubDate: 2026-03-14
 slug: about
 ---

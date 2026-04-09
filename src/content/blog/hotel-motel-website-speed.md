@@ -3,6 +3,7 @@ title: "Website Speed Testing - Improve your SEO."
 pubDate: Wed, 11 Jun 2025 00:09:49 +0000
 slug: hotel-motel-website-speed
 category: "Motel Marketing"
+description: "Slow sites kill bookings. Learn why website speed is a direct ranking factor for motel SEO. Request your Technical Performance Audit today."
 executiveSummary: "A slow motel website is the best way to send guests to the motel next door."
 ---
 

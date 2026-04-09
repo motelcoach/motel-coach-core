@@ -3,6 +3,7 @@ title: "Free GuestPoint PMS Training - Comprehensive"
 pubDate: Thu, 30 Oct 2025 00:49:09 +0000
 slug: free-online-guestpoint-training
 category: "GuestPoint Training"
+description: "Free GuestPoint videos. Enrol in our Full Course for Structured learning on Confidence as a Motel Manager."
 executiveSummary: "GuestPoint PMS Training from a motel operations specialist."
 ---
 

@@ -3,6 +3,7 @@ title: "Getting the Basics right in a Motel."
 pubDate: Mon, 07 Apr 2025 11:19:08 +0000
 slug: motel-management-basics
 category: "Motel Management"
+description: "Stop guessing the basics. Master clean rooms, maintenance planning, and guest service systems. Order the definitive Motel Management Book today!"
 executiveSummary: "Lets look at your motel and identify opportunities to improve your guest experience."
 ---
 

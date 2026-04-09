@@ -3,6 +3,7 @@ title: "Buying a Motel: A Practical Guide to Avoid Costly Mistakes"
 pubDate: Sun, 04 Jan 2026 00:10:25 +0000
 slug: buying-a-motel-business
 category: "Buying a Motel"
+description: "Avoid costly mistakes when buying a motel business. A practical guide to stress-testing add-backs and capex. Book a free consult to talk about your target motel investment."
 executiveSummary: "Buying the wrong motel can cost you your savings - our guide will help you avoid this."
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Become a Motel Coach"
+description: "Want to join the Motel Coach network? Leverage your operational expertise to help independent owners thrive. Apply to become a Motel Coach today."
 pubDate: Wed, 11 Feb 2026 23:56:15 +0000
 slug: become-motel-coach
 ---

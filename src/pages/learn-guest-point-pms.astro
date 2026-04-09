@@ -6,7 +6,7 @@ import LucideIcon from '../components/LucideIcon.astro';
 const entry = await getEntry('pages', 'learn-guest-point-pms');
 ---
 
-<BaseLayout title={entry.data.title}>
+<BaseLayout title={entry.data.title} description={entry.data.description}>
   <!-- 1. Zero-Risk Hero -->
   <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
     <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-start">

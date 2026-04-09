@@ -2,7 +2,7 @@
 title: "Motel Room Pickup: What It Means and Why It Matters"
 pubDate: Thu, 19 Feb 2026 07:46:46 +0000
 slug: what-is-motel-room-pick-up
-description: "Room pickup is the net number of rooms added to your bookings over a period. Learn how to calculate daily, weekly, and monthly pickup and use it for forecasting."
+description: "What is room pickup and why does it matter for your bottom line? Master the metrics that drive occupancy. Enroll in our Revenue Management training now."
 category: "Revenue Management"
 executiveSummary: "Room pickup is a revenue management tool to help you roster staff, forecast demand and optimize profitability."
 ---

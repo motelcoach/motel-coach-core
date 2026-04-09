@@ -3,6 +3,7 @@ title: "Understand How Motel Rates Affect Profit"
 pubDate: Thu, 19 Jun 2025 02:06:52 +0000
 slug: motel-room-rate-calculator
 category: "Revenue Management"
+description: "Understand how room rates impact your P&L. Stop the erosion of profit through small misalignments. Join the Revenue Management Course Waitlist today!"
 executiveSummary: "Understand how your motel's room rate affects profit."
 ---
 

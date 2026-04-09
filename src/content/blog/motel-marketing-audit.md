@@ -3,6 +3,7 @@ title: "Free Motel Marketing Audit for Independent Motels"
 pubDate: Thu, 18 Dec 2025 05:21:40 +0000
 slug: motel-marketing-audit
 category: "Motel Marketing"
+description: "Uncover the hidden revenue blockers in your digital footprint. Get a forensic read on your direct booking strategy. Schedule a $95 Marketing Audit of your Motel today."
 executiveSummary: "Stop paying the OTA Tax. Start learning marketing strategies to increase direct bookings."
 ---
 

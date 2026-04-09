@@ -3,6 +3,7 @@ title: "Do You Need Qualifications to Work in Hotels or Motels?"
 pubDate: 2026-03-09
 slug: motel-manager-career
 category: "Motel Management"
+description: "Do you need qualifications for hospitality management? Discover the practical path to a high-performance motel career. Join our 'Become a Coach' program."
 executiveSummary: "My answer is no - but not all motels are equal. Lets talk about what motel role might be a good fit."
 ---
 

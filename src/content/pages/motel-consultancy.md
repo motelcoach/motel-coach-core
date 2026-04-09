@@ -1,5 +1,6 @@
 ---
 title: "Motel Consultancy"
+description: "Institutional-grade oversight for independent motels. Align pricing and strategy with your long-term asset goals. Schedule your Strategy Session."
 pubDate: Sun, 08 Mar 2026 03:31:41 +0000
 slug: motel-consultancy
 ---

@@ -3,6 +3,7 @@ title: "Motel Receptionist Jobs – Front Desk Roles, Duties & How to Get Hired"
 pubDate: Fri, 13 Feb 2026 00:45:03 +0000
 slug: motel-receptionist-jobs
 category: "Hospitality Jobs"
+description: "Learn how to run a motel reception or front office. Enrol in our Motel Management Course from $95"
 executiveSummary: "What a motel receptionist actually does, the skills employers look for, and how to prepare before applying — no prior experience required."
 ---
 

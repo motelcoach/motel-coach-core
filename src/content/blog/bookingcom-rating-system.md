@@ -3,6 +3,7 @@ title: "Booking.com Rating System: The 36-Month Truth & ROI Guide"
 pubDate: 2026-04-08
 slug: bookingcom-rating-system
 category: "Motel Management"
+description: "How does booking.com count the guest reviews or ratings received? Review recency, review volume, review responses, and overall review score."
 executiveSummary: "Your Booking.com score affects your rate ceiling and rank. This guide explains the 36-month recency window, review velocity, and practical steps to improve your score faster."
 ---
 

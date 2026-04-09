@@ -13,7 +13,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<BaseLayout title={entry.data.title}>
+<BaseLayout title={entry.data.title} description={entry.data.description}>
   {entry.data.faqs && (
     <script type="application/ld+json">
       {JSON.stringify({

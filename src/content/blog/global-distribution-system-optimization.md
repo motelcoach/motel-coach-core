@@ -3,6 +3,7 @@ title: "GDS Optimization Checklist for Motels"
 pubDate: Mon, 01 Dec 2025 23:25:18 +0000
 slug: global-distribution-system-optimization
 category: "GDS"
+description: "Is your GDS strategy leaking revenue? Optimize your motel's global reach with our distribution checklist. Inquire about GDS consultancy today."
 executiveSummary: "Learn how to maximize your GDS Connection and motel occupancy."
 ---
 

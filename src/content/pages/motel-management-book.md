@@ -1,5 +1,6 @@
 ---
 title: "The Essential Guide to Motel Management"
+description: "The 190+ page manual for Australian motel management. Hundreds of templates and checklists. Download your free chapter or buy the full guide today!"
 pubDate: Sun, 22 Feb 2026 14:00:58 +0000
 slug: motel-management-book
 ---

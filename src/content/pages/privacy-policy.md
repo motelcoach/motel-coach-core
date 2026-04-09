@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+description: "Review the Motel Coach Privacy Policy. We are committed to protecting your data and maintaining information consistency across all digital channels."
 pubDate: Fri, 09 Jan 2026 02:44:14 +0000
 slug: privacy-policy
 ---

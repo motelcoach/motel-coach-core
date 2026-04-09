@@ -3,6 +3,7 @@ title: "Are Housekeepers Contractors or Employees?"
 pubDate: Fri, 30 May 2025 00:50:33 +0000
 slug: hiring-housekeepers-as-contractors
 category: "Motel Management"
+description: "Are your housekeepers contractors or employees? Avoid the legal pitfalls of motel staffing. Learn how to structure your team for compliance and profit."
 executiveSummary: "How to hiring housekeepers with the correct employment or contractor structure."
 ---
 

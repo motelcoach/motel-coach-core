@@ -3,6 +3,7 @@ title: "Motel Inventory Management: The 2026 Revenue & Yield Guide"
 pubDate: 2026-02-13
 slug: managing-motel-room-inventory
 category: "Motel Management"
+description: "The 2026 guide to yield and inventory management. Maximize your ADR and stop leaking revenue to OTAs. Secure your spot in the Revenue Course Waitlist."
 executiveSummary: "Maximize RevPAR by shifting from passive order-taking to active inventory control. Learn to use MLOS, CTA, and dynamic pricing to protect high-demand dates."
 ---
 

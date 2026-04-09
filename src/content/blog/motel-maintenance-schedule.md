@@ -3,6 +3,7 @@ title: "Pro-active Motel Maintenance Strategy "
 pubDate: Mon, 05 Jan 2026 11:31:10 +0000
 slug: motel-maintenance-schedule
 category: "Maintenance"
+description: "Protect your asset value with a proactive maintenance strategy. Prevent erosion of profit through small misalignments. Download maintenance templates."
 executiveSummary: "We've put together a terrific Maintenance Tracker, grab it at the bottom of this article."
 ---
 

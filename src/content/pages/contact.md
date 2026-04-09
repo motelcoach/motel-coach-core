@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+description: "Ready to reclaim your time and maximize profit? Reach out to the Motel Coach team today to discuss your transition or performance strategy. Contact us."
 pubDate: Wed, 11 Feb 2026 23:35:48 +0000
 slug: contact
 ---

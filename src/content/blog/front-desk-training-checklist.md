@@ -3,6 +3,7 @@ title: "Front Desk Training: The Complete Arrival & Check-In SOP"
 pubDate: 2026-02-13
 slug: front-desk-training-checklist
 category: "Front Desk Training"
+description: "The complete arrival and check-in SOP for motel receptionists. Turn front desk chaos into repeatable systems. Access the Motel Management Training Course."
 executiveSummary: "Eliminate front-desk errors and service drift by adopting a step-by-step guest registration and room status framework."
 ---
 

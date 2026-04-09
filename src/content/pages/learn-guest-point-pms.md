@@ -1,5 +1,6 @@
 ---
 title: "Learn GuestPoint PMS"
+description: "Master your GuestPoint PMS with our comprehensive training modules. Simplify guest accounts and optimize room inventory. Access free PMS training now."
 pubDate: Sun, 08 Mar 2026 05:18:35 +0000
 slug: learn-guest-point-pms
 ---

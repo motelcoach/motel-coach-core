@@ -3,6 +3,7 @@ title: "The 2026 Motel SEO and Local SEO Power Guide"
 pubDate: Thu, 11 Dec 2025 23:27:44 +0000
 slug: motel-seo-checklist-2026
 category: "Motel Marketing"
+description: "Master the 2026 Motel SEO framework. Rank in the Map Pack and beat the OTAs. Download the SEO Checklist to dominate your local market."
 executiveSummary: "Over 70% of visitors start their accommodation search on Google - do you show up?"
 ---
 

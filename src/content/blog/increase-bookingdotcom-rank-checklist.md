@@ -3,6 +3,7 @@ title: "Increase your Motels Booking.com Rank"
 pubDate: Thu, 21 Aug 2025 00:34:36 +0000
 slug: increase-bookingdotcom-rank-checklist
 category: "Motel Marketing"
+description: "Is your motel buried on page 10? Master the CTR and conversion signals that drive OTA visibility. Download your free Booking.com Rank Checklist today!"
 executiveSummary: "We've created a checklist to help you rank higher on Booking.com"
 ---
 
