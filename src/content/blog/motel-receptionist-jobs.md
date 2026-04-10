@@ -7,11 +7,9 @@ description: "Learn how to run a motel reception or front office. Enrol in our M
 executiveSummary: "What a motel receptionist actually does, the skills employers look for, and how to prepare before applying — no prior experience required."
 ---
 
-Motel Receptionist Jobs
-=======================
+## Motel Receptionist Jobs
 
-Duties, Skills & How to Get Hired
----------------------------------
+### Duties, Skills & How to Get Hired
 
 A motel receptionist is responsible for managing guest arrivals, bookings, and communication at the front desk of a property.
 

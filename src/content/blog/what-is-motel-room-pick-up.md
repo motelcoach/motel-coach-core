@@ -8,8 +8,7 @@ executiveSummary: "Maximise your revenue by using room pickup as a real-time bar
 ---
 
 
-Room Pick up Explained
-======================
+## Room Pick up Explained
 
 ### Room Pickup: What It Means and Why It Matters
 

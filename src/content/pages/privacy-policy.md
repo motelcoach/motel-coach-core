@@ -3,6 +3,7 @@ title: "Privacy Policy"
 description: "Review the Motel Coach Privacy Policy. We are committed to protecting your data and maintaining information consistency across all digital channels."
 pubDate: Fri, 09 Jan 2026 02:44:14 +0000
 slug: privacy-policy
+noindex: true
 ---
 
 **Last updated: 24 November 2025**
@@ -68,8 +69,7 @@ Motel Coach uses your personal information to:
 *   **Run remarketing and personalised advertising campaigns across Google, Facebook, Instagram and YouTube**
     
 
-**4\. Advertising & Remarketing Compliance (Google, Meta, YouTube, Instagram)**
-===============================================================================
+## **4\. Advertising & Remarketing Compliance (Google, Meta, YouTube, Instagram)**
 
 Motel Coach uses cookies, pixels, device identifiers and similar tracking technologies to deliver personalised advertising and measure marketing performance.
 

@@ -11,24 +11,37 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+// Related posts: same category, excluding current post, up to 3
+const allPosts = await getCollection('blog');
+const relatedPosts = allPosts
+  .filter(p => p.slug !== entry.slug && p.data.category === entry.data.category)
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 3);
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: entry.data.title,
+  description: entry.data.description ?? '',
+  datePublished: new Date(entry.data.pubDate).toISOString(),
+  author: { '@type': 'Person', name: 'Benjamin Douglas' },
+  publisher: { '@type': 'Organization', name: 'Motel Coach', url: 'https://motelcoach.com.au/' },
+};
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.description}>
+<BaseLayout title={`${entry.data.title} | Motel Coach`} description={entry.data.description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(articleJsonLd)} />
   {entry.data.faqs && (
-    <script type="application/ld+json">
-      {JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: entry.data.faqs.map((faq) => ({
-          '@type': 'Question',
-          name: faq.q,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.a,
-          },
-        })),
-      })}
-    </script>
+    <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: entry.data.faqs.map((faq: { q: string; a: string }) => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    })} />
   )}
   <div class="max-w-3xl mx-auto px-6 py-20">
     <a href="/blog/" class="text-[#4A554E] font-medium text-sm hover:text-stone-900 transition-colors">← Back to Blog</a>
@@ -46,4 +59,22 @@ const { Content } = await entry.render();
       <Content />
     </article>
   </div>
+
+  {relatedPosts.length > 0 && (
+    <section class="border-t border-stone-100 bg-brand-50 py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-stone-900 tracking-tight mb-8">Related Articles</h2>
+        <div class="grid sm:grid-cols-3 gap-6">
+          {relatedPosts.map(post => (
+            <a href={`/blog/${post.slug}/`} class="group block bg-white rounded-xl border border-stone-100 p-5 hover:border-[#4A554E] transition-colors no-underline">
+              {post.data.category && (
+                <span class="text-xs font-bold uppercase tracking-widest text-[#4A554E] mb-2 block">{post.data.category}</span>
+              )}
+              <p class="text-sm font-semibold text-stone-900 group-hover:text-[#4A554E] transition-colors leading-snug">{post.data.title}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 </BaseLayout>

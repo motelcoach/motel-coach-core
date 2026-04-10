@@ -3,6 +3,7 @@ title: "Disclaimer Statement"
 description: "Review our disclaimer statement. At Motel Coach, we focus on measurable results and field-proven hospitality strategy, not just theoretical advice."
 pubDate: Thu, 06 Nov 2025 06:05:54 +0000
 slug: disclaimer
+noindex: true
 ---
 
 **Effective Date:** 29 May 2025  

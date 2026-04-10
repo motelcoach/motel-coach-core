@@ -18,6 +18,7 @@ const pages = defineCollection({
     pubDate: z.coerce.date().optional(),
     description: z.string().optional(),
     category: z.string().optional(),
+    noindex: z.boolean().optional(),
   }),
 });
 

@@ -7,6 +7,8 @@ interface Props {
   canonicalURL?: string | URL;
   /** Pass a <link rel="preload"> tag for the page's LCP element */
   lcpPreload?: string;
+  /** Override the default OG/Twitter share image */
+  ogImage?: string;
 }
 
 const {
@@ -16,7 +18,10 @@ const {
   noindex = false,
   canonicalURL,
   lcpPreload,
+  ogImage = '/the-essential-guide-to-motel-management.png',
 } = Astro.props;
+
+const ogImageAbsolute = new URL(ogImage, Astro.site ?? 'https://motelcoach.com.au').toString();
 
 const resolvedCanonical = canonicalURL ?? new URL(Astro.url.pathname, Astro.site);
 // Ensure canonical URL does not contain www.
@@ -40,6 +45,13 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
     <meta property="og:url" content={finalCanonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageAbsolute} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageAbsolute} />
 
     {lcpPreload && <Fragment set:html={lcpPreload} />}
     <slot name="head" />
@@ -81,7 +93,8 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
       },
       "sameAs": [
         "https://www.linkedin.com/company/motel-coach/",
-        "https://www.facebook.com/motelcoach"
+        "https://www.facebook.com/motelcoach",
+        "https://www.youtube.com/@Motelcoach"
       ],
       "knowsAbout": [
         "motel management",
@@ -123,7 +136,10 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
         "gds and distribution",
         "hotel motel website speed"
       ],
-      "sameAs": []
+      "sameAs": [
+        "https://www.linkedin.com/in/benjamin-douglas-motel-coach/",
+        "https://www.youtube.com/@Motelcoach"
+      ]
     }
     </script>
 
@@ -308,7 +324,7 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
               <li><a href="/about/" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">About Us</a></li>
               <li><a href="/blog/" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Blog</a></li>
               <li><a href="/contact/" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Contact</a></li>
-              <li><a href="https://www.reddit.com/user/Cute_Oil5593/" target="_blank" class="text-sm text-[#4A554E] hover:text-stone-900 transition-colors font-medium">Reddit Advice Hub</a></li>
+              <li><a href="https://www.reddit.com/user/Cute_Oil5593/" target="_blank" rel="noopener noreferrer" class="text-sm text-[#4A554E] hover:text-stone-900 transition-colors font-medium">Reddit Advice Hub</a></li>
             </ul>
           </div>
 

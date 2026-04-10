@@ -13,7 +13,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.description}>
+<BaseLayout title={entry.data.title} description={entry.data.description} noindex={entry.data.noindex ?? false}>
   <div class="bg-brand-50 py-16 md:py-20">
     <div class="max-w-4xl mx-auto px-6">
       <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight mb-10">
