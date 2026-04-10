@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page Not Found | Motel Coach"
+  description="The page you were looking for doesn't exist. Find motel management resources, training courses, and expert consultancy at Motel Coach."
+  noindex
+>
+  <section class="bg-[#F9F9F8] min-h-[70vh] flex items-center py-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+
+      <span class="inline-block text-8xl font-bold text-stone-200 leading-none mb-4">404</span>
+
+      <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight mb-4">
+        Page Not Found
+      </h1>
+      <p class="text-lg text-stone-500 leading-relaxed max-w-xl mx-auto mb-10">
+        The page you were looking for has moved, been removed, or never existed. Use the links below to find what you need.
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-4 text-left max-w-xl mx-auto mb-12">
+        <a href="/" class="group flex items-start gap-4 bg-white border border-stone-100 rounded-xl p-5 hover:border-[#4A554E] transition-colors">
+          <div>
+            <p class="font-semibold text-stone-900 group-hover:text-[#4A554E] transition-colors">Home</p>
+            <p class="text-sm text-stone-400 mt-0.5">Start from the beginning</p>
+          </div>
+        </a>
+        <a href="/blog/" class="group flex items-start gap-4 bg-white border border-stone-100 rounded-xl p-5 hover:border-[#4A554E] transition-colors">
+          <div>
+            <p class="font-semibold text-stone-900 group-hover:text-[#4A554E] transition-colors">Blog</p>
+            <p class="text-sm text-stone-400 mt-0.5">Motel management guides & tips</p>
+          </div>
+        </a>
+        <a href="/motel-management-training-course/" class="group flex items-start gap-4 bg-white border border-stone-100 rounded-xl p-5 hover:border-[#4A554E] transition-colors">
+          <div>
+            <p class="font-semibold text-stone-900 group-hover:text-[#4A554E] transition-colors">Training Course</p>
+            <p class="text-sm text-stone-400 mt-0.5">Learn to run a high-performance motel</p>
+          </div>
+        </a>
+        <a href="/motel-consultancy/" class="group flex items-start gap-4 bg-white border border-stone-100 rounded-xl p-5 hover:border-[#4A554E] transition-colors">
+          <div>
+            <p class="font-semibold text-stone-900 group-hover:text-[#4A554E] transition-colors">Consultancy</p>
+            <p class="text-sm text-stone-400 mt-0.5">1-on-1 expert guidance</p>
+          </div>
+        </a>
+        <a href="/motel-management-book/" class="group flex items-start gap-4 bg-white border border-stone-100 rounded-xl p-5 hover:border-[#4A554E] transition-colors">
+          <div>
+            <p class="font-semibold text-stone-900 group-hover:text-[#4A554E] transition-colors">Free Book</p>
+            <p class="text-sm text-stone-400 mt-0.5">The Essential Guide to Motel Management</p>
+          </div>
+        </a>
+        <a href="/contact/" class="group flex items-start gap-4 bg-white border border-stone-100 rounded-xl p-5 hover:border-[#4A554E] transition-colors">
+          <div>
+            <p class="font-semibold text-stone-900 group-hover:text-[#4A554E] transition-colors">Contact</p>
+            <p class="text-sm text-stone-400 mt-0.5">Get in touch with Ben directly</p>
+          </div>
+        </a>
+      </div>
+
+      <a href="/" class="inline-flex items-center gap-2 bg-[#4A554E] text-white font-semibold px-6 py-3 rounded-lg hover:bg-stone-800 transition-colors">
+        ← Back to Home
+      </a>
+
+    </div>
+  </section>
+</BaseLayout>
