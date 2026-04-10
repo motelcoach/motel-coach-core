@@ -7,9 +7,7 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     category: z.string().optional(),
     description: z.string().optional(),
-    executiveSummary: z
-      .string()
-      .max(200, "Summary must be concise for AI rendering."),
+    executiveSummary: z.string().optional(),
   }),
 });
 

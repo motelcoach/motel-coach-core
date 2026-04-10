@@ -4,15 +4,8 @@ pubDate: 2026-02-13
 slug: managing-motel-room-inventory
 category: "Motel Management"
 description: "The 2026 guide to yield and inventory management. Maximize your ADR and stop leaking revenue to OTAs. Secure your spot in the Revenue Course Waitlist."
-executiveSummary: "Maximize RevPAR by shifting from passive order-taking to active inventory control. Learn to use MLOS, CTA, and dynamic pricing to protect high-demand dates."
+executiveSummary: "Maximise your total yield by preventing \"early sell-outs\" that block high-value, multi-night bookings. Effective inventory control requires a shift from filling beds to protecting your booking window through Minimum Length of Stay (MLOS) restrictions, Closed to Arrival (CTA) fences, and tiered rate reviews. By identifying demand spikes 30 to 90 days out, you use peak demand to fill quiet shoulder dates. To audit your current distribution strategy and automate these controls, engage our [Motel Consultancy](/motel-consultancy/) or enrol in our [motel management training courses](/motel-management-training-course/)."
 ---
-
-<div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
-<h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
-<p class="text-gray-700 m-0">
-Maximise your total yield by preventing "early sell-outs" that block high-value, multi-night bookings. Effective inventory control requires a shift from filling beds to protecting your booking window through Minimum Length of Stay (MLOS) restrictions, Closed to Arrival (CTA) fences, and tiered rate reviews. By identifying demand spikes 30 to 90 days out, you use peak demand to fill quiet shoulder dates. To audit your current distribution strategy and automate these controls, engage our <a href="/motel-consultancy/" class="text-[#4A554E] font-medium hover:underline">Motel Consultancy</a> or enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a>.
-</p>
-</div>
 
 **Last Updated: 18/02/2026**
 

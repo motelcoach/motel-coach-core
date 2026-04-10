@@ -4,15 +4,8 @@ pubDate: 2026-02-13
 slug: front-desk-training-checklist
 category: "Front Desk Training"
 description: "The complete arrival and check-in SOP for motel receptionists. Turn front desk chaos into repeatable systems. Access the Motel Management Training Course."
-executiveSummary: "Eliminate front-desk errors and service drift by adopting a step-by-step guest registration and room status framework."
+executiveSummary: "Eliminate front-desk errors and service drift by adopting a step-by-step guest registration framework. Inexperienced operators often miss critical upselling or service-scheduling opportunities during the arrival rush. A disciplined [motel management system](/motel-management/) approach ensures every guest is correctly billed and briefed on property policies before they receive their keys. To build a solid foundation in property operations and team leadership, enrol in our [motel management training courses](/motel-management-training-course/) designed specifically for the Australian market."
 ---
-
-<div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
-<h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
-<p class="text-gray-700 m-0">
-<em>Eliminate front-desk errors and service drift by adopting a step-by-step guest registration framework. Inexperienced operators often miss critical upselling or service-scheduling opportunities during the arrival rush. A disciplined <a href="/motel-management/" class="text-[#4A554E] font-medium hover:underline">motel management system</a> approach ensures every guest is correctly billed and briefed on property policies before they receive their keys. To build a solid foundation in property operations and team leadership, enrol in our <a href="/motel-management-training-course/" class="text-[#4A554E] font-medium hover:underline">motel management training courses</a> designed specifically for the Australian market.</em>
-</p>
-</div>
 
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the Printable Front Desk Quick Reference Guide</h2>

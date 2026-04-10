@@ -4,17 +4,8 @@ pubDate: Fri, 30 May 2025 00:50:33 +0000
 slug: hiring-housekeepers-as-contractors
 category: "Motel Management"
 description: "Are your housekeepers contractors or employees? Avoid the legal pitfalls of motel staffing. Learn how to structure your team for compliance and profit."
-executiveSummary: "How to hiring housekeepers with the correct employment or contractor structure."
+executiveSummary: "Protect your cash flow and sleep at night by hiring housekeepers correctly as employees when they work like employees. Sham contracting in a motel organizational structure creates legal risk, back-pay liabilities, and operational chaos that will wipe out years of profit. This guide shows you how to structure your team, align rosters and duties with Fair Work requirements, and use disciplined motel management practices so hiring housekeepers supports a stable [motel management system](/motel-management/) instead of becoming a future audit problem."
 ---
-
-<div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
-<h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
-<p class="text-gray-700 m-0">
-<em>Protect your cash flow and sleep at night by hiring housekeepers correctly as employees when they work like employees. Sham contracting in a motel organizational structure creates legal risk, back-pay liabilities, and operational chaos that will wipe out years of profit. This guide shows you how to structure your team, align rosters and duties with Fair Work requirements, and use disciplined motel management practices so hiring housekeepers supports a stable  <a href="/motel-management/" class="text-[#4A554E] font-medium hover:underline">motel management system</a> instead of becoming a future audit problem.</em>
-</p>
-</div>
-
-
 
 <img src="/images/migrated/sham-contracting-housekeepers.png" alt="Sham contracting risks for motel housekeepers" width="512" height="512" loading="lazy" decoding="async" style="max-width:100%;height:auto;" />
 

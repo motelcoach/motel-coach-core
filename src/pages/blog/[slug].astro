@@ -37,6 +37,12 @@ const { Content } = await entry.render();
         <p class="text-stone-400 text-sm">{new Date(entry.data.pubDate).toDateString()}</p>
         <h1 class="text-5xl font-semibold text-stone-900 mt-2 tracking-tight">{entry.data.title}</h1>
       </header>
+      {entry.data.executiveSummary && (
+        <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8 not-prose">
+          <h2 class="text-xl font-bold text-brand-950 mb-3">Executive Summary: Key Takeaways</h2>
+          <p class="text-gray-700 m-0"><em set:html={entry.data.executiveSummary} /></p>
+        </div>
+      )}
       <Content />
     </article>
   </div>
