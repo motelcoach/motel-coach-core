@@ -203,28 +203,19 @@ const prefill = {
       const formData = new FormData(this);
       const formType = formData.get('form_type');
       
-      // Console logging for debugging
-      console.log('Submitting to Zapier:', Object.fromEntries(formData));
-
-      await fetch(this.action, { 
-        method: 'POST', 
-        mode: 'no-cors', // Required to prevent CORS errors from Zapier Webhooks
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams(formData).toString() 
+      await fetch(this.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
       });
-      
-      // Trigger Google Ads Conversions
-      if (typeof gtag === 'function') {
-        if (formType === 'strategy-session') {
-          gtag('event', 'conversion', {'send_to': 'AW-5951687348/STRATEGY_LABEL'});
-        }
+
+      if (typeof gtag === 'function' && formType === 'strategy-session') {
+        gtag('event', 'conversion', { 'send_to': 'AW-5951687348/STRATEGY_LABEL' });
       }
 
-      // With no-cors, we can't check response.ok. If fetch doesn't throw a network error, it succeeded.
       if (formType === 'strategy-session') {
-        window.location.href = "YOUR_GOOGLE_CALENDAR_LINK_HERE";
+        window.location.href = '/contact/?submitted=true';
       } else {
         this.classList.add('hidden');
         document.getElementById('contact-success').classList.remove('hidden');

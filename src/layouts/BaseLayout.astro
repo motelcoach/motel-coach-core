@@ -127,34 +127,6 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
     }
     </script>
 
-    {import.meta.env.PROD && (
-      <script is:inline>
-        // Load GA/GTM after the page is interactive to avoid TBT penalty
-        function loadGtag() {
-          var s = document.createElement('script');
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-B8FB29436G';
-          s.async = true;
-          document.head.appendChild(s);
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          window.gtag = gtag;
-          gtag('js', new Date());
-          gtag('config', 'G-B8FB29436G');
-          gtag('config', 'AW-5951687348', {'allow_enhanced_conversions': true});
-          document.addEventListener('astro:after-swap', function() {
-            gtag('event', 'page_view', {
-              page_location: window.location.href,
-              page_path: window.location.pathname + window.location.search
-            });
-          });
-        }
-        if (document.readyState === 'complete') {
-          loadGtag();
-        } else {
-          window.addEventListener('load', loadGtag, {once: true});
-        }
-      </script>
-    )}
   </head>
 
   <body class="bg-white text-stone-900 antialiased flex flex-col min-h-screen">
@@ -355,12 +327,27 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
       </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
+    <!-- WhatsApp Floating Button (static HTML, hidden on pages with a guide-download form) -->
+    <a
+      id="wa-fab"
+      href="https://wa.me/61485510486?text=Hi%20Ben,%20I'm%20on%20the%20Motel%20Coach%20website%20and%20had%20a%20quick%20question..."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hidden fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#20ba56] transition-colors group"
+      aria-label="Chat on WhatsApp"
+    >
+      <span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-stone-900 text-white text-xs font-medium rounded shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none hidden md:block">Chat with Ben</span>
+      <span class="absolute inset-0 rounded-full border-2 border-[#25D366] animate-ping opacity-75"></span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <!-- Single merged script: mobile menu + global download form + WhatsApp reveal + GTM -->
     <script>
+      // --- Mobile menu ---
       (function () {
-        var openBtn  = document.getElementById('mobile-menu-open');
-        var closeBtn = document.getElementById('mobile-menu-close');
-        var drawer   = document.getElementById('mobile-menu-drawer');
+        var openBtn    = document.getElementById('mobile-menu-open');
+        var closeBtn   = document.getElementById('mobile-menu-close');
+        var drawer     = document.getElementById('mobile-menu-drawer');
         var closeLinks = document.querySelectorAll('[data-mobile-close]');
 
         function openMenu() {
@@ -381,10 +368,8 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
           link.addEventListener('click', closeMenu);
         });
       })();
-    </script>
 
-    <!-- Global Download Form Handler -->
-    <script>
+      // --- Global download form handler ---
       (function () {
         document.addEventListener('submit', function (e) {
           var form = e.target.closest('.global-download-form');
@@ -405,44 +390,29 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
           }
 
           var formData = new FormData(form);
-          if (!formData.has('source_page')) {
-            formData.append('source_page', sourcePage);
-          }
-          if (!formData.has('form_type')) {
-            formData.append('form_type', 'guide-download');
-          }
-          if (downloadUrl && !formData.has('download_url')) {
-            formData.append('download_url', downloadUrl);
-          }
+          if (!formData.has('source_page'))  formData.append('source_page', sourcePage);
+          if (!formData.has('form_type'))    formData.append('form_type', 'guide-download');
+          if (downloadUrl && !formData.has('download_url')) formData.append('download_url', downloadUrl);
 
           fetch('https://hooks.zapier.com/hooks/catch/26131104/upwyerc/', {
             method: 'POST',
             mode: 'no-cors',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded'
-            },
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams(formData).toString(),
           })
             .then(function () {
-              var formType = formData.get('form_type');
+              var formType  = formData.get('form_type');
               var offerTier = formData.get('offer_tier');
-
-              // Trigger Google Ads Conversions
               if (typeof gtag === 'function') {
                 if (formType === 'strategy-session') {
-                  gtag('event', 'conversion', {'send_to': 'AW-5951687348/STRATEGY_LABEL'});
+                  gtag('event', 'conversion', { 'send_to': 'AW-5951687348/STRATEGY_LABEL' });
                 }
                 if (offerTier === 'paid') {
-                  gtag('event', 'conversion', {
-                    'send_to': 'AW-5951687348/AUDIT_LABEL',
-                    'value': 99.00,
-                    'currency': 'AUD'
-                  });
+                  gtag('event', 'conversion', { 'send_to': 'AW-5951687348/AUDIT_LABEL', 'value': 99.00, 'currency': 'AUD' });
                 }
               }
-
               if (formType === 'strategy-session') {
-                window.location.href = "YOUR_GOOGLE_CALENDAR_LINK_HERE";
+                window.location.href = '/contact/?submitted=true';
               } else if (downloadUrl) {
                 window.location.href = downloadUrl;
               } else {
@@ -453,7 +423,7 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
               console.error('Form submission error:', err);
               var formType = formData.get('form_type');
               if (formType === 'strategy-session') {
-                window.location.href = "YOUR_GOOGLE_CALENDAR_LINK_HERE";
+                window.location.href = '/contact/?submitted=true';
               } else if (downloadUrl) {
                 window.location.href = downloadUrl;
               } else {
@@ -468,41 +438,36 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
             });
         });
       })();
-    </script>
 
-    <!-- WhatsApp Floating Button (deferred until after load) -->
-    <script>
+      // --- WhatsApp FAB: reveal after load unless page has a guide-download form ---
       window.addEventListener('load', function () {
-        // Check if the page has a form with form_type="guide-download"
-        var hasGuideForm = document.querySelector('input[name="form_type"][value="guide-download"]');
-        
-        if (!hasGuideForm) {
-          var waButton = document.createElement('a');
-          waButton.href = "https://wa.me/61485510486?text=Hi%20Ben,%20I'm%20on%20the%20Motel%20Coach%20website%20and%20had%20a%20quick%20question...";
-          waButton.target = "_blank";
-          waButton.rel = "noopener noreferrer";
-          waButton.className = "fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#20ba56] transition-colors group";
-          waButton.setAttribute('aria-label', 'Chat on WhatsApp');
-          
-          // Tooltip for desktop
-          var tooltip = document.createElement('span');
-          tooltip.className = "absolute right-full mr-4 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-stone-900 text-white text-xs font-medium rounded shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none hidden md:block";
-          tooltip.textContent = "Chat with Ben";
-          
-          // Pulse animation ring
-          var pulse = document.createElement('span');
-          pulse.className = "absolute inset-0 rounded-full border-2 border-[#25D366] animate-ping opacity-75";
-          
-          // WhatsApp Icon (Lucide)
-          var icon = document.createElement('div');
-          icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>';
-          
-          waButton.appendChild(pulse);
-          waButton.appendChild(tooltip);
-          waButton.appendChild(icon);
-          document.body.appendChild(waButton);
+        var fab = document.getElementById('wa-fab');
+        if (fab && !document.querySelector('input[name="form_type"][value="guide-download"]')) {
+          fab.classList.remove('hidden');
         }
-      }, {once: true});
+      }, { once: true });
+
+      // --- GTM / GA4: load after page is fully loaded (production only) ---
+      if (import.meta.env.PROD) {
+        window.addEventListener('load', function () {
+          var s = document.createElement('script');
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-B8FB29436G';
+          s.async = true;
+          document.head.appendChild(s);
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', 'G-B8FB29436G');
+          gtag('config', 'AW-5951687348', { 'allow_enhanced_conversions': true });
+          document.addEventListener('astro:after-swap', function () {
+            gtag('event', 'page_view', {
+              page_location: window.location.href,
+              page_path: window.location.pathname + window.location.search,
+            });
+          });
+        }, { once: true });
+      }
     </script>
 
   </body>

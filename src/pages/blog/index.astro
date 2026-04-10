@@ -58,9 +58,15 @@ const fullCanonical = new URL(Astro.url.href, Astro.site ?? Astro.url.origin);
     </div>
   </section>
 
+  <style>
+    #blog-grid[data-filter]:not([data-filter="All"]) .blog-card:not([data-category-match]) {
+      display: none;
+    }
+  </style>
+
   <section class="py-20 bg-brand-50 min-h-screen">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid" data-filter="All">
         {sortedPosts.map(post => (
           <article class="blog-card group bg-white p-8 rounded-2xl border border-stone-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full" data-category={post.data.category || 'General'}>
             
@@ -86,17 +92,22 @@ const fullCanonical = new URL(Astro.url.href, Astro.site ?? Astro.url.origin);
 </BaseLayout>
 
 <script>
-  document.getElementById('blog-subscribe-form').addEventListener('submit', async function (e) {
+  // Subscribe form
+  document.getElementById('blog-subscribe-form')?.addEventListener('submit', async function (e) {
     e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    const original = btn.textContent.trim();
+    const btn = this.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const original = btn.textContent!.trim();
     btn.disabled = true;
     btn.textContent = 'Subscribing…';
     try {
-      const res = await fetch(this.action, { method: 'POST', body: new URLSearchParams(new FormData(this)) });
-      if (!res.ok) throw new Error();
+      await fetch(this.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(this as HTMLFormElement)).toString(),
+      });
       btn.textContent = 'Subscribed!';
-      this.querySelector('input[type="email"]').value = '';
+      (this.querySelector('input[type="email"]') as HTMLInputElement).value = '';
     } catch {
       btn.disabled = false;
       btn.textContent = original;
@@ -104,31 +115,37 @@ const fullCanonical = new URL(Astro.url.href, Astro.site ?? Astro.url.origin);
     }
   });
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.blog-card');
+  // Category filter — one attribute write on the grid; CSS does the hiding
+  const grid = document.getElementById('blog-grid');
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const cards = document.querySelectorAll<HTMLElement>('.blog-card');
 
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        buttons.forEach(b => {
-          b.classList.remove('bg-[#4A554E]', 'text-white', 'border-[#4A554E]', 'shadow-md');
-          b.classList.add('bg-white', 'text-stone-900', 'border-stone-200');
-        });
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selected = btn.getAttribute('data-filter') ?? 'All';
 
-        btn.classList.remove('bg-white', 'text-stone-900', 'border-stone-200');
-        btn.classList.add('bg-[#4A554E]', 'text-white', 'border-[#4A554E]', 'shadow-md');
-
-        const selectedCategory = btn.getAttribute('data-filter');
-        
-        cards.forEach(card => {
-          const htmlCard = card as HTMLElement; 
-          if (selectedCategory === 'All' || card.getAttribute('data-category') === selectedCategory) {
-            htmlCard.style.display = 'flex';
-          } else {
-            htmlCard.style.display = 'none';
-          }
-        });
+      // Update active button styles
+      buttons.forEach(b => {
+        b.classList.remove('bg-[#4A554E]', 'text-white', 'border-[#4A554E]', 'shadow-md');
+        b.classList.add('bg-white', 'text-stone-900', 'border-stone-200');
       });
+      btn.classList.remove('bg-white', 'text-stone-900', 'border-stone-200');
+      btn.classList.add('bg-[#4A554E]', 'text-white', 'border-[#4A554E]', 'shadow-md');
+
+      // Mark matching cards so CSS can show/hide with a single attribute write
+      cards.forEach(card => {
+        if (selected === 'All' || card.getAttribute('data-category') === selected) {
+          card.setAttribute('data-category-match', '');
+        } else {
+          card.removeAttribute('data-category-match');
+        }
+      });
+
+      // Set filter on grid — CSS rule uses this to hide non-matching cards
+      grid?.setAttribute('data-filter', selected);
     });
   });
+
+  // Initialise: mark all cards as matching on first load
+  cards.forEach(card => card.setAttribute('data-category-match', ''));
 </script>
