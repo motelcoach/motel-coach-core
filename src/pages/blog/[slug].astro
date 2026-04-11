@@ -12,6 +12,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
+function mdLinksToHtml(text: string): string {
+  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+}
+
 // Related posts: same category, excluding current post, up to 3
 const allPosts = await getCollection('blog');
 const relatedPosts = allPosts
@@ -53,7 +57,7 @@ const articleJsonLd = {
       {entry.data.executiveSummary && (
         <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8 not-prose">
           <h2 class="text-xl font-bold text-brand-950 mb-3">Executive Summary: Key Takeaways</h2>
-          <p class="text-gray-700 m-0"><em set:html={entry.data.executiveSummary} /></p>
+          <p class="text-gray-700 m-0"><em set:html={mdLinksToHtml(entry.data.executiveSummary)} /></p>
         </div>
       )}
       <Content />
