@@ -19,11 +19,9 @@ These three are proving that whether you're in a boardroom in Bangkok or around 
 
 ## Frasers Hospitality & The 'Modena' Revolution
 
-Frasers Hospitality isn't just opening rooms. They are executing a disciplined expansion of 18 new residences across Asia by 2028—not guessing where the ball is going, but putting their glove squarely in the path of **"serviced living"**: accommodation designed for the long-stay guest who wants the comforts of home with the reliability of a hotel.
+Frasers Hospitality isn't just opening rooms. They are executing a disciplined expansion of 18 new residences across Asia by 2028—not guessing where the ball is going, but putting their glove squarely in the path of **"serviced living"**: accommodation designed for the long-stay guest who wants the comforts of home with the reliability of a hotel. The crown jewel of this push is the **Modena by Fraser** brand, targeting young professionals in gateway cities like Chengdu and Dalian.
 
-The crown jewel of this push is the **Modena by Fraser** brand, targeting young professionals in gateway cities like Chengdu and Dalian. For owners and investors trying to navigate this new era, specialised resources like [modenaresidence.com](https://modenaresidence.com) have become important for understanding how these managed residences actually operate.
-
-It's a blunt reminder: if your room descriptions don't provide everything a guest needs for an extended stay, your [Motel SEO](/motel-seo/) results will be wasted.
+It's a blunt reminder: if your room descriptions don't provide everything a guest needs for an extended stay, your [Motel SEO](/blog/motel-seo/) results will be wasted.
 
 ### What makes Modena by Fraser different?
 
