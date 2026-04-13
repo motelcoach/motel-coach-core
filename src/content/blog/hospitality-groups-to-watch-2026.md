@@ -4,7 +4,7 @@ pubDate: Mon, 13 Apr 2026 00:00:00 +0000
 slug: hospitality-groups-to-watch-2026
 category: "Industry Trends"
 description: "From Frasers Hospitality's Asia expansion to the cattle-station roots of Travellers Group and Minor Hotels' global push. See who is redefining hospitality in 2026."
-executiveSummary: "For the Mom and Pop Motels, Being unique, and having a warm welcome are critical. But that does not devalue evolving, and learning. In 2026, three hospitality groups are setting the pace: **Frasers Hospitality** with their disciplined 'serviced living' expansion across Asia, **Travellers Group** with an authentically Australian, land-rooted approach to regional accommodation, and **Minor Hotels** with a bold global acquisition strategy. Whether you run a boardroom in Bangkok or a motel on a regional highway, the lesson is the same—think through every step of the guest journey. At Motel Coach, our keyword this year is 'Thoughtful.' To put these insights into practice, explore our [motel management training courses](/motel-management-training-course/) or speak with our team about [motel consultancy](/motel-consultancy/)."
+executiveSummary: "For the Mom and Pop Motels, Being unique, and having a warm welcome are always going to be non-negotiable. But that does not remove or reduce the value of learning and improving your craft. In 2026, three hospitality groups are setting the pace: Frasers Hospitality with their disciplined 'serviced living' expansion across Asia, Travellers Group with an authentically Australian, land-rooted approach to regional accommodation, and Minor Hotels with a bold global acquisition strategy."
 ---
 
 # Catching the Next Wave: 3 Hospitality Groups To Study in 2026
