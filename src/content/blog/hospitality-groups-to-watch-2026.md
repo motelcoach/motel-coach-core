@@ -37,8 +37,6 @@ That rhythm of the land—steady, trust-based, and looking after one another—i
 
 For us, building a motel isn't just about the building. It's about making people feel at home, wherever the road takes them.
 
-*(Placeholder: Geotagged photos of regional motel sites to signal authenticity to Google's Vision AI)*
-
 ---
 
 ## Minor Hotels: The Global Heavyweight
@@ -55,6 +53,4 @@ Minor Hotels' playbook is a masterclass in intentional growth. They don't acquir
 
 These three groups operate in very different markets, but the thread connecting them is the same: **intentionality**. Every room type, every brand extension, every acquisition is a deliberate answer to a specific guest need.
 
-That's the standard to hold yourself to in 2026. Not perfection—intentionality.
-
-If you want help applying these principles to your own property, explore our [motel management training courses](/motel-management-training-course/) or [get in touch with the Motel Coach team](/motel-consultancy/) to talk through your strategy.
+That's the standard to hold yourself to in 2026. Not perfectionism.
