@@ -392,6 +392,9 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
           if (!form) return;
           e.preventDefault();
 
+          var honeypot = form.querySelector('input[name="last_name_verification"]');
+          if (honeypot && honeypot.value) return;
+
           var downloadUrl = form.getAttribute('data-download');
           var emailInput  = form.querySelector('input[type="email"]');
           var submitBtn   = form.querySelector('button[type="submit"]');

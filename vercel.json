@@ -2,6 +2,7 @@
   "buildCommand": "rm -rf dist && npm run build",
   "outputDirectory": "dist",
   "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.motelcoach.com.au" }], "destination": "https://motelcoach.com.au/:path*", "permanent": true },
     { "source": "/motel-operational-review", "destination": "/operational-performance-audit/", "permanent": true },
     { "source": "/motel-operational-review/", "destination": "/operational-performance-audit/", "permanent": true },
     { "source": "/learn-motel-mangement", "destination": "/motel-management-training-course/", "permanent": true },

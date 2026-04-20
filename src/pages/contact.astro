@@ -32,6 +32,9 @@ const prefill = {
         <form id="contact-form" class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
           <input type="hidden" name="source_page" value="Contact Page" />
           <input type="hidden" name="form_type" value="general-contact" />
+          <div class="hidden" aria-hidden="true">
+            <input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" />
+          </div>
           {prefill.waitlist && (
             <div class="rounded-xl border border-stone-200 bg-[#F9F9F8] p-4">
               <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
@@ -197,6 +200,10 @@ const prefill = {
     e.preventDefault();
     const btn = this.querySelector('button[type="submit"]');
     const original = btn.textContent.trim();
+
+    const honeypot = this.querySelector('input[name="last_name_verification"]');
+    if (honeypot && honeypot.value) return;
+
     btn.disabled = true;
     btn.textContent = 'Sending…';
     

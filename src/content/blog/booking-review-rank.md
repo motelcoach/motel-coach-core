@@ -15,6 +15,7 @@ executiveSummary: "Maximise your property’s visibility by mastering the Bookin
     <input type="hidden" name="form_type" value="checklist-download" />
     <input type="hidden" name="topic" value="checklist" />
     <input type="hidden" name="message" value="Please send me the Booking.com Checklist." />
+    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
     <label for="bookingcom-checklist-email" class="sr-only">Email address</label>
     <input
       id="bookingcom-checklist-email"

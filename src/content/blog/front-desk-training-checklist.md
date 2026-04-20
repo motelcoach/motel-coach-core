@@ -15,6 +15,7 @@ executiveSummary: "Eliminate front-desk errors and service drift by adopting a s
     <input type="hidden" name="form_type" value="checklist-download" />
     <input type="hidden" name="topic" value="checklist" />
     <input type="hidden" name="message" value="Please send me the Front Desk Guide." />
+    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
     <label for="reception-guide-email" class="sr-only">Email address</label>
     <input
       id="reception-guide-email"

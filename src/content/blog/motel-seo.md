@@ -70,6 +70,7 @@ Review velocity is also the fastest way to close the gap on a competitor who has
   <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4">
     <input type="hidden" name="source_page" value="Blog: Motel SEO" />
     <input type="hidden" name="form_type" value="website-audit" />
+    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
     <div class="flex flex-col sm:flex-row gap-3">
       <label for="seo-audit-email" class="sr-only">Email address</label>
       <input id="seo-audit-email" type="email" name="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />

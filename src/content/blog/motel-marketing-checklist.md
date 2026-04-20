@@ -31,6 +31,7 @@ These channels directly intercept guests who are actively searching to book. The
   >
     <input type="hidden" name="source_page" value="Blog: Motel Marketing Checklist" />
     <input type="hidden" name="form_type" value="checklist-download" />
+    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
     <label for="dl-email-marketing-checklist" class="sr-only">Email address</label>
     <input
       id="dl-email-marketing-checklist"
