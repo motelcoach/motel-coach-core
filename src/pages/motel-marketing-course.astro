@@ -2,15 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Revenue Management Course Waitlist | Motel Coach" description="Stop reactive pricing. Master the data-driven systems that drive high-yield assets. Join the Revenue Management Course for early-bird access." hideFooterCta noindex>
+<BaseLayout title="Motel Marketing Course | Motel Coach" description="Future-proof your marketing. Learn direct booking strategies the big OTAs don't want you to know. Join the Motel Marketing Course now." hideFooterCta>
   <!-- Hero (Minimalist) -->
   <section class="bg-[#F9F9F8] border-b border-stone-200 pt-24 pb-16">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h1 class="text-5xl md:text-7xl font-semibold text-stone-900 tracking-tight text-balance" data-reveal="up">
-        The Motel Revenue Management Course
+        The Motel Marketing Course
       </h1>
       <p class="mt-6 text-lg md:text-xl text-stone-500 leading-relaxed text-balance max-w-2xl mx-auto" data-reveal="up">
-        Practical revenue discipline for Australian motels—so you stop discounting and start controlling yield.
+        A practical course for Australian motel operators who want direct bookings without guessing.
       </p>
       <a
         href="#waitlist"
@@ -30,16 +30,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           Course syllabus at a glance
         </h2>
         <p class="mt-4 text-stone-500 leading-relaxed">
-          Three modules that fix the biggest pricing mistakes and channel leakage.
+          The exact modules most motels need first—before spending another dollar on "marketing."
         </p>
       </div>
 
       <div class="mt-10 max-w-2xl mx-auto rounded-2xl border border-stone-200 bg-[#F9F9F8] p-8" data-reveal="up">
         <ul class="space-y-4">
           {[
-            'Pricing rules: set discipline you can run weekly without overthinking',
-            'Pickup control: read pace and compression early (no panic discounting)',
-            'Channel mix: protect margin with parity and inventory control',
+            'Direct booking foundations: website path, offer clarity, mobile booking',
+            'Google Local: maps visibility, GBP optimisation, high-intent copy',
+            'Distribution discipline: OTA strategy, parity control, feeding direct demand',
           ].map((t) => (
             <li class="flex items-start gap-3 text-stone-500">
               <svg class="mt-0.5 h-5 w-5 text-stone-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -65,14 +65,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </div>
 
-      <div id="revenue-waitlist-success" class="hidden mt-8 max-w-xl mx-auto text-center py-6 bg-[#4A554E]/10 rounded-2xl">
+      <div id="marketing-waitlist-success" class="hidden mt-8 max-w-xl mx-auto text-center py-6 bg-[#4A554E]/10 rounded-2xl">
         <p class="font-semibold text-stone-900 mb-1">You&apos;re on the list!</p>
         <p class="text-sm text-stone-500">We&apos;ll email you first when enrollment opens.</p>
       </div>
-      <form id="revenue-waitlist-form" class="mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" data-reveal="up">
-        <input type="hidden" name="source_page" value="Revenue Management Course Waitlist" />
+      <form id="marketing-waitlist-form" class="mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" data-reveal="up">
+        <input type="hidden" name="source_page" value="Motel Marketing Course" />
         <input type="hidden" name="form_type" value="waitlist" />
-        <input type="hidden" name="waitlist" value="revenue-management-course" />
+        <input type="hidden" name="waitlist" value="motel-marketing-course" />
         <div class="hidden" aria-hidden="true">
           <input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" />
         </div>
@@ -83,9 +83,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           placeholder="you@example.com"
           class="flex-1 px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
         />
-        <label for="revenue-waitlist-type" class="sr-only">Operator Type</label>
+        <label for="marketing-waitlist-type" class="sr-only">Operator Type</label>
         <select
-          id="revenue-waitlist-type"
+          id="marketing-waitlist-type"
           name="operator_type"
           required
           class="flex-1 px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
@@ -101,7 +101,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </form>
 
       <p class="mt-4 text-center text-xs text-stone-400" data-reveal="fade">
-        Join other Australian operators improving their yield and channel mix.
+        Join other Australian operators improving their channel mix.
       </p>
       <p class="mt-6 text-center text-xs text-stone-500 max-w-lg mx-auto bg-stone-50 p-4 rounded-lg border border-stone-100" data-reveal="fade">
         <strong>Note:</strong> These courses are designed for independent owners and general managers. If you are a specialized Corporate RM or Marketing Pro, this content may be too foundational for your needs.
@@ -109,7 +109,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 <script>
-  document.getElementById('revenue-waitlist-form').addEventListener('submit', async function (e) {
+  document.getElementById('marketing-waitlist-form').addEventListener('submit', async function (e) {
     e.preventDefault();
     const btn = this.querySelector('button[type="submit"]');
     const original = btn.textContent.trim();
@@ -129,7 +129,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         body: new URLSearchParams(new FormData(this)).toString() 
       });
       this.classList.add('hidden');
-      document.getElementById('revenue-waitlist-success').classList.remove('hidden');
+      document.getElementById('marketing-waitlist-success').classList.remove('hidden');
     } catch {
       btn.disabled = false;
       btn.textContent = original;
@@ -138,4 +138,3 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   });
 </script>
 </BaseLayout>
-

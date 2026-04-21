@@ -3,6 +3,10 @@
   "outputDirectory": "dist",
   "redirects": [
     { "source": "/:path*", "has": [{ "type": "host", "value": "www.motelcoach.com.au" }], "destination": "https://motelcoach.com.au/:path*", "permanent": true },
+    { "source": "/motel-revenue-management-course-waitlist", "destination": "/motel-revenue-management-course/", "permanent": true },
+    { "source": "/motel-revenue-management-course-waitlist/", "destination": "/motel-revenue-management-course/", "permanent": true },
+    { "source": "/motel-marketing-course-waitlist", "destination": "/motel-marketing-course/", "permanent": true },
+    { "source": "/motel-marketing-course-waitlist/", "destination": "/motel-marketing-course/", "permanent": true },
     { "source": "/motel-operational-review", "destination": "/operational-performance-audit/", "permanent": true },
     { "source": "/motel-operational-review/", "destination": "/operational-performance-audit/", "permanent": true },
     { "source": "/learn-motel-mangement", "destination": "/motel-management-training-course/", "permanent": true },
