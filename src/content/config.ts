@@ -8,6 +8,7 @@ const blog = defineCollection({
     category: z.string().optional(),
     description: z.string().optional(),
     executiveSummary: z.string().optional(),
+    hideFromBlog: z.boolean().optional(),
   }),
 });
 

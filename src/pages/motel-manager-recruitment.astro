@@ -5,6 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout
   title="Motel Manager Recruitment | Find Your Next Manager | Motel Coach"
   description="Specialist motel manager recruitment for independent Australian motels. We source, screen, and onboard managers — individual managers and couples. Competitive relief manager rates and salary packages."
+  hideFooterCta
 >
   <!-- Hero -->
   <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
@@ -22,16 +23,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
         <div class="flex flex-col sm:flex-row gap-3">
           <a
-            href="/contact/?topic=Manager+Recruitment"
+            href="#vacancy-form"
             class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
           >
             Discuss Your Vacancy
           </a>
           <a
-            href="#how-it-works"
+            href="/blog/motel-manager-jobs/"
             class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white border border-stone-200 text-stone-900 font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm"
           >
-            How It Works
+            Job Seeker
           </a>
         </div>
       </div>
@@ -194,23 +195,120 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="bg-[#4A554E] py-20">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold text-white tracking-tight mb-4">
-        Ready to Find Your Next Manager?
-      </h2>
-      <p class="text-stone-300 leading-relaxed mb-8">
-        Tell us about your vacancy and we'll outline how we can help — whether you need permanent placement, relief cover, or a couple package.
-      </p>
-      <a
-        href="/contact/?topic=Manager+Recruitment"
-        class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#4A554E] font-semibold rounded-lg hover:bg-stone-100 transition-colors shadow-sm"
-      >
-        Discuss Your Vacancy
-      </a>
+  <!-- On-Page Vacancy Form -->
+  <section id="vacancy-form" class="bg-white py-24 border-b border-stone-200">
+    <div class="max-w-3xl mx-auto px-6">
+      <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-3">Discuss Your Vacancy</p>
+      <h2 class="text-3xl font-semibold text-stone-900 tracking-tight mb-3">Tell Us About Your Role</h2>
+      <p class="text-stone-500 leading-relaxed mb-10">Fill out the form below and we'll be in touch to outline how we can find the right manager for your property.</p>
+
+      <div id="vacancy-success" class="hidden py-8 text-center">
+        <p class="text-xl font-semibold text-stone-900 mb-2">Enquiry Received</p>
+        <p class="text-stone-500">We'll review your vacancy details and be in touch within one business day.</p>
+      </div>
+
+      <form id="vacancy-form-el" class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+        <input type="hidden" name="source_page" value="Motel Manager Recruitment" />
+        <input type="hidden" name="form_type" value="vacancy-enquiry" />
+        <div class="hidden" aria-hidden="true">
+          <input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" />
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="v-name" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1.5">Contact Name</label>
+            <input id="v-name" name="name" type="text" required placeholder="Your full name"
+              class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
+          </div>
+          <div>
+            <label for="v-motel" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1.5">Motel Name</label>
+            <input id="v-motel" name="motel_name" type="text" required placeholder="Your motel's name"
+              class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="v-email" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1.5">Email Address</label>
+            <input id="v-email" name="email" type="email" required placeholder="you@example.com"
+              class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
+          </div>
+          <div>
+            <label for="v-mobile" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1.5">Mobile Number</label>
+            <input id="v-mobile" name="mobile" type="tel" required placeholder="+61 4xx xxx xxx"
+              class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="v-type" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1.5">Type of Manager Needed</label>
+            <select id="v-type" name="manager_type" required
+              class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent">
+              <option value="" disabled selected>Select one</option>
+              <option value="Permanent Individual">Permanent Individual Manager</option>
+              <option value="Permanent Couple">Permanent Management Couple</option>
+              <option value="Relief Manager">Relief Manager</option>
+              <option value="Fixed-Term Contract">Fixed-Term Contract</option>
+              <option value="Unsure">Not Sure Yet</option>
+            </select>
+          </div>
+          <div>
+            <label for="v-rooms" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1.5">Number of Rooms</label>
+            <select id="v-rooms" name="room_count"
+              class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent">
+              <option value="" disabled selected>Select range</option>
+              <option value="Under 20">Under 20 rooms</option>
+              <option value="20-40">20–40 rooms</option>
+              <option value="41-80">41–80 rooms</option>
+              <option value="80+">80+ rooms</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="v-message" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1.5">Brief Details (Optional)</label>
+          <textarea id="v-message" name="message" rows="4"
+            placeholder="Tell us about the role, your property location, start date, or any other relevant details..."
+            class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
+          Submit Vacancy Enquiry
+        </button>
+        <p class="text-xs text-stone-400">We'll respond within one business day. See our <a href="/privacy-policy/" class="underline hover:text-stone-600">Privacy Policy</a>.</p>
+      </form>
     </div>
   </section>
+
+  <script>
+    (function () {
+      const form = document.getElementById('vacancy-form-el');
+      if (!form) return;
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const btn = this.querySelector('button[type="submit"]') as HTMLButtonElement;
+        const original = btn.textContent!.trim();
+        const honeypot = this.querySelector('input[name="last_name_verification"]') as HTMLInputElement;
+        if (honeypot && honeypot.value) return;
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        try {
+          await fetch((this as HTMLFormElement).action, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(new FormData(this as HTMLFormElement)).toString(),
+          });
+        } catch (_) {}
+        (this as HTMLFormElement).classList.add('hidden');
+        document.getElementById('vacancy-success')!.classList.remove('hidden');
+        btn.disabled = false;
+        btn.textContent = original;
+      });
+    })();
+  </script>
 
   <script type="application/ld+json">
   {

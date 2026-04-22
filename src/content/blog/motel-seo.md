@@ -5,6 +5,7 @@ slug: motel-seo
 category: "Motel Marketing"
 description: "Is your motel SEO strategy ready for 2026? Learn how to rank above OTAs in local search. Book a free Digital Strategy Session today."
 executiveSummary: "Every booking captured through organic search or Google Maps costs you nothing in commission. The independent motels winning in 2026 are not spending more on ads — they are building three compounding SEO assets: a dominant Google Business Profile, a technically clean website with structured data, and content formatted for AI search engines. This guide gives you the exact framework across all three pillars. To audit your current digital distribution and implement these systems. Want us to do it for you? [Contact us](/contact/) or visit our [Motel Consultancy](/motel-consultancy/)."
+hideFromBlog: true
 ---
 
 Most motel owners treat SEO as a background task — something they'll get to after the busy season. Meanwhile, their competitors are collecting free, high-intent traffic from Google every day while they pay 15–20% commission on every OTA booking.

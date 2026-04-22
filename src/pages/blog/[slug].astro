@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('blog', ({ data }) => !data.hideFromBlog);
   return posts.map(entry => ({
     params: { slug: entry.slug }, props: { entry },
   }));
@@ -17,7 +17,7 @@ function mdLinksToHtml(text: string): string {
 }
 
 // Related posts: same category, excluding current post, up to 3
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog', ({ data }) => !data.hideFromBlog);
 const relatedPosts = allPosts
   .filter(p => p.slug !== entry.slug && p.data.category === entry.data.category)
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())

@@ -33,6 +33,90 @@ const { Content } = await post.render();
     </div>
   </section>
 
+  <!-- SEO Pricing -->
+  <section class="w-full bg-[#F9F9F8] py-20 border-t border-stone-200">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-3 text-center">Motel SEO Services</p>
+      <h2 class="text-3xl font-semibold text-stone-900 tracking-tight text-center mb-3">SEO That Compounds Every Month</h2>
+      <p class="text-stone-500 text-center leading-relaxed mb-12 max-w-2xl mx-auto">Done-for-you motel SEO built around your Google Business Profile, website authority, and AI search visibility. Month-to-month, no lock-in.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Starter -->
+        <div class="bg-white border border-stone-200 rounded-2xl p-7 flex flex-col">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Starter</p>
+          <p class="text-3xl font-bold text-stone-900 mb-1">$1,500<span class="text-base font-normal text-stone-400">/mo</span></p>
+          <p class="text-sm text-stone-500 mb-6 leading-relaxed">Best for motels new to SEO or establishing foundational visibility.</p>
+          <ul class="space-y-2.5 text-sm text-stone-600 mb-8 flex-grow">
+            {[
+              'Google Business Profile optimisation',
+              'On-page SEO audit & fixes',
+              'Schema markup implementation',
+              'Monthly performance report',
+            ].map(item => (
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 text-[#4A554E] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <a href="/contact/?topic=Motel+SEO+Starter" class="mt-auto inline-flex items-center justify-center px-5 py-3 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">
+            Enquire
+          </a>
+        </div>
+
+        <!-- Growth — highlighted -->
+        <div class="bg-[#4A554E] border border-[#3d4640] rounded-2xl p-7 flex flex-col relative">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-stone-900 text-white text-xs font-bold px-3 py-1 rounded-full tracking-widest uppercase">Most Popular</span>
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-300 mb-2">Growth</p>
+          <p class="text-3xl font-bold text-white mb-1">$2,500<span class="text-base font-normal text-stone-300">/mo</span></p>
+          <p class="text-sm text-stone-300 mb-6 leading-relaxed">For motels actively competing against OTAs in local search.</p>
+          <ul class="space-y-2.5 text-sm text-stone-200 mb-8 flex-grow">
+            {[
+              'Everything in Starter',
+              '2× SEO content pieces per month',
+              'Local citation building',
+              'AI search optimisation',
+              'Backlink outreach',
+            ].map(item => (
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 text-stone-300 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <a href="/contact/?topic=Motel+SEO+Growth" class="mt-auto inline-flex items-center justify-center px-5 py-3 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors">
+            Enquire
+          </a>
+        </div>
+
+        <!-- Authority -->
+        <div class="bg-white border border-stone-200 rounded-2xl p-7 flex flex-col">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Authority</p>
+          <p class="text-3xl font-bold text-stone-900 mb-1">Custom<span class="text-base font-normal text-stone-400"> pricing</span></p>
+          <p class="text-sm text-stone-500 mb-6 leading-relaxed">Multi-property operators or motels in high-competition markets.</p>
+          <ul class="space-y-2.5 text-sm text-stone-600 mb-8 flex-grow">
+            {[
+              'Everything in Growth',
+              'Multi-location SEO strategy',
+              'Weekly reporting & check-ins',
+              'Dedicated strategist',
+            ].map(item => (
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 text-[#4A554E] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <a href="/contact/?topic=Motel+SEO+Authority" class="mt-auto inline-flex items-center justify-center px-5 py-3 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">
+            Get a Quote
+          </a>
+        </div>
+      </div>
+
+      <p class="text-center text-xs text-stone-400 mt-8">All packages are month-to-month. No lock-in contracts. Results tracked against agreed KPIs.</p>
+    </div>
+  </section>
+
   <!-- Marketing Audit CTA -->
   <section class="bg-[#4A554E] py-12">
     <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -46,4 +130,5 @@ const { Content } = await post.render();
       </a>
     </div>
   </section>
+
 </BaseLayout>
