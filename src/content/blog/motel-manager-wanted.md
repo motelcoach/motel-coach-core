@@ -1,7 +1,7 @@
 ---
 title: "Motel Manager Wanted | Professional Management Recruitment Australia"
 pubDate: Fri, 22 Apr 2026 00:21:18 +0000
-slug: what-does-a-motel-manager-do
+slug: motel-manager-wanted
 category: "Motel Management"
 description: "Searching for a motel manager? Stop posting generic ads and attracting liabilities. Learn how to hire professional managers who protect your asset and your profit."
 executiveSummary: "A motel manager is the single most important decision, and the biggest factor for your motels operational and financial performance. Commit time to hiring the right manager, if required bring in a [motel relief manager](/motel-relief-manager-jobs/) while you find the right person. Contact us"
