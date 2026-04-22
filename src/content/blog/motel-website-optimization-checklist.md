@@ -124,3 +124,9 @@ Your [**motel website**](/motel-website-design/) is the only part of your digita
     </button>
   </form>
 </div>
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Quick Win</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a $99 Marketing Audit</h2>
+  <p class="text-stone-600 text-sm mb-6">Get a practitioner review of your motel's digital distribution, website speed, and OTA setup. Actionable findings, fast.</p>
+  <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book a $99 Marketing Audit</a>
+</div>

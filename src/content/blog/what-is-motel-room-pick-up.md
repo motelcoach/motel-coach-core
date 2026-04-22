@@ -61,3 +61,10 @@ A basic example may help. Your motel is tracking bookings for July 10:
 Such simple calculations can be done with any bookkeeping or PMS data. In practice, many motels use their [property management system](/learn-guest-point-pms/) or even a spreadsheet to record total bookings for each future date at the end of each day, then compute pickups by subtraction.
 
 Overall, room pickup is a basic yet powerful metric. By watching how many rooms are added (or lost) each day or week, motel operators gain a timely view of demand and can adjust forecasts, pricing, and marketing in response.
+
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Revenue Management</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Join the Revenue Management Course Waitlist</h2>
+  <p class="text-stone-600 text-sm mb-6">Get early access and save 10% when the course launches. Built for independent motel owners who want to master ADR, occupancy, and yield.</p>
+  <a href="/motel-revenue-management-course/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Join the Waitlist — Save 10%</a>
+</div>

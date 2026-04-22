@@ -21,7 +21,7 @@ These three are proving that whether you're in a boardroom in Bangkok or around 
 
 Frasers Hospitality isn't just opening rooms. They are executing a disciplined expansion of 18 new residences across Asia by 2028—not guessing where the ball is going, but putting their glove squarely in the path of **"serviced living"**: accommodation designed for the long-stay guest who wants the comforts of home with the reliability of a hotel. The crown jewel of this push is the **Modena by Fraser** brand, targeting young professionals in gateway cities like Chengdu and Dalian.
 
-It's a blunt reminder: if your room descriptions don't provide everything a guest needs for an extended stay, your [Motel SEO](/blog/motel-seo/) results will be wasted.
+It's a blunt reminder: if your room descriptions don't provide everything a guest needs for an extended stay, your [Motel SEO](/motel-seo/) results will be wasted.
 
 ### What makes Modena by Fraser different?
 
@@ -54,3 +54,10 @@ Minor Hotels' playbook is a masterclass in intentional growth. They don't acquir
 These three groups operate in very different markets, but the thread connecting them is the same: **intentionality**. Every room type, every brand extension, every acquisition is a deliberate answer to a specific guest need.
 
 That's the standard to hold yourself to in 2026. Not perfectionism.
+
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Limited Availability</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a 2-Hour Strategy Session</h2>
+  <p class="text-stone-600 text-sm mb-6">A focused session on your motel's biggest profit levers. Normally $259 — <strong>only $135.</strong></p>
+  <a href="https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book Now — $135</a>
+</div>

@@ -47,3 +47,10 @@ By Day 15, the "honeymoon" is over. You must now define the standard.
     
 
 If you are nervous about starting your first [motel management](/motel-management/) role, or want to start your day with confidence - have a look through our [motel management training courses](/motel-management-training-course/). Our Courses combine management with a [motel property management system - GuestPoint](/learn-guest-point-pms/).
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Motel Management Course</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Enrol in Our Motel Management Course</h2>
+  <p class="text-stone-600 text-sm mb-1">Practical, beginner-to-advanced motel management training built around real operational systems.</p>
+  <p class="text-stone-400 text-xs mb-6">From $89 &nbsp;·&nbsp; 10-day money-back guarantee</p>
+  <a href="/motel-management-training-course/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">View Course &amp; Enrol</a>
+</div>

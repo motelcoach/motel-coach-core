@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Motel Relief Manager Jobs | Vetted Professionals | Motel Coach"
+  description="Vetted, police-checked motel relief managers who run your desk with strict performance standards. Short-notice and planned cover across Australia."
+>
+  <!-- Hero -->
+  <section class="bg-[#F9F9F8] border-b border-stone-200 py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-8">
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">Relief Management</p>
+        <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-6">
+          Hand Over the Keys with Absolute Certainty.
+        </h1>
+        <p class="text-xl text-stone-600 leading-relaxed mb-6">
+          Vetted, police-checked professionals who run your desk with strict performance standards.
+        </p>
+        <p class="text-stone-500 leading-relaxed mb-8">
+          Whether you need cover for annual leave, a family emergency, or a planned ownership transition, our relief managers arrive ready to operate — not to learn on the job at your expense.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a
+            href="/contact/?topic=Relief+Management"
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+          >
+            Request Relief Cover
+          </a>
+          <a
+            href="#gold-standard"
+            class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white border border-stone-200 text-stone-900 font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm"
+          >
+            Our Standards
+          </a>
+        </div>
+      </div>
+      <div class="md:col-span-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">Every Relief Manager Is</p>
+          <ul class="space-y-3 text-sm text-stone-600">
+            {[
+              'Police-checked and verified',
+              'Operationally assessed, not just interviewed',
+              'Briefed on your property before arrival',
+              'Held to daily performance standards',
+              'Available for short-notice deployment',
+            ].map(item => (
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 text-[#4A554E] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Motel Owners Trust Us -->
+  <section class="bg-white py-24 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-2xl mb-12">
+        <h2 class="text-3xl font-semibold text-stone-900 tracking-tight mb-4">
+          Why Thousands of Motel Owners Trust Our Relief Management
+        </h2>
+        <p class="text-lg text-stone-500 leading-relaxed">
+          Handing over your motel to someone you don't know is one of the highest-risk moments in motel ownership. Most owners have a story about a relief manager who left the place worse than they found it. We built our screening process to eliminate that risk.
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="bg-[#F9F9F8] border border-stone-200 p-8 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-[#4A554E]/10 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-stone-900 mb-3">Verified Before They Arrive</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">Every relief manager in our network has completed police checks, identity verification, and a practical motel operations assessment — not just a CV review.</p>
+        </div>
+        <div class="bg-[#F9F9F8] border border-stone-200 p-8 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-[#4A554E]/10 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-stone-900 mb-3">Your Property Brief</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">Before your relief manager arrives, we prepare a property-specific brief covering your PMS, check-in procedures, key supplier contacts, and guest service standards — so day one runs smoothly.</p>
+        </div>
+        <div class="bg-[#F9F9F8] border border-stone-200 p-8 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-[#4A554E]/10 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 12c-1.06-2.82-1.41-5.77-.97-8.73A2 2 0 0 1 5.11 1.5h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 23 16.92z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-stone-900 mb-3">Owner-Level Oversight</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">We stay available throughout the relief period. If your relief manager has a question, an operational issue, or a guest escalation, they have experienced motel operators in their corner — not just a helpline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Gold Standard -->
+  <section id="gold-standard" class="bg-[#F9F9F8] py-24 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl font-semibold text-stone-900 tracking-tight mb-6">
+            The Gold Standard
+          </h2>
+          <p class="text-stone-500 leading-relaxed mb-6">
+            Most relief management services place a body in your front office. We place an operator. The difference shows up in your daily reconciliation, your guest reviews, and your OTA score — which means it shows up directly in your revenue.
+          </p>
+          <p class="text-stone-500 leading-relaxed mb-6">
+            Our Gold Standard is a set of non-negotiable performance benchmarks every relief manager must maintain throughout their placement:
+          </p>
+          <ul class="space-y-4">
+            {[
+              { title: 'Daily Reconciliation Accuracy', body: 'End-of-day reconciliation completed and balanced to zero variance every night.' },
+              { title: 'Review Response Within 24 Hours', body: 'All guest reviews responded to professionally within 24 hours of posting.' },
+              { title: 'Room Standard Compliance', body: 'Room inspections completed to your property standard, not to a generic checklist.' },
+              { title: 'Occupancy Reporting', body: 'Nightly occupancy and rate data reported to the owner in the agreed format.' },
+              { title: 'Zero Unilateral Policy Changes', body: 'No room rates, policies, or supplier arrangements changed without owner authorisation.' },
+            ].map(item => (
+              <li class="flex items-start gap-3">
+                <svg class="mt-1 h-5 w-5 text-[#4A554E] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <p class="font-semibold text-stone-900 text-sm">{item.title}</p>
+                  <p class="text-stone-500 text-sm leading-relaxed">{item.body}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="bg-white border-2 border-[#4A554E] rounded-2xl p-8 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">Owner Peace of Mind</p>
+          <blockquote class="text-stone-700 text-lg leading-relaxed italic mb-6">
+            "The relief manager arrived knowing the property, handled the desk without any issues, and the reconciliation was clean every single night. Best relief experience we've had."
+          </blockquote>
+          <p class="text-sm text-stone-400">— Independent motel owner, Queensland</p>
+          <div class="mt-8 pt-6 border-t border-stone-200">
+            <a
+              href="/contact/?topic=Relief+Management"
+              class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+            >
+              Request Relief Cover
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Questions -->
+  <section class="bg-white py-24 border-b border-stone-200">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-stone-900 tracking-tight mb-10">
+        Common Questions
+      </h2>
+      <div class="space-y-4">
+        {[
+          {
+            q: 'How much notice do you need to place a relief manager?',
+            a: 'For planned placements, 2–4 weeks notice is ideal. For genuine emergencies, we do our best to mobilise qualified cover as quickly as possible. Contact us and we\'ll tell you honestly what we can arrange.',
+          },
+          {
+            q: 'What if my PMS is unusual or not widely used?',
+            a: 'We ensure your relief manager is briefed on your specific PMS setup before arrival. Where a manager has no prior experience with a particular system, we provide guided onboarding so they can operate it confidently.',
+          },
+          {
+            q: 'Are relief managers available for short placements (1–2 weeks)?',
+            a: 'Yes. We place relief managers for as short as one week, though longer placements are generally more economical for all parties.',
+          },
+          {
+            q: 'What is included in the relief manager rate?',
+            a: 'Our relief manager rates include the manager\'s remuneration and our placement and oversight fee. Accommodation is generally provided by the property. We provide full rate transparency at the briefing stage.',
+          },
+          {
+            q: 'Do relief managers work alone or with existing staff?',
+            a: 'Either. Your relief manager can work alongside existing housekeeping or front desk staff, or operate the property independently for smaller properties. We structure the engagement to match your actual staffing situation.',
+          },
+        ].map(faq => (
+          <details class="group rounded-xl border border-stone-200 bg-white p-4">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left">
+              <span class="text-sm md:text-base font-semibold text-stone-900">{faq.q}</span>
+              <span class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-stone-300 text-stone-500 transition group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-stone-500 leading-relaxed">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Footer -->
+  <section class="bg-[#4A554E] py-20">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold text-white tracking-tight mb-4">
+        Ready to Arrange Cover?
+      </h2>
+      <p class="text-stone-300 leading-relaxed mb-8">
+        Tell us your property, dates, and requirements and we'll come back to you within one business day.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white">
+        <a href="mailto:contact@motelcoach.com.au" class="inline-flex items-center gap-2 text-base font-medium hover:text-stone-200 transition-colors">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          contact@motelcoach.com.au
+        </a>
+        <a href="tel:0458510486" class="inline-flex items-center gap-2 text-base font-medium hover:text-stone-200 transition-colors">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 12c-1.06-2.82-1.41-5.77-.97-8.73A2 2 0 0 1 5.11 1.5h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 23 16.92z"/></svg>
+          0458 510 486
+        </a>
+      </div>
+      <p class="mt-4 text-stone-400 text-sm">Phone or text — we respond to both.</p>
+    </div>
+  </section>
+</BaseLayout>

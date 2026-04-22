@@ -7,16 +7,11 @@ description: "How does booking.com count the guest reviews or ratings received? 
 executiveSummary: "Booking.com's review score has a direct financial impact — a higher score allows you to charge more and rank above competitors. Reviews are weighted by recency over a rolling 36-month window, meaning operational improvements show up in your score faster than most owners realise. This guide covers how the rating system works, what the sub-categories measure, and the practical steps to lift your score and protect it. We can help you with your [motel marketing](/motel-marketing/) and [Booking.com ranking](/blog/booking-review-rank/)."
 ---
 
-<div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl my-8">
-<h2 class="text-xl font-bold text-brand-950 mb-3 !mt-0">Executive Summary: Key Takeaways</h2>
-<p class="text-gray-700 m-0">
-<em>Booking.com's review score has a direct financial impact — a higher score allows you to charge more and rank above competitors. Reviews are weighted by recency over a rolling 36-month window, meaning operational improvements show up in your score faster than most owners realise. This guide covers how the rating system works, what the sub-categories actually measure, and the practical steps to lift your score and protect it.</em>
-</p>
-</div>
+**Last Edited 22/04/2026.**
 
 ## Decoding the Booking.com Rating System: Recency, Velocity, and ROI
 
-Booking.com's Rating System has a significant financial impact on a motel. A higher review score allows a property to charge a higher room rate, and with all else being equal, your motel will rank higher than other motels if your Guest Review Score is higher.
+**Booking.com's Rating System has a direct and measurable financial impact on your motel.** A higher review score unlocks higher room rates — guests demonstrably pay more for properties with scores above 8.5 — and with all else being equal, your motel will rank higher than competing properties in Booking.com search results if your Guest Review Score is higher. A sustained improvement of 0.5 points on your score can translate to a 5–10% increase in achievable ADR and a meaningful lift in your Booking.com rank position.
 
 One important thing to recognise is that a guest review is a personal opinion — some guests have high expectations, some guests just want a friendly welcome or to be treated with respect. As a motel owner or on-site motel manager, your role is to improve the aggregate review score. Avoid getting caught up in individual reviews. With so much personal investment in a motel, it is not always easy to do, but try to learn from each review and move on quickly when they seem harsh or unfair.
 
@@ -40,7 +35,7 @@ Guests who have booked and completed a stay can leave an overall score on the Bo
 
 > **Note:** This is the only required part of the review system to submit a review.
 
-Your Review Rating out of 10 is one component of your overall Booking.com performance. We have written a focused article on [improving your rank on Booking.com](/blog/booking-review-rank/) that covers the full algorithm in detail.
+Your Review Rating out of 10 is one component of your overall Booking.com performance. We have written a focused article on [improving your rank on Booking.com](/blog/booking-review-rank/) that covers the full ranking algorithm — including visibility score, content completeness, and response rate — in detail. Operators who implement the full ranking framework consistently see measurable improvement in their position within 60–90 days.
 
 ---
 
@@ -140,4 +135,11 @@ Part of optimising your motel's profitability is optimising the visibility of yo
   <a href="/contact/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
     Book a Free Consultation
   </a>
+</div>
+
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Quick Win</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a $99 Marketing Audit</h2>
+  <p class="text-stone-600 text-sm mb-6">Get a practitioner review of your motel's digital distribution, website speed, and OTA setup. Actionable findings, fast.</p>
+  <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book a $99 Marketing Audit</a>
 </div>

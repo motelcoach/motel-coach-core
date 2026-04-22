@@ -66,3 +66,10 @@ In this bonus lesson, I show how to use your daily building walk to connect oper
 Ready to Go Deeper?
 
 These free videos are the perfect starting point to build confidence with GuestPoint PMS. But if you want to master GuestPoint faster, get personal help, or train your entire team — I offer 1-on-1 GuestPoint Training Sessions and a complete [Comprehensive Motel Management Course](/motel-management-training-course/), both designed specifically for [Australian motels](/motel-management/).
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">GuestPoint PMS Course</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Enrol in Our Full GuestPoint Course</h2>
+  <p class="text-stone-600 text-sm mb-1">Structured, practitioner-led GuestPoint PMS training aligned with real motel operations.</p>
+  <p class="text-stone-400 text-xs mb-6">From $195 &nbsp;·&nbsp; 10-day money-back guarantee</p>
+  <a href="/learn-guest-point-pms/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">View GuestPoint Course</a>
+</div>

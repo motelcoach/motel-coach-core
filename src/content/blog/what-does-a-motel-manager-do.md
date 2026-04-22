@@ -22,7 +22,7 @@ For some people that variety is energising. For others it's exhausting.
 
 The rest of this guide explains the job in practical terms so you can decide which one you are.
 
-The Core Responsibilities of a Motel Manager
+Motel Manager Job Description
 --------------------------------------------
 
 ### 1\. Front Office & Guest Management
@@ -311,3 +311,10 @@ Download the introductory guide below or read our book: [The Essential Guide to 
 *   Should I apply for a motel manager role before learning the basics?
     
     It's strongly recommended to understand the role and expectations first. Many first-time managers struggle simply because they didn't know what the job involved.
+
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">The Essential Guide</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Buy The Essential Guide to Motel Management</h2>
+  <p class="text-stone-600 text-sm mb-6">The definitive 190+ page manual on Australian motel management. Hundreds of operational templates and checklists included.</p>
+  <a href="/motel-management-book/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Get the Book</a>
+</div>

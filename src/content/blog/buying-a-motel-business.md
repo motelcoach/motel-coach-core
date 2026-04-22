@@ -4,10 +4,10 @@ pubDate: Sun, 04 Jan 2026 00:10:25 +0000
 slug: buying-a-motel-business
 category: "Buying a Motel"
 description: "Avoid costly mistakes when buying a motel business. A practical guide to stress-testing add-backs and capex. Book a free consult to talk about your target motel investment."
-executiveSummary: "Safeguard your investment by mitigating capital risk through a rigorous [motel buyers audit](/motel-buyers-audit/) before signing any contract. Buying a motel without professional due diligence is a gamble that ignores hidden waterproofing failures, aged plant equipment, and unfavorable lease reviews. You must account for family labor, deferred maintenance and articificially bloated future bookings to uncover the \"True Profit\" of any motel that is listed for sale. To ensure you have the skills to grow your investment from Day 1, our [motel management training courses](/motel-management-training-course/) provide the definitive roadmap for professionalizing your acquisition and streamlining daily operations."
+executiveSummary: "Safeguard your investment by mitigating capital risk through a rigorous [motel buyers audit](/motel-buyers-audit/) before signing any contract. Buying a motel without professional due diligence is a gamble that ignores hidden waterproofing failures, aged plant equipment, and unfavorable lease reviews. You must account for family labor, deferred maintenance and articificially bloated future bookings to uncover the \"True Profit\" of any motel that is listed for sale."
 ---
 
-**Last Edited 18/03/2026.**
+**Last Edited 22/04/2026.**
 
 Introduction
 ------------
@@ -25,7 +25,7 @@ At the end of this page, you can download a **free Motel Buying Checklist** to h
 
 Not all motel purchases are the same. Before you look at price, you need clarity on the structure.
 
-*   **Freehold going concern**: land, buildings, and business
+*   **Freehold going concern**: land, buildings, and business.
     
 *   **Leasehold motel**: business only, operating under a lease
     
@@ -282,17 +282,28 @@ The best buyers don’t chase upside. They protect downside first.
 Disclaimer
 ----------
 
-The information provided on this page and in the accompanying **Motel Buying Checklist** is for **general information and educational purposes only**.
+**Last updated: April 2026.**
 
-It does not constitute financial advice, legal advice, accounting advice, or real estate advice, and should not be relied upon as a substitute for professional advice specific to your circumstances.
+The information provided on this page and in the accompanying **Motel Buying Checklist** is for **general information and educational purposes only**. It is not a substitute for professional advice tailored to your specific circumstances.
 
-Buying a motel involves financial risk and requires independent due diligence. Before making any purchase decision, you should seek advice from appropriately qualified professionals, including (but not limited to) a licensed accountant, solicitor, valuer, finance broker, and building or compliance specialists.
+Nothing on this page constitutes financial advice, legal advice, accounting advice, real estate advice, or investment advice under Australian law. Motel acquisitions are complex commercial transactions involving significant capital risk. Before making any purchase or investment decision, you must engage appropriately qualified independent professionals, including (but not limited to):
 
-While every effort has been made to ensure the information is accurate and practical at the time of publication, **Motel Coach makes no representations or warranties** regarding the accuracy, completeness, or suitability of the information for any particular purpose.
+- A licensed accountant or CPA experienced in hospitality business acquisitions
+- A commercial solicitor with experience in motel and leasehold transactions
+- A licensed property valuer
+- A finance broker or lender familiar with motel and accommodation business lending
+- A qualified building and pest inspector
+- A compliance specialist for WHS and food safety obligations where relevant
 
-To the maximum extent permitted by law, [Motel Coach](/) disclaims all liability for any loss, damage, or expense incurred as a result of reliance on the information provided.
+The Australian motel market is subject to economic conditions, interest rate movements, labour market changes, and regulatory shifts that are beyond the control of Motel Coach. Past performance of motel investments described in this content is not a reliable indicator of future results.
 
-Use of this content indicates your acceptance of this disclaimer.
+Motel Coach operates as an operational consultancy and does not hold an Australian Financial Services Licence (AFSL) or act as a real estate agent, business broker, or licensed advisor in any regulated profession. Our services are operational and educational in nature.
+
+While every effort has been made to ensure the accuracy and currency of information at the time of publication, **Motel Coach makes no representations or warranties** — express or implied — regarding the accuracy, completeness, reliability, or suitability of the information for any purpose.
+
+To the maximum extent permitted by applicable law, [Motel Coach](/) expressly disclaims all liability for any loss, damage, or expense of any kind — including consequential, indirect, or economic loss — arising directly or indirectly from reliance on the information provided on this page.
+
+Use of this content constitutes your acceptance of this disclaimer in full.
 
 Learn More about Motel Management
 ---------------------------------
@@ -300,3 +311,9 @@ Learn More about Motel Management
 Motel Coach offers a few options for learning [Motel Management](/motel-management-training-course/).
 
 If your weakness is the computer, have a look at our [Motel Property Management System Course](/learn-guest-point-pms/) using GuestPoint PMS.
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Limited Availability</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a 2-Hour Strategy Session</h2>
+  <p class="text-stone-600 text-sm mb-6">A focused session on your motel's biggest profit levers. Normally $259 — <strong>only $135.</strong></p>
+  <a href="https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book Now — $135</a>
+</div>

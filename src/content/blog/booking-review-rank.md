@@ -3,9 +3,11 @@ title: "The Ultimate Guide to Booking.com Ranking & Review Algorithms for Motels
 pubDate: 2026-02-12
 slug: booking-review-rank
 category: "Motel Management"
-description: "The truth about Booking.com algorithms. Learn how review recency and velocity affect your property's ranking. Download the Booking.com Rank Checklist."
-executiveSummary: "Maximise your property’s visibility by mastering the Booking.com \"core formula,\" which prioritises conversion, 24+ high-resolution photos, and the new 36-month recency-weighted review algorithm. Booking.com now prioritises your most recent guest feedback, meaning current service improvements elevate your score faster. Success requires an active reputation control system and strategic use of Preferred Partner or Genius programmes to trigger algorithmic boosts that outpace local competitors."
+description: "How Booking.com Ranks Motels and Hotels. Learn how review recency and velocity affect your property's ranking. Download the Booking.com Rank Checklist."
+executiveSummary: "Maximise your property’s visibility on Booking.com \"core formula,\" which prioritises conversion, 24+ high-resolution photos, and the new 36-month recency-weighted review algorithm. Booking.com now prioritises your most recent guest feedback, meaning current service improvements elevate your score faster. To out-rank motels in your town you need to be active and keep your motels page up to date."
 ---
+
+**Last Edited 22/04/2026.**
 
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download our Booking.com Optimization Checklist</h2>
@@ -84,6 +86,8 @@ Guest review scores are not just vanity metrics—they materially affect search 
 * **Recency Weighting (2025 Update):** Recent reviews carry significantly more mathematical weight than older ones. Reviews from the last 3 months have the highest impact, while 24–36 month-old reviews contribute minimal influence. This allows properties that have recently improved to see their ratings climb much faster.
 * **Overall vs. Category Ratings:** The Guest Review Score is based *only* on the overall 1-10 rating guests provide. Category ratings (Cleanliness, Comfort, Location) are displayed for transparency but do not directly compute into the headline algorithmic score.
 
+Learn more about the [Booking.com Guest Ratings here](/blog/bookingcom-rating-system/).
+
 ### Mitigating Score Swings & Policy Changes
 Booking.com has implemented stability measures so that a single 1/10 review will not drastically swing a small motel's average overnight. Furthermore, **anonymous reviews are no longer allowed**, and the system now prompts guests leaving "extreme" scores to leave a written comment explaining why, drastically reducing unjustified anomalies.
 
@@ -105,3 +109,12 @@ Australian motels serve a unique mix of domestic road-trippers and seasonal holi
 Ranking higher on Booking.com is an ongoing process of aligning your property with the platform’s core formula: high conversion, deep visual content, and recent, positive guest reviews. By mastering these variables, independent motels can trigger algorithmic boosts that outpace local competitors.
 
 To audit your current OTA performance and professionalise your digital distribution, engage our [Motel Consultancy](/motel-consultancy/) or enrol in our [Motel Management Training Courses](/motel-management-training-course/).
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Free Checklist + Audit</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Get the Booking.com Rank Improvement Checklist</h2>
+  <p class="text-stone-600 text-sm mb-4">Download the checklist and pair it with a $99 Marketing Audit to get a practitioner review of your full distribution setup.</p>
+  <div class="flex flex-col sm:flex-row gap-3">
+    <a href="/blog/increase-bookingdotcom-rank-checklist/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Get the Checklist</a>
+    <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">Book $99 Audit</a>
+  </div>
+</div>

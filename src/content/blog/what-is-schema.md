@@ -235,3 +235,9 @@ And in business, that’s what actually matters.
 > Getting your Schema correct is similar to good room photos - it works for you, and pays itself off every day your motel operates.
 
 Interested in learning more about Motel Management, [Learn more about our Motel Management Training here.](/motel-management-training-course/) If your Motel is missing a lot of bookings because of incorrect setup, and you want additional support, talk to us about our [motel consultancy services](/motel-consultancy/).
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Quick Win</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a $99 Marketing Audit</h2>
+  <p class="text-stone-600 text-sm mb-6">Get a practitioner review of your motel's digital distribution, website speed, and OTA setup. Actionable findings, fast.</p>
+  <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book a $99 Marketing Audit</a>
+</div>

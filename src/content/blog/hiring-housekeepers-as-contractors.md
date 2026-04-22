@@ -53,3 +53,9 @@ Heavy fines apply for employers who engage in sham contracting.
 If someone is working like an employee, they should _be_ an employee—calling them a contractor doesn’t change the legal reality.
 
 Interested in more structured [motel management training](/motel-management-training-course/) or [motel consultancy services](/motel-consultancy/). Lets organize a phone call.
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Limited Availability</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a 2-Hour Strategy Session</h2>
+  <p class="text-stone-600 text-sm mb-6">A focused session on your motel's biggest profit levers. Normally $259 — <strong>only $135.</strong></p>
+  <a href="https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book Now — $135</a>
+</div>

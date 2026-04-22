@@ -27,3 +27,12 @@ Checklist: Get More Bookings on Booking.com
      
 
 Want to learn more about Booking.com? Enrol in our [Motel Management Course](/motel-management-training-course/). It is the One Course you need to fully understand [Motel Management](/motel-management/). Not ready to commit, have a read of our thorough book on motel management; [The Essential Guide to Motel Management](/motel-management-book/).
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Free Checklist + Audit</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Get the Booking.com Rank Improvement Checklist</h2>
+  <p class="text-stone-600 text-sm mb-4">Download the checklist and pair it with a $99 Marketing Audit to get a practitioner review of your full distribution setup.</p>
+  <div class="flex flex-col sm:flex-row gap-3">
+    <a href="/blog/increase-bookingdotcom-rank-checklist/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Get the Checklist</a>
+    <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">Book $99 Audit</a>
+  </div>
+</div>

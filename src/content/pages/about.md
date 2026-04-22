@@ -75,3 +75,9 @@ We only work with motel clients that we can drive performance improvements with.
 Motel owners who implement formal operational frameworks report significantly improved guest satisfaction and protected profit margins. Comprehensive training on these frameworks is available through our specialized [Motel Management Training Courses](/courses/). 
 
 Independent operators facing occupancy volatility require structured rate discipline to secure direct bookings. Our [Performance-Focused Motel Consultancy Services](/motel-consultancy/) provide the exact systems needed to stabilize your asset.
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Limited Availability</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a 2-Hour Strategy Session</h2>
+  <p class="text-stone-600 text-sm mb-6">A focused session on your motel's biggest profit levers. Normally $259 — <strong>only $135.</strong></p>
+  <a href="https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book Now — $135</a>
+</div>

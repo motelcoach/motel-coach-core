@@ -35,3 +35,9 @@ Motel Coach creates smart, practical training content for motel and small accomm
 If you’re passionate about the industry and want to help others succeed, [Contact Us](/contact/). We review all submissions and will be in touch if it’s a fit. Know someone great? We’d love a referral too.
 
 Let’s make training better—together.
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Limited Availability</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a 2-Hour Strategy Session</h2>
+  <p class="text-stone-600 text-sm mb-6">A focused session on your motel's biggest profit levers. Normally $259 — <strong>only $135.</strong></p>
+  <a href="https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book Now — $135</a>
+</div>

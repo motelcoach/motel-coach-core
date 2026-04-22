@@ -47,3 +47,9 @@ Innovators like **Motel Moose** and other forward-thinking operators are already
 **Q: Will AI replace my booking engine?** **A:** No, it will enhance it. Modern **AI for hotel booking** integrates with your existing PMS to provide "Agentic" capabilities, allowing AI assistants to negotiate rates or check availability on behalf of the guest.
 
 **Q: Where can I see AI in the hospitality industry examples?** **A:** Look at how **SiteMinder** uses AI for distribution or how **Seekom** implements AI-driven SEO. These tools are designed to ensure your motel is the first answer provided to a traveler’s query.
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Quick Win</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a $99 Marketing Audit</h2>
+  <p class="text-stone-600 text-sm mb-6">Get a practitioner review of your motel's digital distribution, website speed, and OTA setup. Actionable findings, fast.</p>
+  <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book a $99 Marketing Audit</a>
+</div>

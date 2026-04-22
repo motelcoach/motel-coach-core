@@ -74,3 +74,9 @@ Yes. Even for small properties, Google Hotel Ads can level the playing field and
 Tip: Keep your Google Business Profile updated with fresh photos, correct amenities, and positive reviews. It boosts your chances of appearing in more searches.
 
 Learn more about what is involved in [Motel Management](/motel-management/). Motel Coach offers structured [training courses](/motel-management-training-course/), [consultancy services](/motel-consultancy/) and [marketing strategy](/motel-marketing/).
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Quick Win</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a $99 Marketing Audit</h2>
+  <p class="text-stone-600 text-sm mb-6">Get a practitioner review of your motel's digital distribution, website speed, and OTA setup. Actionable findings, fast.</p>
+  <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book a $99 Marketing Audit</a>
+</div>
