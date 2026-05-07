@@ -4,10 +4,11 @@ pubDate: 2026-05-07
 description: "Discover the profitability of owning a motel in Australia. Learn about average ROIs, owner-operator earnings, and the pros and cons of the industry with Motelcoach."
 keywords: "Is owning a motel profitable?, motel advantages and disadvantages, is motel business profitable in australia"
 category: "Buying a Motel"
+executiveSummary: "> *Executive Summary: Key Takeaways - Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management.*"
 ---
 
 
-> *> *Executive Summary: Key Takeaways - Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management.**
+> **Executive Summary:** > *Executive Summary: Key Takeaways - Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management.*
 
 *Executive Summary: Key Takeaways - Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management.*
 
@@ -44,8 +45,9 @@ Profitability in Australia is largely dictated by the tenure of the business:
 
 In the current market, regional freehold assets are trading at yields of 10% to 12%. Success in the Australian landscape requires a focus on digital reputation; a 4.5-star Google rating can be the difference between a struggling business and a thriving one. By keeping a tight rein on variable costs and leveraging online booking platforms, Australian moteliers continue to find significant financial success.
 
-### Limited Availability: Schedule a 2-Hour Strategy Session
-
-A focused session on your motel's biggest profit levers. Normally $259 — only $135.
-
-[Book Now — $135](https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g)
+<div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Limited Availability</p>
+  <h2 class="text-xl font-semibold text-stone-900 mb-2">Schedule a 2-Hour Strategy Session</h2>
+  <p class="text-stone-600 text-sm mb-6">A focused session on your motel's biggest profit levers. Normally $259 — only $135.</p>
+  <a href="https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Book Now — $135</a>
+</div>
