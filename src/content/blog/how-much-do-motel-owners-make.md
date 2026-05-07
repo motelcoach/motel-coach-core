@@ -1,7 +1,7 @@
 ---
 title: "How Much Do Motel Owners Make?"
 description: "Discover the profitability of owning a motel in Australia. Learn about average ROIs, owner-operator earnings, and the pros and cons of the industry with Motelcoach."
-keywords: "Is owning a motel profitable?, motel advantages and disadvantages, is motel business profitable in australia"
+category: "Buying a Motel"
 date: 2026-05-07
 ---
 
