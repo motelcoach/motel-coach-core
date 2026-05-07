@@ -7,6 +7,8 @@ category: "Buying a Motel"
 ---
 
 
+> *> *Executive Summary: Key Takeaways - Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management.**
+
 *Executive Summary: Key Takeaways - Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management.*
 
 Entering the Australian accommodation sector often starts with a single question: what is the actual take-home pay? For those looking to swap the corporate grind for a regional lifestyle, understanding the financial reality of motel ownership is essential. In Australia, owner-operator earnings are influenced by several factors, including the type of ownership (freehold versus leasehold), location, and the efficiency of daily operations.
@@ -15,7 +17,7 @@ Entering the Australian accommodation sector often starts with a single question
 
 Owning a motel remains a cornerstone of the Australian tourism industry, and for many, it is a highly profitable venture. Unlike many retail businesses, motels offer a steady cash flow from day one. Profits are generally calculated as a percentage of gross turnover, with well-run independent motels often seeing profit margins between 15% and 25%.
 
-For a typical regional motel, owner-operator earnings generally sit between $100,000 and $150,000 per year. However, high-performing motels in "oil boom" towns or prime coastal hubs can see much higher returns, sometimes netting upwards of $90,000 a month in exceptional circumstances. The key to profitability lies in managing fixed costsâsuch as land tax and insuranceâwhile maximising Revenue Per Available Room (RevPAR) through dynamic pricing.
+For a typical regional motel, owner-operator earnings generally sit between $100,000 and $150,000 per year. However, high-performing motels in "oil boom" towns or prime coastal hubs can see much higher returns, sometimes netting upwards of $90,000 a month in exceptional circumstances. The key to profitability lies in managing fixed costs—such as land tax and insurance—while maximising Revenue Per Available Room (RevPAR) through dynamic pricing.
 
 ## motel advantages and disadvantages
 
@@ -41,8 +43,6 @@ Profitability in Australia is largely dictated by the tenure of the business:
 - **Freehold Going Concern:** You own the land and the business. While the initial investment is higher ($1.5m+), the security is greater, and you capture 100% of the profit plus property growth.
 
 In the current market, regional freehold assets are trading at yields of 10% to 12%. Success in the Australian landscape requires a focus on digital reputation; a 4.5-star Google rating can be the difference between a struggling business and a thriving one. By keeping a tight rein on variable costs and leveraging online booking platforms, Australian moteliers continue to find significant financial success.
-
-```
 
 ### Limited Availability: Schedule a 2-Hour Strategy Session
 
