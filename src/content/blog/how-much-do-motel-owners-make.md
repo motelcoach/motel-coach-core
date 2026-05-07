@@ -1,7 +1,7 @@
 ---
 title: "How Much Do Motel Owners Make?"
 pubDate: 2026-05-07
-description: "Discover the profitability of owning a motel in Australia. Learn about average ROIs, owner-operator earnings, and the pros and cons of the industry with Motelcoach."
+description: "Is owning a motel profitable in Australia? Explore the advantages and disadvantages of the motel business and see real ROI data. Start today with Motelcoach."
 keywords: "Is owning a motel profitable?, motel advantages and disadvantages, is motel business profitable in australia"
 category: "Buying a Motel"
 executiveSummary: "Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management."
