@@ -7,9 +7,6 @@ category: "Buying a Motel"
 executiveSummary: "Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management."
 ---
 
-
-> **Executive Summary:** Motel owner earnings in Australia typically range from $100,000 to $150,000 for regional owner-operators, though high-performing freehold assets can yield significantly more. Profitability is heavily dependent on the ownership structure, location, and the ability to maintain consistent occupancy rates through effective management.
-
 Determining the potential income for a motel owner in Australia involves looking at various financial metrics and operational models. On average, an owner-operator of a typical regional motel can expect to earn between $100,000 and $150,000 per year. However, this figure is highly variable. Large, well-positioned freehold motels or those in high-demand areas can generate significantly more, sometimes reaching net profits of $450,000 or higher for larger operations.
 
 It is vital to recognise that yields have compressed dramatically in the last four years. Quality freehold going concerns that once traded at 14–15% are now sitting between 9–10%. Regional assets that used to command 18–20% are now closer to 12–15%. Even in the last 18 months, 12% is hard to find. Leaseholds — long viewed as harder work but higher return — are now averaging around 25–27%, a full five points lower than a few years ago.
