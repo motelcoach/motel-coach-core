@@ -21,24 +21,47 @@ OTAs cannot create a Google Business Profile (GBP). This is your only unfair adv
     
 *   **The Review Momentum:** A 4.8-star rating is useless if the last review was three weeks ago. You need **Recency.**
 
-Learn How to Increase Your Motels Rank on Google
-------------------------------------------------
-
-Sign up with your email address to receive our 2026 Motel SEO Checklist
-
-Email Address 
-
-⬇️ Download Guide (Free)
-
-Please review our [Privacy Policy](/privacy-policy/).
-
-Thank you! Please find attached a link to our 2026 Motel SEO Checklist
-
-[https://docs.google.com/spreadsheets/d/1eV9eSvKKhc4JO2lRQ-Kl3MIWU3ZfQBaEsiJHCQWN324/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1eV9eSvKKhc4JO2lRQ-Kl3MIWU3ZfQBaEsiJHCQWN324/edit?gid=0#gid=0)
+<div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+  <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the 2026 Motel SEO Checklist</h2>
+  <p class="text-stone-600 text-sm mb-6">Enter your email to receive the free checklist and other <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">Motel Marketing</a> resources direct to your inbox.</p>
+  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="https://docs.google.com/spreadsheets/d/1eV9eSvKKhc4JO2lRQ-Kl3MIWU3ZfQBaEsiJHCQWN324/edit?gid=0#gid=0">
+    <input type="hidden" name="source_page" value="Blog: Motel SEO Checklist 2026" />
+    <input type="hidden" name="form_type" value="checklist-download" />
+    <input type="hidden" name="topic" value="checklist" />
+    <input type="hidden" name="message" value="Please send me the 2026 Motel SEO Checklist." />
+    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
+    <label for="seo-checklist-email" class="sr-only">Email address</label>
+    <input
+      id="seo-checklist-email"
+      type="email"
+      name="email"
+      required
+      placeholder="you@example.com"
+      class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+    />
+    <label for="seo-checklist-exp" class="sr-only">Experience Level</label>
+    <select
+      id="seo-checklist-exp"
+      name="motel-experience"
+      required
+      class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
+    >
+      <option value="" disabled selected>Select Experience Level</option>
+      <option value="No Experience">No Experience</option>
+      <option value="Some Experience">Some Experience</option>
+      <option value="Experienced">Experienced</option>
+      <option value="Motel Owner">Motel Owner</option>
+    </select>
+    <button type="submit" class="px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">
+      ⬇️ Get the Checklist
+    </button>
+  </form>
+  <p class="text-xs text-stone-400 mt-4">Please review our <a href="/privacy-policy/" class="underline hover:text-stone-600">Privacy Policy</a>.</p>
+</div>
 
 ### How Guests Search
 
-Google dominates how travelers find and choose accommodation – over **70% of travelers begin their trip planning on Google**. For an independent motel in Australia, mastering SEO (Search Engine Optimization) means more direct bookings and less reliance on OTAs. In 2026 and beyond, Google’s algorithm and features are evolving fast. Mobile searches, voice queries, and AI-driven results are now central to how guests discover places to stay. This guide will walk you through current best practices in [SEO and Local SEO](/motel-marketing/) for motels, with each tactic labeled by difficulty level. Whether you’re a beginner or a marketing pro, you’ll find actionable steps to boost your Google Search and Maps presence – and bring more guests straight to your front desk.
+Google dominates how travelers find and choose accommodation – over **70% of travelers begin their trip planning on Google**. For an independent motel in Australia, mastering SEO (Search Engine Optimization) means more direct bookings and less reliance on OTAs. In 2026 and beyond, Google’s algorithm and features are evolving fast. Mobile searches, voice queries, and AI-driven results are now central to how guests discover places to stay. This guide will walk you through current best practices in [SEO and Local SEO](/motel-seo/) for motels, with each tactic labeled by difficulty level. Whether you’re a beginner or a marketing pro, you’ll find actionable steps to boost your Google Search and Maps presence – and bring more guests straight to your front desk.
 
 ### Google’s Evolving Algorithm & Why It Matters _(Advanced)_
 
@@ -63,7 +86,7 @@ Your Google Business Profile is the cornerstone of local SEO and [marketing for 
 
 Staying active on your Google Business Profile directly influences your local rankings. A fully-optimized GBP can get your motel into the **local 3-pack** – those top Maps results for searches like “motels in \[Town\]”. Many travelers, especially on mobile, will choose from those top 3 map results without ever clicking “View more.” Your goal is to be in that spotlight.
 
-### On-Page [Website SEO Basics](/motel-marketing/) _(Intermediate)_
+### On-Page [Website SEO Basics](/motel-seo/) _(Intermediate)_
 
 Once your GBP is in shape, turn attention to your website – the content here strongly impacts both organic Google rankings and the info Google shows in search snippets or AI answers. **Difficulty:** Intermediate (you may need to edit website text and some HTML tags). Focus on:
 
@@ -90,7 +113,9 @@ A technically sound website is the unsung hero of SEO – it ensures all your gr
     
 *   **Local Business Schema:** Additionally, consider adding LocalBusiness schema (with type Hotel or Motel) to reinforce your NAP info, geo-coordinates, and opening hours. This can further validate your business’s location and offerings to Google.
     
-*   **Site Structure & Navigation:** Ensure your site’s navigation is simple and logical. All key pages (rooms, booking, contact, location, etc.) should be reachable in a few clicks. Internally link related content – e.g., your blog post about a local attraction should link to your booking page or a call-to-action. Good internal linking not only guides users but also helps search engines understand which pages are most important. It also aids AI-driven tools in understanding your site’s context .
+*   **Site Structure & Navigation:** Ensure your site’s navigation is simple and logical. All key pages (rooms, booking, contact, location, etc.) should be reachable in a few clicks. Internally link related content – e.g., your blog post about a local attraction should link to your booking page or a call-to-action. Good internal linking not only guides users but also helps search engines understand which pages are most important. It also aids AI-driven tools in understanding your site’s context. 
+
+* **Focussed Main Menu:** Your main menu should be focussed to the key pages that drive revenue. Think of it this way if your motel has 100 points of authority with Google and you have 5 items on your main menu, each of those items gets 20 points of authority to help them rank, if you remove one they get 25 points. This concept was discussed between Joy Hawkins and Edward Sturn on his daily podcast, and has shown some great uptick in performance with our motel seo and [motel consultancy](/motel-consultancy/) clients.
     
 *   **Multimedia Optimization:** If you have an image gallery or virtual tour video on your site, optimize them for speed and SEO. Compress images for faster load, and add descriptive `alt` text (e.g., `<img src="room.jpg" alt="Deluxe Queen Room at Sunshine Motel">`). This helps your images appear in Google image searches and provides context (also useful for voice search reading of content). For videos, host them on YouTube or a fast server and embed them – and include a transcript or summary below (search engines can’t fully “watch” videos, so text is still needed).
     
