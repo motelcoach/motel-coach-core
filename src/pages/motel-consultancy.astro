@@ -44,7 +44,7 @@ const faqs = [
   { q: 'Will you work directly with my staff or managers?', a: 'Absolutely. In the "Rails" and "Freedom" packages, I am the "Final Boss." I train them, set their KPIs, and handle their escalations. The goal is to remove the owner from the daily "engine room" conversations entirely.' },
   { q: 'Is this more operational or more strategic?', a: 'It is a hybrid. A great strategy fails on a broken operational engine. I fix the engine (Operations) so that the strategy (Revenue/Growth) actually produces a return.' },
   { q: 'Do you guarantee increases in occupancy or revenue?', a: 'I only work with properties where I am confident I can find a significant ROI. While I cannot control the market, I control the levers that determine how much of that market you capture and how much of that revenue you actually keep as profit.' },
-  { q: 'How do we get started?', a: 'Submit the Performance Diagnostic form. I review every submission personally. If I see a clear path to increasing your profit and saving you time, I\'ll call you to discuss the best Tier for your objectives.' },
+  { q: 'How do we get started?', a: 'Lets start with a phone call. We then do an initial review of your property, if there is a good fit for our services, We will call you to discuss the best Tier for your objectives.' },
 ];
 ---
 
@@ -96,11 +96,11 @@ const faqs = [
             Our consulting approach is built around structured operational diagnosis. We assess performance drivers, isolate constraints, and implement practical systems designed to restore stability, increase occupancy resilience, and protect profitability.
           </p>
           <div class="mt-8 pt-8 border-t border-stone-200 flex flex-col sm:flex-row gap-3">
-            <a href="/motel-management-book/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
-              Buy the Book
+            <a href="#services" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
+              View Consultancy Services
             </a>
-            <a href="/motel-management-training-course/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border border-stone-200 text-stone-900 text-sm font-semibold rounded-lg hover:bg-stone-50 transition-colors shadow-sm">
-              View Training Courses
+            <a href="#book-a-call" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border border-stone-200 text-stone-900 text-sm font-semibold rounded-lg hover:bg-stone-50 transition-colors shadow-sm">
+              Book a Free 30 Minute Phone Call
             </a>
           </div>
           <p class="mt-6 text-stone-500 leading-relaxed">
@@ -138,7 +138,7 @@ const faqs = [
           <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">On this page</p>
           <nav class="space-y-2">
             <a href="#services" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Motel Consultancy Services</a>
-            <a href="#diagnostic" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Request Your Performance Diagnostic</a>
+            <a href="#book-a-call" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Book a Free 30 Minute Phone Call</a>
             <a href="#reviews" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Our Clients and Partners</a>
             <a href="#faq" class="block text-sm text-stone-500 hover:text-[#4A554E] transition-colors">Frequently Asked Questions</a>
           </nav>
@@ -232,51 +232,51 @@ const faqs = [
           </div>
         </div>
 
-        <div id="diagnostic" class="pt-8 border-t border-stone-200">
-          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">Request Motel Performance Audit</h2>
-          <p class="text-stone-500 leading-relaxed mb-6">All of our consultancy services start with a thorough review of your motels operations and strategies.</p>
-          
+        <div id="book-a-call" class="pt-8 border-t border-stone-200">
+          <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight mb-4">Book in a 30 Minute Phone Call</h2>
+          <p class="text-stone-500 leading-relaxed mb-6">Let's start with a conversation. Fill in your details below and we'll call you at a time that suits.</p>
+
           <div class="bg-[#F9F9F8] border border-stone-200 rounded-2xl p-6 md:p-8">
             <div id="consultancy-success" class="hidden py-8 text-center">
-              <p class="text-xl font-semibold text-stone-900 mb-2">Request Received</p>
-              <p class="text-stone-500">We'll review your details and contact you within 1-2 business days.</p>
+              <p class="text-xl font-semibold text-stone-900 mb-2">Call Booked</p>
+              <p class="text-stone-500">We'll be in touch shortly to confirm your call time.</p>
             </div>
             <form id="consultancy-form" class="space-y-4" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
               <input type="hidden" name="source_page" value="Motel Consultancy" />
-              <input type="hidden" name="form_type" value="consultancy-audit" />
+              <input type="hidden" name="form_type" value="phone-call-booking" />
               <div class="hidden" aria-hidden="true">
                 <input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" />
               </div>
-              
+
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <label for="name" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">Full Name</label>
                   <input id="name" name="name" type="text" required class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" placeholder="Your name" />
                 </div>
                 <div>
-                  <label for="email" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">Email</label>
+                  <label for="email" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">Email Address</label>
                   <input id="email" name="email" type="email" required class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" placeholder="you@example.com" />
                 </div>
               </div>
-              
+
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label for="motel-name" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">Motel Name</label>
-                  <input id="motel-name" name="motel-name" type="text" required class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" placeholder="e.g. 28-room regional motel" />
+                  <label for="phone" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">Phone Number</label>
+                  <input id="phone" name="phone" type="tel" required class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" placeholder="04xx xxx xxx" />
                 </div>
                 <div>
-                  <label for="website" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">Website URL</label>
-                  <input id="website" name="website" type="text" class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" placeholder="yourmotel.com.au" />
+                  <label for="motel-name" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">Motel Name</label>
+                  <input id="motel-name" name="motel-name" type="text" required class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" placeholder="e.g. Sunrise Motel" />
                 </div>
               </div>
-              
+
               <div>
-                <label for="message" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">What is the primary challenge?</label>
-                <textarea id="message" name="message" rows="3" class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" placeholder="Tell us about your current situation..."></textarea>
+                <label for="message" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">Best time to call &amp; what would you like to discuss?</label>
+                <textarea id="message" name="message" rows="3" class="w-full px-4 py-3 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" placeholder="e.g. Weekday mornings — I'd like to discuss occupancy and OTA commission costs."></textarea>
               </div>
-              
+
               <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
-                Submit Request
+                Book Call
               </button>
             </form>
           </div>

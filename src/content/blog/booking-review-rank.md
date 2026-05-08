@@ -4,7 +4,7 @@ pubDate: 2026-02-12
 slug: booking-review-rank
 category: "Motel Management"
 description: "How Booking.com Ranks Motels and Hotels. Learn how review recency and velocity affect your property's ranking. Download the Booking.com Rank Checklist."
-executiveSummary: "Maximise your property’s visibility on Booking.com \"core formula,\" which prioritises conversion, 24+ high-resolution photos, and the new 36-month recency-weighted review algorithm. Booking.com now prioritises your most recent guest feedback, meaning current service improvements elevate your score faster. To out-rank motels in your town you need to be active and keep your motels page up to date."
+executiveSummary: "Maximise your property’s visibility on Booking.com \"core formula,\" which prioritises your motels conversion rate, 24+ high-resolution photos, and the new 36-month recency-weighted review algorithm. Booking.com now prioritises your most recent guest feedback, meaning current service improvements elevate your score faster. To out-rank motels in your town you need to be active and keep your motels Booking.com page up to date."
 ---
 
 **Last Edited 22/04/2026.**
