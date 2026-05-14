@@ -9,7 +9,7 @@ executiveSummary: "Maximise your property’s visibility on Booking.com \"core f
 
 **Last Edited 22/04/2026.**
 
-<div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
+<div id="checklist-download" class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 scroll-mt-24">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download our Booking.com Optimization Checklist</h2>
   <p class="text-stone-600 text-sm mb-6">Sign up to receive our Booking.com Checklist and other <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">Motel Marketing</a> resources direct to your inbox.</p>
   <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/downloads/booking-checklist.pdf">
@@ -114,7 +114,7 @@ To audit your current OTA performance and professionalise your digital distribut
   <h2 class="text-xl font-semibold text-stone-900 mb-2">Get the Booking.com Rank Improvement Checklist</h2>
   <p class="text-stone-600 text-sm mb-4">Download the checklist and pair it with a $99 Marketing Audit to get a practitioner review of your full distribution setup.</p>
   <div class="flex flex-col sm:flex-row gap-3">
-    <a href="/blog/increase-bookingdotcom-rank-checklist/" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Get the Checklist</a>
+    <a href="#checklist-download" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">Get the Checklist</a>
     <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">Book $99 Audit</a>
   </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: "GuestPoint PMS Tips: Simplify Guest Accounts"
 pubDate: Thu, 02 Oct 2025 04:35:33 +0000
-slug: guestpoint-pms-account-troublshooting
+slug: guestpoint-pms-account-troubleshooting
 category: "GuestPoint Training"
 description: "How to troubleshoot a GuestPoint PMS Account for your Motel. Enrol in the full course today from $95"
 executiveSummary: "Eliminate financial discrepancies and reconciliation frustration by utilizing the Account Summary tab within your GuestPoint PMS. High-level motel management requires absolute transaction clarity, especially when handling complex payment reversals or multi-charge bookings. By grouping transactions by type, you identify accounting errors instantly and ensure accurate end-of-day reporting. To master these technical workflows and professionalise your front office, [Learn GuestPoint PMS](/learn-guest-point-pms/) through our targeted training or enrol in our [motel management training courses](/motel-management-training-course/) to scale your operational efficiency."

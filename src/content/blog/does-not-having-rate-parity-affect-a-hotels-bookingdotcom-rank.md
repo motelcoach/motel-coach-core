@@ -1,7 +1,7 @@
 ---
 title: "Does Not Having Rate Parity Affect Booking.com Rank?"
 pubDate: 2026-04-08
-slug: does-not-having-rate-parity-effect-a-hotels-bookingdotcom-rank
+slug: does-not-having-rate-parity-affect-a-hotels-bookingdotcom-rank
 category: "Motel Marketing"
 description: "Breaking rate parity can kill your Booking.com rank. Learn how to use member rates to protect your direct bookings."
 executiveSummary: "Does not having rates in parity with Booking.com affect your motel's rank? Yes. The underlying ranking factor Booking.com uses to track your property's performance — Conversion Rate — will reduce when you have a lower rate on your direct website or other channels. Lower Conversion Rate equals lower rank on Booking.com."
