@@ -6,7 +6,13 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
-      filter: (page) => !page.includes('/motel-management-book-free-chapter/'),
+      filter: (page) => {
+        const excluded = [
+          '/motel-management-book-free-chapter/',
+          '/blog/motel-seo/',
+        ];
+        return !excluded.some((path) => page.endsWith(path));
+      },
     }),
   ],
   site: 'https://motelcoach.com.au',
