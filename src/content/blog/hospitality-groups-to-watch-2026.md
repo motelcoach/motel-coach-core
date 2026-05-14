@@ -7,7 +7,7 @@ description: "From Frasers Hospitality's Asia expansion to the cattle-station ro
 executiveSummary: "For the Mom and Pop Motels, Being unique, and having a warm welcome are always going to be non-negotiable. But that does not remove or reduce the value of learning and improving your craft. In 2026, three hospitality groups are setting the pace: Frasers Hospitality with their disciplined 'serviced living' expansion across Asia, Travellers Group with an authentically Australian, land-rooted approach to regional accommodation, and Minor Hotels with a bold global acquisition strategy."
 ---
 
-# Catching the Next Wave: 3 Hospitality Groups To Study in 2026
+## Catching the Next Wave: 3 Hospitality Groups To Study in 2026
 
 If you've been running a motel for twenty years, you know that new is not always better. But in 2026, the industry is shifting in ways that even the most experienced regional owner can't ignore. From AI and the major shifts in the OTA landscape to Expedia's impressive strategic manoeuvres—the ground is moving.
 

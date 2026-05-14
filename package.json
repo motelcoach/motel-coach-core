@@ -15,6 +15,7 @@
     "marked": "^18.0.0",
     "tailwindcss": "^3.4.19",
     "turndown": "^7.2.2",
+    "vercel-seo-audit": "^2.5.0",
     "xml2js": "^0.6.2"
   },
   "devDependencies": {

@@ -16,7 +16,7 @@ Motel SEO in 2026 is not about gaming an algorithm. It is about making your prop
 
 ## Pillar 1: Local SEO & the Google Map Pack
 
-When a traveller searches "motel near [town]" or "accommodation near [highway]", Google serves a Map Pack — three properties displayed above the organic results. Appearing in that pack is the single highest-leverage SEO action available to an independent motel.
+When a traveller searches "motel near [town]" or "accommodation near [highway]", Google serves a Map Pack — three properties displayed above the organic results. Appearing in that pack is the single highest opportunity SEO action available to an independent motel.
 
 ### Why the Map Pack Matters
 
@@ -52,15 +52,17 @@ Review velocity is the rate at which your property generates new reviews. Google
 2. Place a QR code linking to your Google review page at reception
 3. Add a review request to your post-stay confirmation email
 4. Respond to every review within 24 hours — responses signal active management to Google's algorithm
+5. Recent reviews are so important now that we recommend incentivizing your on-site motel managers for every review they can get (legitimately). This might be a $10 incentive if they are mentioned in a Google Review or an extra hour off per review.
 
 Review velocity is also the fastest way to close the gap on a competitor who has been accumulating reviews for years. See the full channel-by-channel breakdown in the [2026 Motel Marketing Checklist](/blog/motel-marketing-checklist/).
 
 ### Google Business Profile Optimisation Checklist
 
 - [ ] Set primary category to "Motel" (not "Hotel" or "Accommodation")
+- [ ] If you can put an important search term into the title this will help your visibility considerably, but make sure you follow Googles Policy.
 - [ ] Complete every attribute: parking, air conditioning, pool, accessibility, Wi-Fi
 - [ ] Upload 20–30 high-quality photos, updated monthly
-- [ ] Write a 750-character description using location keywords ("motel in [town]", "accommodation near [highway/landmark]")
+- [ ] Write a 750-character description using location keywords ("motel in [town]", "accommodation near [highway/landmark]"). You can use a Free Tool like [Google Keyword Planner](https://business.google.com/aunz/ad-tools/keyword-planner/) to get the search terms and search volume for your location.
 - [ ] Enable messaging and respond within 1 hour
 - [ ] Publish one Google Post per week (local events, property updates, seasonal rates)
 - [ ] Add your correct website URL and confirm it resolves without redirect chains

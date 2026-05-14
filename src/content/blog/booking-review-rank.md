@@ -48,7 +48,7 @@ executiveSummary: "Maximise your property’s visibility on Booking.com \"core f
 
 ## Procedural Checklist: Get More Bookings on Booking.com
 
-1. **Evaluate your rank:** Check your position on Booking.com. If you are already ranked #1 on Booking.com, then there is no opportunity to improve your rank, pick another area to focus on, such as [Google Local SEO](/blog/motel-seo-checklist-2026/) or Expedia.
+1. **Evaluate your rank:** Check your position on Booking.com. If you are already ranked #1 on Booking.com, then there is no opportunity to improve your rank, pick another area to focus on, such as [Motel Local SEO](/blog/motel-seo-checklist-2026/) or optimising your Expedia Rank. Expedia may appear to have decreased their performance in 2026, but as a company they have gone from strength to strength, and will 
 2. **Image Density:** Use high-quality, professional images. The algorithm favors 24+ photos with multiple angles of each room and amenity.
 3. **Hero Image Optimization:** This is the first photo guests see. A strong Hero Image attracts clicks (CTR), which directly feeds the ranking algorithm.
 4. **Rate Parity:** Keep prices competitive and update regularly. If your standard public prices are cheaper on your website, Booking.com's algorithm will push you down their ranks.
