@@ -34,7 +34,7 @@ const articleJsonLd = {
 };
 ---
 
-<BaseLayout title={`${entry.data.title} | Motel Coach`} description={entry.data.description}>
+<BaseLayout title={entry.data.seoTitle ?? `${entry.data.title} | Motel Coach`} description={entry.data.seoDescription ?? entry.data.description}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(articleJsonLd)} />
   {entry.data.faqs && (
     <script type="application/ld+json" slot="head" set:html={JSON.stringify({

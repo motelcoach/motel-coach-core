@@ -11,7 +11,10 @@ const categories = ['All', ...new Set(sortedPosts.map(post => post.data.category
 
 const NON_CANONICAL_PARAMS = ['offset', 'reversePaginate', 'category', 'author'];
 const hasNonCanonicalParams = NON_CANONICAL_PARAMS.some(p => Astro.url.searchParams.has(p));
-const fullCanonical = new URL(Astro.url.href, Astro.site ?? Astro.url.origin);
+const fullCanonical = new URL(
+  hasNonCanonicalParams ? Astro.url.pathname : Astro.url.href,
+  Astro.site ?? Astro.url.origin
+);
 ---
 
 <BaseLayout title="Motel Operations Library" noindex={hasNonCanonicalParams} canonicalURL={fullCanonical}>

@@ -7,8 +7,8 @@ const { Content } = await post.render();
 ---
 
 <BaseLayout
-  title="Motel SEO Specialist | Rank Above OTAs in 2026 | Motel Coach"
-  description={post.data.description}
+  title={post.data.seoTitle ?? "Motel SEO Specialist | Rank Above OTAs in 2026 | Motel Coach"}
+  description={post.data.seoDescription ?? post.data.description}
   canonicalURL="https://motelcoach.com.au/motel-seo/"
   hideFooterCta>
 

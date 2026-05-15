@@ -4,6 +4,8 @@ const blog = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
     pubDate: z.coerce.date(),
     category: z.string().optional(),
     description: z.string().optional(),
@@ -16,6 +18,8 @@ const pages = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
     pubDate: z.coerce.date().optional(),
     description: z.string().optional(),
     category: z.string().optional(),
