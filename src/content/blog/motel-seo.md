@@ -35,19 +35,18 @@ Google's Local ranking algorithm weighs three factors:
 NAP stands for Name, Address, Phone number. If these three details appear differently across your Google Business Profile, your website, Booking.com, Expedia, TripAdvisor, and local directories, Google's confidence in your listing drops — and so does your ranking.
 
 **Audit checklist:**
-[ ] Business name is identical across every platform (no abbreviations on one and full name on another)
-[ ] Street address format is consistent (e.g. "St" vs "Street", suite numbers)
-[ ] Phone number uses the same format everywhere (include country code)
-[ ] Website URL, which might be www.mymotel.com.au is consistently written throughout the internet. We will talk about Website URLS in more detail next
+- [ ] Business name is identical across every platform (no abbreviations on one and full name on another)
+- [ ] Street address format is consistent (e.g. "St" vs "Street", suite numbers)
+- [ ] Phone number uses the same format everywhere (include country code)
 
+### Website URL consistency
 
-### Website URL 
+Your website address must match everywhere it appears — Google Business Profile, directory listings, OTA extranets, and printed collateral. Google treats inconsistent URLs as separate entities, which weakens trust signals.
 
-[ ] www.yourmotel.com is different to yourmotel.com if you type both, you need to ensure one of them automatically redirects to the other. You should pick which style you prefer - www is more of a traditional way, non www is shorter.
-[ ] If your website is already existing type site:addmywebsitehere and see what links are showing on Google. This method shows what pages are currently indexed by Google. 
-
-
-www.motelname.com is different to motelname.com and 
+**Checklist:**
+- [ ] `www.yourmotel.com.au` and `yourmotel.com.au` resolve to one canonical URL (set a 301 redirect from the version you do not use; www is traditional, non-www is shorter — pick one and keep it everywhere)
+- [ ] The website URL on your Google Business Profile exactly matches your live canonical domain
+- [ ] Run `site:yourmotel.com.au` in Google Search to see which pages are indexed; fix or redirect any unexpected or duplicate URLs
 
 Run a NAP audit quarterly. Even a minor discrepancy introduced by a platform auto-populating your details can erode ranking over weeks.
 
@@ -67,14 +66,14 @@ Review velocity is also the fastest way to close the gap on a competitor who has
 
 ### Google Business Profile Optimisation Checklist
 
-[ ] Set primary category to "Motel" (not "Hotel" or "Accommodation")
-[ ] If you can put an important search term into the title this will help your visibility considerably, but make sure you follow Googles Policy.
-[ ] Complete every attribute: parking, air conditioning, pool, accessibility, Wi-Fi
-[ ] Upload 20–30 high-quality photos, updated monthly
-[ ] Write a 750-character description using location keywords ("motel in [town]", "accommodation near [highway/landmark]"). You can use a Free Tool like [Google Keyword Planner](https://business.google.com/aunz/ad-tools/keyword-planner/) to get the search terms and search volume for your location.
-[ ] Enable messaging and respond within 1 hour
-[ ] Publish one Google Post per week (local events, property updates, seasonal rates)
-[ ] Add your correct website URL and confirm it resolves without redirect chains
+- [ ] Set primary category to "Motel" (not "Hotel" or "Accommodation")
+- [ ] If you can put an important search term into the title this will help your visibility considerably, but make sure you follow Googles Policy.
+- [ ] Complete every attribute: parking, air conditioning, pool, accessibility, Wi-Fi
+- [ ] Upload 20–30 high-quality photos, updated monthly
+- [ ] Write a 750-character description using location keywords ("motel in [town]", "accommodation near [highway/landmark]"). You can use a Free Tool like [Google Keyword Planner](https://business.google.com/aunz/ad-tools/keyword-planner/) to get the search terms and search volume for your location.
+- [ ] Enable messaging and respond within 1 hour
+- [ ] Publish one Google Post per week (local events, property updates, seasonal rates)
+- [ ] Add your correct website URL and confirm it resolves without redirect chains
 
 <div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Website Conversion Audit</h2>
@@ -264,11 +263,11 @@ Repeat this pattern for every major local employer, hospital, event venue, or hi
 
 ### GEO Content Audit
 
-[ ] Every room type has a dedicated page or section with factual specifications
-[ ] A "Frequently Asked Questions" section answers the 10 most common guest queries
-[ ] Location context paragraphs cover each major local demand source
-[ ] Amenity lists use specific data, not marketing language
-[ ] Property name, address, and phone are consistent across all indexed pages
+- [ ] Every room type has a dedicated page or section with factual specifications
+- [ ] A "Frequently Asked Questions" section answers the 10 most common guest queries
+- [ ] Location context paragraphs cover each major local demand source
+- [ ] Amenity lists use specific data, not marketing language
+- [ ] Property name, address, and phone are consistent across all indexed pages
 
 ---
 
