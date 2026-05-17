@@ -1,6 +1,8 @@
 {
   "buildCommand": "rm -rf dist && npm run build",
   "outputDirectory": "dist",
+  "trailingSlash": true,
+  "cleanUrls": false,
   "redirects": [
     { "source": "/:path*", "has": [{ "type": "host", "value": "www.motelcoach.com.au" }], "destination": "https://motelcoach.com.au/:path*", "permanent": true },
     { "source": "/blog/motel-seo", "destination": "/motel-seo/", "permanent": true },

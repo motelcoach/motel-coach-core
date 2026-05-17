@@ -217,7 +217,7 @@ Deferred maintenance becomes your problem the day after settlement.
 Download: Free Motel Buying Checklist
 -------------------------------------
 
-Buying and [running a motel](/motel-management/) involves dozens of decisions and documents. Missing just one can be costly. Download our free checklist below or strongly consider our thorough [Motel Management Courses](/motel-management-training-course/) or book; [The Essential Guide to Motel Management](/motel-management-book/).
+[Motel Management]](/motel-management/) involves dozens of decisions and documents. Missing just one can be costly. Download our free checklist below or strongly consider our thorough [Motel Management Courses](/motel-management-training-course/) or book; [The Essential Guide to Motel Management](/motel-management-book/).
 
 Enter your email to receive a practical, step-by-step checklist covering:
 
