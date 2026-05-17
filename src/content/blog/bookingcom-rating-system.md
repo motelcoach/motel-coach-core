@@ -11,7 +11,7 @@ executiveSummary: "Booking.com's review score has a direct financial impact — 
 
 ## Decoding the Booking.com Rating System: Recency, Velocity, and ROI
 
-**Booking.com's Rating System has a direct and measurable financial impact on your motel.** A higher review score unlocks higher room rates — guests demonstrably pay more for properties with scores above 8.5 — and with all else being equal, your motel will rank higher than competing properties in Booking.com search results if your Guest Review Score is higher. A sustained improvement of 0.5 points on your score can translate to a 5–10% increase in achievable ADR and a meaningful lift in your Booking.com rank position.
+**Booking.com's Rating System has a direct and measurable financial impact in [motel management](/motel-management/).** A higher review score unlocks higher room rates — guests demonstrably pay more for properties with scores above 8.5 — and with all else being equal, your motel will rank higher than competing properties in Booking.com search results if your Guest Review Score is higher. A sustained improvement of 0.5 points on your score can translate to a 5–10% increase in achievable ADR and a meaningful lift in your Booking.com rank position.
 
 One important thing to recognise is that a guest review is a personal opinion — some guests have high expectations, some guests just want a friendly welcome or to be treated with respect. As a motel owner or on-site motel manager, your role is to improve the aggregate review score. Avoid getting caught up in individual reviews. With so much personal investment in a motel, it is not always easy to do, but try to learn from each review and move on quickly when they seem harsh or unfair.
 

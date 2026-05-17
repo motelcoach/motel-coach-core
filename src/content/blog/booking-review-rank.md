@@ -12,7 +12,7 @@ executiveSummary: "The biggest ranking factor for Booking.com is what motel or h
 
 ## Booking.com Ranking Algorithm
 
-Booking.com's search algorithm is designed to prioritise visibility to motels that will drive the most profitability for Booking.com. The algorithm prioritises:
+Booking.com's search algorithm is designed to prioritise visibility to motels that will drive the most profitability for Booking.com. The algorithm is a machine learning algorithm and prioritises:
 * Motels that convert visitors to paying guests.
 * Motels that pay higher commissions, often as part of their partner programs.
 * Motels that provide the best rate to Booking.com or at least an equivalent rate (rate parity) with their direct website and other OTAs.
@@ -28,7 +28,7 @@ Booking.com is monitoring your motel and other motels in your local market using
 
 Click Through Rate, or CTR, shows how relevant or appealing your motel is to potential guests looking for accommodation in your town. Booking.com wants to show motels that have high relevance. Your CTR is a ratio of how many people click to visit your Motel listing from the main page listing all of the motels in your town.
 
-> "A high click-through rate usually means that an Accommodation makes a good first impression on our Platform (e.g. through images, amenities, or descriptions), and getting a lot of bookings indicates that many people find it meets their requirements." — Booking.com
+> A high click-through rate usually means that an Accommodation makes a good first impression on our Platform (e.g. through images, amenities, or descriptions), and getting a lot of bookings indicates that many people find it meets their requirements. — Booking.com
 
 Conversion Rate shows how likely your motel is to convert a Booking.com visitor into a paying guest. High Conversion Rate properties rise in rankings.
 
@@ -38,7 +38,7 @@ In the table above, you can see that Motel A had 50 visitors from the 100 visito
 
 Motels in the first few positions will receive more clicks and conversions because guests see them more prominently. Booking.com takes this into account; they have an expectation that the motel ranked 1st will get a certain % CTR. If they don’t, and the motels ranked 2nd and lower are getting a higher CTR, Booking.com might test putting other motels higher in the ranks and moving the motel ranked first down to second or lower.
 
-In the table, you can also see that Motel C had 50% less visitors to their listing but achieved an equal amount of conversions to Motel B. A motel with higher conversion rates will increase in the rankings.
+In the table, you can also see that Motel C had 50% less visitors to their listing but achieved an equal amount of conversions to Motel B. If this continued to occurr Motel C would likely increase above Motel B (With all other things being equal).
 
 | Motel | Visitors | CTR | No. of Bookings | Conversion Rate |
 | :--- | :---: | :---: | :---: | :---: |
@@ -75,7 +75,7 @@ CTR and Conversion Rate are the primary factors for Booking.com’s ranking algo
 * **Photos:** Once a guest is on your motel’s listing, photos heavily influence your conversion rate. Use high-resolution, landscape photos (2048 x 1536 pixels).
 * Tag photos accurately in the extranet (e.g., Bathroom, Kitchenette, Pool) so the platform can surface them when users apply specific filters.
 * **The 24+ Rule:** Booking.com experiments indicate that displaying ~24 high-quality property photos and about 4 photos per room type (including at least one photo of each bathroom) has a massive positive impact on conversion.
-* **House rules:** Set clear expectations with guests upfront. Mistakes will happen, and guests won’t always read your House Rules, but a big part of good reviews and quality [motel management](/motel-management-training-course/) is making your motel information consistent and easy to understand.
+* **House rules:** Set clear expectations with guests upfront. Mistakes will happen, and guests won’t always read your House Rules, but a big part of good reviews and quality [motel management](/motel-management/) is making your motel information consistent and easy to understand.
 * **Room details:** Be very thorough with your room details and all description areas. Ensure that these descriptions match your motel's website descriptions so that it is easy for guests to make a booking. Having consistent, thorough information will drive better reviews and ensure your motel appears for all of the relevant search filters on Booking.com.
 
 ### Guest review scores are not just a vanity metric.

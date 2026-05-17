@@ -1,7 +1,8 @@
 ---
-title: "Motel Management: How to Run a Profitable Independent Motel"
-description: "Stop reactive management. Implement institutional-grade systems for your independent motel. Discover how our management frameworks protect your profit."
-pubDate: Mon, 02 Mar 2026 14:00:18 +0000
+title: "Motel Management Support"
+seoTitle: "Motel Management Support: Recruitment, Systems & Training"
+description: "Practical frameworks for motel operations. Recruitment, training systems, and buying support for owners, buyers, and managers. No fluff."
+pubDate: Mon, 17 May 2026 14:00:18 +0000
 category: "Operations"
 slug: motel-management
 ---
