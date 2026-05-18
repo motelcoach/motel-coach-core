@@ -89,7 +89,7 @@ CTR and Conversion Rate are the primary factors for Booking.com’s ranking algo
 
 <div class="border-l-4 border-[#4A554E] bg-brand-50 p-6 rounded-r-lg my-8 not-prose">
   <p class="text-sm font-semibold text-[#4A554E] uppercase tracking-widest mb-2 m-0">Tip</p>
-  <p class="text-stone-700 m-0">The Guest Review Score is based only on the overall 1-10 rating guests provide. Category ratings (Cleanliness, Comfort, Location) are displayed for transparency but do not directly compute into the headline algorithmic score. Learn more about the <a href="/blog/bookingcom-rating-system/" class="text-[#4A554E] font-medium hover:underline">Booking.com Guest Ratings here</a>.</p>
+  <p class="text-stone-700 m-0">The Guest Review Score is based only on the overall 1-10 rating guests provide. Category ratings (Cleanliness, Comfort, Location) are displayed for transparency but do not directly compute into the headline algorithmic score. Learn more about the <a href="/blog/bookingcom-rating-system/" class="text-[#4A554E] font-medium hover:underline">Booking.com Guest Ratings</a> here.</p>
 </div>
 
 ### Room Pricing, Availability and Flexibility
@@ -135,4 +135,4 @@ Booking.com looks at what bookings a guest has, or has previously made, and what
 
 Ranking higher on Booking.com is an ongoing process of aligning your property with Booking.com's focus on profitability. If your motel is relevant, appealing and converts Booking.com visitors to guests at a higher rate than your competitors, then you will rank highly on their platform.
 
-Ultimately, the end goal as a Motelier is to maximise your motel's profitability and minimise reliance on OTAs. For many motels, some reliance on OTAs is a reality. If your motel or hotel is not operating at a high occupancy, you often need to make more use of OTAs to capture market share and fill those empty rooms.
+Ultimately, the end goal in <a href="/motel-management">motel management</a> is to maximise your motel's profitability and minimise reliance on OTAs. For many motels, some reliance on OTAs is a reality. If your motel or hotel is not operating at a high occupancy, you often need to make more use of OTAs to capture market share and fill those empty rooms.
