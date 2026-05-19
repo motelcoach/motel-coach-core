@@ -3,8 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="Motel Management Support: Recruitment, Systems & Training | Motel Coach"
-  description="Practical frameworks for motel operations. Recruitment, training systems, and buying support for owners, buyers, and managers. No fluff."
+  title="Motel Management: Duties, Skills, Systems & Training Guide | Motel Coach"
+  description="What a motel manager does day-to-day: duties, skills, lifestyle, and the systems that turn a motel into a profitable asset. Recruitment, training & operational support."
 >
 
   <!-- SECTION 1: INTENT-TRIAGE HERO -->
@@ -240,6 +240,328 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </a>
           ))}
         </div>
+
+        <!-- DEEP GUIDE: What Does a Motel Manager Do? -->
+        <div id="motel-manager-role" class="mt-20 pt-12 border-t border-slate-200">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#4A554E] bg-[#4A554E]/8 px-3 py-1 rounded-full">In-Depth Guide</span>
+          <h3 class="mt-6 text-2xl md:text-3xl font-bold text-[#1E293B] tracking-tight text-balance">
+            What Does a Motel Manager Do?
+          </h3>
+          <p class="mt-5 text-lg text-slate-600 leading-relaxed">
+            You check in guests, resolve complaints, adjust bookings, and fix minor issues while coordinating cleaners, contractors, and arrivals. A key card stops working, a room isn&apos;t ready, a guest arrives early, and an air-conditioner fails &mdash; often within the same hour.
+          </p>
+
+          <div class="mt-6 border-l-4 border-[#4A554E] bg-[#F8FAFC] p-6 rounded-r-lg">
+            <p class="text-sm font-semibold text-[#4A554E] uppercase tracking-widest mb-2">Tip</p>
+            <p class="text-slate-700 leading-relaxed m-0">The keys to success in motel management are problem-solving and effective systems to keep everything organised.</p>
+          </div>
+
+          <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+            You manage housekeeping standards, step in when staff are short, monitor payments and daily balances, organise repairs, and keep rooms available for sale. Group bookings, <a href="/motel-marketing/" class="text-[#4A554E] font-semibold underline underline-offset-4 decoration-[#4A554E]/40 hover:decoration-[#4A554E] transition-colors">marketing tasks</a>, online reviews, and maintenance all compete for attention &mdash; especially on busy arrival days.
+          </p>
+
+          <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+            The work isn&apos;t difficult because tasks are complex &mdash; it&apos;s difficult because everything happens at once, and decisions can&apos;t wait. For some people, that variety is energising. For others, it&apos;s exhausting.
+          </p>
+        </div>
+
+        <!-- The 5 Core Responsibilities -->
+        <div class="mt-16">
+          <h3 class="text-2xl md:text-3xl font-bold text-[#1E293B] tracking-tight text-balance">
+            The 5 Core Responsibilities of a Motel Manager
+          </h3>
+
+          <div class="mt-8 space-y-6">
+            {[
+              {
+                num: '1',
+                title: 'Front Office & Guest Management',
+                intro: 'You control the guest experience from booking to departure. The motel industry has evolved in the past 10 years, where having more technical and online expertise is highly beneficial.',
+                items: [
+                  'Check-ins and check-outs',
+                  'Handling late arrivals and early departures',
+                  'Room changes and special requests',
+                  'Complaints and conflict resolution',
+                  'Managing online reviews',
+                  'Phone and email enquiries',
+                  'Walk-in sales',
+                ],
+              },
+              {
+                num: '2',
+                title: 'Housekeeping Coordination',
+                intro: 'Clean rooms are the foundation of a motel; without them, you will never run a successful motel. They are the cornerstone to repeat clientele, high-quality reviews, and stronger room rates.',
+                items: [
+                  'Recruiting cleaners',
+                  'Training cleaning standards',
+                  'Inspecting rooms',
+                  'Managing time pressure on arrival days',
+                  'Handling staff absences',
+                  'Laundry flow and linen stock control',
+                ],
+                outro: 'As a motel manager, the skill is in getting the housekeeping team to perform at a high level and maintaining that team. Housekeeping staff are high-turnover and can be a difficult department to develop.',
+              },
+              {
+                num: '3',
+                title: 'Maintenance & Property Control',
+                intro: 'Most motels do not have an on-site tradesperson. Motel maintenance is about having schedules to keep things in good condition and building good relationships with local trades so you can turn room issues around quickly when required.',
+                items: [
+                  'Small repairs (remotes, locks, leaks, batteries)',
+                  'Scheduling contractors',
+                  'Obtaining quotes',
+                  'Preventative maintenance',
+                  'Safety checks',
+                  'Pool and outdoor areas',
+                ],
+              },
+              {
+                num: '4',
+                title: 'Booking & Revenue Management',
+                intro: 'Motel managers are accountable to meet certain Key Performance Indicators (KPIs). Having a good understanding of how a motel drives profitability is important, but often an owner will handle the financial side. Their expectation of the on-site manager is someone who works hard, is friendly with guests, and builds a regular client base.',
+                items: [
+                  'Setting room rates',
+                  'Managing online travel agents (Booking sites)',
+                  'Monitoring occupancy',
+                  'Adjusting prices for demand',
+                  'Group bookings and allocations',
+                  'Minimising empty rooms',
+                ],
+                outro: 'This is where profit is made or lost. Two motels with identical occupancy can have completely different financial results depending on management decisions.',
+              },
+              {
+                num: '5',
+                title: 'Financial Administration',
+                intro: 'You are responsible for accuracy, not accounting complexity.',
+                items: [
+                  'Balancing the daily takings',
+                  'Checking payments match bookings',
+                  'Invoices and company accounts',
+                  'Following up on unpaid stays',
+                  'Monitoring expenses',
+                ],
+              },
+            ].map((block) => (
+              <div class="rounded-2xl border border-slate-200 bg-white p-7">
+                <div class="flex items-start gap-4">
+                  <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#4A554E] text-white text-sm font-bold">
+                    {block.num}
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="text-lg md:text-xl font-bold text-[#1E293B] tracking-tight">{block.title}</h4>
+                    <p class="mt-3 text-base text-slate-600 leading-relaxed">{block.intro}</p>
+                    <ul class="mt-4 grid gap-2 sm:grid-cols-2" role="list">
+                      {block.items.map((task) => (
+                        <li class="flex items-start gap-2.5 text-base text-slate-700 leading-relaxed">
+                          <svg class="mt-1 h-4 w-4 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
+                          </svg>
+                          {task}
+                        </li>
+                      ))}
+                    </ul>
+                    {block.outro && (
+                      <p class="mt-4 text-base text-slate-600 leading-relaxed italic">{block.outro}</p>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div class="mt-8 border-l-4 border-red-600 bg-red-50 p-6 rounded-r-lg">
+            <p class="text-sm font-semibold text-red-800 uppercase tracking-widest mb-2">Important</p>
+            <p class="text-slate-700 leading-relaxed m-0">Keeping a good record of the money in and out of the motel is critical to building trust and a good relationship with the motel owner.</p>
+          </div>
+        </div>
+
+        <!-- Skills Required -->
+        <div class="mt-16">
+          <h3 class="text-2xl md:text-3xl font-bold text-[#1E293B] tracking-tight text-balance">
+            Skills Required to Be a Motel Manager
+          </h3>
+          <p class="mt-4 text-base text-slate-500 leading-relaxed italic">
+            Ranked by importance &mdash; in honesty, items 1, 2, and 3 are equal.
+          </p>
+
+          <ol class="mt-8 space-y-4" role="list">
+            {[
+              { title: 'Problem Solving Under Pressure', desc: 'Things go wrong daily &mdash; guests, staff, bookings, maintenance.' },
+              { title: 'Organisation & Prioritisation', desc: 'You must decide what matters right now vs later.' },
+              { title: 'Communication', desc: 'With guests, cleaners, contractors, and owners.' },
+              { title: 'Basic Technical Confidence', desc: 'Booking systems, payments, and online platforms.' },
+              { title: 'Consistency & Reliability', desc: 'The job rewards routine more than talent.' },
+            ].map((skill, idx) => (
+              <li class="flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-5">
+                <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#F8FAFC] border border-slate-200 text-[#4A554E] text-sm font-bold">
+                  {idx + 1}
+                </div>
+                <div>
+                  <p class="text-base md:text-lg font-bold text-[#1E293B]">{skill.title}</p>
+                  <p class="mt-1 text-base text-slate-600 leading-relaxed" set:html={skill.desc}></p>
+                </div>
+              </li>
+            ))}
+          </ol>
+
+          <div class="mt-8 grid gap-6 sm:grid-cols-2">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6">
+              <p class="text-sm font-semibold text-emerald-700 uppercase tracking-widest mb-3">You Do Not Need</p>
+              <ul class="space-y-2" role="list">
+                {['Advanced business education', 'Hospitality degree', 'Prior hotel experience'].map((item) => (
+                  <li class="flex items-start gap-2.5 text-base text-slate-700 leading-relaxed">
+                    <svg class="mt-1 h-4 w-4 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-[#4A554E]/30 bg-[#F8FAFC] p-6">
+              <p class="text-sm font-semibold text-[#4A554E] uppercase tracking-widest mb-3">You Do Need</p>
+              <p class="text-base text-slate-700 leading-relaxed">
+                A willingness to work hard, especially when you first start out. As you develop more experience and on-the-job capability, you will have access to roles that require less hands-on work, more people management, and you will start to see how better systems reduce your workload.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Working Hours & Lifestyle Reality -->
+        <div class="mt-16">
+          <h3 class="text-2xl md:text-3xl font-bold text-[#1E293B] tracking-tight text-balance">
+            Working Hours & Lifestyle Reality
+          </h3>
+          <p class="mt-5 text-lg text-slate-600 leading-relaxed">Typical pattern:</p>
+
+          <ul class="mt-6 space-y-4" role="list">
+            {[
+              'Morning departures',
+              'Midday cleaning coordination',
+              'Afternoon arrivals',
+              'Evening guest issues',
+              'Occasional late-night calls',
+            ].map((item) => (
+              <li class="flex items-start gap-3.5 text-base md:text-lg text-slate-700 leading-relaxed">
+                <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+            It is not a shift job. You are responsible even when off duty.
+          </p>
+
+          <div class="mt-8 grid sm:grid-cols-2 gap-4">
+            <div class="border-l-4 border-emerald-600 bg-emerald-50 p-6 rounded-r-lg">
+              <p class="text-sm font-semibold text-emerald-800 uppercase tracking-widest mb-2">The Benefit</p>
+              <p class="text-slate-700 leading-relaxed m-0">Predictable income and autonomy.</p>
+            </div>
+            <div class="border-l-4 border-red-600 bg-red-50 p-6 rounded-r-lg">
+              <p class="text-sm font-semibold text-red-800 uppercase tracking-widest mb-2">The Trade-Off</p>
+              <p class="text-slate-700 leading-relaxed m-0">Mental presence is continuous.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Beginner Mistakes -->
+        <div class="mt-16">
+          <h3 class="text-2xl md:text-3xl font-bold text-[#1E293B] tracking-tight text-balance">
+            Common Beginner Mistakes
+          </h3>
+
+          <div class="mt-8 space-y-5">
+            {[
+              { title: 'Not being organised', desc: 'Checking through guest arrivals, learning what to check for, and proactively communicating with guests if you are not sure about something will help you save time.' },
+              { title: 'People Management', desc: 'When you first take over as a motel manager, you are the senior leader on-site, and developing your team is as important as your own checklist.' },
+              { title: 'Cutting Rates', desc: 'New managers often reduce rates to fill rooms. The expression &ldquo;Bums in Beds&rdquo; is a classic and terrible saying for profitability. When you reduce your rates, you don&apos;t necessarily attract additional guests &mdash; you just reduce what the guests who do book end up paying.' },
+              { title: 'Room Inspections', desc: 'You are accountable for the housekeeping standards. As cleaners complete rooms, you inspect them. Communicate directly with the staff member who cleaned the room if it is not to standard, and ask them to go back to fix the issue.' },
+            ].map((m) => (
+              <div class="rounded-xl border border-slate-200 bg-white p-5">
+                <p class="text-base md:text-lg font-bold text-[#1E293B]">{m.title}</p>
+                <p class="mt-2 text-base text-slate-600 leading-relaxed" set:html={m.desc}></p>
+              </div>
+            ))}
+          </div>
+
+          <div class="mt-6 border-l-4 border-[#4A554E] bg-[#F8FAFC] p-6 rounded-r-lg">
+            <p class="text-sm font-semibold text-[#4A554E] uppercase tracking-widest mb-2">Tip</p>
+            <p class="text-slate-700 leading-relaxed m-0">When you first start, don&apos;t be too critical of the housekeeping staff &mdash; work with them to develop, help fix up some room issues, but still flag them to go back to rooms that are not to standard. Be calm, don&apos;t communicate negatively in front of the team &mdash; be direct with each staff member privately. When you address the whole team, make it about &ldquo;things to focus on&rdquo;, not &ldquo;you did this wrong, Cleaner A&rdquo;. Appreciate that when a new motel manager starts, the power dynamic in the motel is changing, and some staff may simply have built a strong relationship with the previous manager.</p>
+          </div>
+
+          <div class="mt-5 space-y-5">
+            {[
+              { title: 'Ignoring preventative maintenance and deep cleaning', desc: 'On a spreadsheet, write down all of the rooms and tasks for cleaning and maintenance. Schedule out a plan over an extended period; sometimes you will need to shuffle tasks to fit in important issues that arise. Completing these tasks on a schedule will streamline your work and increase the motel&apos;s standards.' },
+              { title: 'Avoiding difficult conversations with staff', desc: 'Over time, if you do not give direct &mdash; but always constructive &mdash; feedback, your staff will not work to a high standard.' },
+            ].map((m) => (
+              <div class="rounded-xl border border-slate-200 bg-white p-5">
+                <p class="text-base md:text-lg font-bold text-[#1E293B]">{m.title}</p>
+                <p class="mt-2 text-base text-slate-600 leading-relaxed" set:html={m.desc}></p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Who This Job Suits / Avoids -->
+        <div class="mt-16">
+          <h3 class="text-2xl md:text-3xl font-bold text-[#1E293B] tracking-tight text-balance">
+            Is Motel Management Right for You?
+          </h3>
+
+          <div class="mt-8 grid gap-6 sm:grid-cols-2">
+            <div class="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-6">
+              <p class="text-sm font-semibold text-emerald-800 uppercase tracking-widest mb-3">You&apos;ll Likely Enjoy It If You</p>
+              <ul class="space-y-3" role="list">
+                {['Like solving practical problems', 'Are calm under pressure', 'Want independence in your work'].map((item) => (
+                  <li class="flex items-start gap-2.5 text-base text-slate-700 leading-relaxed">
+                    <svg class="mt-1 h-4 w-4 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/>
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-red-200 bg-red-50/60 p-6">
+              <p class="text-sm font-semibold text-red-800 uppercase tracking-widest mb-3">It&apos;s Difficult If You</p>
+              <ul class="space-y-3" role="list">
+                {[
+                  'Need strict work hours or don&apos;t want to do overtime',
+                  'Dislike confrontation or customer service',
+                  'Avoid responsibility',
+                  'Prefer purely administrative work',
+                ].map((item) => (
+                  <li class="flex items-start gap-2.5 text-base text-slate-700 leading-relaxed">
+                    <svg class="mt-1 h-4 w-4 flex-shrink-0 text-red-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm-2-9a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H8Z" clip-rule="evenodd"/>
+                    </svg>
+                    <span set:html={item}></span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Should You Learn Before Applying -->
+        <div class="mt-16">
+          <h3 class="text-2xl md:text-3xl font-bold text-[#1E293B] tracking-tight text-balance">
+            Should You Learn Before Applying?
+          </h3>
+          <p class="mt-5 text-lg text-slate-600 leading-relaxed">
+            Starting a role with zero understanding creates stress that can easily be avoided by completing one of our <a href="/motel-management-training-course/" class="text-[#4A554E] font-semibold underline underline-offset-4 decoration-[#4A554E]/40 hover:decoration-[#4A554E] transition-colors">motel management short courses</a>. These take about 7&ndash;21 days, are primarily done at your own pace, and you will learn using a real property management system that motels use in their day-to-day activities called <a href="https://www.guestpoint.com/" target="_blank" rel="noopener" class="text-[#4A554E] font-semibold underline underline-offset-4 decoration-[#4A554E]/40 hover:decoration-[#4A554E] transition-colors">GuestPoint PMS</a>. This system is very popular in Australia.
+          </p>
+          <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+            If you are not ready to complete a course, start with our <a href="/motel-management-book/" class="text-[#4A554E] font-semibold underline underline-offset-4 decoration-[#4A554E]/40 hover:decoration-[#4A554E] transition-colors">motel guide</a>. It is a comprehensive, practical book on running a motel &mdash; around 200 pages, packed with front desk checklists and day-to-day templates that will save you a huge amount of pain when you first start out.
+          </p>
+
+          <div class="mt-6 border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-lg">
+            <p class="text-sm font-semibold text-blue-800 uppercase tracking-widest mb-2">A Note From Motel Coach</p>
+            <p class="text-slate-700 leading-relaxed m-0">We are not all about sales and profit at Motel Coach. If you are interested in learning Motel Management, <a href="/contact/" class="text-[#4A554E] font-semibold underline underline-offset-4 decoration-[#4A554E]/40 hover:decoration-[#4A554E] transition-colors">reach out</a> &mdash; we can just talk through your ideas. Sometimes a quick phone call can be a big help.</p>
+          </div>
+        </div>
       </section>
 
     </div>
@@ -267,6 +589,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           { q: 'How often should I change room rates?', a: 'Weekly is a minimum. In high-demand markets you can review more frequently, but rules matter more than frequency.' },
           { q: 'How do I improve motel reviews?', a: 'Set standards, reduce room defects, and implement a simple review request workflow. Reviews are a system output.' },
           { q: 'How do I run a small motel business profitably?', a: 'Protect margin first: wage discipline, parity control, defect reduction, and direct conversion. Small motels win by consistency, not complexity.' },
+          { q: 'Do you need experience to be a motel manager?', a: 'Not always. Many motel owners value attitude, reliability, and willingness to learn over formal management experience.' },
+          { q: 'Is motel management suitable for beginners?', a: 'Yes, in many cases it is. Many motel managers start with little or no direct motel experience. Owners often look for people who are reliable, organised, good with guests, and willing to learn on the job. Smaller motels in regional areas are often the most beginner-friendly, as they provide hands-on experience across all parts of the business.' },
+          { q: 'Is accommodation included in a motel manager role?', a: 'Most motel manager roles include on-site accommodation, particularly in regional locations. This varies by property and should always be confirmed before accepting a role.' },
+          { q: 'What skills should I focus on before becoming a motel manager?', a: 'Depending on your current background and previous work experience, we would suggest looking at learning the computer system, reading our book The Essential Guide to Motel Management, and considering a short role on reception in a local property — which will give you a good starting foundation.' },
         ].map((item) => (
           <details class="group rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow">
             <summary class="flex cursor-pointer items-center justify-between gap-4 p-5 text-left list-none [&::-webkit-details-marker]:hidden min-h-[56px]">

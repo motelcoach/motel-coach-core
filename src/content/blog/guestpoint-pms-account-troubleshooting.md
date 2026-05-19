@@ -9,7 +9,7 @@ executiveSummary: "Eliminate financial discrepancies and reconciliation frustrat
 
 #### Managing Motel Guest Accounts
 
-Managing guest account as a [motel manager](/blog/what-does-a-motel-manager-do/) can get messy — especially when payments are reversed, charges are posted incorrectly, or there are multiple transactions on the same booking. In this video, we show you a powerful but often overlooked feature in GuestPoint PMS: the Account Summary tab.
+Managing guest account as a [motel manager](/motel-management/) can get messy — especially when payments are reversed, charges are posted incorrectly, or there are multiple transactions on the same booking. In this video, we show you a powerful but often overlooked feature in GuestPoint PMS: the Account Summary tab.
 
 With a single click, you can see all transactions grouped by type, making it much easier to understand complex guest accounts and know what action to take next.
 
