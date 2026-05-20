@@ -8,7 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
 
   <!-- SECTION 1: INTENT-TRIAGE HERO -->
-  <section class="bg-[#F8FAFC] border-b border-slate-200 pt-24 pb-16">
+  <section id="hero" class="bg-[#F8FAFC] border-b border-slate-200 pt-24 pb-16">
     <div class="max-w-6xl mx-auto px-6">
       <div class="max-w-3xl">
         <h1 class="text-4xl md:text-6xl font-bold text-[#1E293B] tracking-tight leading-tight text-balance">
@@ -87,7 +87,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           Motel Management Recruitment
         </h2>
         <p class="mt-5 text-lg text-slate-600 leading-relaxed">
-          Your on-site managers are the big asset and liability for your motel's performance. Hiring the right motel managers is critical to a high-performing motel, and concluding the employment of underperforming managers is equally important.
+          Your on-site managers are the big asset or liability for your motel's performance. Hiring the right management is critical to a high-performing motel, and concluding the employment of underperforming managers is equally important.
         </p>
         <p class="mt-4 text-lg text-slate-600 leading-relaxed">
           Motel Coach can support you in the recruitment or removal of on-site motel managers and relief motel managers.
@@ -619,27 +619,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="bg-white/95 backdrop-blur-sm border-t border-slate-200 shadow-lg">
       <div class="max-w-6xl mx-auto px-6 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p class="text-sm text-slate-600">
-          <span class="font-bold text-[#1E293B]">Ready to systemise your motel?</span> Start with the fastest path.
+          <span class="font-bold text-[#1E293B]">Stop handling the daily management headache</span> — get field proven support in management, recruitment, training and marketing.
         </p>
         <div class="flex w-full sm:w-auto gap-3">
-          <a href="/motel-management-training-course/" class="flex-1 sm:flex-none inline-flex items-center justify-center min-h-[44px] rounded-lg bg-[#4A554E] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#3d4640] transition">
-            Start the Course
-          </a>
-          <a href="/contact/" class="flex-1 sm:flex-none inline-flex items-center justify-center min-h-[44px] rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-[#1E293B] shadow-sm hover:bg-slate-50 transition">
-            Book a Strategy Session
+          <a href="/contact/" class="flex-1 sm:flex-none inline-flex items-center justify-center min-h-[44px] rounded-lg bg-[#4A554E] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#3d4640] transition">
+            Contact Us Today
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="sticky-footer-sentinel" aria-hidden="true"></div>
-
   <script>
     (function () {
       const bar = document.getElementById('sticky-footer-cta');
-      const sentinel = document.getElementById('sticky-footer-sentinel');
-      if (!bar || !sentinel) return;
+      const hero = document.getElementById('hero');
+      if (!bar || !hero) return;
       const io = new IntersectionObserver(
         (entries) => {
           if (entries[0].isIntersecting) bar.classList.add('hidden');
@@ -647,7 +642,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         },
         { root: null, threshold: 0 }
       );
-      io.observe(sentinel);
+      io.observe(hero);
     })();
   </script>
 

@@ -3,6 +3,11 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark',
+    },
+  },
   integrations: [
     tailwind(),
     sitemap({

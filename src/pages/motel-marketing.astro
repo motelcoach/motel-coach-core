@@ -5,7 +5,7 @@ import LucideIcon from '../components/LucideIcon.astro';
 
 <BaseLayout title="Motel Marketing | Motel Coach" description="Improve your motel or hotel marketing. We optimise your website speed and intercept guest intent. Shift guests from OTAs to direct bookings. Book a Marketing Audit today." hideFooterCta>
   <!-- 1. Hero (Minimalist & High-Impact) -->
-  <section class="bg-[#F9F9F8] border-b border-stone-200 pt-24 pb-16">
+  <section id="hero" class="bg-[#F9F9F8] border-b border-stone-200 pt-24 pb-16">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid gap-10 md:grid-cols-12 items-start">
         <div class="md:col-span-7" data-reveal="up">
@@ -151,6 +151,38 @@ import LucideIcon from '../components/LucideIcon.astro';
       </div>
     </div>
   </section>
+
+  <!-- Sticky Footer CTA -->
+  <div id="sticky-footer-cta" class="fixed inset-x-0 bottom-0 z-40 hidden">
+    <div class="bg-white/95 backdrop-blur-sm border-t border-slate-200 shadow-lg">
+      <div class="max-w-6xl mx-auto px-6 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm text-slate-600">
+          <span class="font-bold text-[#1E293B]">Are you over reliant on Booking.com?</span> — Get field proven Marketing support.
+        </p>
+        <div class="flex w-full sm:w-auto gap-3">
+          <a href="/contact/" class="flex-1 sm:flex-none inline-flex items-center justify-center min-h-[44px] rounded-lg bg-[#4A554E] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#3d4640] transition">
+            Contact Us Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const bar = document.getElementById('sticky-footer-cta');
+      const hero = document.getElementById('hero');
+      if (!bar || !hero) return;
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) bar.classList.add('hidden');
+          else bar.classList.remove('hidden');
+        },
+        { root: null, threshold: 0 }
+      );
+      io.observe(hero);
+    })();
+  </script>
 
   <!-- Strategy Session CTA -->
   <section class="bg-[#4A554E] py-14">

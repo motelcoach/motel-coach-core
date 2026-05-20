@@ -12,23 +12,76 @@ const { Content } = await post.render();
   canonicalURL="https://motelcoach.com.au/motel-seo/"
   hideFooterCta>
 
-  <section class="w-full bg-[#F9F9F8] pt-32 pb-16 border-b border-stone-200">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-4">
-        {post.data.category || "Motel Marketing"}
-      </p>
-      <h1 class="text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight text-balance mb-6">
-        {post.data.title}
-      </h1>
-      <p class="text-lg text-stone-500 leading-relaxed text-balance">
-        {post.data.description}
-      </p>
+  <section id="hero" class="w-full bg-[#F9F9F8] pt-24 pb-20 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <h1 class="text-5xl md:text-6xl font-semibold text-stone-900 tracking-tight text-balance mb-6 max-w-3xl mx-auto">
+          {post.data.title}
+        </h1>
+        <p class="text-xl md:text-2xl text-stone-800 leading-relaxed text-balance font-medium max-w-6xl mx-auto">
+          {post.data.description}
+        </p>
+      </div>
+
+      <!-- Two-track CTA hero -->
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Track A: Free Keyword Scan -->
+        <div class="bg-white border-2 border-[#4A554E] rounded-2xl p-7 shadow-sm flex flex-col">
+          <p class="text-xs font-bold uppercase tracking-widest text-[#4A554E] mb-3">Track A &middot; Done For You</p>
+          <h2 class="text-2xl font-semibold text-stone-900 tracking-tight mb-3">Let Us Do the Legwork (Free Keyword Scan)</h2>
+          <p class="text-stone-600 text-sm leading-relaxed mb-6">
+            We will run a custom keyword configuration check on your property to uncover the exact terms travellers use to find accommodation in your region. This report is <strong class="text-stone-900">100% free</strong>.
+          </p>
+          <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-3 mt-auto">
+            <input type="hidden" name="source_page" value="Motel SEO Hero · Track A" />
+            <input type="hidden" name="form_type" value="keyword-scan" />
+            <input type="hidden" name="topic" value="Free Keyword Scan" />
+            <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
+            <label for="track-a-url" class="sr-only">Your Motel Website URL</label>
+            <input id="track-a-url" type="url" name="website_url" required placeholder="Your Motel Website URL" class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
+            <label for="track-a-name" class="sr-only">Your First Name</label>
+            <input id="track-a-name" type="text" name="first_name" required placeholder="Your First Name" class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
+            <label for="track-a-email" class="sr-only">Your Email Address</label>
+            <input id="track-a-email" type="email" name="email" required placeholder="Your Email Address" class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
+            <button type="submit" class="w-full px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors">
+              Get My Free Keyword Report
+            </button>
+          </form>
+        </div>
+
+        <!-- Track B: DIY Guide -->
+        <div class="bg-[#4A554E] rounded-2xl p-7 shadow-sm flex flex-col text-white">
+          <p class="text-xs font-bold uppercase tracking-widest text-stone-300 mb-3">Track B &middot; Do It Yourself</p>
+          <h2 class="text-2xl font-semibold tracking-tight mb-3">Run the Playbook Yourself</h2>
+          <p class="text-stone-200 text-sm leading-relaxed mb-6 flex-grow">
+            Prefer to handle your own optimisation? Scroll down to access our complete, zero-fluff <strong class="text-white">2026 Motel SEO Framework</strong> &mdash; three pillars with code, checklists, and audits you can implement this week.
+          </p>
+          <ul class="space-y-2 text-sm text-stone-200 mb-6">
+            {[
+              'Pillar 1 — Local SEO & the Google Map Pack',
+              'Pillar 2 — Technical SEO & Schema',
+              'Pillar 3 — Generative Engine Optimisation (GEO)',
+            ].map(item => (
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 text-stone-300 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <a href="#framework" class="mt-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors">
+            Jump to the Framework
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <section class="w-full bg-white py-20">
+  <section id="framework" class="w-full bg-white py-20 scroll-mt-24">
     <div class="max-w-3xl mx-auto px-6">
-      <article class="prose prose-stone lg:prose-lg max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-stone-900 prose-p:text-stone-500 prose-p:leading-relaxed prose-a:text-[#4A554E] prose-a:font-medium prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-stone-300 prose-blockquote:border-l-[#4A554E] prose-blockquote:bg-[#F9F9F8] prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:text-stone-700 prose-blockquote:not-italic prose-blockquote:rounded-r-lg prose-img:rounded-xl prose-img:shadow-sm prose-img:border prose-img:border-stone-200 prose-li:text-stone-500 [&_ul:has(input[type=checkbox])]:pl-0 [&_li:has(input[type=checkbox])]:list-none [&_li:has(input[type=checkbox])]:flex [&_li:has(input[type=checkbox])]:items-start [&_li:has(input[type=checkbox])]:gap-2 [&_input[type=checkbox]]:mt-1 [&_input[type=checkbox]]:h-4 [&_input[type=checkbox]]:w-4 [&_input[type=checkbox]]:shrink-0 [&_input[type=checkbox]]:accent-[#4A554E] prose-table:w-auto prose-table:mx-auto prose-table:border prose-table:border-stone-200 prose-table:rounded-lg prose-th:bg-[#F9F9F8] prose-th:text-[#4A554E] prose-th:p-4 prose-th:border-b-2 prose-th:border-stone-200 prose-td:p-4 prose-td:border-b prose-td:border-stone-100 prose-tr:last:border-b-0">
+      <article class="prose prose-stone lg:prose-lg max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-stone-900 prose-p:text-stone-500 prose-p:leading-relaxed prose-a:text-[#4A554E] prose-a:font-medium prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-stone-300 prose-blockquote:border-l-[#4A554E] prose-blockquote:bg-[#F9F9F8] prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:text-stone-700 prose-blockquote:not-italic prose-blockquote:rounded-r-lg prose-img:rounded-xl prose-img:shadow-sm prose-img:border prose-img:border-stone-200 prose-li:text-stone-500 [&_:not(pre)>code]:text-[#4A554E] [&_:not(pre)>code]:bg-stone-100 [&_:not(pre)>code]:px-1.5 [&_:not(pre)>code]:py-0.5 [&_:not(pre)>code]:rounded [&_:not(pre)>code]:before:content-none [&_:not(pre)>code]:after:content-none prose-pre:rounded-xl prose-pre:shadow-md [&_ul:has(input[type=checkbox])]:pl-0 [&_li:has(input[type=checkbox])]:list-none [&_li:has(input[type=checkbox])]:flex [&_li:has(input[type=checkbox])]:items-start [&_li:has(input[type=checkbox])]:gap-2 [&_input[type=checkbox]]:mt-1 [&_input[type=checkbox]]:h-4 [&_input[type=checkbox]]:w-4 [&_input[type=checkbox]]:shrink-0 [&_input[type=checkbox]]:accent-[#4A554E] prose-table:w-auto prose-table:mx-auto prose-table:border prose-table:border-stone-200 prose-table:rounded-lg prose-th:bg-[#F9F9F8] prose-th:text-[#4A554E] prose-th:p-4 prose-th:border-b-2 prose-th:border-stone-200 prose-td:p-4 prose-td:border-b prose-td:border-stone-100 prose-tr:last:border-b-0">
         <Content />
       </article>
     </div>
@@ -121,6 +174,38 @@ const { Content } = await post.render();
       <p class="text-center text-xs text-stone-400 mt-8">All packages are month-to-month. No lock-in contracts. Results tracked against agreed KPIs.</p>
     </div>
   </section>
+
+  <!-- Sticky Footer CTA -->
+  <div id="sticky-footer-cta" class="fixed inset-x-0 bottom-0 z-40 hidden">
+    <div class="bg-white/95 backdrop-blur-sm border-t border-slate-200 shadow-lg">
+      <div class="max-w-6xl mx-auto px-6 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm text-slate-600">
+          <span class="font-bold text-[#1E293B]">Is the motel next door taking all of your guests?</span> — Get your motel to rank on Google.
+        </p>
+        <div class="flex w-full sm:w-auto gap-3">
+          <a href="/contact/" class="flex-1 sm:flex-none inline-flex items-center justify-center min-h-[44px] rounded-lg bg-[#4A554E] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#3d4640] transition">
+            Contact Us Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const bar = document.getElementById('sticky-footer-cta');
+      const hero = document.getElementById('hero');
+      if (!bar || !hero) return;
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) bar.classList.add('hidden');
+          else bar.classList.remove('hidden');
+        },
+        { root: null, threshold: 0 }
+      );
+      io.observe(hero);
+    })();
+  </script>
 
   <!-- Marketing Audit CTA -->
   <section class="bg-[#4A554E] py-12">
