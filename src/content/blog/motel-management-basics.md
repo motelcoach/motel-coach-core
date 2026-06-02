@@ -19,7 +19,7 @@ Run through the booking, check-in, stay and post stay experience of your custome
 
 **Booking.com and Expedia**
 
-*   Photos are a massive conversion factor for your [Motel Operation](/motel-management/) - do you have good quality photos, how do you compare against other properties?
+*   Photos are a massive conversion factor in [Motel Management](/motel-management/) - do you have good quality photos, how do you compare against other properties?
     
 *   We spend a lot of time looking at Hero Photos - this is the first image of your motel that is displayed, a good hero photo will increase your conversion from browsing to staying.
     

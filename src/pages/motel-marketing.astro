@@ -1,16 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PartnerGrid from '../components/PartnerGrid.astro';
 import LucideIcon from '../components/LucideIcon.astro';
 ---
 
-<BaseLayout title="Motel Marketing | Motel Coach" description="Improve your motel or hotel marketing. We optimise your website speed and intercept guest intent. Shift guests from OTAs to direct bookings. Book a Marketing Audit today." hideFooterCta>
+<BaseLayout title="Motel & Hotel Marketing Specialist Services - Book a Free Consult Today!" description="Improve your motel or hotel marketing. We optimise your website speed and intercept guest intent. Shift guests from OTAs to direct bookings. Book a Marketing Audit today." hideFooterCta>
   <!-- 1. Hero (Minimalist & High-Impact) -->
   <section id="hero" class="bg-[#F9F9F8] border-b border-stone-200 pt-24 pb-16">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid gap-10 md:grid-cols-12 items-start">
         <div class="md:col-span-7" data-reveal="up">
           <h1 class="text-5xl md:text-7xl font-semibold text-stone-900 tracking-tight text-balance">
-            Motel Marketing that drives direct bookings.
+            Motel Marketing that Drives Direct Bookings.
           </h1>
           <p class="mt-6 text-lg md:text-xl text-stone-500 leading-relaxed text-balance">
             We install a practical marketing system for independent Australian motels—so “Direct” becomes the default choice, not the lucky outcome.
@@ -21,12 +22,8 @@ import LucideIcon from '../components/LucideIcon.astro';
           >
             Book Your Free Strategy Session
           </a>
-          <p class="mt-4 text-sm text-stone-500">
-            Prefer to train your team?{' '}
-            <a href="/motel-marketing-course/" class="font-medium text-[#4A554E] hover:text-[#3d4640] hover:underline inline-flex items-center gap-2">
-              Join the Marketing Course waitlist
-              <LucideIcon name="arrow-right" size={18} class="text-[#4A554E]" />
-            </a>
+          <p class="mt-4 text-lg text-stone-500">
+            🚀 Our last client's website traffic increased by 145%.
           </p>
         </div>
 
@@ -47,15 +44,20 @@ import LucideIcon from '../components/LucideIcon.astro';
     </div>
   </section>
 
+  <div class="w-full bg-white">
+      
+      <PartnerGrid />
+    </div>
+
   <!-- 2. Motel Marketing Pillar Content -->
-  <section class="bg-white py-24">
+  <section class="bg-stone-50 border-y border-stone-200 py-24">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="max-w-3xl" data-reveal="up">
+      <div class="max-w-5xl" data-reveal="up">
         <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance">
           The 9-Step Motel Marketing System
         </h2>
         <p class="mt-4 text-stone-500 leading-relaxed">
-          Motel Marketing is different at Motel Coach. We are not just marketers, we know how to run a motel inside and out.
+          At Motel Coach, we are a specialist marketing company and digital agency that actually knows how to run a motel or hotel inside and out. Most online marketing strategies fail because generic corporate agencies do not understand your front desk, booking websites, or guest reviews. We combine real property management experience with the right online tools to build straightforward digital strategies that fill your rooms directly.
         </p>
       </div>
 

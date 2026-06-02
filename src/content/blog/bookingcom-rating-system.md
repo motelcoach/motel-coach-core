@@ -1,10 +1,11 @@
 ---
 title: "Booking.com Rating System: The 36-Month Truth & ROI Guide"
+seoTitle: "Learn how your Booking.com Rating is calculated."
 pubDate: 2026-04-08
 slug: bookingcom-rating-system
 category: "Motel Management"
 description: "How does booking.com count the guest reviews or ratings received? Review recency, review volume, review responses, and overall review score."
-executiveSummary: "Booking.com's review score has a direct financial impact — a higher score allows you to charge more and rank above competitors. Reviews are weighted by recency over a rolling 36-month window, meaning operational improvements show up in your score faster than most owners realise. This guide covers how the rating system works, what the sub-categories measure, and the practical steps to lift your score and protect it. We can help you with your [motel marketing](/motel-marketing/) and [Booking.com ranking](/blog/booking-review-rank/)."
+executiveSummary: "Booking.com's review score has a direct financial impact — a higher score allows you to charge more and rank above competitors. Reviews are weighted by recency over a rolling 36-month window, meaning operational improvements show up in your score faster than most owners realise. This guide covers how the rating system works, what the sub-categories measure, and the practical steps to lift your score and protect it. We can help you with your [motel marketing](/motel-marketing/), [seo](/motel-seo/) and [Booking.com ranking](/blog/booking-review-rank/)."
 ---
 
 **Last Edited 22/04/2026.**

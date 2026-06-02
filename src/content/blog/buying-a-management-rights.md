@@ -1,16 +1,17 @@
 ---
 title: "Thinking About Buying Management Rights? Read This First"
+seoTitle: "Before Buying a Management Rights Read This"
 pubDate: Wed, 28 Jan 2026 01:19:22 +0000
 slug: buying-a-management-rights
 category: "Management Rights"
-description: "Thinking about buying management rights? Understand the risks and operational reality before you sign."
+description: "Thinking about buying a management rights? Understand the risks and operational reality before you sign."
 executiveSummary: "Safeguard your capital by working with independent industry-specific specialists before signing any management rights agreement. This is a complex legal and operational undertaking that requires more than general commercial advice. You must stress-test wage substitution assumptions and verify the consistency of the letting income against actual market trends. A big part of a successful investment starts with buying the right property."
 ---
 
 
 Management Rights can look attractive from the outside: a business, a residence, and long-term income all wrapped into one. But as many operators discover too late, the reality can be very different if the structure, the people, or the agreements are wrong.
 
-Before we go any further—and before you assume we are a _Management Rights Specialist_—we’re not. Our speciality is [Motel Management Training](/motel-management-training-course/) and [Consultancy Services](/motel-consultancy/).
+Before we go any further—and before you assume we are a _Management Rights Specialist_—we’re not. Our speciality is [Motel Management](/motel-management/) and [Motel Marketing](/motel-marketing/).
 
 We intentionally leave Management Rights to people who have earned their experience in this space and understand the subtleties that can make all the difference. This guide is designed to give you **initial, practical insight** into Management Rights and, more importantly, to highlight why getting the _right_ advice early matters.
 
@@ -195,8 +196,6 @@ Final Thoughts: Go in With Eyes Open
 ------------------------------------
 
 Management Rights can be a solid business in the right building, with the right agreement, and the right people involved.
-
-Once operating, **training and support become critical**, particularly around trust accounting, and compliance. For specialist support in this area, we recommend [**McCarthy Management Rights Services**](https://www.mccarthymanagementrightsservices.com/), who provide a wealth of Management Rights Experience.
 
 Management Rights can also become a long-term source of stress if:
 

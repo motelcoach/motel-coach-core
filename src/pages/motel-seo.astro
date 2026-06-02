@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PartnerGrid from '../components/PartnerGrid.astro';
 import { getEntry } from 'astro:content';
 
 const post = await getEntry('blog', 'motel-seo');
@@ -7,88 +8,103 @@ const { Content } = await post.render();
 ---
 
 <BaseLayout
-  title={post.data.seoTitle ?? "Motel SEO Specialist | Rank Above OTAs in 2026 | Motel Coach"}
+  title={post.data.seoTitle ?? "Motel and Accommodation SEO Service | Rank Higher in 2026 | Motel Coach"}
   description={post.data.seoDescription ?? post.data.description}
   canonicalURL="https://motelcoach.com.au/motel-seo/"
   hideFooterCta>
 
-  <section id="hero" class="w-full bg-[#F9F9F8] pt-24 pb-20 border-b border-stone-200">
+  <section id="hero" class="w-full bg-[#F9F9F8] pt-6 pb-16 md:pb-24 border-b border-stone-200 overflow-hidden">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-14">
-        <h1 class="text-5xl md:text-6xl font-semibold text-stone-900 tracking-tight text-balance mb-6 max-w-3xl mx-auto">
-          {post.data.title}
-        </h1>
-        <p class="text-xl md:text-2xl text-stone-800 leading-relaxed text-balance font-medium max-w-6xl mx-auto">
-          {post.data.description}
-        </p>
-      </div>
+      <div class="grid md:grid-cols-[1fr,420px] gap-12 lg:gap-16 items-center min-h-[70vh]">
 
-      <!-- Two-track CTA hero -->
-      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Left: Messaging -->
+        <div class="flex flex-col">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-stone-900 tracking-tight leading-[1.1] mb-4">
+            Motel &amp; Hotel<br class="hidden sm:block" /> SEO Services
+          </h1>
 
-        <!-- Track A: Free Keyword Scan -->
-        <div class="bg-white border-2 border-[#4A554E] rounded-2xl p-7 shadow-sm flex flex-col">
-          <p class="text-xs font-bold uppercase tracking-widest text-[#4A554E] mb-3">Track A &middot; Done For You</p>
-          <h2 class="text-2xl font-semibold text-stone-900 tracking-tight mb-3">Let Us Do the Legwork (Free Keyword Scan)</h2>
-          <p class="text-stone-600 text-sm leading-relaxed mb-6">
-            We will run a custom keyword configuration check on your property to uncover the exact terms travellers use to find accommodation in your region. This report is <strong class="text-stone-900">100% free</strong>.
+          <div class="mb-5">
+            <div class="elfsight-app-fa3918c4-4da8-42cc-b0d4-d65da9693b10" data-elfsight-app-lazy></div>
+          </div>
+
+          <p class="text-lg lg:text-xl text-stone-600 leading-relaxed max-w-md mb-8">
+            Every day your motel is not ranking on Google, your competition and the OTAs are taking your guests&mdash;and your money.
           </p>
-          <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-3 mt-auto">
-            <input type="hidden" name="source_page" value="Motel SEO Hero · Track A" />
+
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-stone-800 text-base lg:text-lg font-medium">
+              <span class="flex items-center justify-center h-6 w-6 rounded-full bg-[#4A554E]/10">
+                <svg class="h-4 w-4 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <strong class="text-stone-900">145%</strong> increase in direct search traffic.
+            </li>
+            <li class="flex items-center gap-3 text-stone-800 text-base lg:text-lg font-medium">
+              <span class="flex items-center justify-center h-6 w-6 rounded-full bg-[#4A554E]/10">
+                <svg class="h-4 w-4 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              Rank higher on Google &amp; AI Search.
+            </li>
+            <li class="flex items-center gap-3 text-stone-800 text-base lg:text-lg font-medium">
+              <span class="flex items-center justify-center h-6 w-6 rounded-full bg-[#4A554E]/10">
+                <svg class="h-4 w-4 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              No lock-in contracts.
+            </li>
+            <li class="flex items-center gap-3 text-stone-800 text-base lg:text-lg font-medium">
+              <span class="flex items-center justify-center h-6 w-6 rounded-full bg-[#4A554E]/10">
+                <svg class="h-4 w-4 text-[#4A554E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              More direct bookings. Less commission.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Form Card -->
+        <div id="free-audit" class="relative bg-white border border-stone-200 rounded-2xl p-8 shadow-xl ring-1 ring-stone-900/5 scroll-mt-24">
+          <div class="absolute -top-3 left-6 inline-flex items-center rounded-full bg-[#4A554E] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+            Free Audit
+          </div>
+          <h2 class="text-xl font-semibold text-stone-900 tracking-tight text-center mt-2 mb-6">
+            Get Actionable SEO Insight for your Motel or Hotel
+          </h2>
+          <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4">
+            <input type="hidden" name="source_page" value="Motel SEO Hero" />
             <input type="hidden" name="form_type" value="keyword-scan" />
             <input type="hidden" name="topic" value="Free Keyword Scan" />
             <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
-            <label for="track-a-url" class="sr-only">Your Motel Website URL</label>
-            <input id="track-a-url" type="url" name="website_url" required placeholder="Your Motel Website URL" class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
-            <label for="track-a-name" class="sr-only">Your First Name</label>
-            <input id="track-a-name" type="text" name="first_name" required placeholder="Your First Name" class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
-            <label for="track-a-email" class="sr-only">Your Email Address</label>
-            <input id="track-a-email" type="email" name="email" required placeholder="Your Email Address" class="w-full px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
-            <button type="submit" class="w-full px-6 py-3 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors">
+            <div>
+              <label for="hero-url" class="sr-only">Your Motel Website URL</label>
+              <input id="hero-url" type="url" name="website_url" required placeholder="e.g., www.yourproperty.com.au" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
+            </div>
+            <div>
+              <label for="hero-name" class="sr-only">Your First Name</label>
+              <input id="hero-name" type="text" name="first_name" required placeholder="Your Name" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
+            </div>
+            <div>
+              <label for="hero-email" class="sr-only">Your Email Address</label>
+              <input id="hero-email" type="email" name="email" required placeholder="Your Best Email" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
+            </div>
+            <button type="submit" class="w-full px-6 py-4 bg-[#4A554E] text-white font-bold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm text-base">
               Get My Free Keyword Report
             </button>
+            <p class="text-center text-xs text-stone-400">30 seconds to complete &middot; Results within 48 hours</p>
           </form>
-        </div>
-
-        <!-- Track B: DIY Guide -->
-        <div class="bg-[#4A554E] rounded-2xl p-7 shadow-sm flex flex-col text-white">
-          <p class="text-xs font-bold uppercase tracking-widest text-stone-300 mb-3">Track B &middot; Do It Yourself</p>
-          <h2 class="text-2xl font-semibold tracking-tight mb-3">Run the Playbook Yourself</h2>
-          <p class="text-stone-200 text-sm leading-relaxed mb-6 flex-grow">
-            Prefer to handle your own optimisation? Scroll down to access our complete, zero-fluff <strong class="text-white">2026 Motel SEO Framework</strong> &mdash; three pillars with code, checklists, and audits you can implement this week.
-          </p>
-          <ul class="space-y-2 text-sm text-stone-200 mb-6">
-            {[
-              'Pillar 1 — Local SEO & the Google Map Pack',
-              'Pillar 2 — Technical SEO & Schema',
-              'Pillar 3 — Generative Engine Optimisation (GEO)',
-            ].map(item => (
-              <li class="flex items-start gap-2">
-                <svg class="mt-0.5 h-4 w-4 text-stone-300 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                {item}
-              </li>
-            ))}
-          </ul>
-          <a href="#framework" class="mt-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors">
-            Jump to the Framework
-            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <section id="framework" class="w-full bg-white py-20 scroll-mt-24">
-    <div class="max-w-3xl mx-auto px-6">
-      <article class="prose prose-stone lg:prose-lg max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-stone-900 prose-p:text-stone-500 prose-p:leading-relaxed prose-a:text-[#4A554E] prose-a:font-medium prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-stone-300 prose-blockquote:border-l-[#4A554E] prose-blockquote:bg-[#F9F9F8] prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:text-stone-700 prose-blockquote:not-italic prose-blockquote:rounded-r-lg prose-img:rounded-xl prose-img:shadow-sm prose-img:border prose-img:border-stone-200 prose-li:text-stone-500 [&_:not(pre)>code]:text-[#4A554E] [&_:not(pre)>code]:bg-stone-100 [&_:not(pre)>code]:px-1.5 [&_:not(pre)>code]:py-0.5 [&_:not(pre)>code]:rounded [&_:not(pre)>code]:before:content-none [&_:not(pre)>code]:after:content-none prose-pre:rounded-xl prose-pre:shadow-md [&_ul:has(input[type=checkbox])]:pl-0 [&_li:has(input[type=checkbox])]:list-none [&_li:has(input[type=checkbox])]:flex [&_li:has(input[type=checkbox])]:items-start [&_li:has(input[type=checkbox])]:gap-2 [&_input[type=checkbox]]:mt-1 [&_input[type=checkbox]]:h-4 [&_input[type=checkbox]]:w-4 [&_input[type=checkbox]]:shrink-0 [&_input[type=checkbox]]:accent-[#4A554E] prose-table:w-auto prose-table:mx-auto prose-table:border prose-table:border-stone-200 prose-table:rounded-lg prose-th:bg-[#F9F9F8] prose-th:text-[#4A554E] prose-th:p-4 prose-th:border-b-2 prose-th:border-stone-200 prose-td:p-4 prose-td:border-b prose-td:border-stone-100 prose-tr:last:border-b-0">
-        <Content />
-      </article>
-    </div>
-  </section>
+  <!-- Elfsight Platform (loaded once) -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
 
-  <!-- SEO Pricing -->
-  <section class="w-full bg-[#F9F9F8] py-20 border-t border-stone-200">
+  <div class="w-full bg-white">
+      
+      <PartnerGrid />
+    </div>
+  
+  <!-- SEO Pricing (moved up, directly after form) -->
+  <section id="pricing" class="w-full bg-[#F9F9F8] py-20 border-b border-stone-200 scroll-mt-24">
     <div class="max-w-4xl mx-auto px-6">
       <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-3 text-center">Motel SEO Services</p>
       <h2 class="text-3xl font-semibold text-stone-900 tracking-tight text-center mb-3">SEO That Compounds Every Month</h2>
@@ -96,18 +112,20 @@ const { Content } = await post.render();
 
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Starter -->
-        <div class="bg-white border border-stone-200 rounded-2xl p-7 flex flex-col">
+        <div class="relative bg-white border border-stone-200 rounded-2xl p-7 flex flex-col">
+          <span class="absolute -top-3 right-4 inline-flex items-center rounded-full bg-red-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">20% Off June</span>
           <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Starter</p>
-          <p class="text-3xl font-bold text-stone-900 mb-1">$1,475<span class="text-base font-normal text-stone-400">/mo</span></p>
-          <p class="text-sm text-stone-500 mb-6 leading-relaxed">Best for motels new to SEO or with less than 20 motel rooms.</p>
+          <p class="text-3xl font-bold text-stone-900 mb-1">
+            <span class="line-through text-stone-400 text-xl font-normal mr-2">$1,475</span>$1,180<span class="text-base font-normal text-stone-400">/mo</span>
+          </p>
+          <p class="text-sm text-stone-500 mb-6 leading-relaxed">For motels with up to 21 rooms.</p>
           <ul class="space-y-2.5 text-sm text-stone-600 mb-8 flex-grow">
             {[
-              'Google Business Profile optimisation',
-              '1× SEO content pieces per month',
-              'Local backlink development',
-              'On-page SEO audit & fixes',
-              'Schema markup implementation',
-              'Monthly performance report',
+              'Increase Direct Bookings',
+              'Reduce OTA Commissions',
+              'Connect Free Google Local',
+              'Increase Profitability',
+              'Fortnightly Report',
             ].map(item => (
               <li class="flex items-start gap-2">
                 <svg class="mt-0.5 h-4 w-4 text-[#4A554E] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -121,20 +139,23 @@ const { Content } = await post.render();
         </div>
 
         <!-- Growth — highlighted -->
-        <div class="bg-[#4A554E] border border-[#3d4640] rounded-2xl p-7 flex flex-col">
+        <div class="relative bg-[#4A554E] border border-[#3d4640] rounded-2xl p-7 flex flex-col">
+          <span class="absolute -top-3 right-4 inline-flex items-center rounded-full bg-red-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">20% Off June</span>
           <div class="flex items-center justify-between mb-2">
             <p class="text-xs font-semibold uppercase tracking-widest text-stone-300">Growth</p>
             <span class="bg-white/20 text-white text-xs font-bold px-2.5 py-1 rounded-full tracking-widest uppercase">Most Popular</span>
           </div>
-          <p class="text-3xl font-bold text-white mb-1">$2,375<span class="text-base font-normal text-stone-300">/mo</span></p>
-          <p class="text-sm text-stone-300 mb-6 leading-relaxed">For motels above 25 rooms.</p>
+          <p class="text-3xl font-bold text-white mb-1">
+            <span class="line-through text-stone-400 text-xl font-normal mr-2">$2,375</span>$1,900<span class="text-base font-normal text-stone-300">/mo</span>
+          </p>
+          <p class="text-sm text-stone-300 mb-6 leading-relaxed">For motels with 22 rooms or more.</p>
           <ul class="space-y-2.5 text-sm text-stone-200 mb-8 flex-grow">
             {[
-              'Everything in Starter',
-              '2× SEO content pieces per month',
-              'Local citation building',
-              'AI search optimisation',
-              'Backlink outreach',
+              'Increase Direct Bookings',
+              'Reduce OTA Commissions',
+              'Connect Free Google Local',
+              'Increase Profitability',
+              'Fortnightly Report',
             ].map(item => (
               <li class="flex items-start gap-2">
                 <svg class="mt-0.5 h-4 w-4 text-stone-300 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -175,16 +196,24 @@ const { Content } = await post.render();
     </div>
   </section>
 
+  <section id="framework" class="w-full bg-white py-20 scroll-mt-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <article class="prose prose-stone lg:prose-lg max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-stone-900 prose-p:text-stone-500 prose-p:leading-relaxed prose-a:text-[#4A554E] prose-a:font-medium prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-stone-300 prose-blockquote:border-l-[#4A554E] prose-blockquote:bg-[#F9F9F8] prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:text-stone-700 prose-blockquote:not-italic prose-blockquote:rounded-r-lg prose-img:rounded-xl prose-img:shadow-sm prose-img:border prose-img:border-stone-200 prose-li:text-stone-500 [&_:not(pre)>code]:text-[#4A554E] [&_:not(pre)>code]:bg-stone-100 [&_:not(pre)>code]:px-1.5 [&_:not(pre)>code]:py-0.5 [&_:not(pre)>code]:rounded [&_:not(pre)>code]:before:content-none [&_:not(pre)>code]:after:content-none prose-pre:rounded-xl prose-pre:shadow-md [&_ul:has(input[type=checkbox])]:pl-0 [&_li:has(input[type=checkbox])]:list-none [&_li:has(input[type=checkbox])]:flex [&_li:has(input[type=checkbox])]:items-start [&_li:has(input[type=checkbox])]:gap-2 [&_input[type=checkbox]]:mt-1 [&_input[type=checkbox]]:h-4 [&_input[type=checkbox]]:w-4 [&_input[type=checkbox]]:shrink-0 [&_input[type=checkbox]]:accent-[#4A554E] prose-table:w-auto prose-table:mx-auto prose-table:border prose-table:border-stone-200 prose-table:rounded-lg prose-th:bg-[#F9F9F8] prose-th:text-[#4A554E] prose-th:p-4 prose-th:border-b-2 prose-th:border-stone-200 prose-td:p-4 prose-td:border-b prose-td:border-stone-100 prose-tr:last:border-b-0">
+        <Content />
+      </article>
+    </div>
+  </section>
+
   <!-- Sticky Footer CTA -->
   <div id="sticky-footer-cta" class="fixed inset-x-0 bottom-0 z-40 hidden">
     <div class="bg-white/95 backdrop-blur-sm border-t border-slate-200 shadow-lg">
       <div class="max-w-6xl mx-auto px-6 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p class="text-sm text-slate-600">
-          <span class="font-bold text-[#1E293B]">Is the motel next door taking all of your guests?</span> — Get your motel to rank on Google.
+          <span class="font-bold text-[#1E293B]">Are you losing Guests to the Motel Next Door?</span> — Get your motel to rank high on Google.
         </p>
         <div class="flex w-full sm:w-auto gap-3">
-          <a href="/contact/" class="flex-1 sm:flex-none inline-flex items-center justify-center min-h-[44px] rounded-lg bg-[#4A554E] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#3d4640] transition">
-            Contact Us Today
+          <a href="/motel-seo/#free-audit" class="flex-1 sm:flex-none inline-flex items-center justify-center min-h-[44px] rounded-lg bg-[#4A554E] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#3d4640] transition">
+            Start with a Free Website &amp; SEO Audit.
           </a>
         </div>
       </div>
@@ -207,18 +236,5 @@ const { Content } = await post.render();
     })();
   </script>
 
-  <!-- Marketing Audit CTA -->
-  <section class="bg-[#4A554E] py-12">
-    <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-      <div>
-        <p class="text-xs font-semibold uppercase tracking-widest text-stone-300 mb-1">Quick Win</p>
-        <h2 class="text-xl font-semibold text-white">Schedule a $99 Marketing Audit</h2>
-        <p class="text-stone-300 text-sm mt-1">Practitioner review of your motel's full digital presence, OTA setup, and website SEO. Actionable findings, fast.</p>
-      </div>
-      <a href="https://buy.stripe.com/9B67sL9IL1nf7CH7pp6Zy03" class="flex-shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#4A554E] text-sm font-bold rounded-lg hover:bg-stone-100 transition-colors shadow-sm whitespace-nowrap">
-        Book $99 Audit
-      </a>
-    </div>
-  </section>
 
 </BaseLayout>
