@@ -81,7 +81,7 @@ Employers are usually hiring for the same responsibilities regardless of title.
 Skills Employers Look For
 -------------------------
 
-Most [motels recruit](/motel-management-recruitment/) for reliability and attitude before experience.
+Most [motels recruit](/motel-manager-recruitment/) for reliability and attitude before experience.
 
 Important skills:
 
