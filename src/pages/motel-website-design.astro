@@ -41,14 +41,28 @@ const jsonLd = {
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "DIY Motel Website + Website SEO Course",
+        "name": "Motel Website Packages",
         "itemListElement": [
           {
             "@type": "Offer",
-            "name": "DIY Website + Website SEO Course",
-            "price": "450",
+            "name": "The Website Refresh",
+            "price": "150",
             "priceCurrency": "AUD",
-            "description": "Self-build motel website on the high-performance framework, bundled with a Website SEO Course and checklist. Plus a $40/month care plan."
+            "description": "High-speed tune-up for your existing motel website. Speed injection, conversion alignment and technical debt cleanup."
+          },
+          {
+            "@type": "Offer",
+            "name": "The DIY Motel Site Builder",
+            "price": "495",
+            "priceCurrency": "AUD",
+            "description": "Self-build motel website on the high-performance framework with Website SEO Course, designed for the tech-savvy on-site manager. Plus $40/month care plan."
+          },
+          {
+            "@type": "Offer",
+            "name": "The High-Performance New Build",
+            "price": "3550",
+            "priceCurrency": "AUD",
+            "description": "Ground-up motel website built on our battle-tested motel framework. Standardized high-conversion architecture for the 2026 hospitality landscape."
           }
         ]
       }
@@ -93,26 +107,11 @@ const jsonLd = {
   ]
 };
 
-const diySteps = [
-  { label: "You fill the spreadsheet", desc: "Your content for each existing URL, with images referenced simply as [IMAGENAME]." },
-  { label: "Add your keywords & assets", desc: "Target keywords, named images, your Terms & Conditions and direct booking link." },
-  { label: "We place it on the framework", desc: "Fast, mobile, SEO- and AI-optimised — built and ready for you to launch." },
-  { label: "Website SEO Course + checklist", desc: "Learn the marketing that drives direct bookings, and keep growing yourself." },
-];
-
-const diyFeatures = [
-  "Mobile Friendly",
-  "Lightning Fast",
-  "SEO & AI Optimised",
-  "High-performance motel framework",
-  "Structured content spreadsheet",
-  "Website SEO Course & checklist included",
-];
 ---
 
 <BaseLayout
   title="Motel Website Design | Stop Donating 15% to Booking.com"
-  description="Stop donating 15% to Booking.com. High-conversion motel websites built for direct bookings and speed. Get a Website Package quote today!"
+  description="Websites designed for Australian Motels. DIY Website Builder from $495, or fully built packages from $3550.00"
 >
 
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />
@@ -126,18 +125,15 @@ const diyFeatures = [
 
         <!-- Copy -->
         <div class="pb-16 md:pb-24">
-          <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#4A554E] mb-6">
-            <span class="h-px w-6 bg-[#4A554E]"></span>
-            Motel Websites
-          </span>
+                   
 
-          <h1 class="text-5xl md:text-6xl font-semibold text-stone-900 leading-[1.05] tracking-tight mb-2">
-            Stop Donating 15%
-            <span class="text-stone-400"> to Booking.com.</span>
+          <h1 class="text-6xl md:text-6xl font-semibold text-stone-900 leading-[1.05] tracking-tight mb-10">
+            Motel Website 
+            <span class="text-stone-400">Design</span>
           </h1>
 
           <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-xl mb-8">
-            When your site is slow, guests flee to OTAs and the motel next door. A high-performance motel website is the only way to protect your margins and own the guest relationship.
+            When your motel website site is slow, or not designed for mobile, guests flee to OTAs or motel next door. A high-performance motel website is the only way to protect your margins and own the guest relationship.
           </p>
 
           <div class="flex flex-wrap items-center gap-4">
@@ -158,7 +154,7 @@ const diyFeatures = [
           <!-- Live build credit -->
           <p class="mt-6 text-xs text-stone-400">
             Live build shown:
-            <a href="https://eco-motel.netlify.app/rooms/king-deluxe-motel-room/" target="_blank" rel="noopener noreferrer" class="text-[#4A554E] font-medium hover:underline">
+            <a href="https://ecomotel.com.au/accommodation/king-deluxe-motel-room/" target="_blank" rel="noopener noreferrer" class="text-[#4A554E] font-medium hover:underline">
               Crossroads Ecomotel &rarr;
             </a>
           </p>
@@ -577,30 +573,31 @@ const diyFeatures = [
       <!-- Three tier cards -->
       <div class="grid gap-6 lg:grid-cols-3 items-start">
 
-        <!-- Tier 1: The Website Refresh -->
+        <!-- Tier 1: Website Update -->
         <div class="bg-white rounded-2xl border-2 border-stone-200 p-8 shadow-sm flex flex-col">
           <div class="mb-6">
             <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Tier 01</p>
-            <h3 class="text-xl font-bold text-stone-900 tracking-tight mb-1">The Website Refresh</h3>
-            <p class="text-sm text-[#4A554E] font-semibold italic">&ldquo;Fix the Leaky Bucket&rdquo;</p>
+            <h3 class="text-xl font-bold text-stone-900 tracking-tight mb-1">Website Update</h3>
+            <p class="text-sm text-[#4A554E] font-semibold italic">&ldquo;Quick Wins, Fast.&rdquo;</p>
           </div>
           <div class="mb-6 pb-6 border-b border-stone-100">
             <div class="flex items-end gap-1.5">
-              <span class="text-4xl font-bold text-stone-900">$2,650</span>
+              <span class="text-4xl font-bold text-stone-900">$150</span>
               <span class="text-stone-400 text-sm mb-1.5">inc. GST</span>
             </div>
             <p class="text-stone-500 text-sm mt-1 font-medium">100% upfront</p>
             <p class="text-stone-400 text-sm mt-0.5">+ $40/mo Peace of Mind</p>
           </div>
           <p class="text-sm text-stone-500 leading-relaxed mb-6">
-            Technical renovation of your current site. No full rebuild required &mdash; we inject speed, fix conversion leaks, and clean the code that&apos;s stalling mobile guests.
+            A focused update to your existing site &mdash; speed injection, mobile fixes, and conversion alignment so you stop bleeding bookings today.
           </p>
           <ul class="space-y-3 flex-grow mb-8">
             {[
-              { label: 'Speed Injection', desc: 'Reaching the 0.8s load time benchmark.' },
-              { label: 'Conversion Alignment', desc: 'Optimising existing pages for direct booking.' },
-              { label: 'Technical Debt Cleanup', desc: 'Removing code bloat that stalls mobile guests.' },
-              { label: 'Timeline', desc: '2&ndash;4 Weeks.' },
+              { label: 'Speed Injection', desc: 'Faster website = more direct bookings.' },
+              { label: 'Improve Conversion', desc: 'Optimising existing pages for more direct bookings.' },
+              { label: 'Clean up Errors', desc: 'Removing old errors or broken parts.' },
+              { label: 'Mobile Friendly', desc: 'Make sure guests can easily book on mobile.' },
+              { label: 'Timeline', desc: '1&ndash;2 Weeks.' },
             ].map(({ label, desc }) => (
               <li class="flex items-start gap-3">
                 <span class="mt-0.5 h-5 w-5 flex-shrink-0 flex items-center justify-center rounded-full bg-[#4A554E]/10">
@@ -611,65 +608,66 @@ const diyFeatures = [
             ))}
           </ul>
           <a
-            href="https://buy.stripe.com/28E6oH3knfe5cX18tt6Zy0e"
+            href="/contact/?topic=Website+Update"
             class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors"
           >
-            Get Started
+            Contact Us
           </a>
         </div>
 
-        <!-- Tier 2: The Growth Engine — Recommended (centre) -->
+        <!-- Tier 2: The DIY Motel Site Builder — Most Popular -->
         <div class="relative bg-gradient-to-br from-stone-900 to-[#4A554E] rounded-2xl p-8 shadow-xl flex flex-col">
           <div class="absolute -top-3.5 left-6 inline-flex items-center gap-1.5 bg-[#4A554E] border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
             <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none"><path d="M6 1l1.5 3 3.5.5-2.5 2.5.5 3.5L6 9l-3 1.5.5-3.5L1 4.5 4.5 4z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-            Recommended Strategy
+            Most Popular
           </div>
           <div class="mb-6">
             <p class="text-xs font-bold uppercase tracking-widest text-stone-300 mb-2">Tier 02</p>
-            <h3 class="text-xl font-bold text-white tracking-tight mb-1">The Growth Engine</h3>
-            <p class="text-sm text-stone-300 font-semibold italic">&ldquo;Market Dominance&rdquo;</p>
+            <h3 class="text-xl font-bold text-white tracking-tight mb-1">The DIY Motel Site Builder</h3>
+            <p class="text-sm text-stone-300 font-semibold italic">&ldquo;Learn It. Build It. Own It.&rdquo;</p>
           </div>
           <div class="mb-6 pb-6 border-b border-white/10">
             <div class="flex items-end gap-1.5">
-              <span class="text-4xl font-bold text-white">$4,750</span>
-              <span class="text-stone-300 text-sm mb-1.5">inc. GST</span>
+              <span class="text-4xl font-bold text-white">$495</span>
+              <span class="text-stone-300 text-sm mb-1.5">once</span>
             </div>
-            <p class="text-stone-300 text-sm mt-1 font-medium">50% upfront &middot; 50% on completion</p>
-            <p class="text-stone-400 text-sm mt-0.5">+ $40/mo Peace of Mind</p>
+            <p class="text-stone-400 text-sm mt-1">+ $40/mo care plan &mdash; hosting, security &amp; backups</p>
           </div>
           <p class="text-sm text-stone-300 leading-relaxed mb-6">
-            For owners looking to outrank competitors and reclaim margins from OTAs. Everything in The Foundation, plus the tools to dominate your market.
+            Designed for the tech-savvy on-site manager to execute. You get our high-performance motel framework, a guided builder tool, and our
+            <a href="/motel-seo/" class="text-white font-medium hover:underline">Website SEO Course</a>
+            &mdash; place your own content, learn the marketing, and launch a site that rivals a $3k+ build.
           </p>
           <ul class="space-y-3 flex-grow mb-8">
             {[
-              { label: 'Everything in The Foundation', desc: 'Full ground-up build included.' },
-              { label: 'Social Trust Stack', desc: 'Integration of verified 3rd-party review widgets.' },
-              { label: 'Niche Content Strategy', desc: 'Custom pages targeting high-intent local search terms.' },
-              { label: 'Revenue Support', desc: 'We manage your seasonal price-promo banners and photo updates.' },
-              { label: 'Timeline', desc: '4 Weeks.' },
+              { label: 'Battle-Tested Motel Framework', desc: 'Same high-speed architecture used in our professional builds.' },
+              { label: 'Guided Website Builder', desc: 'Step-by-step content entry with a live preview of your site.' },
+              { label: 'No Experience Required', desc: 'Learn the marketing that drives direct bookings.' },
+              { label: 'Lightning Fast &amp; Mobile First', desc: 'Sub-second load times, built for the guest on their phone.' },
+              { label: 'You Control the Content', desc: 'Update it yourself &mdash; no developer costs.' },
             ].map(({ label, desc }) => (
               <li class="flex items-start gap-3">
                 <span class="mt-0.5 h-5 w-5 flex-shrink-0 flex items-center justify-center rounded-full bg-white/10">
                   <svg class="h-3 w-3 text-white" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
-                <p class="text-sm text-stone-200"><span class="font-semibold text-white">{label}:</span> <span set:html={desc}></span></p>
+                <p class="text-sm text-stone-200"><span class="font-semibold text-white" set:html={label}></span> <span set:html={desc}></span></p>
               </li>
             ))}
           </ul>
           <a
-            href="https://buy.stripe.com/eVqeVdf35c1T2indNN6Zy0d"
+            href="https://buy.stripe.com/YOUR_DIY_PAYMENT_LINK"
             class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors shadow-sm"
           >
-            Get Started &mdash; Pay 50% Now
+            Get Started &mdash; $495
           </a>
         </div>
 
-        <!-- Tier 3: The Foundation -->
+        <!-- Tier 3: The High-Performance New Build -->
         <div class="bg-white rounded-2xl border-2 border-stone-200 p-8 shadow-sm flex flex-col">
           <div class="mb-6">
             <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Tier 03</p>
-            <h3 class="text-xl font-bold text-stone-900 tracking-tight mb-1">The Foundation</h3>
-            <p class="text-sm text-[#4A554E] font-semibold italic">&ldquo;The Modern Motel Standard&rdquo;</p>
+            <h3 class="text-xl font-bold text-stone-900 tracking-tight mb-1">The High-Performance New Build</h3>
+            <p class="text-sm text-[#4A554E] font-semibold italic">&ldquo;The Battle-Tested Motel Framework&rdquo;</p>
           </div>
           <div class="mb-6 pb-6 border-b border-stone-100">
             <div class="flex items-end gap-1.5">
@@ -680,13 +678,14 @@ const diyFeatures = [
             <p class="text-stone-400 text-sm mt-0.5">+ $40/mo Peace of Mind</p>
           </div>
           <p class="text-sm text-stone-500 leading-relaxed mb-6">
-            A ground-up build based on hospitality best practices. Designed for the 2026 guest journey from the first click to the booking confirmation.
+            A ground-up build on our standardised, high-conversion motel architecture &mdash; purpose-built for the 2026 hospitality landscape. No bespoke coding delays, no guesswork. Just a proven framework that turns lookers into bookers.
           </p>
           <ul class="space-y-3 flex-grow mb-8">
             {[
-              { label: 'Brand New High-Speed Site', desc: 'Built for the 2026 guest journey.' },
-              { label: 'Local SEO Foundation', desc: "Optimised for &lsquo;Accommodation [Your Town]&rsquo; search terms." },
-              { label: 'Direct Booking Sync', desc: 'Native Little Hotelier, GuestPoint, or RMS integration.' },
+              { label: 'Standardised Industry Framework', desc: 'Proven architecture refined across dozens of motel builds &mdash; speed, reliability, results.' },
+              { label: 'Local SEO Foundation', desc: "Optimised for &lsquo;Accommodation [Your Town]&rsquo; and high-intent search terms." },
+              { label: 'Direct Booking Integration', desc: 'Native Little Hotelier, GuestPoint, or RMS sync built in.' },
+              { label: 'Revenue-Ready From Day One', desc: 'Social proof, trust signals and conversion architecture included.' },
               { label: 'Timeline', desc: '2&ndash;4 Weeks.' },
             ].map(({ label, desc }) => (
               <li class="flex items-start gap-3">
@@ -698,8 +697,16 @@ const diyFeatures = [
             ))}
           </ul>
           <a
+            href="https://ecomotel.com.au"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors mb-3"
+          >
+            See a Recent Client Build &rarr;
+          </a>
+          <a
             href="https://buy.stripe.com/cNi3cvaMP9TL9KP9xx6Zy0f"
-            class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors"
+            class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
           >
             Get Started &mdash; Pay 50% Now
           </a>
@@ -720,76 +727,7 @@ const diyFeatures = [
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       DIY PACKAGE + WEBSITE SEO COURSE
-  ═══════════════════════════════════════════ -->
-  <section id="diy" class="bg-[#F9F9F8] py-20 md:py-28 border-b border-stone-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-        <!-- Copy + steps -->
-        <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-[#4A554E] mb-3 block">Do It Yourself</span>
-          <h2 class="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight mb-5">
-            Prefer to build it yourself — and learn the marketing?
-          </h2>
-          <p class="text-lg text-stone-500 leading-relaxed mb-8">
-            Get our high-performance motel website framework and place your own
-            content using a simple structured spreadsheet. It comes bundled with
-            our <a href="/motel-seo/" class="text-[#4A554E] font-medium hover:underline">Website SEO Course</a>
-            and checklist — so you do more of the work, keep costs down, and learn
-            the marketing that drives direct bookings.
-          </p>
-
-          <ul class="space-y-5">
-            {diySteps.map(({ label, desc }, i) => (
-              <li class="flex items-start gap-4">
-                <span class="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full bg-[#4A554E] text-white text-sm font-bold tabular-nums">
-                  {i + 1}
-                </span>
-                <div>
-                  <p class="text-sm font-semibold text-stone-900 mb-0.5">{label}</p>
-                  <p class="text-sm text-stone-500 leading-relaxed">{desc}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <!-- Pricing card -->
-        <div class="bg-gradient-to-br from-stone-900 to-[#4A554E] rounded-2xl p-8 shadow-xl">
-          <p class="text-xs font-bold uppercase tracking-widest text-stone-300 mb-2">DIY Package</p>
-          <h3 class="text-xl font-bold text-white tracking-tight mb-5">
-            Website + Website SEO Course
-          </h3>
-          <div class="pb-5 mb-5 border-b border-white/10">
-            <div class="flex items-end gap-1.5">
-              <span class="text-4xl font-bold text-white">$450</span>
-              <span class="text-stone-300 text-sm mb-1.5">once</span>
-            </div>
-            <p class="text-stone-400 text-sm mt-1">+ $40/month care plan — hosting, security &amp; backups</p>
-          </div>
-          <ul class="space-y-3 mb-8">
-            {diyFeatures.map((f) => (
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex-shrink-0 flex items-center justify-center rounded-full bg-white/10">
-                  <svg class="h-3 w-3 text-white" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <span class="text-sm text-stone-200">{f}</span>
-              </li>
-            ))}
-          </ul>
-          <a
-            href="/contact/?topic=DIY+Website+SEO+Course"
-            class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors shadow-sm"
-          >
-            Get the DIY Package
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  <!-- DIY section absorbed into Tier 2 pricing card above -->
 
   <!-- ═══════════════════════════════════════════
        LEAD GENERATION FORM
