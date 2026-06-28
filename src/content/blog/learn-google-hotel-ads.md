@@ -63,11 +63,11 @@ Google Hotel Ads use a data feed from your Property Management System (PMS) or c
 
 <div class="not-prose my-8 grid sm:grid-cols-2 gap-4">
   <div class="rounded-2xl border border-stone-200 bg-white p-2 shadow-sm">
-    <img src="/images/migrated/google-hotel-ad-example.png" alt="Google Hotel Ad Example" width="834" height="750" loading="lazy" decoding="async" class="rounded-xl w-full h-auto" />
+    <img src="/images/migrated/google-hotel-ad-example.webp" alt="Google Hotel Ad Example" width="834" height="750" loading="lazy" decoding="async" class="rounded-xl w-full h-auto" />
     <p class="text-xs font-semibold text-stone-500 text-center mt-2 mb-1">Google Hotel Ad Example</p>
   </div>
   <div class="rounded-2xl border border-stone-200 bg-white p-2 shadow-sm">
-    <img src="/images/migrated/google-search-ad-example.png" alt="Google Search Ad Example" width="1000" height="575" loading="lazy" decoding="async" class="rounded-xl w-full h-auto" />
+    <img src="/images/migrated/google-search-ad-example.webp" alt="Google Search Ad Example" width="1000" height="575" loading="lazy" decoding="async" class="rounded-xl w-full h-auto" />
     <p class="text-xs font-semibold text-stone-500 text-center mt-2 mb-1">Google Search Ad Example</p>
   </div>
 </div>
