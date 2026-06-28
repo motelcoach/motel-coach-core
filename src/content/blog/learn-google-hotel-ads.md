@@ -15,7 +15,7 @@ Google Hotel Ads are a powerful [accommodation marketing tool](/motel-marketing/
 **Where Do They Appear?**
 
 <div class="not-prose my-8 rounded-2xl border border-stone-200 bg-white p-2 shadow-sm">
-  <img src="/images/migrated/google-hotel-ads.png" alt="Google Hotel Ads example showing motel rates in search results" width="834" height="656" loading="lazy" decoding="async" class="rounded-xl w-full h-auto" />
+  <img src="/images/migrated/google-hotel-ads.webp" alt="Google Hotel Ads example showing motel rates in search results" width="846" height="480" loading="lazy" decoding="async" class="rounded-xl w-full h-auto" />
 </div>
 
 *   Google Search results for accommodation-related queries.
