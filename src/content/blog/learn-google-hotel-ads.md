@@ -1,7 +1,7 @@
 ---
 title: "What are Google Hotel Ads, and is it Worth It?"
 seoTitle: "Google Hotel Ads and Free Link Setup and Management Service | Motel Coach"
-pubDate: Fri, 30 May 2025 03:56:17 +0000
+pubDate: Mon, 29 June 2026 03:56:17 +0000
 slug: learn-google-hotel-ads
 category: "Motel Marketing"
 description: "Intercept guest intent before they hit the OTAs. Learn how Google Hotel Ads drive high-margin direct bookings. Book your Digital Strategy Session now."
