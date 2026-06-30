@@ -112,6 +112,7 @@ const jsonLd = {
 <BaseLayout
   title="Motel Website Design | Stop Donating 15% to Booking.com"
   description="Websites designed for Australian Motels. DIY Website Builder from $495, or fully built packages from $3550.00"
+  hideFooterCta
 >
 
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />
@@ -927,22 +928,50 @@ const jsonLd = {
   }
 </script>
 
-  <!-- Dual CTA: Quote + Strategy Session -->
+  <!-- Bottom CTA: Direct Contact -->
   <section class="bg-[#F9F9F8] py-14 border-t border-stone-200">
     <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
       <div>
         <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-1">Next Step</p>
         <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight">Get a Website Quote</h2>
-        <p class="text-stone-500 text-sm mt-1">Or book a 2-hour strategy session for $135 to discuss your full digital presence.</p>
+        <p class="text-stone-500 text-sm mt-1">Call or email us directly. No forms, no sales pitches.</p>
       </div>
       <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-        <a href="/contact/?topic=Website+Quote" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-bold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm whitespace-nowrap">
-          Get a Website Quote
+        <a href="tel:+61485510486" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A554E] text-white text-sm font-bold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm whitespace-nowrap">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Call Ben: 0485 510 486
         </a>
-        <a href="https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors whitespace-nowrap">
-          Strategy Session — $135
-        </a>
+        <button
+          id="wd-email-reveal-btn"
+          type="button"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors whitespace-nowrap cursor-pointer"
+        >
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span id="wd-email-reveal-text">Email Ben</span>
+        </button>
       </div>
     </div>
   </section>
+
+<script>
+  (function () {
+    var btn = document.getElementById('wd-email-reveal-btn');
+    var label = document.getElementById('wd-email-reveal-text');
+    if (!btn || !label) return;
+    var parts = ['contact', 'motelcoach.com.au'];
+    var addr = parts[0] + '@' + parts[1];
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(addr).then(function () {
+        label.textContent = 'Copied! ' + addr;
+        btn.classList.add('ring-2', 'ring-[#4A554E]', 'bg-stone-50');
+        setTimeout(function () {
+          label.textContent = 'Email Ben';
+          btn.classList.remove('ring-2', 'ring-[#4A554E]', 'bg-stone-50');
+        }, 3000);
+      }).catch(function () {
+        label.textContent = addr;
+      });
+    });
+  })();
+</script>
 </BaseLayout>

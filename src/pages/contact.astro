@@ -55,6 +55,7 @@ const prefill = {
                 id="name"
                 name="name"
                 type="text"
+                required
                 class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
                 placeholder="Your name"
                 value={prefill.name}
@@ -68,6 +69,7 @@ const prefill = {
                 id="email"
                 name="email"
                 type="email"
+                required
                 class="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
                 placeholder="you@example.com"
                 value={prefill.email}
@@ -109,7 +111,7 @@ const prefill = {
 
           <div>
             <label for="property" class="block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-1">
-              Motel Name / Location
+              Motel Name / Location (Optional)
             </label>
             <input
               id="property"
@@ -218,8 +220,9 @@ const prefill = {
         body: new URLSearchParams(formData).toString(),
       });
 
-      if (typeof gtag === 'function' && formType === 'strategy-session') {
-        gtag('event', 'conversion', { 'send_to': 'AW-5951687348/STRATEGY_LABEL' });
+      window.dataLayer = window.dataLayer || [];
+      if (formType === 'strategy-session') {
+        dataLayer.push({ 'event': 'form_submission', 'form_type': 'strategy-session' });
       }
 
       if (formType === 'strategy-session') {

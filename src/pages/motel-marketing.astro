@@ -10,21 +10,38 @@ import LucideIcon from '../components/LucideIcon.astro';
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid gap-10 md:grid-cols-12 items-start">
         <div class="md:col-span-7" data-reveal="up">
-          <h1 class="text-5xl md:text-7xl font-semibold text-stone-900 tracking-tight text-balance">
+          <h1 class="text-5xl md:text-7xl mb-10 font-semibold text-stone-900 tracking-tight text-balance">
             Motel Marketing that Increases Direct Bookings.
           </h1>
-          <p class="mt-6 text-lg md:text-xl text-stone-500 leading-relaxed text-balance">
-            We install a practical marketing system for Australian hotels and motels—so “Direct” becomes the default choice, not the lucky outcome.
-          </p>
-          <a
-            href="/contact/"
-            class="mt-8 inline-flex items-center justify-center rounded-lg bg-[#4A554E] px-8 py-4 text-base font-medium text-white shadow-sm hover:bg-[#3d4640] hover:shadow-lg transition"
-          >
-            Book Your Free Motel Marketing Strategy Session
+          <!-- Value props -->
+        <ul class="space-y-4 mb-5 max-w-xl">
+          <li class="flex items-start gap-3">
+            <svg class="mt-1 h-5 w-5 text-[#4A554E] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="text-lg text-stone-700"><a href="/motel-website-design/" class="text-stone-900 font-bold underline">Website Design & Optimisation</a> &ndash; We reduce OTA bookings.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="mt-1 h-5 w-5 text-[#4A554E] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="text-lg text-stone-700"><a href="/motel-seo/" class="text-stone-900 font-bold underline">Motel & Hotel SEO</a> &ndash; Guests find you on Google.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="mt-1 h-5 w-5 text-[#4A554E] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="text-lg text-stone-700"><a href="#marketing-pillars" class="text-stone-900 font-bold underline">View our 11-step System</a> &ndash; Increase motel occupancy.</span>
+          </li>
+        </ul>
+            <div class="mt-8 pt-8 border-t border-stone-200 flex flex-col sm:flex-row gap-3">
+          <a href="tel:+61485510486" class="inline-flex items-center gap-2 px-7 py-3.5 bg-[#4A554E] text-white text-base font-medium rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call Ben: 0485 510 486
           </a>
-          <p class="mt-4 text-lg text-stone-500">
-            🚀 Our last client's website traffic increased by 145%.
-          </p>
+          <button
+            id="email-reveal-btn"
+            type="button"
+            class="inline-flex items-center gap-2 px-7 py-3.5 bg-white border border-stone-200 text-stone-900 text-base font-medium rounded-lg hover:bg-stone-50 transition-colors shadow-sm cursor-pointer"
+          >
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span id="email-reveal-text">Email Ben</span>
+          </button>
+        </div>
         </div>
 
         <!-- Hero Image -->
@@ -50,7 +67,7 @@ import LucideIcon from '../components/LucideIcon.astro';
     </div>
 
   <!-- 2. Motel Marketing Pillar Content -->
-  <section class="bg-stone-50 border-y border-stone-200 py-24">
+  <section id="marketing-pillars" class="bg-stone-50 border-y border-stone-200 py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="max-w-5xl" data-reveal="up">
         <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance">
