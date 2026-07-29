@@ -74,15 +74,23 @@ const { Content } = await post.render();
             <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
             <div>
               <label for="hero-url" class="sr-only">Your Motel Website URL</label>
-              <input id="hero-url" type="url" name="website_url" required placeholder="e.g., www.yourproperty.com.au" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
+              <input id="hero-url" type="url" name="website" required placeholder="e.g., www.yourproperty.com.au" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
             </div>
             <div>
-              <label for="hero-name" class="sr-only">Your First Name</label>
-              <input id="hero-name" type="text" name="first_name" required placeholder="Your Name" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
+              <label for="hero-name" class="sr-only">Your Name</label>
+              <input id="hero-name" type="text" name="name" required placeholder="Your Name" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
+            </div>
+            <div>
+              <label for="hero-motel-name" class="sr-only">Your Motel or Hotel Name</label>
+              <input id="hero-motel-name" type="text" name="motel-name" required placeholder="Your Motel or Hotel Name" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
             </div>
             <div>
               <label for="hero-email" class="sr-only">Your Email Address</label>
               <input id="hero-email" type="email" name="email" required placeholder="Your Best Email" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
+            </div>
+            <div>
+              <label for="hero-phone" class="sr-only">Your Mobile Number</label>
+              <input id="hero-phone" type="tel" name="phone" placeholder="Your Mobile Number" class="w-full px-4 py-3.5 rounded-lg border border-stone-200 bg-[#F9F9F8] text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent focus:bg-white transition-colors" />
             </div>
             <button type="submit" class="w-full px-6 py-4 bg-[#4A554E] text-white font-bold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm text-base">
               Get My Free Keyword Report
