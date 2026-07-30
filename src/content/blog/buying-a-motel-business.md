@@ -5,7 +5,7 @@ slug: buying-a-motel-business
 category: Buying a Motel
 description: Planning to buy a motel in Australia? Discover real costs, leasehold vs freehold yields, financing requirements, and critical due diligence steps before you buy.
 executiveSummary: Looking to Buy a Motel? Safeguard your investment by mitigating risk with a rigorous [motel buyers audit](/motel-buyers-audit/). Buying a motel involves a lot of moving parts, and it is important to complete thorough due diligence. We recommend getting input from an experienced professional that specializes in the motel space.
-updatedDate: 30/07/2026
+updatedDate: 2026-07-30
 seoTitle: "How to Buy a Motel Business in Australia: Costs, Yields & Due Diligence Guide"
 ---
 
