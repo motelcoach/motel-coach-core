@@ -29,6 +29,7 @@ const articleJsonLd = {
   headline: entry.data.title,
   description: entry.data.description ?? '',
   datePublished: new Date(entry.data.pubDate).toISOString(),
+  dateModified: new Date(entry.data.updatedDate ?? entry.data.pubDate).toISOString(),
   author: { '@type': 'Person', name: 'Benjamin Douglas' },
   publisher: { '@type': 'Organization', name: 'Motel Coach', url: 'https://motelcoach.com.au/' },
 };
