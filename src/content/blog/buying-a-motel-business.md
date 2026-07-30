@@ -44,17 +44,71 @@ The **cost of buying a motel** varies widely based on geographic location, room 
 - Small Regional Freehold Going Concern: $1,500,000 – $3,500,000
 - Prime Coastal / Metro Freehold Going Concern: $4,000,000 – $12,000,000+
 
+
+
 ## 2. How Much Does It Cost to Build a Motel in Australia?
 
 If you are evaluating whether to buy an existing business or build from scratch, commercial construction costs in Australia currently average **$180,000 to $320,000 per room (per key)**, excluding land acquisition, council headworks, and civil engineering. For a standard 20-room regional motel, greenfield development costs routinely exceed **$5 million to $7 million**. Buying an established motel usually offers a much faster route to positive cash flow at a significant discount to replacement cost.
 
-## 3. How to Finance a Motel Purchase (LVR & Capital Requirements)
 
-Commercial lenders treat accommodation businesses differently than residential real estate. You cannot buy a motel with a 10% deposit.
 
-- **Leasehold Finance:** Banks typically lend up to **50% LVR (Loan-to-Value Ratio)** against the valuation of the business. You will generally need 50% cash equity plus working capital and stamp duty.
-- **Freehold Going Concern Finance:** Banks typically lend **60% to 70% LVR** against the combined land, building, and business value.
-- **Key Lending Criteria:** Lenders look heavily at the **Lease Coverage Ratio** (net profit must cover rent by at least 1.6x to 2.0x) and your prior business or hospitality management experience.
+## 3. How to Finance a Motel Purchase (Borrowing Capacity & LVR Rules)
+
+Commercial accommodation lending operates under far stricter rules than standard residential mortgages. Lenders evaluate borrowing capacity based on four core pillars: 
+
+1. Cash deposit size,
+2. Available property equity,
+3. Commercial management experience,
+4. Asset’s debt-serviceability ratio.
+
+
+
+### Leveraging Residential Equity vs. Cash Deposits
+
+A common myth among prospective buyers is that you must sell your primary residence or existing investment properties to raise cash for a deposit. In reality, commercial lenders frequently allow you to borrow against existing real estate equity.
+
+Because leasehold motel businesses generate high cash flow relative to debt, many operators keep their residential properties intact, draw down on home equity to fund the business deposit, and service both loans through the motel’s operating income.
+
+### Standard Commercial Lending Benchmarks (LVR)
+
+- **Leasehold Business Finance:** Lenders cap borrowing at **50% LVR (Loan-to-Value Ratio)** against the business valuation, requiring the buyer to fund the remaining 50% plus acquisition costs.
+- **Freehold Going Concern (FHGC) Finance:** Banks typically lend **60% to 70% LVR** against the combined property and operational valuation.
+- **Debt Serviceability Standards:** Lenders require a **Lease Coverage Ratio** where net operating profit covers annual rent by at least 1.6x to 2.0x, ensuring sufficient room for loan repayments.
+
+
+
+### Operational Financing Scenarios: How the Capital Math Works
+
+The following examples illustrate how buyers structure acquisitions using either liquid cash or leveraged property equity.
+
+#### Scenario A: Direct Cash Contribution (Leasehold)
+
+- **Acquisition Profile:** A 18-room leasehold motel listed at **$700,000** with estimated stamp duty, legal, and settlement costs of **$70,000** (Total required capital: **$770,000**).
+- **Funding Structure:** The bank provides a 50% commercial loan of **$350,000** amortized over 10 years. The buyer contributes **$420,000** in cash savings to cover the deposit balance and closing fees.
+- **Annual Servicing:** At an illustrative 10% principal and interest rate, annual loan repayments equal roughly **$55,500**.
+- **Financial Outcome:** With a net operating profit of **$196,000** (a 28% ROI), the business easily absorbs debt servicing, leaving **$140,500** in net cash flow to the owner-operator.
+
+
+
+#### Scenario B: Unlocking Home Equity (Zero Cash Sale Required)
+
+Instead of selling their residential home, a buyer uses accrued equity to fund the deposit:
+
+- **Property Equity Calculation:** The buyer owns a home valued at **$900,000** with an existing **$150,000** mortgage. A bank will refinance up to 80% LVR (**$720,000** max debt), leaving **$570,000** in usable equity after clearing the initial mortgage.
+- **Funding Strategy:** To fund the **$770,000** total acquisition cost (for the $700,000 motel + $70,000 costs), the buyer combines a 50% commercial business loan (**$350,000**) with **$420,000** drawn from their residential equity line.
+- **Combined Cash Flow:**
+  - Motel Net Profit: **$196,000**
+  - Less Commercial Debt Servicing (10% P&I): **-$55,500**
+  - Less Residential Equity Servicing (8% Interest-Only on $420k): **-$33,600**
+- **Financial Outcome:** Total debt service equals **$89,100**, leaving **$106,900** in net income while preserving the primary residential asset for long-term capital growth.
+
+*(Note: Commercial interest rates are modeled conservatively above base market rates to illustrate an asset's capacity to comfortably service higher borrowing costs).*
+
+> **Finance Tip:** Commercial lending policies change rapidly across Australian banks. We strongly recommend working with specialized accommodation finance brokers — such as **Mike Phipps Finance** — who understand business-to-rent ratios and commercial valuation models.
+
+
+
+
 
 ## 4. Don’t Trust Add-Backs: Rebuilding the Real Financials
 
@@ -73,6 +127,8 @@ Motel financial statements prepared by brokers often include aggressive "add-bac
 
 **The Fix:** Always recalculate earnings under a **fully managed model**. Deduct market-rate salaries for a manager and cleaning staff, set aside a 3% to 5% reserve for capital repairs, and assess what profit remains.
 
+
+
 ## 5. Location Breakdown: What to Look for Across Australian Markets
 
 If you are looking to **buy a motel in NSW, Victoria, Queensland**, or across the Tasman in **New Zealand**, regional micro-economies dictate your success:
@@ -81,6 +137,10 @@ If you are looking to **buy a motel in NSW, Victoria, Queensland**, or across th
 - **Queensland (Gold Coast, Brisbane, North QLD):** Coastal markets experience pronounced seasonal swings. Ensure winter cash surpluses are banked to cover slower summer periods. Look for multi-night stay demand drivers such as regional infrastructure expansions.
 - **New Zealand:** Strongly influenced by international inbound tourism and regional transit routes. Ensure lease structures account for local rates and insurance shifts.
 
+
+
+
+
 ## 6. Buying a Motel: Reddit Reality vs. Commercial Reality
 
 A common search among prospective buyers is **"buying a motel reddit"** or **"owning a motel reddit"**, seeking unfiltered accounts from real owners. The consensus across industry forums highlights three truths that sales brochures rarely mention:
@@ -88,6 +148,8 @@ A common search among prospective buyers is **"buying a motel reddit"** or **"ow
 1. **You are buying a lifestyle AND a job:** Unless you run a large 30+ room property with full-time staff, you are tied to the front desk, laundry operations, and late-night check-ins.
 2. **OTA Fees Eat Margins:** Online Travel Agents (OTAs) charge 12% to 18% commission per booking. A motel that relies heavily on third-party channels yields significantly less profit than one with a strong direct-booking engine.
 3. **The First 90 Days Are Tough:** Transitioning software platforms, updating OTA credentials, managing existing staff, and fixing deferred maintenance usually consume significant capital immediately after settlement.
+
+
 
 ## 7. Operational Due Diligence: Inspect Like an Operator, Not a Guest
 
@@ -98,6 +160,10 @@ When conducting a physical inspection, look past fresh paint and clean linen. Fo
 - **Waterproofing & Wet Areas:** Inspect bathroom shower recesses for leaking membranes — a major hidden expense in older motels. If you are local to the motel, inspect the property when there is heavy rain. This will help to uncover potential issues with drainage, leaks and waterproofing.
 - **Laundry Infrastructure:** Are commercial washers and dryers owned or leased? Is linen processed in-house or outsourced?
 - **Pest & Building Compliance:** Verify fire safety compliance certificates, food safety registrations, and WHS documentation.
+
+
+
+
 
 ## 8. Market Trends: One-Off Spike or Permanent Demand?
 
@@ -119,6 +185,8 @@ Long-term demand is usually driven by:
 
 If the seller cannot clearly explain the cause of growth, assume it may not last and value the motel conservatively.
 
+
+
 ## 9. Is the Market Growing or Shrinking?
 
 A motel can perform well even in a declining town — temporarily.
@@ -131,6 +199,8 @@ Before buying, assess:
 - Tourism seasonality vs year-round demand
 
 Strong performance in a shrinking market is harder to sustain long term and should be priced accordingly.
+
+
 
 ## 10. Are the Rates Right for the Town?
 
@@ -147,6 +217,8 @@ Room rates should always be viewed **relative to comparable motels**, not in iso
 - Mid-to-upper pricing
 - Supported by solid reviews
 - With stable, repeatable demand
+
+
 
 ## 11. Restaurant “Upside” Is Often Overstated
 
@@ -168,6 +240,8 @@ are more profitable than full food operations. The one important thing to note i
 
 Treat “huge upside by reopening restaurant” claims with caution.
 
+
+
 ## 12. Seasonality and Cash Flow Matter More Than Profit
 
 One of the most common mistakes buyers make is underestimating seasonality.
@@ -185,7 +259,11 @@ If you are buying or settling in low season, ensure you have:
 
 Cash flow, not profit, is what keeps the business alive.
 
+
+
 ---
+
+
 
 ## Final Thought
 
@@ -193,10 +271,12 @@ Buying a motel can be an excellent business — but only if you buy with clear e
 
 **Before buying a motel** we strongly recommend doing some [motel training](/motel-management-training-course/).
 
+
+
 ## Schedule a 2-Hour Strategy Session
 
 A focused session on a target motel acquisition from an experienced motel operator. Normally $259 — **only $135.**
 
 [Book Now — $135](https://book.stripe.com/4gM00jg79aXP1ej9xx6Zy0g)  
-  
+
 Disclaimer: We are a motel training, marketing and operations specialist. We are not a Licensed Financial Advisor or Lawyer, and suggest to get industry focussed professional legal and financial advice before investing in a motel.
