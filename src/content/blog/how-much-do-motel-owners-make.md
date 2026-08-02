@@ -35,7 +35,7 @@ To understand where the money goes, you have to separate your income into two di
 
 (Note: We are looking at **how you choose to run the daily business**, which is different from your legal property structure—such as Freehold Going Concern vs. Leasehold—which dictates whether you own the physical land and building or just the business rights).
 
-- **The Owner-Operator Model (Hands-On):** You handle the front desk, deal with housekeeping staff, manage linen, tackle basic maintenance, and clean rooms yourself. In this setup, you pay yourself a [baseline motel manager’s salary](/how-much-do-motel-managers-make/) (**$75,000 to $90,000**) *plus* you collect 100% of the remaining net profit.
+- **The Owner-Operator Model (Hands-On):** You handle the front desk, deal with housekeeping staff, manage linen, tackle basic maintenance, and clean rooms yourself. In this setup, you pay yourself a [baseline motel manager’s salary](/blog/how-much-do-motel-managers-make/) (**$75,000 to $90,000**) *plus* you collect 100% of the remaining net profit.
 - **The Passive Investor Model (Hands-Off):** You hire an on-site manager or management couple to handle daily operations, paying them a competitive market salary ($75,000–$90,000 plus housing perks). You take zero wage and rely entirely on whatever net profit is left over after paying all staff and expenses.
 
 **Important Distinction:** A "Passive Investor Model" running an operational motel is still distinct from buying a **Passive Freehold** (where you simply own the land, lease the building to a tenant, and collect rent without touching business operations at all). Here, we are talking about owning the hospitality business itself and paying someone else to run it.

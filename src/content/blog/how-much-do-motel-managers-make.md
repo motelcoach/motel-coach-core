@@ -28,11 +28,11 @@ For a Level 5 supervisor or a Duty Manager, the base hourly rate sits between $2
 
 ### The 125% Rule (Salary Absorption)
 
-Most professional motel management roles use the "Salary Absorption" model. To legally roll overtime and penalties into a single flat salary, an employer must pay you at least 125% of the Managerial Staff base.
+Most professional [motel management](/motel-management/) roles use the "Salary Absorption" model. To legally roll overtime and penalties into a single flat salary, an employer must pay you at least 125% of the Managerial Staff base.
 
 ### For the 2025–2026 financial year
 
-The minimum legal threshold for an absorbed salary is $75,915 plus superannuation. If you are offered less than this for a "live-in" management role that expects 24/7 availability, the offer is likely non-compliant with the [Better Off Overall Test]([https://www.fwc.gov.au/better-off-overall-test](https://www.fwc.gov.au/better-off-overall-test)).
+The minimum legal threshold for an absorbed salary is $75,915 plus superannuation. If you are offered less than this for a "live-in" management role that expects 24/7 availability, the offer is likely non-compliant with the [Better Off Overall Test](https://www.fwc.gov.au/better-off-overall-test).
 
 ### Regional Premiums: Where the Real Money Is
 
@@ -82,4 +82,4 @@ In 2026, a competent motel manager or couple should expect a package exceeding $
 
 ## Looking to Recruit a new Manager?
 
-Contact the Motel Coach team today. [Recruiting the right Motel Manager](/motel-manager-recruitment/) is critical for protecting your investment. If your looking for a new motel role, Motel Coach regularly has [motel manager jobs](/motel-manager-jobs/) available - submit your CV today.
+Contact the Motel Coach team today. [Recruiting the right Motel Manager](/motel-manager-recruitment/) is critical for protecting your investment. If your looking for a new motel role, Motel Coach regularly has [motel manager jobs](/blog/motel-manager-jobs/) available - submit your CV today.
