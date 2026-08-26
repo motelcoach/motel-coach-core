@@ -1,5 +1,4 @@
 ---
-// You will replace the src with your local /images/legacy/... paths
 const partners = [
   { name: "GuestPoint", src: "/images/legacy/GuestPoint-PMS.webp" },
   { name: "Casa Nostra Motel", src: "/images/legacy/Casa-Nostra-Motel-Logo.webp" },
@@ -7,8 +6,12 @@ const partners = [
   { name: "Alan Cunningham Motel", src: "/images/legacy/Allan-Cunningham-Motel_Logo.webp" },
   { name: "SiteMinder", src: "/images/legacy/siteminder-motel-channel-manager.webp" },
   { name: "Accom News", src: "/images/legacy/motel-management-news.webp" },
-  { name: "True Blue Motor Inn", src: "/images/legacy/True-Blue-Motor-Inn.webp" }, 
-  { name: "Casa Nostra Motel Mackay", src: "/images/legacy/Casa-Nostra-Mackay-Motel-Logo.webp" } 
+  { name: "True Blue Motor Inn", src: "/images/legacy/True-Blue-Motor-Inn.webp" },
+  { name: "Casa Nostra Motel Mackay", src: "/images/legacy/Casa-Nostra-Mackay-Motel-Logo.webp" },
+  { name: "Kismet Hotel", src: "/images/legacy/Kismet-Hotel-Logo.png", dark: true },
+  { name: "Southport Shores Motel", src: "/images/legacy/Southport-Shores-Motel-Logo.png" },
+  { name: "Miami Motel", src: "/images/legacy/Miami-Motel-Logo.png", dark: true },
+  { name: "Centrepoint Motel", src: "/images/legacy/Centrepoint-Motel-Logo.png" },
 ];
 ---
 
@@ -29,11 +32,12 @@ const partners = [
             alt={`${partner.name} - Motel Coach Partner`} 
             width="200"
             height="80"
-            /* mix-blend-multiply removes white backgrounds from JPEGs.
-              grayscale + opacity-50 creates the uniform "tint".
-              group-hover reverses it back to the brand's true colors.
-            */
-            class="max-h-full max-w-full object-contain filter grayscale opacity-50 mix-blend-multiply transition-all duration-400 ease-in-out group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 group-hover:drop-shadow-sm"
+            class:list={[
+              "max-h-full max-w-full object-contain transition-all duration-400 ease-in-out group-hover:opacity-100 group-hover:scale-105 group-hover:drop-shadow-sm",
+              partner.dark
+                ? "rounded-md opacity-70 grayscale group-hover:grayscale-0"
+                : "filter grayscale opacity-50 mix-blend-multiply group-hover:grayscale-0",
+            ]}
             loading="lazy"
           />
         </div>
