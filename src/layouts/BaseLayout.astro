@@ -454,6 +454,46 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
         });
       })();
 
+      // --- Generic Zapier contact forms (e.g. blog lead forms) ---
+      (function () {
+        document.addEventListener('submit', function (e) {
+          var form = e.target.closest('.zapier-contact-form');
+          if (!form) return;
+          e.preventDefault();
+
+          var honeypot = form.querySelector('input[name="last_name_verification"]');
+          if (honeypot && honeypot.value) return;
+
+          var submitBtn = form.querySelector('button[type="submit"]');
+          var originalLabel = submitBtn ? submitBtn.textContent.trim() : 'Submit';
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending\u2026';
+          }
+
+          var formData = new FormData(form);
+          fetch(form.action, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString(),
+          })
+            .then(function () {
+              var successSel = form.getAttribute('data-success');
+              var successEl = successSel ? document.querySelector(successSel) : null;
+              form.classList.add('hidden');
+              if (successEl) successEl.classList.remove('hidden');
+            })
+            .catch(function (err) {
+              console.error('Form submission error:', err);
+              if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalLabel;
+              }
+            });
+        });
+      })();
+
 
     </script>
 
