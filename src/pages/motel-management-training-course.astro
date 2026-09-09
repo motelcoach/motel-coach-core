@@ -2,8 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEntry } from 'astro:content';
 import LucideIcon from '../components/LucideIcon.astro';
+import EnrollmentPulse from '../components/EnrollmentPulse.astro';
+import PartnerGrid from '../components/PartnerGrid.astro';
+import { courseStats, courseTracks, seatsRemaining, trackHref } from '../data/course-tracks';
 
 const entry = await getEntry('pages', 'motel-management-training-course');
+const onlineTracks = courseTracks.filter((track) => track.id !== 'level-3');
+const intensiveTrack = courseTracks.find((track) => track.id === 'level-3');
+const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i < courseStats.level3SeatsTaken);
 ---
 
 <head>
@@ -29,38 +35,44 @@ const entry = await getEntry('pages', 'motel-management-training-course');
       "hasCourseInstance": [
         {
           "@type": "CourseInstance",
-          "name": "Self-Guided Motel Management",
+          "name": "Level 1: The Starter Course",
           "courseMode": "online",
-          "description": "Self-guided access to the full motel management syllabus without formal assessment.",
+          "description": "Self-paced motel management toolkit with the Essential Guide, operational templates, and Guestpoint PMS access. Does not include a completion certificate.",
           "offers": {
             "@type": "Offer",
-            "price": "89",
+            "price": "175",
             "priceCurrency": "AUD",
             "availability": "https://schema.org/InStock"
           }
         },
         {
           "@type": "CourseInstance",
-          "name": "Self-Guided + Testing",
+          "name": "Level 2: The Complete Course",
           "courseMode": "online",
-          "description": "Self-guided learning with assessments and certificate of completion.",
+          "description": "Self-paced motel management training plus Guestpoint PMS access and three hours of live group coaching.",
           "offers": {
             "@type": "Offer",
-            "price": "189",
+            "price": "975",
             "priceCurrency": "AUD",
             "availability": "https://schema.org/InStock"
           }
         },
         {
           "@type": "CourseInstance",
-          "name": "Priority Course with 1:1 Coaching",
-          "courseMode": "online",
-          "description": "Intensive motel management course with 1:1 coaching and implementation support.",
+          "name": "Level 3: The On-Site Relief Manager Intensive",
+          "courseMode": "onsite",
+          "location": {
+            "@type": "Place",
+            "name": "Centrepoint Motel, Lismore"
+          },
+          "startDate": "2026-11-14",
+          "endDate": "2026-11-15",
+          "description": "Two-day on-site relief manager intensive with accommodation, dual PMS training, certificate, and job placement support. Limited to 10 students.",
           "offers": {
             "@type": "Offer",
-            "price": "675",
+            "price": "2150",
             "priceCurrency": "AUD",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/LimitedAvailability"
           }
         }
       ],
@@ -68,26 +80,26 @@ const entry = await getEntry('pages', 'motel-management-training-course');
       "offers": [
         {
           "@type": "Offer",
-          "name": "Self-Guided Motel Management",
-          "price": "89",
+          "name": "Level 1: The Starter Course",
+          "price": "175",
           "priceCurrency": "AUD",
           "availability": "https://schema.org/InStock",
           "url": "https://motelcoach.com.au/motel-management-training-course/"
         },
         {
           "@type": "Offer",
-          "name": "Self-Guided + Testing",
-          "price": "189",
+          "name": "Level 2: The Complete Course",
+          "price": "975",
           "priceCurrency": "AUD",
           "availability": "https://schema.org/InStock",
           "url": "https://motelcoach.com.au/motel-management-training-course/"
         },
         {
           "@type": "Offer",
-          "name": "Priority Course with 1:1 Coaching",
-          "price": "675",
+          "name": "Level 3: The On-Site Relief Manager Intensive",
+          "price": "2150",
           "priceCurrency": "AUD",
-          "availability": "https://schema.org/InStock",
+          "availability": "https://schema.org/LimitedAvailability",
           "url": "https://motelcoach.com.au/motel-management-training-course/"
         }
       ],
@@ -136,7 +148,7 @@ const entry = await getEntry('pages', 'motel-management-training-course');
           "name": "Do I get a certificate?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our base Self-Guided course does not include a certificate. The Self-Guided + Testing and Priority Course options provide a certificate of completion once you meet the required competency, and we support any students who need extra help to get there."
+            "text": "Level 1 includes Guestpoint PMS access and does not include a completion certificate. Level 3, the On-Site Relief Manager Intensive, includes an official certificate of completion as proof of practical, on-site competency."
           }
         },
         {
@@ -199,7 +211,7 @@ const entry = await getEntry('pages', 'motel-management-training-course');
                 <span class="mt-1 h-6 w-6 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
                   <LucideIcon name="check-circle-2" size={18} class="text-[#4A554E]" />
                 </span>
-                <span><strong class="text-stone-900">Certificate included</strong><br />Receive a certificate of completion when you meet course competency.</span>
+                <span><strong class="text-stone-900">Recommended by GuestPoint</strong><br />Motel Coach is a recommended consultant and trainer by <a href="https://www.guestpoint.com/resources/relief-managers/" class="text-[#4A554E] font-medium hover:underline">GuestPoint</a>.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="mt-1 h-6 w-6 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
@@ -223,9 +235,12 @@ const entry = await getEntry('pages', 'motel-management-training-course');
 <!-- 6. Google Reviews -->
   <section class="bg-white py-16 md:py-20 border-t border-stone-200">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10 text-center">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-4 text-center">
         What our students say
       </h2>
+      <p class="text-stone-500 leading-relaxed text-center mb-10 max-w-3xl mx-auto">
+        Google reviews from past motel training and consultancy clients, including hospitality students, motel receptionists, motel managers, and motel owners.
+      </p>
       <script src="https://static.elfsight.com/platform/platform.js" async is:inline></script>
       <div class="elfsight-app-b09bbb90-e770-4872-8334-f5b66579c51e" data-elfsight-app-lazy></div>
     </div>
@@ -238,162 +253,235 @@ const entry = await getEntry('pages', 'motel-management-training-course');
         As featured in Accom News
       </p>
       <p class="text-base text-stone-700 italic font-serif">
-        &quot;How to Win your First 21 Days as a Motel Manager&quot;
+        <a href="https://www.accomnews.com.au/2026/02/how-to-win-your-first-21-days-as-a-motel-manager/" class="hover:text-[#4A554E] transition-colors">
+          &quot;How to Win your First 21 Days as a Motel Manager&quot;
+        </a>
       </p>
     </div>
   </section>
 
-  <!-- 3. Experience Fit + Pricing -->
+  <PartnerGrid />
+
+  <!-- 3. Training Tracks + Pricing -->
   <section id="curriculum" class="bg-white py-24">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10">
-        Motel Training Suitable for All Experience Levels
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-4">
+        The Motel Management Training Tracks
       </h2>
-      <div class="space-y-8">
-        <div class="space-y-3">
-          {[
-            'Inexperienced & aspiring motel managers.',
-            'Experienced managers looking to increase their capabilities.',
-            'Motel owners wanting to develop their on-site management team.',
-          ].map((t) => (
-            <div class="flex items-start gap-3 text-sm text-stone-600">
-              <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                <LucideIcon name="check" size={18} class="text-[#4A554E]" />
-              </span>
-              <span>{t}</span>
-            </div>
-          ))}
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6 mt-8">
-          <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm flex flex-col">
-            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
-              Self-Guided
-            </h3>
-            <p class="text-3xl font-semibold text-stone-900 mb-6">$89</p>
-            
-            <ul class="space-y-4 text-sm text-stone-700 mb-8 flex-grow">
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>Course duration: 7 to 21 days</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>No certificate</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>Self-guided access to the full course content.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>Includes a Motel Management folder with real-world templates and checklists.</span>
-              </li>
-            </ul>
-
-            <a href="https://buy.stripe.com/7sY4gzdZ1gi91ejgZZ6Zy0b" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">
-              Enrol Now
-            </a>
-          </div>
-
-          <div class="relative bg-white border-2 border-[#4A554E] rounded-2xl p-8 shadow-md flex flex-col">
-            <span class="absolute -top-3 left-4 inline-flex items-center rounded-full bg-[#4A554E] px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
-              Most Popular
+      <p class="text-stone-500 leading-relaxed mb-8 max-w-3xl">
+        Choose the track that matches how ready you are to step into a motel: start with the self-paced blueprint, add live software practice, or join the limited on-site intensive in Lismore.
+      </p>
+      <div class="space-y-3 mb-10">
+        {[
+          'Inexperienced & aspiring motel managers.',
+          'Experienced managers looking to increase their capabilities.',
+          'Motel owners wanting to develop their on-site management team.',
+        ].map((t) => (
+          <div class="flex items-start gap-3 text-sm text-stone-600">
+            <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
+              <LucideIcon name="check" size={18} class="text-[#4A554E]" />
             </span>
-            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
-              Self-Guided + Testing
-            </h3>
-            <p class="text-3xl font-semibold text-stone-900 mb-6">$189</p>
-            
-            <ul class="space-y-4 text-sm text-stone-700 mb-8 flex-grow">
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>Course duration: 7 to 21 days</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span class="font-medium">Certificate included</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>Structured assessments to validate your competency.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>Includes a Motel Management folder with real-world templates and checklists.</span>
-              </li>
-            </ul>
+            <span>{t}</span>
+          </div>
+        ))}
+      </div>
 
-            <a href="https://buy.stripe.com/bJecN5bQT7LDe15cJJ6Zy05" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
-              Enrol Now
+      <div class="mb-10">
+        <EnrollmentPulse />
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        {onlineTracks.map((track) => (
+          <div class:list={[
+            'relative bg-white rounded-2xl p-8 shadow-sm flex flex-col',
+            track.featured ? 'border-2 border-[#4A554E] shadow-md' : 'border-2 border-stone-200',
+          ]}>
+            {track.badge && (
+              <span class="absolute -top-3 left-4 inline-flex items-center rounded-full bg-[#4A554E] px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
+                {track.badge}
+              </span>
+            )}
+            <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">{track.level}</p>
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-1">{track.title}</h3>
+            <p class="text-sm text-stone-500 mb-4">{track.subtitle}</p>
+            <div class="mb-2">
+              <p class="text-[10px] font-semibold uppercase tracking-widest text-[#4A554E] mb-1">10% off</p>
+              <p class="flex items-baseline gap-3">
+                <span class="text-lg text-stone-400 line-through">{track.wasPrice}</span>
+                <span class="text-3xl font-semibold text-[#4A554E]">{track.price}</span>
+              </p>
+            </div>
+            {track.id === 'level-1' && (
+              <p class="text-sm text-stone-500 mb-4">{courseStats.activeLevel1} students currently enrolled</p>
+            )}
+            {track.id === 'level-2' && (
+              <p class="text-sm text-stone-500 mb-4">{courseStats.activeLevel2} students currently enrolled</p>
+            )}
+            <p class="text-sm text-stone-600 leading-relaxed mb-6">{track.description}</p>
+            <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">{track.includesHeading}</p>
+            <ul class="space-y-4 text-sm text-stone-700 mb-6 flex-grow">
+              {track.includes.map((item) => (
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
+                    <LucideIcon name="check" size={14} class="text-[#4A554E]" />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            {track.note && (
+              <p class="text-xs text-stone-500 leading-relaxed mb-6">{track.note}</p>
+            )}
+            <a
+              href={trackHref(track)}
+              class:list={[
+                'w-full inline-flex flex-col sm:flex-row items-center justify-center gap-0 sm:gap-2 px-6 py-3.5 text-sm font-semibold rounded-lg transition-colors',
+                track.featured
+                  ? 'bg-[#4A554E] text-white hover:bg-[#3d4640] shadow-sm'
+                  : 'bg-white border-2 border-[#4A554E] text-[#4A554E] hover:bg-[#4A554E] hover:text-white',
+              ]}
+            >
+              <span>{track.ctaLabel}</span>
+              {track.paymentPlans && (
+                <span class="mt-0.5 sm:mt-0 text-[11px] font-medium tracking-wide opacity-90">Payment Plans Available</span>
+              )}
             </a>
           </div>
+        ))}
+      </div>
 
-          <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm flex flex-col">
-            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
-              1:3 Coaching
-            </h3>
-            <p class="text-3xl font-semibold text-stone-900 mb-6">$675</p>
-            
-            <ul class="space-y-4 text-sm text-stone-700 mb-8 flex-grow">
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
+      {intensiveTrack && (
+        <div class="relative mt-6 bg-white border-2 border-stone-200 rounded-2xl p-8 md:p-10 shadow-sm">
+          {intensiveTrack.badge && (
+            <span class="absolute -top-3 left-4 inline-flex items-center rounded-full bg-[#4A554E] px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
+              {intensiveTrack.badge}
+            </span>
+          )}
+          <div class="grid lg:grid-cols-12 gap-10">
+            <div class="lg:col-span-5">
+              <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">{intensiveTrack.level}</p>
+              <h3 class="text-2xl font-semibold text-stone-900 tracking-tight mb-2">{intensiveTrack.title}</h3>
+              <p class="text-sm text-stone-500 mb-4">{intensiveTrack.subtitle}</p>
+              <div class="mb-1">
+                <p class="text-[10px] font-semibold uppercase tracking-widest text-[#4A554E] mb-1">10% off</p>
+                <p class="flex items-baseline gap-3">
+                  <span class="text-lg text-stone-400 line-through">{intensiveTrack.wasPrice}</span>
+                  <span class="text-3xl font-semibold text-[#4A554E]">{intensiveTrack.price}</span>
+                  {intensiveTrack.priceNote && (
+                    <span class="text-base font-medium text-stone-500">{intensiveTrack.priceNote}</span>
+                  )}
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 text-sm text-stone-600 mt-4 mb-4">
+                <span class="inline-flex items-start gap-2">
+                  <LucideIcon name="calendar" size={16} class="text-[#4A554E] mt-0.5 shrink-0" />
+                  Next On-site Course starts {courseStats.intakeLabel}
                 </span>
-                <span>Course duration: 7 to 21 days</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
+                <span class="inline-flex items-start gap-2">
+                  <LucideIcon name="map-pin" size={16} class="text-[#4A554E] mt-0.5 shrink-0" />
+                  {courseStats.intakeLocation}
                 </span>
-                <span class="font-medium">Certificate Included</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span class="font-medium">Max 3 students per group</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>Two full days of intensive coaching with guided implementation support.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span>Includes the full Motel Management folder of templates and real documents.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                  <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-                </span>
-                <span class="font-medium">GuestPoint PMS Access</span>
-              </li>
-            </ul>
-
-            <a href="https://buy.stripe.com/cNi4gz8EHea1f59eRR6Zy06" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">
-              Enrol Now
-            </a>
+              </div>
+              <p class="text-sm text-stone-600 leading-relaxed mb-6">{intensiveTrack.description}</p>
+              <div class="mb-6">
+                <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">
+                  {seatsRemaining} of {courseStats.level3Capacity} seats remaining
+                </p>
+                <div class="flex flex-wrap gap-2" aria-hidden="true">
+                  {seatDots.map((taken) => (
+                    <span class:list={[
+                      'h-3 w-3 rounded-full',
+                      taken ? 'bg-[#4A554E]' : 'bg-stone-200',
+                    ]} />
+                  ))}
+                </div>
+              </div>
+              <a
+                href={trackHref(intensiveTrack)}
+                class="w-full sm:w-auto inline-flex flex-col sm:flex-row items-center justify-center gap-0 sm:gap-2 px-6 py-3.5 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm"
+              >
+                <span>{intensiveTrack.ctaLabel}</span>
+                {intensiveTrack.paymentPlans && (
+                  <span class="mt-0.5 sm:mt-0 text-[11px] font-medium tracking-wide text-white/90">Payment Plans Available</span>
+                )}
+              </a>
+            </div>
+            <div class="lg:col-span-7">
+              <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">{intensiveTrack.includesHeading}</p>
+              <ul class="space-y-4 text-sm text-stone-700">
+                {intensiveTrack.includes.map((item) => (
+                  <li class="flex items-start gap-3">
+                    <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
+                      <LucideIcon name="check" size={14} class="text-[#4A554E]" />
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
+        </div>
+      )}
+
+      <div class="mt-12 bg-[#F9F9F8] border border-stone-200 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-4">
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
+          <LucideIcon name="shield-check" size={20} class="text-[#4A554E]" />
+        </span>
+        <div>
+          <p class="font-semibold text-stone-900">10-day money-back guarantee</p>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            If the course is not the right fit, you can request a refund within 10 days. You still keep access to our community and can ask motel questions after that.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tangible proof: book, software, live motel -->
+  <section class="bg-[#F9F9F8] py-24 border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-4">
+        Proof this is built for a real motel desk
+      </h2>
+      <p class="text-stone-500 leading-relaxed mb-10 max-w-3xl">
+        The course is not a generic hospitality lecture. It is the same operating kit we use with independent motels, plus software practice and an on-site intake at a working property.
+      </p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border border-stone-200 rounded-2xl p-8 shadow-sm">
+          <img
+            src="/the-essential-guide-to-motel-management.png"
+            alt="The Essential Guide to Motel Management"
+            class="w-28 h-auto mb-6 rounded-lg shadow-sm"
+            loading="lazy"
+          />
+          <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">The course textbook</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            Every track includes <a href="/motel-management-book/" class="text-[#4A554E] font-medium hover:underline">The Essential Guide to Motel Management</a> plus the operational template suite used on the desk: checklists, daily procedures, and management templates.
+          </p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-2xl p-8 shadow-sm">
+          <img
+            src="/images/legacy/GuestPoint-PMS.webp"
+            alt="GuestPoint PMS"
+            class="h-10 w-auto object-contain mb-6"
+            loading="lazy"
+          />
+          <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Industry software, not screenshots</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            Motel Coach is a <a href="https://www.guestpoint.com/resources/relief-managers/" class="text-[#4A554E] font-medium hover:underline">recommended GuestPoint consultant and trainer</a>. Level 2 gives you Guestpoint practice. Level 3 adds RMS as well.
+          </p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-2xl p-8 shadow-sm">
+          <img
+            src="/images/legacy/Centrepoint-Motel-Logo.png"
+            alt="Centrepoint Motel Lismore"
+            class="h-10 w-auto object-contain mb-6"
+            loading="lazy"
+          />
+          <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Trained inside a live motel</h3>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            The November intensive runs at Centrepoint Motel in Lismore on the 14th and 15th. You stay on-site, work the real systems, and leave with placement support for relief manager work.
+          </p>
         </div>
       </div>
     </div>
@@ -488,7 +576,7 @@ const entry = await getEntry('pages', 'motel-management-training-course');
             </span>
           </summary>
           <div class="mt-3 text-sm text-stone-500 leading-relaxed">
-            Our base Self-Guided course does not include a certificate. The Self-Guided + Testing and Priority Course options provide a certificate of completion once you meet the required competency, and we support any students who need extra help to get there.
+            Level 1 includes Guestpoint PMS access and does not include a completion certificate. Level 3, the On-Site Relief Manager Intensive, includes an official certificate of completion as proof of your practical, on-site competency.
           </div>
         </details>
 
@@ -601,7 +689,5 @@ const entry = await getEntry('pages', 'motel-management-training-course');
     }
   });
 </script>
-
-  </section>
 </BaseLayout>
 

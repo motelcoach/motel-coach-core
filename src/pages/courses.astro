@@ -7,9 +7,10 @@ const courses = [
     slug: 'motel-management-training-course',
     title: 'Learn Motel Management',
     description: 'Motel Management Training for people with Zero Experience or Owners looking to upskill their on-site management.',
-    format: 'Self-Paced Video',
+    format: 'Self-paced, Online and In-person',
     badge: '01',
     waitlist: false,
+    priceFrom: 'From $175',
   },
   {
     slug: 'learn-guest-point-pms',
@@ -29,13 +30,14 @@ const courses = [
     waitlistHref: '/motel-marketing-course/',
   },
   {
-    slug: 'motel-revenue-management',
+    slug: 'motel-revenue-management-course',
     title: 'Learn Revenue Management',
     description: 'Dynamic pricing, yield optimization, and margin expansion. Stop leaving money on the table with institutional-grade revenue discipline.',
-    format: 'Self-Paced Video',
+    format: 'Interactive',
     badge: '04',
-    waitlist: true,
-    waitlistHref: '/motel-revenue-management-course/',
+    waitlist: false,
+    hidePrice: true,
+    showCertificate: false,
   },
 ];
 ---
@@ -87,8 +89,8 @@ const courses = [
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-6">
         {courses.map((course) => {
-          const href = course.waitlist ? (course.waitlistHref ?? `/contact/?waitlist=${course.slug}`) : `/${course.slug}/`;
-          const ctaText = course.waitlist ? 'Join Waitlist' : 'View Curriculum';
+          const href = course.href ?? (course.waitlist ? (course.waitlistHref ?? `/contact/?waitlist=${course.slug}`) : `/${course.slug}/`);
+          const ctaText = course.cta ?? (course.waitlist ? 'Join Waitlist' : 'View Curriculum');
           return (
             <a
               href={href}
@@ -109,7 +111,9 @@ const courses = [
                 <h2 class="text-xl md:text-2xl font-semibold text-stone-900 tracking-tight group-hover:text-[#4A554E] transition-colors">
                   {course.title}
                 </h2>
-                <span class="text-base font-bold text-[#4A554E] whitespace-nowrap bg-[#4A554E]/15 px-3 py-1.5 rounded-lg">From $89</span>
+                {!course.hidePrice && (
+                  <span class="text-base font-bold text-[#4A554E] whitespace-nowrap bg-[#4A554E]/15 px-3 py-1.5 rounded-lg">{course.priceFrom ?? 'From $89'}</span>
+                )}
               </div>
               <p class="text-stone-500 leading-relaxed mb-4">
                 {course.description}
@@ -117,14 +121,16 @@ const courses = [
               <span class="inline-block text-xs font-medium uppercase tracking-widest text-stone-400 mb-4">
                 {course.format}
               </span>
-              <div class="mb-6">
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-[#4A554E]">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 shrink-0" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                  Certificate on completion
-                </span>
-              </div>
+              {course.showCertificate !== false && (
+                <div class="mb-6">
+                  <span class="inline-flex items-center gap-2 text-sm font-medium text-[#4A554E]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 shrink-0" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                    </svg>
+                    Certificate on completion
+                  </span>
+                </div>
+              )}
               <span class="inline-flex items-center gap-1.5 text-sm font-medium text-[#4A554E] group-hover:text-[#3d4640] transition-colors">
                 {ctaText}
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

@@ -1,0 +1,93 @@
+---
+import LucideIcon from './LucideIcon.astro';
+import { courseStats, seatsRemaining } from '../data/course-tracks';
+---
+
+<div
+  class="bg-[#F9F9F8] border border-stone-200 rounded-2xl p-6 md:p-8"
+  data-enrollment-pulse
+>
+  <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+    <div class="flex items-start gap-3">
+      <span class="mt-1 h-9 w-9 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
+        <LucideIcon name="briefcase" size={18} class="text-[#4A554E]" />
+      </span>
+      <div>
+        <p class="text-3xl font-semibold text-stone-900 tabular-nums" data-count-to={courseStats.managersTrained2026}>
+          {courseStats.managersTrained2026}
+        </p>
+        <p class="text-sm text-stone-500 leading-relaxed">Managers trained in 2026</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-3">
+      <span class="mt-1 h-9 w-9 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
+        <LucideIcon name="users" size={18} class="text-[#4A554E]" />
+      </span>
+      <div>
+        <p class="text-3xl font-semibold text-stone-900 tabular-nums" data-count-to={courseStats.activeLevel1}>
+          {courseStats.activeLevel1}
+        </p>
+        <p class="text-sm text-stone-500 leading-relaxed">Active students in the Starter Course</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-3">
+      <span class="mt-1 h-9 w-9 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
+        <LucideIcon name="users" size={18} class="text-[#4A554E]" />
+      </span>
+      <div>
+        <p class="text-3xl font-semibold text-stone-900 tabular-nums" data-count-to={courseStats.activeLevel2}>
+          {courseStats.activeLevel2}
+        </p>
+        <p class="text-sm text-stone-500 leading-relaxed">Active students in the Complete Course</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-3">
+      <span class="mt-1 h-9 w-9 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
+        <LucideIcon name="user-plus" size={18} class="text-[#4A554E]" />
+      </span>
+      <div>
+        <p class="text-3xl font-semibold text-stone-900 tabular-nums" data-count-to={seatsRemaining}>
+          {seatsRemaining}
+        </p>
+        <p class="text-sm text-stone-500 leading-relaxed">
+          Seats remaining for {courseStats.intakeLabel} ({courseStats.level3SeatsTaken} enrolled)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const root = document.querySelector('[data-enrollment-pulse]');
+  if (root) {
+    const counters = root.querySelectorAll('[data-count-to]');
+    const animate = (el) => {
+      const target = Number(el.getAttribute('data-count-to')) || 0;
+      const duration = 900;
+      const start = performance.now();
+      el.textContent = '0';
+      const step = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        el.textContent = String(Math.round(target * progress));
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          counters.forEach(animate);
+          observer.disconnect();
+        });
+      },
+      { threshold: 0.4 },
+    );
+
+    observer.observe(root);
+  }
+</script>

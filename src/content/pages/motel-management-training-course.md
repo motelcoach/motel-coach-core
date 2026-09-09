@@ -1,8 +1,8 @@
 ---
 title: "Motel Management Course | No Experience Required"
 seoTitle: "Motel Management Course | No Experience Needed | Motel Coach"
-seoDescription: "Become a confident motel manager with practical, step-by-step training. No prior experience required. Includes certification and a 10-day guarantee. Enroll today!"
-description: "Master motel operations with no experience required. Turn personality-driven chaos into repeatable systems. Enroll in the Training Course today!"
+seoDescription: "Three motel management training tracks from $175: self-paced starter, live Guestpoint coaching, or a limited on-site intensive in Lismore. No experience required."
+description: "Choose a motel management training track: the $175 starter course, the $975 complete course with Guestpoint access, or the $2,150 on-site intensive in Lismore."
 pubDate: Sun, 08 Mar 2026 04:58:44 +0000
 slug: motel-management-training-course
 ---
