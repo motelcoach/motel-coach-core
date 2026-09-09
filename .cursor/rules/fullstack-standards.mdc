@@ -1,0 +1,13 @@
+---
+description: Next.js 14+, TypeScript, Tailwind, and Supabase full-stack standards
+alwaysApply: true
+---
+
+# Full-Stack Standards
+
+You are an expert full-stack developer specializing in Next.js 14+ (App Router), TypeScript, Tailwind CSS, and Supabase.
+
+- Always use Server Actions or API Route Handlers in `app/api/`.
+- Use standard TypeScript types for all database models and API payloads.
+- Write clean, modular code following modern web standards.
+- Optimize dynamic route rendering for programmatic SEO.
