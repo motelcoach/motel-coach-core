@@ -1,13 +1,15 @@
 ---
 import LucideIcon from './LucideIcon.astro';
-import { courseStats, seatsRemaining } from '../data/course-tracks';
+import { courseStats, courseTracks, seatsRemaining } from '../data/course-tracks';
+
+const showIntensive = courseTracks.some((track) => track.id === 'level-3' && !track.hidden);
 ---
 
 <div
   class="bg-[#F9F9F8] border border-stone-200 rounded-2xl p-6 md:p-8"
   data-enrollment-pulse
 >
-  <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+  <div class:list={['grid gap-6 sm:grid-cols-2', showIntensive ? 'xl:grid-cols-4' : 'xl:grid-cols-3']}>
     <div class="flex items-start gap-3">
       <span class="mt-1 h-9 w-9 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
         <LucideIcon name="briefcase" size={18} class="text-[#4A554E]" />
@@ -28,7 +30,7 @@ import { courseStats, seatsRemaining } from '../data/course-tracks';
         <p class="text-3xl font-semibold text-stone-900 tabular-nums" data-count-to={courseStats.activeLevel1}>
           {courseStats.activeLevel1}
         </p>
-        <p class="text-sm text-stone-500 leading-relaxed">Active students in the Starter Course</p>
+        <p class="text-sm text-stone-500 leading-relaxed">Active students in Complete Course - Self Guided</p>
       </div>
     </div>
 
@@ -40,23 +42,25 @@ import { courseStats, seatsRemaining } from '../data/course-tracks';
         <p class="text-3xl font-semibold text-stone-900 tabular-nums" data-count-to={courseStats.activeLevel2}>
           {courseStats.activeLevel2}
         </p>
-        <p class="text-sm text-stone-500 leading-relaxed">Active students in the Complete Course</p>
+        <p class="text-sm text-stone-500 leading-relaxed">Active students in Complete Course Premium</p>
       </div>
     </div>
 
-    <div class="flex items-start gap-3">
-      <span class="mt-1 h-9 w-9 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
-        <LucideIcon name="user-plus" size={18} class="text-[#4A554E]" />
-      </span>
-      <div>
-        <p class="text-3xl font-semibold text-stone-900 tabular-nums" data-count-to={seatsRemaining}>
-          {seatsRemaining}
-        </p>
-        <p class="text-sm text-stone-500 leading-relaxed">
-          Seats remaining for {courseStats.intakeLabel} ({courseStats.level3SeatsTaken} enrolled)
-        </p>
+    {showIntensive && (
+      <div class="flex items-start gap-3">
+        <span class="mt-1 h-9 w-9 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E] shrink-0">
+          <LucideIcon name="user-plus" size={18} class="text-[#4A554E]" />
+        </span>
+        <div>
+          <p class="text-3xl font-semibold text-stone-900 tabular-nums" data-count-to={seatsRemaining}>
+            {seatsRemaining}
+          </p>
+          <p class="text-sm text-stone-500 leading-relaxed">
+            Seats remaining for {courseStats.intakeLabel} ({courseStats.level3SeatsTaken} enrolled)
+          </p>
+        </div>
       </div>
-    </div>
+    )}
   </div>
 </div>
 

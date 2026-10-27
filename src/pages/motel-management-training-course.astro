@@ -7,8 +7,8 @@ import PartnerGrid from '../components/PartnerGrid.astro';
 import { courseStats, courseTracks, seatsRemaining, trackHref } from '../data/course-tracks';
 
 const entry = await getEntry('pages', 'motel-management-training-course');
-const onlineTracks = courseTracks.filter((track) => track.id !== 'level-3');
-const intensiveTrack = courseTracks.find((track) => track.id === 'level-3');
+const onlineTracks = courseTracks.filter((track) => track.id !== 'level-3' && !track.hidden);
+const intensiveTrack = courseTracks.find((track) => track.id === 'level-3' && !track.hidden);
 const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i < courseStats.level3SeatsTaken);
 ---
 
@@ -35,7 +35,7 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
       "hasCourseInstance": [
         {
           "@type": "CourseInstance",
-          "name": "Level 1: The Starter Course",
+          "name": "Level 1: Complete Course - Self Guided",
           "courseMode": "online",
           "description": "Self-paced motel management toolkit with the Essential Guide, operational templates, and Guestpoint PMS access. Does not include a completion certificate.",
           "offers": {
@@ -47,32 +47,15 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
         },
         {
           "@type": "CourseInstance",
-          "name": "Level 2: The Complete Course",
+          "name": "Level 2: Complete Course Premium",
           "courseMode": "online",
           "description": "Self-paced motel management training plus Guestpoint PMS access and three hours of live group coaching.",
           "offers": {
             "@type": "Offer",
-            "price": "975",
+            "price": "475",
             "priceCurrency": "AUD",
-            "availability": "https://schema.org/InStock"
-          }
-        },
-        {
-          "@type": "CourseInstance",
-          "name": "Level 3: The On-Site Relief Manager Intensive",
-          "courseMode": "onsite",
-          "location": {
-            "@type": "Place",
-            "name": "Centrepoint Motel, Lismore"
-          },
-          "startDate": "2026-11-14",
-          "endDate": "2026-11-15",
-          "description": "Two-day on-site relief manager intensive with accommodation, dual PMS training, certificate, and job placement support. Limited to 10 students.",
-          "offers": {
-            "@type": "Offer",
-            "price": "2150",
-            "priceCurrency": "AUD",
-            "availability": "https://schema.org/LimitedAvailability"
+            "availability": "https://schema.org/InStock",
+            "url": "https://book.stripe.com/6oU14ncUXaXP7CHcJJ6Zy0k"
           }
         }
       ],
@@ -80,7 +63,7 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
       "offers": [
         {
           "@type": "Offer",
-          "name": "Level 1: The Starter Course",
+          "name": "Level 1: Complete Course - Self Guided",
           "price": "175",
           "priceCurrency": "AUD",
           "availability": "https://schema.org/InStock",
@@ -88,19 +71,11 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
         },
         {
           "@type": "Offer",
-          "name": "Level 2: The Complete Course",
-          "price": "975",
+          "name": "Level 2: Complete Course Premium",
+          "price": "475",
           "priceCurrency": "AUD",
           "availability": "https://schema.org/InStock",
-          "url": "https://motelcoach.com.au/motel-management-training-course/"
-        },
-        {
-          "@type": "Offer",
-          "name": "Level 3: The On-Site Relief Manager Intensive",
-          "price": "2150",
-          "priceCurrency": "AUD",
-          "availability": "https://schema.org/LimitedAvailability",
-          "url": "https://motelcoach.com.au/motel-management-training-course/"
+          "url": "https://book.stripe.com/6oU14ncUXaXP7CHcJJ6Zy0k"
         }
       ],
       "about": [
@@ -148,7 +123,7 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
           "name": "Do I get a certificate?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Level 1 includes Guestpoint PMS access and does not include a completion certificate. Level 3, the On-Site Relief Manager Intensive, includes an official certificate of completion as proof of practical, on-site competency."
+            "text": "Complete Course - Self Guided includes Guestpoint PMS access and does not include a completion certificate."
           }
         },
         {
@@ -269,7 +244,7 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
         The Motel Management Training Tracks
       </h2>
       <p class="text-stone-500 leading-relaxed mb-8 max-w-3xl">
-        Choose the track that matches how ready you are to step into a motel: start with the self-paced blueprint, add live software practice, or join the limited on-site intensive in Lismore.
+        Choose the track that matches how ready you are to step into a motel: start with the self-paced course, or add live software practice and coaching.
       </p>
       <div class="space-y-3 mb-10">
         {[
@@ -305,7 +280,7 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
             <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-1">{track.title}</h3>
             <p class="text-sm text-stone-500 mb-4">{track.subtitle}</p>
             <div class="mb-2">
-              <p class="text-[10px] font-semibold uppercase tracking-widest text-[#4A554E] mb-1">10% off</p>
+              <p class="text-[10px] font-semibold uppercase tracking-widest text-[#4A554E] mb-1">{track.discountLabel ?? '10% off'}</p>
               <p class="flex items-baseline gap-3">
                 <span class="text-lg text-stone-400 line-through">{track.wasPrice}</span>
                 <span class="text-3xl font-semibold text-[#4A554E]">{track.price}</span>
@@ -363,7 +338,7 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
               <h3 class="text-2xl font-semibold text-stone-900 tracking-tight mb-2">{intensiveTrack.title}</h3>
               <p class="text-sm text-stone-500 mb-4">{intensiveTrack.subtitle}</p>
               <div class="mb-1">
-                <p class="text-[10px] font-semibold uppercase tracking-widest text-[#4A554E] mb-1">10% off</p>
+                <p class="text-[10px] font-semibold uppercase tracking-widest text-[#4A554E] mb-1">{intensiveTrack.discountLabel ?? '10% off'}</p>
                 <p class="flex items-baseline gap-3">
                   <span class="text-lg text-stone-400 line-through">{intensiveTrack.wasPrice}</span>
                   <span class="text-3xl font-semibold text-[#4A554E]">{intensiveTrack.price}</span>
@@ -444,9 +419,9 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
         Proof this is built for a real motel desk
       </h2>
       <p class="text-stone-500 leading-relaxed mb-10 max-w-3xl">
-        The course is not a generic hospitality lecture. It is the same operating kit we use with independent motels, plus software practice and an on-site intake at a working property.
+        The course is not a generic hospitality lecture. It is the same operating kit we use with independent motels, plus software practice on the systems a real desk uses.
       </p>
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class:list={['grid gap-6', intensiveTrack ? 'md:grid-cols-3' : 'md:grid-cols-2']}>
         <div class="bg-white border border-stone-200 rounded-2xl p-8 shadow-sm">
           <img
             src="/the-essential-guide-to-motel-management.png"
@@ -468,21 +443,23 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
           />
           <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Industry software, not screenshots</h3>
           <p class="text-sm text-stone-500 leading-relaxed">
-            Motel Coach is a <a href="https://www.guestpoint.com/resources/relief-managers/" class="text-[#4A554E] font-medium hover:underline">recommended GuestPoint consultant and trainer</a>. Level 2 gives you Guestpoint practice. Level 3 adds RMS as well.
+            Motel Coach is a <a href="https://www.guestpoint.com/resources/relief-managers/" class="text-[#4A554E] font-medium hover:underline">recommended GuestPoint consultant and trainer</a>. Complete Course Premium gives you Guestpoint practice.
           </p>
         </div>
-        <div class="bg-white border border-stone-200 rounded-2xl p-8 shadow-sm">
-          <img
-            src="/images/legacy/Centrepoint-Motel-Logo.png"
-            alt="Centrepoint Motel Lismore"
-            class="h-10 w-auto object-contain mb-6"
-            loading="lazy"
-          />
-          <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Trained inside a live motel</h3>
-          <p class="text-sm text-stone-500 leading-relaxed">
-            The November intensive runs at Centrepoint Motel in Lismore on the 14th and 15th. You stay on-site, work the real systems, and leave with placement support for relief manager work.
-          </p>
-        </div>
+        {intensiveTrack && (
+          <div class="bg-white border border-stone-200 rounded-2xl p-8 shadow-sm">
+            <img
+              src="/images/legacy/Centrepoint-Motel-Logo.png"
+              alt="Centrepoint Motel Lismore"
+              class="h-10 w-auto object-contain mb-6"
+              loading="lazy"
+            />
+            <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">Trained inside a live motel</h3>
+            <p class="text-sm text-stone-500 leading-relaxed">
+              The November intensive runs at Centrepoint Motel in Lismore on the 14th and 15th. You stay on-site, work the real systems, and leave with placement support for relief manager work.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   </section>
@@ -576,7 +553,7 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
             </span>
           </summary>
           <div class="mt-3 text-sm text-stone-500 leading-relaxed">
-            Level 1 includes Guestpoint PMS access and does not include a completion certificate. Level 3, the On-Site Relief Manager Intensive, includes an official certificate of completion as proof of your practical, on-site competency.
+            Complete Course - Self Guided includes Guestpoint PMS access and does not include a completion certificate.
           </div>
         </details>
 

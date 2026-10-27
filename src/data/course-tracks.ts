@@ -28,6 +28,9 @@ export type CourseTrack = {
   paymentPlans?: boolean;
   featured?: boolean;
   badge?: string;
+  discountLabel?: string;
+  checkoutUrl?: string;
+  hidden?: boolean;
   description: string;
   includesHeading: string;
   includes: string[];
@@ -44,7 +47,7 @@ export const courseTracks: CourseTrack[] = [
   {
     id: 'level-1',
     level: 'Level 1',
-    title: 'The Starter Course',
+    title: 'Complete Course - Self Guided',
     subtitle: 'The DIY Blueprint for Aspiring Motel Managers',
     price: '$175',
     wasPrice: '$195',
@@ -59,20 +62,22 @@ export const courseTracks: CourseTrack[] = [
     ],
     note: 'This tier does not include a completion certificate.',
     ctaLabel: 'Enrol Now',
-    enquireMessage: 'I would like to enrol in Level 1: The Starter Course ($175).',
+    enquireMessage: 'I would like to enrol in Level 1: Complete Course - Self Guided ($175).',
   },
   {
     id: 'level-2',
     level: 'Level 2',
-    title: 'The Complete Course',
+    title: 'Complete Course Premium',
     subtitle: 'Live Guidance & Hands-On Software Experience',
-    price: '$975',
-    wasPrice: '$1,085',
+    price: '$475',
+    wasPrice: '$575',
+    discountLabel: '$100 Off Ends in 7 days',
+    checkoutUrl: 'https://book.stripe.com/6oU14ncUXaXP7CHcJJ6Zy0k',
     paymentPlans: true,
     featured: true,
     badge: 'Most Popular',
     description:
-      'Theory meets practice. The Complete Course is built for individuals who are serious about entering the industry and need hands-on experience with industry-standard Property Management Systems (PMS) to stand out to employers.',
+      'Theory meets practice. Complete Course Premium is built for individuals who are serious about entering the industry and need hands-on experience with industry-standard Property Management Systems (PMS) to stand out to employers.',
     includesHeading: "What's Included",
     includes: [
       'Everything in Level 1: The Essential Guide to Motel Management and all self-paced training modules (7-21 days).',
@@ -80,11 +85,12 @@ export const courseTracks: CourseTrack[] = [
       'Live Group Coaching (3 Hours): workshop real operational scenarios, troubleshoot your software questions, and cover the nuances of guest relations.',
     ],
     ctaLabel: 'Enrol Now',
-    enquireMessage: 'I would like to enrol in Level 2: The Complete Course ($975).',
+    enquireMessage: 'I would like to enrol in Level 2: Complete Course Premium ($475).',
   },
   {
     id: 'level-3',
     level: 'Level 3',
+    hidden: true,
     title: 'The On-Site Relief Manager Intensive',
     subtitle: 'Total Immersion, Software Mastery & Career Placement',
     price: '$2,150',
@@ -111,5 +117,6 @@ export const courseTracks: CourseTrack[] = [
 ];
 
 export function trackHref(track: CourseTrack) {
+  if (track.checkoutUrl) return track.checkoutUrl;
   return enquireHref(track.enquireMessage);
 }
