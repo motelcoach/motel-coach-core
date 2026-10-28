@@ -1,8 +1,8 @@
 ---
 title: "Motel Management Course | No Experience Required"
 seoTitle: "Motel Management Course | No Experience Needed | Motel Coach"
-seoDescription: "Motel management training with no experience required. Complete Course - Self Guided from $175, or Complete Course Premium at $475 with live guidance."
-description: "Choose Complete Course - Self Guided ($175) or Complete Course Premium ($475, $100 off for 7 days) with Guestpoint access and live coaching."
+seoDescription: "Motel management training with no experience required. Complete Course - Self Guided is $475, or Complete Course Premium is $975 with live guidance. Save $100 for 7 days."
+description: "Choose Complete Course - Self Guided ($475) or Complete Course Premium ($975). Save $100 on both motel management courses for 7 days."
 pubDate: Sun, 08 Mar 2026 04:58:44 +0000
 slug: motel-management-training-course
 ---

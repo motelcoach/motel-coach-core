@@ -1,0 +1,58 @@
+<div class="mb-8 rounded-2xl bg-[#4A554E] px-6 py-6 text-center text-white">
+  <p class="text-sm md:text-base font-semibold tracking-tight">
+    Save $100 on all Motel Management Courses - Ends in 7 days
+  </p>
+  <div
+    class="mt-4 flex items-start justify-center gap-2 sm:gap-4"
+    data-course-countdown
+    role="timer"
+    aria-label="Time remaining on the $100 course saving"
+  >
+    <div class="min-w-[3.25rem]">
+      <p class="text-2xl font-semibold tabular-nums" data-countdown-days>07</p>
+      <p class="text-[10px] uppercase tracking-widest text-white/70">Days</p>
+    </div>
+    <div class="min-w-[3.25rem]">
+      <p class="text-2xl font-semibold tabular-nums" data-countdown-hours>00</p>
+      <p class="text-[10px] uppercase tracking-widest text-white/70">Hours</p>
+    </div>
+    <div class="min-w-[3.25rem]">
+      <p class="text-2xl font-semibold tabular-nums" data-countdown-minutes>00</p>
+      <p class="text-[10px] uppercase tracking-widest text-white/70">Mins</p>
+    </div>
+    <div class="min-w-[3.25rem]">
+      <p class="text-2xl font-semibold tabular-nums" data-countdown-seconds>00</p>
+      <p class="text-[10px] uppercase tracking-widest text-white/70">Secs</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const countdowns = document.querySelectorAll('[data-course-countdown]');
+  if (countdowns.length) {
+    const cycleMs = 7 * 24 * 60 * 60 * 1000;
+    const epoch = Date.parse('2026-10-28T06:00:00+10:00');
+    const pad = (value) => String(value).padStart(2, '0');
+
+    const tick = () => {
+      const elapsed = Date.now() - epoch;
+      const intoCycle = ((elapsed % cycleMs) + cycleMs) % cycleMs;
+      const left = cycleMs - intoCycle;
+      const totalSeconds = Math.floor(left / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+
+      countdowns.forEach((countdown) => {
+        countdown.querySelector('[data-countdown-days]').textContent = pad(days);
+        countdown.querySelector('[data-countdown-hours]').textContent = pad(hours);
+        countdown.querySelector('[data-countdown-minutes]').textContent = pad(minutes);
+        countdown.querySelector('[data-countdown-seconds]').textContent = pad(seconds);
+      });
+    };
+
+    tick();
+    setInterval(tick, 1000);
+  }
+</script>

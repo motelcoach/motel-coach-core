@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEntry } from 'astro:content';
 import LucideIcon from '../components/LucideIcon.astro';
+import CourseOfferCountdown from '../components/CourseOfferCountdown.astro';
 
 const entry = await getEntry('pages', 'learn-guest-point-pms');
 ---
@@ -160,50 +161,13 @@ const entry = await getEntry('pages', 'learn-guest-point-pms');
   </section>
 
   <!-- 3b. Pricing Options -->
-  <section class="bg-white pb-24">
+  <section id="pricing" class="bg-white pb-24">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-2xl md:text-3xl font-semibold text-stone-900 tracking-tight text-balance mb-10">
         Choose How You Want to Learn
       </h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white border-2 border-stone-200 rounded-2xl p-8 shadow-sm flex flex-col">
-          <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
-            Self-Guided
-          </h3>
-          <p class="text-3xl font-semibold text-stone-900 mb-6">$195</p>
-          
-          <ul class="space-y-4 text-sm text-stone-700 mb-8 flex-grow">
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-              </span>
-              <span>Course duration: 7–21 days</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-              </span>
-              <span>No certificate</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-              </span>
-              <span>Self-guided access to the full GuestPoint PMS content.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-[#4A554E]/10 text-[#4A554E]">
-                <LucideIcon name="check" size={14} class="text-[#4A554E]" />
-              </span>
-              <span>Includes a Motel Management folder with real-world templates and checklists.</span>
-            </li>
-          </ul>
-          
-          <a href="https://buy.stripe.com/8x29AT2gj4zr5uz2556Zy0a" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">
-            Enrol Now
-          </a>
-        </div>
-
+      <CourseOfferCountdown />
+      <div class="grid md:grid-cols-2 gap-6">
         <div class="relative bg-white border-2 border-[#4A554E] rounded-2xl p-8 shadow-md flex flex-col">
           <span class="absolute -top-3 left-4 inline-flex items-center rounded-full bg-[#4A554E] px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
             Most Popular
@@ -211,7 +175,13 @@ const entry = await getEntry('pages', 'learn-guest-point-pms');
           <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
             Self-Guided + Testing
           </h3>
-          <p class="text-3xl font-semibold text-stone-900 mb-6">$395</p>
+          <div class="mb-6">
+            <p class="text-[10px] font-semibold uppercase tracking-widest text-[#4A554E] mb-1">Save $100</p>
+            <p class="flex items-baseline gap-3">
+              <span class="text-lg text-stone-400 line-through">$575</span>
+              <span class="text-3xl font-semibold text-[#4A554E]">$475</span>
+            </p>
+          </div>
           
           <ul class="space-y-4 text-sm text-stone-700 mb-8 flex-grow">
             <li class="flex items-start gap-3">
@@ -240,7 +210,7 @@ const entry = await getEntry('pages', 'learn-guest-point-pms');
             </li>
           </ul>
 
-          <a href="https://buy.stripe.com/aFacN52gjc1TbSX4dd6Zy09" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
+          <a href="https://buy.stripe.com/aFa4gzbQTd5Xg9dcJJ6Zy0n" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-[#4A554E] text-white text-sm font-semibold rounded-lg hover:bg-[#3d4640] transition-colors shadow-sm">
             Enrol Now
           </a>
         </div>
@@ -249,7 +219,13 @@ const entry = await getEntry('pages', 'learn-guest-point-pms');
           <h3 class="text-lg font-semibold text-stone-900 tracking-tight mb-2">
             1:3 Coaching
           </h3>
-          <p class="text-3xl font-semibold text-stone-900 mb-6">$675</p>
+          <div class="mb-6">
+            <p class="text-[10px] font-semibold uppercase tracking-widest text-[#4A554E] mb-1">Save $100</p>
+            <p class="flex items-baseline gap-3">
+              <span class="text-lg text-stone-400 line-through">$1,075</span>
+              <span class="text-3xl font-semibold text-[#4A554E]">$975</span>
+            </p>
+          </div>
           
           <ul class="space-y-4 text-sm text-stone-700 mb-8 flex-grow">
             <li class="flex items-start gap-3">
@@ -290,7 +266,7 @@ const entry = await getEntry('pages', 'learn-guest-point-pms');
             </li>
           </ul>
 
-          <a href="https://buy.stripe.com/dRm8wP4oraXPe15aBB6Zy08" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">
+          <a href="https://buy.stripe.com/dRm6oH6wz7LDcX13996Zy0m" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white border-2 border-[#4A554E] text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-[#4A554E] hover:text-white transition-colors">
             Enrol Now
           </a>
         </div>
@@ -410,7 +386,7 @@ const entry = await getEntry('pages', 'learn-guest-point-pms');
     <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <div>
         <h2 class="text-xl font-semibold text-white">Enrol in Our GuestPoint PMS Course</h2>
-        <p class="text-stone-300 text-sm mt-1">From $195 &nbsp;·&nbsp; 10-day money-back guarantee</p>
+        <p class="text-stone-300 text-sm mt-1">From $475 &nbsp;·&nbsp; 10-day money-back guarantee</p>
       </div>
       <a href="#pricing" class="flex-shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#4A554E] text-sm font-bold rounded-lg hover:bg-stone-100 transition-colors shadow-sm whitespace-nowrap">
         View Pricing &amp; Enrol

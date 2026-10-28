@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEntry } from 'astro:content';
 import LucideIcon from '../components/LucideIcon.astro';
 import EnrollmentPulse from '../components/EnrollmentPulse.astro';
+import CourseOfferCountdown from '../components/CourseOfferCountdown.astro';
 import PartnerGrid from '../components/PartnerGrid.astro';
 import { courseStats, courseTracks, seatsRemaining, trackHref } from '../data/course-tracks';
 
@@ -40,9 +41,10 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
           "description": "Self-paced motel management toolkit with the Essential Guide, operational templates, and Guestpoint PMS access. Does not include a completion certificate.",
           "offers": {
             "@type": "Offer",
-            "price": "175",
+            "price": "475",
             "priceCurrency": "AUD",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "url": "https://book.stripe.com/6oU14ncUXaXP7CHcJJ6Zy0k"
           }
         },
         {
@@ -52,10 +54,9 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
           "description": "Self-paced motel management training plus Guestpoint PMS access and three hours of live group coaching.",
           "offers": {
             "@type": "Offer",
-            "price": "475",
+            "price": "975",
             "priceCurrency": "AUD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://book.stripe.com/6oU14ncUXaXP7CHcJJ6Zy0k"
+            "availability": "https://schema.org/InStock"
           }
         }
       ],
@@ -64,18 +65,18 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
         {
           "@type": "Offer",
           "name": "Level 1: Complete Course - Self Guided",
-          "price": "175",
-          "priceCurrency": "AUD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://motelcoach.com.au/motel-management-training-course/"
-        },
-        {
-          "@type": "Offer",
-          "name": "Level 2: Complete Course Premium",
           "price": "475",
           "priceCurrency": "AUD",
           "availability": "https://schema.org/InStock",
           "url": "https://book.stripe.com/6oU14ncUXaXP7CHcJJ6Zy0k"
+        },
+        {
+          "@type": "Offer",
+          "name": "Level 2: Complete Course Premium",
+          "price": "975",
+          "priceCurrency": "AUD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://motelcoach.com.au/motel-management-training-course/"
         }
       ],
       "about": [
@@ -264,6 +265,8 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
       <div class="mb-10">
         <EnrollmentPulse />
       </div>
+
+      <CourseOfferCountdown />
 
       <div class="grid md:grid-cols-2 gap-6">
         {onlineTracks.map((track) => (
