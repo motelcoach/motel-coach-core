@@ -87,10 +87,14 @@ Conclusion
 
 Your **motel website** is the only part of your digital presence you truly own. If you are still relying on a slow, 2018-era template, you are donating your profits to the OTAs. Modernize the tech, remove the friction, and watch your direct bookings rise.
 
-<div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+<div class="not-prose border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Website Conversion Audit</h2>
   <p class="text-stone-600 text-sm mb-6">Stop losing direct bookings. Choose how you want to audit your website's performance.</p>
-  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4">
+  <div id="website-opt-success" class="hidden py-6 text-center">
+    <p class="text-lg font-semibold text-stone-900 mb-1">Request received.</p>
+    <p class="text-sm text-stone-500">We'll review your site and email you the next step.</p>
+  </div>
+  <form action="#" method="POST" class="enquiry-form space-y-4" data-success="#website-opt-success">
     <input type="hidden" name="source_page" value="Blog: Website Optimization" />
     <input type="hidden" name="form_type" value="website-audit" />
     <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
@@ -119,7 +123,7 @@ Your **motel website** is the only part of your digital presence you truly own. 
         </label>
       </div>
     </div>
-    <button type="submit" class="w-full px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">
+    <button type="submit" class="w-full px-6 py-3 bg-[#4A554E] !text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] hover:!text-white transition-colors whitespace-nowrap">
       Get My Audit
     </button>
   </form>

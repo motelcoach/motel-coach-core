@@ -86,30 +86,12 @@ Download: Free Maintenance Tracker.
 
 Getting your Maintenance spot on will save you time and money. While it can feel like a lot to put in place proactive systems, ultimately, you will do less and have better results. Start today, download our free Maintenance Tracker.
 
-<div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+<div class="not-prose border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the Free Motel Maintenance Tracker</h2>
-  <p class="text-stone-600 text-sm mb-6">Move your maintenance out of your head and into a system. Enter your email for instant access — no cost, no catch.</p>
-  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4" data-download="/downloads/maintenance-tracker.xlsx">
-    <input type="hidden" name="source_page" value="Blog: Motel Maintenance Schedule" />
-    <input type="hidden" name="form_type" value="maintenance-tracker" />
-    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
-    <div class="flex flex-col sm:flex-row gap-3">
-      <label for="maint-email" class="sr-only">Email address</label>
-      <input id="maint-email" type="email" name="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent" />
-      <label for="maint-exp" class="sr-only">Experience Level</label>
-      <select id="maint-exp" name="motel-experience" required class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent">
-        <option value="" disabled selected>Select Experience Level</option>
-        <option value="No Experience">No Experience</option>
-        <option value="Some Experience">Some Experience</option>
-        <option value="Experienced">Experienced</option>
-        <option value="Motel Owner">Motel Owner</option>
-      </select>
-    </div>
-    <input type="hidden" name="offer_tier" value="free" />
-    <button type="submit" class="w-full px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">
-      Download Free Tracker
-    </button>
-  </form>
+  <p class="text-stone-600 text-sm mb-6">Move your maintenance out of your head and into a system. The spreadsheet is free to download.</p>
+  <a href="/downloads/maintenance-tracker.xlsx" download class="inline-flex items-center justify-center px-6 py-3 bg-[#4A554E] !text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] hover:!text-white hover:!no-underline transition-colors">
+    Download the tracker
+  </a>
 </div>
 <div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
   <p class="text-xs font-semibold uppercase tracking-widest text-[#4A554E] mb-2">Limited Availability</p>

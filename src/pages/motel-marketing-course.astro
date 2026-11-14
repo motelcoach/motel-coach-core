@@ -69,7 +69,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p class="font-semibold text-stone-900 mb-1">You&apos;re on the list!</p>
         <p class="text-sm text-stone-500">We&apos;ll email you first when enrollment opens.</p>
       </div>
-      <form id="marketing-waitlist-form" class="mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" data-reveal="up">
+      <form id="marketing-waitlist-form" class="enquiry-form mt-8 max-w-xl mx-auto flex flex-col sm:flex-row gap-3" action="#" method="POST" data-success="#marketing-waitlist-success" data-reveal="up">
         <input type="hidden" name="source_page" value="Motel Marketing Course" />
         <input type="hidden" name="form_type" value="waitlist" />
         <input type="hidden" name="waitlist" value="motel-marketing-course" />
@@ -108,36 +108,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </p>
     </div>
   </section>
-<script>
-  document.getElementById('marketing-waitlist-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    const original = btn.textContent.trim();
-
-    const honeypot = this.querySelector('input[name="last_name_verification"]');
-    if (honeypot && honeypot.value) return;
-
-    btn.disabled = true;
-    btn.textContent = 'Joining…';
-    try {
-      await fetch(this.action, { 
-        method: 'POST', 
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams(new FormData(this)).toString() 
-      });
-      this.classList.add('hidden');
-      document.getElementById('marketing-waitlist-success').classList.remove('hidden');
-    } catch {
-      btn.disabled = false;
-      btn.textContent = original;
-      alert('Something went wrong. Please try again.');
-    }
-  });
-</script>
-
   <!-- Book CTA for those not ready -->
   <section class="bg-[#F9F9F8] py-12 border-t border-stone-200">
     <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">

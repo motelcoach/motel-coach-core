@@ -51,7 +51,7 @@ We are always looking for good quality motel managers. Enter your contact inform
     <p class="text-xl font-semibold text-stone-900 mb-2">Thanks — we've got your details.</p>
     <p class="text-stone-500 text-sm">We'll be in touch if a suitable position becomes available.</p>
   </div>
-  <form id="manager-jobs-form" class="zapier-contact-form space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" data-success="#manager-jobs-success">
+  <form id="manager-jobs-form" class="enquiry-form space-y-5" action="#" method="POST" data-success="#manager-jobs-success">
     <input type="hidden" name="source_page" value="Motel Manager Jobs" />
     <input type="hidden" name="form_type" value="motel-manager-jobs" />
     <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>

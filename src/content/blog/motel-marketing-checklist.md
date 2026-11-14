@@ -20,48 +20,17 @@ These channels directly intercept guests who are actively searching to book. The
 
 ---
 
-<div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
+<div class="not-prose border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the 2026 Motel Marketing Checklist</h2>
-  <p class="text-stone-600 text-sm mb-6">Enter your email to receive the full spreadsheet checklist plus practical <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> and <a href="/motel-management/" class="text-[#4A554E] font-medium hover:underline">motel management</a> resources direct to your inbox.</p>
-  <form
-    action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/"
-    method="POST"
-    class="global-download-form flex flex-col sm:flex-row gap-3"
-    data-download="https://docs.google.com/spreadsheets/d/1bEKkymOYYejWDxpuSTozMt4Q0s9LDYzhaKVjhfFmrPo/edit?usp=sharing"
+  <p class="text-stone-600 text-sm mb-6">The full spreadsheet checklist is free to open. Use it alongside the <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">motel marketing</a> and <a href="/motel-management/" class="text-[#4A554E] font-medium hover:underline">motel management</a> guides on this site.</p>
+  <a
+    href="https://docs.google.com/spreadsheets/d/1bEKkymOYYejWDxpuSTozMt4Q0s9LDYzhaKVjhfFmrPo/edit?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex items-center justify-center px-6 py-3 bg-[#4A554E] !text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] hover:!text-white hover:!no-underline transition-colors"
   >
-    <input type="hidden" name="source_page" value="Blog: Motel Marketing Checklist" />
-    <input type="hidden" name="form_type" value="checklist-download" />
-    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
-    <label for="dl-email-marketing-checklist" class="sr-only">Email address</label>
-    <input
-      id="dl-email-marketing-checklist"
-      type="email"
-      name="email"
-      required
-      placeholder="you@example.com"
-      class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
-    />
-    <label for="dl-exp-marketing-checklist" class="sr-only">Experience Level</label>
-    <select
-      id="dl-exp-marketing-checklist"
-      name="motel-experience"
-      required
-      class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
-    >
-      <option value="" disabled selected>Select Experience Level</option>
-      <option value="No Experience">No Experience</option>
-      <option value="Some Experience">Some Experience</option>
-      <option value="Experienced">Experienced</option>
-      <option value="Motel Owner">Motel Owner</option>
-    </select>
-    <button
-      type="submit"
-      class="px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap"
-    >
-      Download Checklist
-    </button>
-  </form>
-  <p class="text-xs text-stone-400 mt-3">No spam. Unsubscribe any time. &mdash; Or <a href="https://docs.google.com/spreadsheets/d/1bEKkymOYYejWDxpuSTozMt4Q0s9LDYzhaKVjhfFmrPo/edit?usp=sharing" target="_blank" rel="noopener" class="text-[#4A554E] hover:underline">open directly ↗</a></p>
+    Open the checklist
+  </a>
 </div>
 
 ---

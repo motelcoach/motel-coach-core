@@ -188,41 +188,12 @@ You will usually find roles on:
 
 Many independent motels hire locally and value preparation over hospitality history.
 
-<div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
+<div class="not-prose border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the Free Reception Quick Reference Guide</h2>
   <p class="text-stone-600 text-sm mb-6">See exactly how the daily workflow operates. Perfect for interview prep or your first week on the job.</p>
-  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="/downloads/front-office-checklist.xlsx">
-    <input type="hidden" name="source_page" value="Blog: Motel Receptionist Jobs" />
-    <input type="hidden" name="form_type" value="guide-download" />
-    <input type="hidden" name="topic" value="checklist" />
-    <input type="hidden" name="message" value="Please send me the Front Desk Guide." />
-    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
-    <label for="reception-guide-email" class="sr-only">Email address</label>
-    <input
-      id="reception-guide-email"
-      type="email"
-      name="email"
-      required
-      placeholder="you@example.com"
-      class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
-    />
-    <label for="reception-guide-exp" class="sr-only">Experience Level</label>
-    <select
-      id="reception-guide-exp"
-      name="motel-experience"
-      required
-      class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
-    >
-      <option value="" disabled selected>Select Experience Level</option>
-      <option value="No Experience">No Experience</option>
-      <option value="Some Experience">Some Experience</option>
-      <option value="Experienced">Experienced</option>
-      <option value="Motel Owner">Motel Owner</option>
-    </select>
-    <button type="submit" class="px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">
-      Get the Guide
-    </button>
-  </form>
+  <a href="/downloads/front-office-checklist.xlsx" download class="inline-flex items-center justify-center px-6 py-3 bg-[#4A554E] !text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] hover:!text-white hover:!no-underline transition-colors">
+    Download the guide
+  </a>
 </div>
 
 <div class="not-prose border-2 border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">

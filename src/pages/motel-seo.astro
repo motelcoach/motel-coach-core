@@ -67,7 +67,11 @@ const { Content } = await post.render();
           <h2 class="text-xl font-semibold text-stone-900 tracking-tight text-center mt-2 mb-6">
             Get Actionable SEO Insight for your Motel or Hotel
           </h2>
-          <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="global-download-form space-y-4">
+          <div id="seo-keyword-success" class="hidden py-6 text-center">
+            <p class="text-lg font-semibold text-stone-900 mb-1">Request received.</p>
+            <p class="text-sm text-stone-500">We'll review your site and email the keyword notes within 48 hours.</p>
+          </div>
+          <form action="#" method="POST" class="enquiry-form space-y-4" data-success="#seo-keyword-success">
             <input type="hidden" name="source_page" value="Motel SEO Hero" />
             <input type="hidden" name="form_type" value="keyword-scan" />
             <input type="hidden" name="topic" value="Free Keyword Scan" />

@@ -599,75 +599,17 @@ const seatDots = Array.from({ length: courseStats.level3Capacity }, (_, i) => i 
         Download our Free Motel Guide
       </h3>
       <p class="text-stone-300 leading-relaxed mb-6">
-        By submitting this form, you&apos;ll receive the Motel Management Guide you requested, along with a short series of follow-up emails to help you understand motel management and your next steps. You can unsubscribe at any time.
+        A short guide to the operating basics: channels, staffing, and the daily work of running a motel.
       </p>
-      <div id="course-guide-success" class="hidden py-4">
-        <p class="font-semibold text-white mb-1">Guide on its way!</p>
-        <p class="text-sm text-stone-300">Check your inbox shortly.</p>
-      </div>
-      <form id="course-guide-form" class="space-y-3" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
-        <input type="hidden" name="source_page" value="Motel Management Training Course" />
-        <input type="hidden" name="form_type" value="guide-download" />
-        <div class="hidden" aria-hidden="true">
-          <input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" />
-        </div>
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="you@example.com"
-          class="w-full px-4 py-2.5 rounded-lg border border-white/20 bg-white/10 text-sm text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
-        />
-        <label for="course-guide-exp" class="sr-only">Experience Level</label>
-        <select
-          id="course-guide-exp"
-          name="motel-experience"
-          required
-          class="w-full px-4 py-2.5 rounded-lg border border-white/20 bg-white/10 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
-        >
-          <option value="" disabled selected class="text-stone-900">Select Experience Level</option>
-          <option value="No Experience" class="text-stone-900">No Experience</option>
-          <option value="Some Experience" class="text-stone-900">Some Experience</option>
-          <option value="Experienced" class="text-stone-900">Experienced</option>
-          <option value="Motel Owner" class="text-stone-900">Motel Owner</option>
-        </select>
-        <button
-          type="submit"
-          class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors shadow-sm"
-        >
-          Get the Free Guide
-        </button>
-      </form>
+      <a
+        href="/downloads/how-to-run-a-motel.pdf"
+        download
+        class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#4A554E] text-sm font-semibold rounded-lg hover:bg-stone-100 transition-colors shadow-sm"
+      >
+        Download the free guide
+      </a>
     </div>
   </section>
 
-<script>
-  document.getElementById('course-guide-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    const original = btn.textContent.trim();
-
-    const honeypot = this.querySelector('input[name="last_name_verification"]');
-    if (honeypot && honeypot.value) return;
-
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-    try {
-      await fetch(this.action, { 
-        method: 'POST', 
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams(new FormData(this)).toString() 
-      });
-    } catch {
-      // no-cors fetch errors are expected in some environments; treat as success
-    } finally {
-      this.classList.add('hidden');
-      document.getElementById('course-guide-success').classList.remove('hidden');
-    }
-  });
-</script>
 </BaseLayout>
 

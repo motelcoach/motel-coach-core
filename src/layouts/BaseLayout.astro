@@ -354,8 +354,10 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
     </footer>
 
 
-    <!-- Single merged script: mobile menu + global download form + GTM -->
+    <!-- Single merged script: mobile menu + enquiry forms -->
     <script>
+      import { WEB3FORMS_ACCESS_KEY } from '../lib/web3forms-key';
+
       // --- Mobile menu ---
       (function () {
         var openBtn    = document.getElementById('mobile-menu-open');
@@ -382,83 +384,24 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
         });
       })();
 
-      // --- Global download form handler ---
+      // --- Enquiry forms (Web3Forms) ---
       (function () {
+        var subjects = {
+          'general-contact': 'Motel Coach contact enquiry',
+          'strategy-session': 'Motel Coach strategy session',
+          'phone-call-booking': 'Motel Coach consultancy call',
+          'vacancy-enquiry': 'Motel Coach manager vacancy',
+          'performance-audit': 'Motel Coach performance audit',
+          'buyers-audit': 'Motel Coach buyers audit',
+          'waitlist': 'Motel Coach course waitlist',
+          'website-audit': 'Motel Coach website audit',
+          'keyword-scan': 'Motel Coach keyword scan',
+          'motel-manager-jobs': 'Motel Coach manager application'
+        };
+
         document.addEventListener('submit', function (e) {
-          var form = e.target.closest('.global-download-form');
-          if (!form) return;
-          e.preventDefault();
-
-          var honeypot = form.querySelector('input[name="last_name_verification"]');
-          if (honeypot && honeypot.value) return;
-
-          var downloadUrl = form.getAttribute('data-download');
-          var emailInput  = form.querySelector('input[type="email"]');
-          var submitBtn   = form.querySelector('button[type="submit"]');
-          var email       = emailInput ? emailInput.value.trim() : '';
-          var sourcePage  = (form.querySelector('input[name="source_page"]') || {}).value || window.location.pathname;
-
-          if (!email) return;
-
-          if (submitBtn) {
-            submitBtn.disabled    = true;
-            submitBtn.textContent = 'Sending\u2026';
-          }
-
-          var formData = new FormData(form);
-          if (!formData.has('source_page'))  formData.append('source_page', sourcePage);
-          if (!formData.has('form_type'))    formData.append('form_type', 'guide-download');
-          if (downloadUrl && !formData.has('download_url')) formData.append('download_url', downloadUrl);
-
-          fetch('https://hooks.zapier.com/hooks/catch/26131104/upwyerc/', {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(formData).toString(),
-          })
-            .then(function () {
-              var formType  = formData.get('form_type');
-              var offerTier = formData.get('offer_tier');
-              window.dataLayer = window.dataLayer || [];
-              if (formType === 'strategy-session') {
-                dataLayer.push({ 'event': 'form_submission', 'form_type': 'strategy-session' });
-              }
-              if (offerTier === 'paid') {
-                dataLayer.push({ 'event': 'form_submission', 'form_type': 'paid-audit', 'value': 99.00, 'currency': 'AUD' });
-              }
-              if (formType === 'strategy-session') {
-                window.location.href = '/contact/?submitted=true';
-              } else if (downloadUrl) {
-                window.location.href = downloadUrl;
-              } else {
-                alert('Success! Please check your email for your report.');
-              }
-            })
-            .catch(function (err) {
-              console.error('Form submission error:', err);
-              var formType = formData.get('form_type');
-              if (formType === 'strategy-session') {
-                window.location.href = '/contact/?submitted=true';
-              } else if (downloadUrl) {
-                window.location.href = downloadUrl;
-              } else {
-                alert('Success! Please check your email for your report.');
-              }
-            })
-            .finally(function () {
-              if (submitBtn) {
-                submitBtn.disabled    = false;
-                submitBtn.textContent = 'Download';
-              }
-            });
-        });
-      })();
-
-      // --- Generic Zapier contact forms (e.g. blog lead forms) ---
-      (function () {
-        document.addEventListener('submit', function (e) {
-          var form = e.target.closest('.zapier-contact-form');
-          if (!form) return;
+          var form = e.target && e.target.closest ? e.target.closest('.enquiry-form') : null;
+          if (!form || form.getAttribute('data-sending') === 'true') return;
           e.preventDefault();
 
           var honeypot = form.querySelector('input[name="last_name_verification"]');
@@ -466,30 +409,83 @@ const finalCanonical = resolvedCanonical.toString().replace('www.', '');
 
           var submitBtn = form.querySelector('button[type="submit"]');
           var originalLabel = submitBtn ? submitBtn.textContent.trim() : 'Submit';
+
+          function restoreButton() {
+            form.removeAttribute('data-sending');
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalLabel;
+            }
+          }
+
+          if (!WEB3FORMS_ACCESS_KEY) {
+            alert('This form is not set up yet. Please email contact@motelcoach.com.au.');
+            return;
+          }
+
+          form.querySelectorAll('input[name="website"]').forEach(function (input) {
+            var value = input.value.trim();
+            if (value && !/^https?:\/\//i.test(value)) input.value = 'https://' + value;
+          });
+
+          var payload = {
+            access_key: WEB3FORMS_ACCESS_KEY,
+            from_name: 'Motel Coach website'
+          };
+          new FormData(form).forEach(function (value, key) {
+            if (key === 'last_name_verification' || typeof value !== 'string') return;
+            var trimmed = value.trim();
+            if (trimmed) payload[key] = trimmed;
+          });
+          if (!payload.subject && payload.form_type && subjects[payload.form_type]) {
+            payload.subject = subjects[payload.form_type];
+          }
+          if (!payload.source_page) payload.source_page = window.location.pathname;
+
+          form.setAttribute('data-sending', 'true');
           if (submitBtn) {
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending\u2026';
           }
 
-          var formData = new FormData(form);
-          fetch(form.action, {
+          fetch('https://api.web3forms.com/submit', {
             method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(formData).toString(),
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json'
+            },
+            body: JSON.stringify(payload)
           })
+            .then(function (response) {
+              return response.json().then(function (result) {
+                if (!response.ok || !result || !result.success) {
+                  throw new Error((result && result.message) || 'Send failed');
+                }
+                return result;
+              });
+            })
             .then(function () {
+              window.dataLayer = window.dataLayer || [];
+              dataLayer.push({ event: 'form_submission', form_type: payload.form_type || 'enquiry' });
+              if (payload.offer_tier === 'paid') {
+                dataLayer.push({
+                  event: 'form_submission',
+                  form_type: 'paid-audit',
+                  value: 99,
+                  currency: 'AUD'
+                });
+              }
+
               var successSel = form.getAttribute('data-success');
               var successEl = successSel ? document.querySelector(successSel) : null;
               form.classList.add('hidden');
               if (successEl) successEl.classList.remove('hidden');
+              else alert('Message received. We will reply by email.');
             })
             .catch(function (err) {
               console.error('Form submission error:', err);
-              if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.textContent = originalLabel;
-              }
+              restoreButton();
+              alert('Something went wrong. Please try again or email contact@motelcoach.com.au.');
             });
         });
       })();

@@ -26,28 +26,6 @@ const fullCanonical = new URL(
       <p class="mt-4 text-lg text-stone-500 max-w-2xl leading-relaxed">
         Actionable strategies, checklists, and guides for independent motel operators.
       </p>
-      <form id="blog-subscribe-form" class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" aria-label="Subscribe to blog updates">
-        <input type="hidden" name="source_page" value="Blog Index" />
-        <input type="hidden" name="form_type" value="newsletter" />
-        <div class="hidden" aria-hidden="true">
-          <input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" />
-        </div>
-        <label for="blog-email" class="sr-only">Email address</label>
-        <input
-          id="blog-email"
-          type="email"
-          name="email"
-          placeholder="you@example.com"
-          required
-          class="flex-1 min-w-0 px-4 py-3 rounded-lg border border-stone-200 bg-white text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
-        />
-        <button
-          type="submit"
-          class="px-5 py-3 bg-[#4A554E] text-white font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap"
-        >
-          Get New Guides Free
-        </button>
-      </form>
     </div>
   </header>
 
@@ -98,33 +76,6 @@ const fullCanonical = new URL(
 </BaseLayout>
 
 <script>
-  // Subscribe form
-  document.getElementById('blog-subscribe-form')?.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]') as HTMLButtonElement;
-    const original = btn.textContent!.trim();
-
-    const honeypot = this.querySelector('input[name="last_name_verification"]') as HTMLInputElement;
-    if (honeypot && honeypot.value) return;
-
-    btn.disabled = true;
-    btn.textContent = 'Subscribing…';
-    try {
-      await fetch(this.action, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(this as HTMLFormElement)).toString(),
-      });
-      btn.textContent = 'Subscribed!';
-      (this.querySelector('input[type="email"]') as HTMLInputElement).value = '';
-    } catch {
-      btn.disabled = false;
-      btn.textContent = original;
-      alert('Something went wrong. Please try again.');
-    }
-  });
-
   // Category filter — one attribute write on the grid; CSS does the hiding
   const grid = document.getElementById('blog-grid');
   const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');

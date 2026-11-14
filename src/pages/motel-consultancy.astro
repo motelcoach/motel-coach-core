@@ -229,7 +229,7 @@ This means our success is tied directly to your financial growth. We only win wh
             <p class="text-xl font-semibold text-stone-900 mb-2">Call Booked</p>
             <p class="text-stone-500">We'll be in touch shortly to confirm your call time.</p>
           </div>
-          <form id="consultancy-form" class="space-y-4" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+          <form id="consultancy-form" class="enquiry-form space-y-4" action="#" method="POST" data-success="#consultancy-success">
             <input type="hidden" name="source_page" value="Motel Consultancy" />
             <input type="hidden" name="form_type" value="phone-call-booking" />
             <div class="hidden" aria-hidden="true">
@@ -300,49 +300,5 @@ This means our success is tied directly to your financial growth. We only win wh
       </a>
     </div>
   </section>
-
-  <script>
-    const form = document.getElementById('consultancy-form');
-    if (form) {
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        const btn = this.querySelector('button[type="submit"]');
-        const original = btn.textContent.trim();
-
-        const honeypot = this.querySelector('input[name="last_name_verification"]');
-        if (honeypot && honeypot.value) return;
-
-        const urlInput = this.querySelector('#website');
-        if (urlInput) {
-          let v = urlInput.value.trim();
-          if (v && !/^https?:\/\//i.test(v)) {
-            urlInput.value = 'https://' + v;
-          }
-        }
-
-        btn.disabled = true;
-        btn.textContent = 'Sending...';
-
-        try {
-          await fetch(this.action, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: new URLSearchParams(new FormData(this)).toString()
-          });
-
-          this.classList.add('hidden');
-          document.getElementById('consultancy-success').classList.remove('hidden');
-        } catch (err) {
-          console.error(err);
-          btn.disabled = false;
-          btn.textContent = original;
-          alert('Something went wrong. Please check your connection and try again.');
-        }
-      });
-    }
-  </script>
 
 </BaseLayout>

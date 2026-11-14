@@ -755,9 +755,10 @@ const jsonLd = {
         </div>
         <form
           id="website-audit-form"
-          action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/"
+          action="#"
           method="POST"
-          class="bg-[#F9F9F8] rounded-2xl border border-stone-200 p-8 space-y-4"
+          class="enquiry-form bg-[#F9F9F8] rounded-2xl border border-stone-200 p-8 space-y-4"
+          data-success="#website-audit-success"
           aria-label="Request a motel website audit"
         >
           <input type="hidden" name="source_page" value="Motel Website Design" />
@@ -822,7 +823,7 @@ const jsonLd = {
           </button>
 
           <p class="text-xs text-stone-400 text-center leading-relaxed">
-            By submitting this form, you'll receive your audit results along with a short series of follow-up emails on <a href="/motel-management/">motel management</a> and direct booking strategies. Unsubscribe any time.
+            We'll email a short priority list for your current site. No automated follow-up sequence.
           </p>
         </form>
 
@@ -878,56 +879,6 @@ const jsonLd = {
        BOTTOM CTA
   ═══════════════════════════════════════════ -->
  
-<script>
-  const form = document.getElementById('website-audit-form');
-  if (form) {
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-      const formEl = e.target;
-      const btn = formEl.querySelector('button[type="submit"]');
-      const originalText = btn.textContent.trim();
-
-      const honeypot = formEl.querySelector('input[name="last_name_verification"]');
-      if (honeypot && honeypot.value) return;
-
-      const urlInput = formEl.querySelector('#audit-url');
-      if (urlInput) {
-        let v = urlInput.value.trim();
-        if (v && !/^https?:\/\//i.test(v)) {
-          urlInput.value = 'https://' + v;
-        }
-      }
-
-      btn.disabled = true;
-      btn.textContent = 'Sending...';
-
-      try {
-        const formData = new FormData(formEl);
-        const data = new URLSearchParams(formData);
-
-        await fetch(formEl.action, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: data.toString()
-        });
-
-        btn.textContent = 'Sent Successfully!';
-        formEl.reset();
-        formEl.classList.add('hidden');
-        document.getElementById('website-audit-success').classList.remove('hidden');
-      } catch (err) {
-        console.error(err);
-        btn.disabled = false;
-        btn.textContent = originalText;
-        alert('Something went wrong. Please check your connection and try again.');
-      }
-    });
-  }
-</script>
-
   <!-- Bottom CTA: Direct Contact -->
   <section class="bg-[#F9F9F8] py-14 border-t border-stone-200">
     <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">

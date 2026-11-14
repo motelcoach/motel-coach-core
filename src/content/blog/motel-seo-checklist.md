@@ -21,42 +21,17 @@ OTAs cannot create a Google Business Profile (GBP). This is your only unfair adv
     
 *   **The Review Momentum:** A 4.8-star rating is useless if the last review was three weeks ago. You need **Recency.**
 
-<div class="border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
+<div class="not-prose border-2 border-dashed border-[#4A554E] rounded-2xl p-8 my-10 bg-[#F9F9F8]">
   <h2 class="text-xl font-semibold text-stone-900 mb-2 !mt-0">Download the 2026 Motel SEO Checklist</h2>
-  <p class="text-stone-600 text-sm mb-6">Enter your email to receive the free checklist and other <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">Motel Marketing</a> resources direct to your inbox.</p>
-  <form action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST" class="flex flex-col sm:flex-row gap-3 global-download-form" data-download="https://docs.google.com/spreadsheets/d/1eV9eSvKKhc4JO2lRQ-Kl3MIWU3ZfQBaEsiJHCQWN324/edit?gid=0#gid=0">
-    <input type="hidden" name="source_page" value="Blog: Motel SEO Checklist 2026" />
-    <input type="hidden" name="form_type" value="checklist-download" />
-    <input type="hidden" name="topic" value="checklist" />
-    <input type="hidden" name="message" value="Please send me the 2026 Motel SEO Checklist." />
-    <div class="hidden" aria-hidden="true"><input type="text" name="last_name_verification" value="" autocomplete="off" tabindex="-1" /></div>
-    <label for="seo-checklist-email" class="sr-only">Email address</label>
-    <input
-      id="seo-checklist-email"
-      type="email"
-      name="email"
-      required
-      placeholder="you@example.com"
-      class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
-    />
-    <label for="seo-checklist-exp" class="sr-only">Experience Level</label>
-    <select
-      id="seo-checklist-exp"
-      name="motel-experience"
-      required
-      class="flex-1 px-4 py-3 rounded-lg border border-stone-200 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#4A554E] focus:border-transparent"
-    >
-      <option value="" disabled selected>Select Experience Level</option>
-      <option value="No Experience">No Experience</option>
-      <option value="Some Experience">Some Experience</option>
-      <option value="Experienced">Experienced</option>
-      <option value="Motel Owner">Motel Owner</option>
-    </select>
-    <button type="submit" class="px-6 py-3 bg-[#4A554E] text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] transition-colors whitespace-nowrap">
-      ⬇️ Get the Checklist
-    </button>
-  </form>
-  <p class="text-xs text-stone-400 mt-4">Please review our <a href="/privacy-policy/" class="underline hover:text-stone-600">Privacy Policy</a>.</p>
+  <p class="text-stone-600 text-sm mb-6">The spreadsheet checklist is free to open. Use it alongside the <a href="/motel-marketing/" class="text-[#4A554E] font-medium hover:underline">Motel Marketing</a> guides on this site.</p>
+  <a
+    href="https://docs.google.com/spreadsheets/d/1eV9eSvKKhc4JO2lRQ-Kl3MIWU3ZfQBaEsiJHCQWN324/edit?gid=0#gid=0"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex items-center justify-center px-6 py-3 bg-[#4A554E] !text-white text-sm font-medium rounded-lg hover:bg-[#3d4640] hover:!text-white hover:!no-underline transition-colors"
+  >
+    Open the checklist
+  </a>
 </div>
 
 ### How Guests Search

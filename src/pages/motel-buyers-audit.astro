@@ -123,7 +123,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="text-2xl font-semibold text-stone-900 mb-2">Request received.</p>
           <p class="text-stone-500">We&apos;ll review your target property details and be in touch shortly.</p>
         </div>
-        <form id="buyers-audit-form" class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+        <form id="buyers-audit-form" class="enquiry-form space-y-5" action="#" method="POST" data-success="#buyers-audit-success">
           <input type="hidden" name="source_page" value="Motel Buyers Audit" />
           <input type="hidden" name="form_type" value="buyers-audit" />
           <div class="hidden" aria-hidden="true">
@@ -238,50 +238,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
-
-<script>
-  document.getElementById('buyers-audit-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    const original = btn.textContent.trim();
-
-    const honeypot = this.querySelector('input[name="last_name_verification"]');
-    if (honeypot && honeypot.value) return;
-
-    const urlInput = this.querySelector('#website');
-    if (urlInput) {
-      let v = urlInput.value.trim();
-      if (v && !/^https?:\/\//i.test(v)) {
-        urlInput.value = 'https://' + v;
-      }
-    }
-
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-
-    try {
-      const formData = new FormData(this);
-      const data = new URLSearchParams(formData);
-
-      await fetch(this.action, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: data.toString()
-      });
-
-      this.classList.add('hidden');
-      document.getElementById('buyers-audit-success').classList.remove('hidden');
-    } catch (err) {
-      console.error(err);
-      btn.disabled = false;
-      btn.textContent = original;
-      alert('Something went wrong. Please try again.');
-    }
-  });
-</script>
 
   <!-- Strategy Session CTA -->
   <section class="bg-[#4A554E] py-14 border-b border-white/10">

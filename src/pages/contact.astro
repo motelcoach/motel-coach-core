@@ -29,7 +29,7 @@ const prefill = {
           <p class="text-2xl font-semibold text-stone-900 mb-2">Message received.</p>
           <p class="text-stone-500">We&apos;ll review your enquiry and reply within 1–2 business days.</p>
         </div>
-        <form id="contact-form" class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+        <form id="contact-form" class="enquiry-form space-y-5" action="#" method="POST" data-success="#contact-success">
           <input type="hidden" name="source_page" value="Contact Page" />
           <input type="hidden" name="form_type" value="general-contact" />
           <div class="hidden" aria-hidden="true">
@@ -196,48 +196,12 @@ const prefill = {
         if (formType) formType.value = 'strategy-session';
       }
     }
-  })();
 
-  document.getElementById('contact-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    const original = btn.textContent.trim();
-
-    const honeypot = this.querySelector('input[name="last_name_verification"]');
-    if (honeypot && honeypot.value) return;
-
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-    
-    try {
-      const formData = new FormData(this);
-      const formType = formData.get('form_type');
-      
-      await fetch(this.action, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
-      });
-
-      window.dataLayer = window.dataLayer || [];
-      if (formType === 'strategy-session') {
-        dataLayer.push({ 'event': 'form_submission', 'form_type': 'strategy-session' });
-      }
-
-      if (formType === 'strategy-session') {
-        window.location.href = '/contact/?submitted=true';
-      } else {
-        this.classList.add('hidden');
-        document.getElementById('contact-success').classList.remove('hidden');
-      }
-    } catch (err) {
-      console.error('Form submission error:', err);
-      btn.disabled = false;
-      btn.textContent = original;
-      alert('Something went wrong. Please try again or email us directly.');
+    if (params.get('submitted') === 'true') {
+      document.getElementById('contact-form')?.classList.add('hidden');
+      document.getElementById('contact-success')?.classList.remove('hidden');
     }
-  });
+  })();
 </script>
 </BaseLayout>
 

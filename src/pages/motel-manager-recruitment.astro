@@ -207,7 +207,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p class="text-stone-500">We'll review your vacancy details and be in touch within one business day.</p>
       </div>
 
-      <form id="vacancy-form-el" class="space-y-5" action="https://hooks.zapier.com/hooks/catch/26131104/upwyerc/" method="POST">
+      <form id="vacancy-form-el" class="enquiry-form space-y-5" action="#" method="POST" data-success="#vacancy-success">
         <input type="hidden" name="source_page" value="Motel Manager Recruitment" />
         <input type="hidden" name="form_type" value="vacancy-enquiry" />
         <div class="hidden" aria-hidden="true">
@@ -281,34 +281,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </form>
     </div>
   </section>
-
-  <script>
-    (function () {
-      const form = document.getElementById('vacancy-form-el');
-      if (!form) return;
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        const btn = this.querySelector('button[type="submit"]') as HTMLButtonElement;
-        const original = btn.textContent!.trim();
-        const honeypot = this.querySelector('input[name="last_name_verification"]') as HTMLInputElement;
-        if (honeypot && honeypot.value) return;
-        btn.disabled = true;
-        btn.textContent = 'Sending…';
-        try {
-          await fetch((this as HTMLFormElement).action, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(new FormData(this as HTMLFormElement)).toString(),
-          });
-        } catch (_) {}
-        (this as HTMLFormElement).classList.add('hidden');
-        document.getElementById('vacancy-success')!.classList.remove('hidden');
-        btn.disabled = false;
-        btn.textContent = original;
-      });
-    })();
-  </script>
 
   <script type="application/ld+json">
   {
